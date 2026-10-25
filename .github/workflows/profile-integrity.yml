@@ -1,0 +1,23 @@
+name: Enterprise Founder Profile Integrity
+on:
+  push:
+    branches: [main]
+    paths:
+      - README.md
+      - tools/verify_profile.py
+      - .github/workflows/profile-integrity.yml
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    steps:
+      - name: Checkout without persisted credentials
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4 verified SHA
+        with:
+          persist-credentials: false
+      - name: Check founder identity, flagship claims, evidence and link structure
+        run: python3 tools/verify_profile.py
