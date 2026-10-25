@@ -12,6 +12,8 @@ I am Alexander Romaskevich — Александр Николаевич Рома�
 
 These are my first-party project roles. Public source, commits and test logs below provide the technical evidence; titles do not substitute for product verification.
 
+**Independent review starts here:** [run the CONSTRUCTOR AI reference locally](https://github.com/oromaskevic23-cmd/CONSTRUCTOR-AI#run-the-reference-app) (Node.js 22+, `npm run verify`, `npm start`), [inspect our public proof verifier in PR #4](https://github.com/oromaskevic23-cmd/IMPERIAL-Core-Public/pull/4), and [read the historical evidence register](https://github.com/oromaskevic23-cmd/IMPERIAL-Core-Public/blob/main/docs/EVIDENCE.md). The first is a Task Manager demo, not an autonomous builder; the second is a reviewed proposal, not a merged release.
+
 ## IMPERIAL Core — ecosystem overview
 
 IMPERIAL Core is a long-term AI-native engineering ecosystem under development. Its **Federated Multi-Orchestrator Architecture** supports domain-specific orchestrators, multiple organizational structures, professional teams and a dynamic number of Nano Core Agents.
