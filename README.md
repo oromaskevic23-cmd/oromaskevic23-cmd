@@ -77,7 +77,7 @@ Observed on **25 October 2026** from public GitHub API records and CI job logs. 
 
 ## Collaboration and business inquiries
 
-I welcome technical review and conversations about governed AI systems, verified software engineering and evidence-based pilots. Start through my [GitHub profile](https://github.com/oromaskevic23-cmd) or open a [non-confidential collaboration issue](https://github.com/oromaskevic23-cmd/IMPERIAL-Core-Public/issues/new). Share confidential project details only after agreeing on a suitable private channel.
+I welcome technical review and conversations about governed AI systems, verified software engineering and evidence-based pilots. Start through my [GitHub profile](https://github.com/oromaskevic23-cmd) or review the [public collaboration issues](https://github.com/oromaskevic23-cmd/IMPERIAL-Core-Public/issues) (sign in to GitHub to open a new issue). Share confidential project details only after agreeing on a suitable private channel.
 
 ## Authorship — RomaskevicH
 

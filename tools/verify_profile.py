@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Reproducible, offline verification for the public IMPERIAL Core founder README."""
 from pathlib import Path
-from urllib.parse import urlparse
+from urllib.parse import urlparse, unquote
 import re
 import sys
 
@@ -38,7 +38,8 @@ check("Clear reference versus production limits",
       "not establish product deployment" in text and
       "No flagship is assigned DEPLOYED or LIVE VERIFIED" in text)
 check("Business inquiry route", "Collaboration and business inquiries" in text
-      and "issues/new" in text)
+      and "sign in to GitHub to open a new issue" in text
+      and "https://github.com/oromaskevic23-cmd/IMPERIAL-Core-Public/issues" in text)
 check("Preserved upstream attribution", "Third-party models, libraries" in text
       and "retain their original attribution" in text)
 check("Free of template filler", "## Hi there 👋" not in text
@@ -48,8 +49,26 @@ check("At least ten useful destination links", len(links) >= 10)
 check("Links are absolute HTTPS or local anchor",
       all((urlparse(u).scheme == "https" and urlparse(u).netloc)
           or u.startswith("#") for u in links))
-check("External links reference public repositories", all(
-      ("github.com" in urlparse(u).netloc or u.startswith("#")) for u in links))
+check("Exact GitHub HTTPS host and safe owner namespace", all(
+      u.startswith("#") or (
+          (parsed := urlparse(u)).scheme == "https"
+          and parsed.netloc == "github.com"
+          and parsed.username is None
+          and parsed.password is None
+          and not parsed.query
+          and not parsed.fragment
+          and (decoded := unquote(parsed.path)).startswith("/oromaskevic23-cmd")
+          and (len(decoded) == len("/oromaskevic23-cmd")
+               or decoded[len("/oromaskevic23-cmd")] == "/")
+          and not any(part in ("", ".", "..") for part in decoded.split("/")[2:])
+          and "\\\\" not in decoded
+      ) for u in links))
+check("No sign-in-only direct issue form", "/issues/new" not in text)
+check("No obsolete Val Town website in published README", "imperialcore.val.run" not in text)
+check("All four milestone PR and CI references present",
+      all(f"/{repo}/pull/{pr}" in text and f"/{repo}/actions/runs/" in text
+          for repo,pr in (("HANTER",3),("VELION-LLM-Public",1),
+                          ("CONSTRUCTOR-AI",1),("CYBER-HAK-Public",1))))
 patterns = [
     r"ghp_[A-Za-z0-9]{36}",
     r"github_pat_[A-Za-z0-9_]{20,}",
