@@ -26,7 +26,7 @@ def check(name, condition):
 text = README.read_text(encoding="utf-8")
 sections = re.findall(r"^## ([^\r\n]+)$", text, flags=re.MULTILINE)
 check("Founder title and identity", text.startswith("# Alexander Romaskevich\n")
-      and "RomaskevicH" in text and "Ukraine" in text)
+      and "RomaskevicH" in text and "Ukraine" not in text)
 check("All nine ordered sections", sections == list(EXPECTED_SECTIONS))
 check("Public technology portfolio", all(name in text for name in PROJECTS))
 check("Founder final authority", "Final Architectural Decision Authority" in text)
