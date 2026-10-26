@@ -1,6 +1,6 @@
 # Alexander Romaskevich
 
-**RomaskevicH · Ukraine**  
+**RomaskevicH**  
 **Founder • Owner • CEO of IMPERIAL Core**  
 **Architect / Final Architectural Decision Authority**
 
