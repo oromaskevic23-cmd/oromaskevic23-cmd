@@ -6,6 +6,13 @@
 
 Building IMPERIAL Core — Governed AI Agents, Verified Software Engineering & Autonomous Digital Systems.
 
+## Official multilingual websites
+
+- **[Alexander Romaskevich — official founder website](https://oromaskevic23-cmd.github.io/oromaskevic23-cmd/)** — Александр Николаевич Ромаскевич · Олександр Миколайович Ромаскевич · RomaskevicH. Public biography and engineering evidence in 10 languages.
+- **[IMPERIAL Core — official project website](https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/)** — architecture, projects, public verification evidence and ecosystem information in 10 languages.
+
+These are the two separately designed, public GitHub Pages destinations maintained by the owner. Search Console ownership, sitemap submission and Google index coverage require independent Google-side evidence; publishing a website or linking it here does not prove indexing or a Google Knowledge Panel.
+
 ## Founder introduction
 
 I am Alexander Romaskevich — Александр Николаевич Ромаскевич — founder of IMPERIAL Core. I set its architectural direction and retain final architectural decision authority. My work focuses on governed AI agents, software verification and accountable digital systems.
