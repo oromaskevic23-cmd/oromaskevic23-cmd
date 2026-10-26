@@ -1,10 +1,12 @@
 # Alexander Romaskevich
 
 **RomaskevicH · Ukraine**  
-**Founder • Owner • CEO of IMPERIAL Core**  
+**Founder • Owner • CEO • Chief Systems Architect of IMPERIAL Core**  
 **Architect / Final Architectural Decision Authority**
 
 Building IMPERIAL Core — Governed AI Agents, Verified Software Engineering & Autonomous Digital Systems.
+
+Official websites: [Founder profile](https://oromaskevic23-cmd.github.io/oromaskevic23-cmd/) · [IMPERIAL Core](https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/). Ten languages: EN, UK, RU, DE, FR, ES, PT, JA, ZH and AR. Publication and Google indexing are separate checks; see the [website release evidence](https://github.com/oromaskevic23-cmd/IMPERIAL-Core-Public/tree/feat/global-founder-github-pages-20261026/websites).
 
 ## Founder introduction
 
@@ -81,8 +83,8 @@ I welcome technical review and conversations about governed AI systems, verified
 
 ## Authorship — RomaskevicH
 
-**Alexander Romaskevich · Александр Николаевич Ромаскевич · Олександр Миколайович Ромаскевич**  
-Founder • Owner • CEO of IMPERIAL Core. Architect / Final Architectural Decision Authority.
+**Alexander Romaskevich · Александр Николаевич Ромаскевич · Олександр Ромаскевич**  
+Founder • Owner • CEO • Chief Systems Architect of IMPERIAL Core. Architect / Final Architectural Decision Authority.
 
 Founder roles are project designations; this profile makes no corporate-registration or certification claim. Third-party models, libraries and forked repositories retain their original attribution and license terms. Git history records contributions; public visibility does not create a new license grant.
 

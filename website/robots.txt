@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://oromaskevic23-cmd.github.io/oromaskevic23-cmd/sitemap.xml

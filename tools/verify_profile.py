@@ -49,8 +49,10 @@ check("At least ten useful destination links", len(links) >= 10)
 check("Links are absolute HTTPS or local anchor",
       all((urlparse(u).scheme == "https" and urlparse(u).netloc)
           or u.startswith("#") for u in links))
-check("Exact GitHub HTTPS host and safe owner namespace", all(
-      u.startswith("#") or (
+OFFICIAL_WEBSITES = {"https://oromaskevic23-cmd.github.io/oromaskevic23-cmd/",
+                     "https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/"}
+check("Exact official Pages URLs or GitHub owner namespace", all(
+      u.startswith("#") or u in OFFICIAL_WEBSITES or (
           (parsed := urlparse(u)).scheme == "https"
           and parsed.netloc == "github.com"
           and parsed.username is None
