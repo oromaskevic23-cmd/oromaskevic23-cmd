@@ -13,6 +13,27 @@ Building IMPERIAL Core — Governed AI Agents, Verified Software Engineering & A
 
 These are the two separately designed, public GitHub Pages destinations maintained by the owner. Search Console ownership, sitemap submission and Google index coverage require independent Google-side evidence; publishing a website or linking it here does not prove indexing or a Google Knowledge Panel.
 
+## October 26, 2026 — verified engineering progress
+
+**Build software. Verify everything.** The links below are exact GitHub Pull Requests and CI evidence, not claimed production launches.
+
+| Engineering track | Verified evidence | Reality boundary |
+| --- | --- | --- |
+| [IMPERIAL Venture Factory](https://github.com/oromaskevic23-cmd/IMPERIAL-Venture-Factory) / [ApproveDesk](https://github.com/oromaskevic23-cmd/IMPERIAL-Venture-Factory/pull/12) | [6/6 API/integration tests and real two-session Chromium E2E PASS](https://github.com/oromaskevic23-cmd/IMPERIAL-Venture-Factory/actions/runs/40344602965); commit `4076522e` | Local SQLite MVP; Draft PR; no production service, paying users or sale confirmed |
+| [Nano Core Agents — public architecture](https://github.com/oromaskevic23-cmd/Nano-Core-Agents-Public) | [NCA scoped GitHub reading and trusted fixed-code build: 107/107 tests PASS](https://github.com/oromaskevic23-cmd/Nano-Core-Agents/actions/runs/40345575013) | Private engineering repository; limited bounded execution, not autonomous LLM code generation |
+| [CYBER HAK](https://github.com/oromaskevic23-cmd/CYBER-HAK-Public) | [Independent automated AuditShield of ApproveDesk: 99/99 tests PASS; 42/42 files assessed](https://github.com/oromaskevic23-cmd/CYBER-HAK-Public/actions/runs/40346901497) | 0 high / 2 medium static findings; no independent human security certification |
+| [VELEON ⚡](https://github.com/oromaskevic23-cmd/VELION-LLM-Public) | [Free local/cloud proposal gateway reference](https://github.com/oromaskevic23-cmd/VELION-LLM-Public/pull/1) | Actual model inference and independently owned weights not verified; MAX is a mode |
+
+**IMPERIAL Venture Factory portfolio:** [ApproveDesk](https://github.com/oromaskevic23-cmd/IMPERIAL-Venture-Factory/issues/2), InvoiceRelay, CSVReconcile, QuoteFlow, RenewalRadar, CatalogFix, MarginLens, TicketTriage, WebhookLedger, and SiteSignal. The latter nine remain ideas/specifications; no fabricated customer or revenue claims.
+
+### Public identity and corporate boundaries
+
+- Official founder website: [Alexander Romaskevich / Александр Николаевич Ромаскевич](https://oromaskevic23-cmd.github.io/oromaskevic23-cmd/).
+- Official ecosystem website: [IMPERIAL Core](https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/).
+- Public signature: **RomaskevicH**. Founder designation: **Founder • Owner • CEO • Chief Systems Architect of IMPERIAL Core** (project roles, not corporate-registration proof).
+- Architecture: **Federated Multi-Orchestrator** with scoped NCA, LEGION, ASTRA coordination, HANTER command, CONSTRUCTOR AI engineering, VELEON intelligence, and CYBER HAK defense. *Identity does not grant authority; a skill does not grant approval.*
+- No public personal residence or origin details. No assumed geography for privately operated compute. No unverified claims about worldwide server regions or search-engine indexing.
+
 ## Founder introduction
 
 I am Alexander Romaskevich — Александр Николаевич Ромаскевич — founder of IMPERIAL Core. I set its architectural direction and retain final architectural decision authority. My work focuses on governed AI agents, software verification and accountable digital systems.
