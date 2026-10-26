@@ -1,7 +1,7 @@
 name: Enterprise Founder Profile Integrity
 on:
   push:
-    branches: [main]
+    branches: [main, feat/multilingual-founder-pages-20261026]
     paths:
       - README.md
       - tools/verify_profile.py
