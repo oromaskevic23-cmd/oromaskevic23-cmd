@@ -26,8 +26,8 @@ def check(name, condition):
 text = README.read_text(encoding="utf-8")
 sections = re.findall(r"^## ([^\r\n]+)$", text, flags=re.MULTILINE)
 check("Founder title and identity", text.startswith("# Alexander Romaskevich\n")
-      and "RomaskevicH" in text and "Ukraine" in text)
-check("All nine ordered sections", sections == list(EXPECTED_SECTIONS))
+      and "RomaskevicH" in text and "Ukraine" not in text)
+check("All approved ordered sections", sections == ["Official multilingual websites", *EXPECTED_SECTIONS])
 check("Public technology portfolio", all(name in text for name in PROJECTS))
 check("Founder final authority", "Final Architectural Decision Authority" in text)
 check("Architecture governance", all(s in text for s in
@@ -49,20 +49,26 @@ check("At least ten useful destination links", len(links) >= 10)
 check("Links are absolute HTTPS or local anchor",
       all((urlparse(u).scheme == "https" and urlparse(u).netloc)
           or u.startswith("#") for u in links))
-check("Exact GitHub HTTPS host and safe owner namespace", all(
-      u.startswith("#") or (
-          (parsed := urlparse(u)).scheme == "https"
-          and parsed.netloc == "github.com"
-          and parsed.username is None
-          and parsed.password is None
-          and not parsed.query
-          and not parsed.fragment
-          and (decoded := unquote(parsed.path)).startswith("/oromaskevic23-cmd")
-          and (len(decoded) == len("/oromaskevic23-cmd")
-               or decoded[len("/oromaskevic23-cmd")] == "/")
-          and not any(part in ("", ".", "..") for part in decoded.split("/")[2:])
-          and "\\\\" not in decoded
-      ) for u in links))
+OFFICIAL_PAGES = {
+    "https://oromaskevic23-cmd.github.io/oromaskevic23-cmd/",
+    "https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/",
+}
+def allowed_public_link(link):
+    if link.startswith("#"):
+        return True
+    parsed = urlparse(link)
+    if parsed.scheme != "https" or parsed.username or parsed.password or parsed.query or parsed.fragment:
+        return False
+    if link in OFFICIAL_PAGES:
+        return True
+    if parsed.netloc != "github.com":
+        return False
+    decoded = unquote(parsed.path)
+    parts = decoded.split("/")
+    return len(parts) >= 2 and parts[1] == "oromaskevic23-cmd" and all(
+        part not in ("", ".", "..") for part in parts[2:]
+    ) and "\\\\" not in decoded
+check("Official Pages plus safe GitHub namespace", all(allowed_public_link(u) for u in links))
 check("No sign-in-only direct issue form", "/issues/new" not in text)
 check("No obsolete Val Town website in published README", "imperialcore.val.run" not in text)
 check("All four milestone PR and CI references present",
