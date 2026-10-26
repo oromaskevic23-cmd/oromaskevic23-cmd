@@ -1,7 +1,7 @@
-# Founder website release
+# Published founder website
 
-Generated from the shared multilingual source and release gate in IMPERIAL-Core-Public commit `610ee1109174d8657b313680454ad82af4b4ce3a`.
+Public site: https://oromaskevic23-cmd.github.io/oromaskevic23-cmd/
 
-Canonical URL after Pages activation: https://oromaskevic23-cmd.github.io/oromaskevic23-cmd/
+Ten-language output from IMPERIAL-Core-Public source revision `4f620fa5c7ddf5e89e445fafc8c43cee10256fe8`. The live `gh-pages` release includes the full name Александр Николаевич Ромаскевич in Russian metadata and portrait attribution. Google indexing is not verified.
 
-Publish only the website output on branch `gh-pages`, root `/`. The founder profile README remains on `main`. The source release, report, manifests and Google validation evidence are reviewed in https://github.com/oromaskevic23-cmd/IMPERIAL-Core-Public/pull/5 . Google indexing is not verified.
+Build source, release manifests and testing: https://github.com/oromaskevic23-cmd/IMPERIAL-Core-Public/pull/5 .

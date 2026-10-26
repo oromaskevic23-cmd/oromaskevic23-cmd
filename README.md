@@ -6,7 +6,7 @@
 
 Building IMPERIAL Core — Governed AI Agents, Verified Software Engineering & Autonomous Digital Systems.
 
-Official websites prepared for GitHub Pages: [Founder profile](https://oromaskevic23-cmd.github.io/oromaskevic23-cmd/) · [IMPERIAL Core](https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/). Ten languages: EN, UK, RU, DE, FR, ES, PT, JA, ZH and AR. Publication and Google indexing are separate checks; see the [website release evidence](https://github.com/oromaskevic23-cmd/IMPERIAL-Core-Public/tree/feat/global-founder-github-pages-20261026/websites).
+Official websites: [Founder profile](https://oromaskevic23-cmd.github.io/oromaskevic23-cmd/) · [IMPERIAL Core](https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/). Ten languages: EN, UK, RU, DE, FR, ES, PT, JA, ZH and AR. Publication and Google indexing are separate checks; see the [website release evidence](https://github.com/oromaskevic23-cmd/IMPERIAL-Core-Public/tree/feat/global-founder-github-pages-20261026/websites).
 
 ## Founder introduction
 
