@@ -67,7 +67,7 @@ def allowed_public_link(link):
     parts = decoded.split("/")
     return len(parts) >= 2 and parts[1] == "oromaskevic23-cmd" and all(
         part not in ("", ".", "..") for part in parts[2:]
-    ) and "\\\\" not in decoded
+    ) and chr(92) not in decoded
 check("Official Pages plus safe GitHub namespace", all(allowed_public_link(u) for u in links))
 check("No sign-in-only direct issue form", "/issues/new" not in text)
 check("No obsolete Val Town website in published README", "imperialcore.val.run" not in text)
