@@ -1,44 +1,32 @@
 # Alexander Romaskevich
 
 **RomaskevicH**  
-**Founder • Owner • CEO of IMPERIAL Core**  
+**Founder • Owner • CEO • Chief Systems Architect of IMPERIAL Core**  
 **Architect / Final Architectural Decision Authority**
 
-Building IMPERIAL Core — Governed AI Agents, Verified Software Engineering & Autonomous Digital Systems.
+**Build software. Verify everything.**
+
+I design governed AI systems: professional agent teams, verifiable software engineering and federated execution. **Architecture before implementation. Evidence before claims.**
 
 ## Official multilingual websites
 
-- **[Alexander Romaskevich — official founder website](https://oromaskevic23-cmd.github.io/oromaskevic23-cmd/)** — Александр Николаевич Ромаскевич · Олександр Миколайович Ромаскевич · RomaskevicH. Public biography and engineering evidence in 10 languages.
-- **[IMPERIAL Core — official project website](https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/)** — architecture, projects, public verification evidence and ecosystem information in 10 languages.
+**[OPEN THE UPDATED IMPERIAL CORE WEBSITE →](https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/reference/)**
 
-These are the two separately designed, public GitHub Pages destinations maintained by the owner. Search Console ownership, sitemap submission and Google index coverage require independent Google-side evidence; publishing a website or linking it here does not prove indexing or a Google Knowledge Panel.
+Architecture, engineering updates, 30 canonical reference sections and verified infrastructure information. Available in six languages.
 
-## October 26, 2026 — verified engineering progress
+[Русская версия](https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/reference/ru/) · [Founder website](https://oromaskevic23-cmd.github.io/oromaskevic23-cmd/) · [Ecosystem overview](https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/)
 
-**Build software. Verify everything.** The links below are exact GitHub Pull Requests and CI evidence, not claimed production launches.
+### Infrastructure — Frankfurt, Germany
 
-| Engineering track | Verified evidence | Reality boundary |
-| --- | --- | --- |
-| [IMPERIAL Venture Factory](https://github.com/oromaskevic23-cmd/IMPERIAL-Venture-Factory) / [ApproveDesk](https://github.com/oromaskevic23-cmd/IMPERIAL-Venture-Factory/pull/12) | [6/6 API/integration tests and real two-session Chromium E2E PASS](https://github.com/oromaskevic23-cmd/IMPERIAL-Venture-Factory/actions/runs/40344602965); commit `4076522e` | Local SQLite MVP; Draft PR; no production service, paying users or sale confirmed |
-| [Nano Core Agents — public architecture](https://github.com/oromaskevic23-cmd/Nano-Core-Agents-Public) | [Private scoped five-agent VELEON code handoff: 120/120 policy tests and 1/1 generated-function test PASS](https://github.com/oromaskevic23-cmd/Nano-Core-Agents/actions/runs/40363006243) | Private source protected; limited verified model-output handoff, not general-purpose autonomous engineering |
-| [CYBER HAK](https://github.com/oromaskevic23-cmd/CYBER-HAK-Public) | [Independent automated AuditShield of ApproveDesk: 99/99 tests PASS; 42/42 files assessed](https://github.com/oromaskevic23-cmd/CYBER-HAK-Public/actions/runs/40346901497) | 0 high / 2 medium static findings; no independent human security certification |
-| [VELEON ⚡](https://github.com/oromaskevic23-cmd/VELION-LLM-Public) | [REAL local CPU inference + first verified LLM-generated code: 70/70 suite tests and 1/1 code trial PASS](https://github.com/oromaskevic23-cmd/VELION-LLM-Public/actions/runs/40362166437) | Uses independently licensed third-party Qwen3 weights, **not** proprietary VELEON model weights; MAX is a mode |
+**Supabase primary database: Frankfurt, Germany (`eu-central-1`).** Configuration checked on **26 October 2026**. This describes project infrastructure; it is not a personal-residence or company-headquarters designation.
 
-**IMPERIAL Venture Factory portfolio:** [ApproveDesk](https://github.com/oromaskevic23-cmd/IMPERIAL-Venture-Factory/issues/2), InvoiceRelay, CSVReconcile, QuoteFlow, RenewalRadar, CatalogFix, MarginLens, TicketTriage, WebhookLedger, and SiteSignal. The latter nine remain ideas/specifications; no fabricated customer or revenue claims.
-
-### Public identity and corporate boundaries
-
-- Official founder website: [Alexander Romaskevich / Александр Николаевич Ромаскевич](https://oromaskevic23-cmd.github.io/oromaskevic23-cmd/).
-- Official ecosystem website: [IMPERIAL Core](https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/).
-- Public signature: **RomaskevicH**. Founder designation: **Founder • Owner • CEO • Chief Systems Architect of IMPERIAL Core** (project roles, not corporate-registration proof).
-- Architecture: **Federated Multi-Orchestrator** with scoped NCA, LEGION, ASTRA coordination, HANTER command, CONSTRUCTOR AI engineering, VELEON intelligence, and CYBER HAK defense. *Identity does not grant authority; a skill does not grant approval.*
-- No public personal residence or origin details. No assumed geography for privately operated compute. No unverified claims about worldwide server regions or search-engine indexing.
+The public reference is hosted on GitHub Pages. Other service locations are stated only where confirmed. [Infrastructure details and sources](https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/reference/#infrastructure).
 
 ## Founder introduction
 
 I am Alexander Romaskevich — Александр Николаевич Ромаскевич — founder of IMPERIAL Core. I set its architectural direction and retain final architectural decision authority. My work focuses on governed AI agents, software verification and accountable digital systems.
 
-These are my first-party project roles. Public source, commits and test logs below provide the technical evidence; titles do not substitute for product verification.
+My public signature is **RomaskevicH**. This profile connects my architectural work with dated source and verification records.
 
 ## IMPERIAL Core — ecosystem overview
 
@@ -51,18 +39,18 @@ IMPERIAL Core is a long-term AI-native engineering ecosystem under development. 
 | Project | Public status | Evidence scope |
 |---|---|---|
 | [IMPERIAL Core](https://github.com/oromaskevic23-cmd/IMPERIAL-Core-Public) | **SPECIFIED** | Parent AI-native engineering ecosystem. Public architecture and governance documentation. |
-| [VELEON](https://github.com/oromaskevic23-cmd/VELION-LLM-Public) | **TESTED** | Proposal gateway reference in open PR #1; mocked endpoints. Default branch is documentation. |
-| [HANTER](https://github.com/oromaskevic23-cmd/HANTER) | **TESTED** | AI Command Center / Chief Systems. Offline Mission Desk reference in open PR #3; default branch is documentation. |
-| [CONSTRUCTOR AI](https://github.com/oromaskevic23-cmd/CONSTRUCTOR-AI) | **TESTED** | Task Manager and planning/quarantine reference. Main has runnable code; the cited 68-test result is open PR #1. |
-| [LEGION / Nano Core Agents](https://github.com/oromaskevic23-cmd/Legion-Public) | **SPECIFIED** | Public professional-team and agent architecture; no public runtime CI evidence verified in these documentation repositories. |
-| [CYBER HAK](https://github.com/oromaskevic23-cmd/CYBER-HAK-Public) | **TESTED** | Defensive reference exists on main; AuditShield v0.2 with 99 tests is open PR #1. |
+| [VELEON](https://github.com/oromaskevic23-cmd/VELION-LLM-Public) | **TESTED** | Scoped CPU-inference and generated-code experiment recorded on 26 October. Uses third-party Qwen3 weights; see the dated CI evidence below. |
+| [HANTER](https://github.com/oromaskevic23-cmd/HANTER) | **TESTED** | AI Command Center / Chief Systems. Offline Mission Desk reference; the 25 October checkpoint covers bounded planning and review. |
+| [CONSTRUCTOR AI](https://github.com/oromaskevic23-cmd/CONSTRUCTOR-AI) | **TESTED** | Task Manager, planning and quarantine/security reference. The cited 68-test checkpoint uses mocked model calls. |
+| [LEGION / Nano Core Agents](https://github.com/oromaskevic23-cmd/Legion-Public) | **SPECIFIED** | Public professional-team and agent architecture, with separate execution and authority boundaries. Private experiments are not presented as public verification. |
+| [CYBER HAK](https://github.com/oromaskevic23-cmd/CYBER-HAK-Public) | **TESTED** | Defensive AuditShield reference with dated test and audit evidence. Continuous deployed protection is not established by these tests. |
 | [NDB & IMPERIUM](https://github.com/oromaskevic23-cmd/CRYPTO-IMPERIAL-Ecosystem-Public) | **SPECIFIED** | Separate blockchain architecture and documentation. Token deployment, adoption, liquidity and value not verified in this audit. |
 
 [Nano Core Agents documentation](https://github.com/oromaskevic23-cmd/Nano-Core-Agents-Public) · [HANTER architecture](https://github.com/oromaskevic23-cmd/HANTER-Public) · [Complete public portfolio](https://github.com/oromaskevic23-cmd/IMPERIAL-Core-Public/blob/main/docs/PORTFOLIO.md)
 
 **Status key:** SPECIFIED = published design; IMPLEMENTED = identifiable source; TESTED = observed tests for a stated revision; DEPLOYED = evidenced deployment; LIVE VERIFIED = dated live behavior verified. A reference test result does not establish product deployment. No flagship is assigned DEPLOYED or LIVE VERIFIED by this audit.
 
-**Naming:** the current source documents specify **VELEON**. The historical repository URL `VELION-LLM-Public` is retained.
+**Naming:** **VELEON ⚡** is the LLM product; **MAX is a mode**. The historical repository URL `VELION-LLM-Public` is retained.
 
 ## Architecture & technology stack
 
@@ -81,6 +69,21 @@ NDB and IMPERIUM belong to a separate blockchain-development direction. **IMPERI
 
 ## Public technical evidence
 
+### 26 October 2026 — recorded engineering milestones
+
+Dated engineering results with source links. A passing workflow applies to its recorded revision; it does not establish a production release.
+
+| Engineering track | Verified evidence | Reality boundary |
+| --- | --- | --- |
+| [IMPERIAL Venture Factory](https://github.com/oromaskevic23-cmd/IMPERIAL-Venture-Factory) / [ApproveDesk](https://github.com/oromaskevic23-cmd/IMPERIAL-Venture-Factory/pull/12) | [6/6 API/integration tests and real two-session Chromium E2E PASS](https://github.com/oromaskevic23-cmd/IMPERIAL-Venture-Factory/actions/runs/40344602965); commit `4076522e` | Local SQLite MVP; Draft PR; no production service, paying users or sale confirmed |
+| [CYBER HAK](https://github.com/oromaskevic23-cmd/CYBER-HAK-Public) | [Independent automated AuditShield of ApproveDesk: 99/99 tests PASS; 42/42 files assessed](https://github.com/oromaskevic23-cmd/CYBER-HAK-Public/actions/runs/40346901497) | 0 high / 2 medium static findings; no independent human security certification |
+| [VELEON ⚡](https://github.com/oromaskevic23-cmd/VELION-LLM-Public) | [REAL local CPU inference + first verified LLM-generated code: 70/70 suite tests and 1/1 code trial PASS](https://github.com/oromaskevic23-cmd/VELION-LLM-Public/actions/runs/40362166437) | Uses independently licensed third-party Qwen3 weights, **not** proprietary VELEON model weights; MAX is a mode |
+
+**Venture portfolio under development:** [ApproveDesk](https://github.com/oromaskevic23-cmd/IMPERIAL-Venture-Factory/issues/2), InvoiceRelay, CSVReconcile, QuoteFlow, RenewalRadar, CatalogFix, MarginLens, TicketTriage, WebhookLedger, and SiteSignal. The latter nine remain ideas/specifications; no fabricated customer or revenue claims.
+
+<details>
+<summary>Earlier verification checkpoint — 25 October 2026</summary>
+
 ### Verified Engineering Milestones
 
 Observed on **25 October 2026** from public GitHub API records and CI job logs. All four cited PRs were **open and unmerged** at this checkpoint. Counts are recorded per test suite and are not combined into a product-readiness score.
@@ -94,10 +97,12 @@ Observed on **25 October 2026** from public GitHub API records and CI job logs. 
 
 [Evidence register and verification limits](https://github.com/oromaskevic23-cmd/IMPERIAL-Core-Public/blob/main/docs/EVIDENCE.md) · [Machine-readable evidence](https://github.com/oromaskevic23-cmd/IMPERIAL-Core-Public/blob/main/evidence/milestones.json)
 
+</details>
+
 ## Engineering roadmap
 
 1. Review and integrate bounded reference PRs with reproducible checks.
-2. Demonstrate authorized real-model inference and isolated execution with retained evidence.
+2. Integrate the scoped model-inference experiments into reproducible, isolated engineering workflows.
 3. Verify a complete application lifecycle before claiming an autonomous software factory.
 4. Validate deployed services and customer outcomes separately from local and CI tests.
 
@@ -109,12 +114,12 @@ I welcome technical review and conversations about governed AI systems, verified
 
 ## Authorship — RomaskevicH
 
-**Alexander Romaskevich · Александр Николаевич Ромаскевич · Олександр Миколайович Ромаскевич**  
-Founder • Owner • CEO of IMPERIAL Core. Architect / Final Architectural Decision Authority.
+**Alexander Romaskevich · Александр Николаевич Ромаскевич**  
+Founder • Owner • CEO • Chief Systems Architect of IMPERIAL Core. Architect / Final Architectural Decision Authority.
 
 Founder roles are project designations; this profile makes no corporate-registration or certification claim. Third-party models, libraries and forked repositories retain their original attribution and license terms. Git history records contributions; public visibility does not create a new license grant.
 
-[English / Українська / Русский](https://github.com/oromaskevic23-cmd/IMPERIAL-Core-Public/blob/main/docs/FOUNDER_IDENTITY.md) · [Provenance](https://github.com/oromaskevic23-cmd/IMPERIAL-Core-Public/blob/main/PROVENANCE.md)
+[Multilingual founder identity](https://github.com/oromaskevic23-cmd/IMPERIAL-Core-Public/blob/main/docs/FOUNDER_IDENTITY.md) · [Provenance](https://github.com/oromaskevic23-cmd/IMPERIAL-Core-Public/blob/main/PROVENANCE.md)
 
 **Build software. Verify everything.**  
 **IMPERIAL Core — Engineering with Evidence.**

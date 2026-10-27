@@ -52,15 +52,18 @@ check("Links are absolute HTTPS or local anchor",
 OFFICIAL_PAGES = {
     "https://oromaskevic23-cmd.github.io/oromaskevic23-cmd/",
     "https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/",
+    "https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/reference/",
+    "https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/reference/ru/",
+    "https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/reference/#infrastructure",
 }
 def allowed_public_link(link):
     if link.startswith("#"):
         return True
     parsed = urlparse(link)
-    if parsed.scheme != "https" or parsed.username or parsed.password or parsed.query or parsed.fragment:
-        return False
     if link in OFFICIAL_PAGES:
         return True
+    if parsed.scheme != "https" or parsed.username or parsed.password or parsed.query or parsed.fragment:
+        return False
     if parsed.netloc != "github.com":
         return False
     decoded = unquote(parsed.path)
