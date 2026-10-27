@@ -1,0 +1,1132 @@
+{
+  "date": "2026-10-27",
+  "scope": "First-party public HTTP and repository metadata observations",
+  "metadata": [
+    {
+      "before": {
+        "full_name": "oromaskevic23-cmd/oromaskevic23-cmd",
+        "description": null,
+        "homepage": null,
+        "topics": [],
+        "private": false,
+        "default_branch": "main"
+      },
+      "after": {
+        "full_name": "oromaskevic23-cmd/oromaskevic23-cmd",
+        "description": "Alexander Romaskevich (RomaskevicH) — Founder, Owner, CEO and Chief Systems Architect of IMPERIAL Core. Official profile, projects and dated engineering evidence.",
+        "homepage": "https://oromaskevic23-cmd.github.io/oromaskevic23-cmd/",
+        "topics": [
+          "ai-governance",
+          "github-profile",
+          "imperial-core",
+          "multi-agent-systems",
+          "portfolio",
+          "software-engineering"
+        ],
+        "private": false,
+        "default_branch": "main"
+      },
+      "verified": true
+    },
+    {
+      "before": {
+        "full_name": "oromaskevic23-cmd/IMPERIAL-Core-Public",
+        "description": "IMPERIAL Core  Official Public Architecture  ──────────────────────────  Getting Started  Architecture  Engineering Principles  Canonical Ecosystem  Public Documentation  Roadmap  Founder  Repository Policy  Public Documents  Architecture Manifest  Mission and Vision  Public Information Policy  Public / Private Boundary  Ecosystem Overview  Engineering Principles  Roadmap",
+        "homepage": null,
+        "topics": [],
+        "private": false,
+        "default_branch": "main"
+      },
+      "after": {
+        "full_name": "oromaskevic23-cmd/IMPERIAL-Core-Public",
+        "description": "IMPERIAL Core — an AI-native engineering ecosystem under development. Federated Multi-Orchestrator Architecture, governed agents and public engineering evidence. Founded by Alexander Romaskevich.",
+        "homepage": "https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/reference/",
+        "topics": [
+          "ai-governance",
+          "imperial-core",
+          "multi-agent-systems",
+          "software-architecture",
+          "software-engineering",
+          "technical-documentation",
+          "zero-trust"
+        ],
+        "private": false,
+        "default_branch": "main"
+      },
+      "verified": true
+    },
+    {
+      "before": {
+        "full_name": "oromaskevic23-cmd/CONSTRUCTOR-AI",
+        "description": "CONSTRUCTOR AI — Autonomous Software Engineering Platform by IMPERIAL Core. Transform ideas into working applications through AI-powered planning, coding, building, testing, debugging and independent QA. Founded by Alexander Romaskevich | RomaskevicH.",
+        "homepage": null,
+        "topics": [],
+        "private": false,
+        "default_branch": "main"
+      },
+      "after": {
+        "full_name": "oromaskevic23-cmd/CONSTRUCTOR-AI",
+        "description": "CONSTRUCTOR AI — software-engineering platform under development within IMPERIAL Core. Bounded planning, task management, code review and tested reference implementations for AI-assisted development.",
+        "homepage": "https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/reference/constructor-ai/",
+        "topics": [
+          "ai-assisted-development",
+          "ai-governance",
+          "automated-testing",
+          "code-review",
+          "imperial-core",
+          "software-engineering",
+          "task-management"
+        ],
+        "private": false,
+        "default_branch": "main"
+      },
+      "verified": true
+    },
+    {
+      "before": {
+        "full_name": "oromaskevic23-cmd/VELION-LLM-Public",
+        "description": "Public architecture, research, governance, evaluations and developer documentation for VELION LLM — an agent-native distributed AI system by Alexander Romaskevich  Founder • Owner • CEO of IMPERIAL Core🌎. HANTER — Chief Systems.",
+        "homepage": null,
+        "topics": [],
+        "private": false,
+        "default_branch": "main"
+      },
+      "after": {
+        "full_name": "oromaskevic23-cmd/VELION-LLM-Public",
+        "description": "VELEON ⚡ — the IMPERIAL Core LLM engineering program. Public architecture, governed model routing and scoped inference experiments using third-party licensed weights. MAX is a mode.",
+        "homepage": "https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/reference/#development",
+        "topics": [
+          "ai-governance",
+          "imperial-core",
+          "inference",
+          "llm",
+          "llm-evaluation",
+          "model-routing",
+          "veleon"
+        ],
+        "private": false,
+        "default_branch": "main"
+      },
+      "verified": true
+    },
+    {
+      "before": {
+        "full_name": "oromaskevic23-cmd/CYBER-HAK-Public",
+        "description": "CYBER HAK — governed defensive security architecture for IMPERIAL Core under HANTER governance. Zero Trust • Deny by Default • Evidence Before Claims.",
+        "homepage": null,
+        "topics": [],
+        "private": false,
+        "default_branch": "main"
+      },
+      "after": {
+        "full_name": "oromaskevic23-cmd/CYBER-HAK-Public",
+        "description": "CYBER HAK — defensive security engineering within IMPERIAL Core. AuditShield reference implementation, scoped verification and dated evidence. Zero Trust, Deny by Default and Fail Closed.",
+        "homepage": "https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/reference/#development",
+        "topics": [
+          "ai-governance",
+          "defensive-security",
+          "imperial-core",
+          "secure-software",
+          "security-audit",
+          "static-analysis",
+          "zero-trust"
+        ],
+        "private": false,
+        "default_branch": "main"
+      },
+      "verified": true
+    },
+    {
+      "before": {
+        "full_name": "oromaskevic23-cmd/Nano-Core-Agents-Public",
+        "description": "Official public repository of Nano Core Agents — an AI-native engineering initiative within IMPERIAL Core. Public architecture, documentation, engineering principles and project vision.",
+        "homepage": null,
+        "topics": [],
+        "private": false,
+        "default_branch": "main"
+      },
+      "after": {
+        "full_name": "oromaskevic23-cmd/Nano-Core-Agents-Public",
+        "description": "Nano Core Agents — professional AI-agent and team architecture within IMPERIAL Core. Scoped capabilities, AI Passport, policy binding, audit identity and federated orchestration.",
+        "homepage": "https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/reference/#section-4",
+        "topics": [
+          "agent-architecture",
+          "ai-agents",
+          "ai-governance",
+          "imperial-core",
+          "multi-agent-systems",
+          "software-architecture",
+          "zero-trust"
+        ],
+        "private": false,
+        "default_branch": "main"
+      },
+      "verified": true
+    },
+    {
+      "before": {
+        "full_name": "oromaskevic23-cmd/HANTER-Public",
+        "description": "Public architecture, documentation and engineering overview of HANTER — the AI command center of IMPERIAL Core.",
+        "homepage": null,
+        "topics": [],
+        "private": false,
+        "default_branch": "main"
+      },
+      "after": {
+        "full_name": "oromaskevic23-cmd/HANTER-Public",
+        "description": "HANTER — AI Command Center and Deputy to the Architect of IMPERIAL Core. Public architecture for bounded planning, delegation, coordination and evidence aggregation.",
+        "homepage": "https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/reference/#section-2",
+        "topics": [
+          "agent-orchestration",
+          "ai-governance",
+          "hanter",
+          "imperial-core",
+          "multi-agent-systems",
+          "software-architecture",
+          "technical-documentation"
+        ],
+        "private": false,
+        "default_branch": "main"
+      },
+      "verified": true
+    },
+    {
+      "before": {
+        "full_name": "oromaskevic23-cmd/ORION-Public",
+        "description": "Public architecture, engineering documentation and research for ORION — the collective intelligence and reasoning architecture of the IMPERIAL Core ecosystem. ORION explores scalable multi-agent collaboration coordinated by HANTER, the executive AI command center of IMPERIAL Core.",
+        "homepage": null,
+        "topics": [],
+        "private": false,
+        "default_branch": "main"
+      },
+      "after": {
+        "full_name": "oromaskevic23-cmd/ORION-Public",
+        "description": "ORION — collective-intelligence and reasoning architecture within IMPERIAL Core. Governed multi-agent research with independent boundaries, explicit integration contracts and federated authority.",
+        "homepage": "https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/reference/#section-17",
+        "topics": [
+          "ai-governance",
+          "ai-reasoning",
+          "collective-intelligence",
+          "imperial-core",
+          "multi-agent-systems",
+          "software-architecture"
+        ],
+        "private": false,
+        "default_branch": "main"
+      },
+      "verified": true
+    }
+  ],
+  "site_audit": {
+    "observed_at_utc": "2026-10-27T07:30:27.841316+00:00",
+    "page_count": 29,
+    "pass_count": 29,
+    "pages": [
+      {
+        "url": "https://oromaskevic23-cmd.github.io/oromaskevic23-cmd/",
+        "status": 200,
+        "canonical": [
+          "https://oromaskevic23-cmd.github.io/oromaskevic23-cmd/"
+        ],
+        "lang": "en",
+        "hreflang": {
+          "en": "https://oromaskevic23-cmd.github.io/oromaskevic23-cmd/",
+          "uk": "https://oromaskevic23-cmd.github.io/oromaskevic23-cmd/uk/",
+          "ru": "https://oromaskevic23-cmd.github.io/oromaskevic23-cmd/ru/",
+          "de": "https://oromaskevic23-cmd.github.io/oromaskevic23-cmd/de/",
+          "fr": "https://oromaskevic23-cmd.github.io/oromaskevic23-cmd/fr/",
+          "es": "https://oromaskevic23-cmd.github.io/oromaskevic23-cmd/es/",
+          "pt": "https://oromaskevic23-cmd.github.io/oromaskevic23-cmd/pt/",
+          "ja": "https://oromaskevic23-cmd.github.io/oromaskevic23-cmd/ja/",
+          "zh": "https://oromaskevic23-cmd.github.io/oromaskevic23-cmd/zh/",
+          "ar": "https://oromaskevic23-cmd.github.io/oromaskevic23-cmd/ar/",
+          "x-default": "https://oromaskevic23-cmd.github.io/oromaskevic23-cmd/"
+        },
+        "robots": "index,follow,max-image-preview:large",
+        "x_robots_tag": null,
+        "schema_types": [
+          "ProfilePage",
+          "Person",
+          "Organization",
+          "WebSite"
+        ],
+        "errors": []
+      },
+      {
+        "url": "https://oromaskevic23-cmd.github.io/oromaskevic23-cmd/uk/",
+        "status": 200,
+        "canonical": [
+          "https://oromaskevic23-cmd.github.io/oromaskevic23-cmd/uk/"
+        ],
+        "lang": "uk",
+        "hreflang": {
+          "en": "https://oromaskevic23-cmd.github.io/oromaskevic23-cmd/",
+          "uk": "https://oromaskevic23-cmd.github.io/oromaskevic23-cmd/uk/",
+          "ru": "https://oromaskevic23-cmd.github.io/oromaskevic23-cmd/ru/",
+          "de": "https://oromaskevic23-cmd.github.io/oromaskevic23-cmd/de/",
+          "fr": "https://oromaskevic23-cmd.github.io/oromaskevic23-cmd/fr/",
+          "es": "https://oromaskevic23-cmd.github.io/oromaskevic23-cmd/es/",
+          "pt": "https://oromaskevic23-cmd.github.io/oromaskevic23-cmd/pt/",
+          "ja": "https://oromaskevic23-cmd.github.io/oromaskevic23-cmd/ja/",
+          "zh": "https://oromaskevic23-cmd.github.io/oromaskevic23-cmd/zh/",
+          "ar": "https://oromaskevic23-cmd.github.io/oromaskevic23-cmd/ar/",
+          "x-default": "https://oromaskevic23-cmd.github.io/oromaskevic23-cmd/"
+        },
+        "robots": "index,follow,max-image-preview:large",
+        "x_robots_tag": null,
+        "schema_types": [
+          "ProfilePage",
+          "Person",
+          "Organization",
+          "WebSite"
+        ],
+        "errors": []
+      },
+      {
+        "url": "https://oromaskevic23-cmd.github.io/oromaskevic23-cmd/ru/",
+        "status": 200,
+        "canonical": [
+          "https://oromaskevic23-cmd.github.io/oromaskevic23-cmd/ru/"
+        ],
+        "lang": "ru",
+        "hreflang": {
+          "en": "https://oromaskevic23-cmd.github.io/oromaskevic23-cmd/",
+          "uk": "https://oromaskevic23-cmd.github.io/oromaskevic23-cmd/uk/",
+          "ru": "https://oromaskevic23-cmd.github.io/oromaskevic23-cmd/ru/",
+          "de": "https://oromaskevic23-cmd.github.io/oromaskevic23-cmd/de/",
+          "fr": "https://oromaskevic23-cmd.github.io/oromaskevic23-cmd/fr/",
+          "es": "https://oromaskevic23-cmd.github.io/oromaskevic23-cmd/es/",
+          "pt": "https://oromaskevic23-cmd.github.io/oromaskevic23-cmd/pt/",
+          "ja": "https://oromaskevic23-cmd.github.io/oromaskevic23-cmd/ja/",
+          "zh": "https://oromaskevic23-cmd.github.io/oromaskevic23-cmd/zh/",
+          "ar": "https://oromaskevic23-cmd.github.io/oromaskevic23-cmd/ar/",
+          "x-default": "https://oromaskevic23-cmd.github.io/oromaskevic23-cmd/"
+        },
+        "robots": "index,follow,max-image-preview:large",
+        "x_robots_tag": null,
+        "schema_types": [
+          "ProfilePage",
+          "Person",
+          "Organization",
+          "WebSite"
+        ],
+        "errors": []
+      },
+      {
+        "url": "https://oromaskevic23-cmd.github.io/oromaskevic23-cmd/de/",
+        "status": 200,
+        "canonical": [
+          "https://oromaskevic23-cmd.github.io/oromaskevic23-cmd/de/"
+        ],
+        "lang": "de",
+        "hreflang": {
+          "en": "https://oromaskevic23-cmd.github.io/oromaskevic23-cmd/",
+          "uk": "https://oromaskevic23-cmd.github.io/oromaskevic23-cmd/uk/",
+          "ru": "https://oromaskevic23-cmd.github.io/oromaskevic23-cmd/ru/",
+          "de": "https://oromaskevic23-cmd.github.io/oromaskevic23-cmd/de/",
+          "fr": "https://oromaskevic23-cmd.github.io/oromaskevic23-cmd/fr/",
+          "es": "https://oromaskevic23-cmd.github.io/oromaskevic23-cmd/es/",
+          "pt": "https://oromaskevic23-cmd.github.io/oromaskevic23-cmd/pt/",
+          "ja": "https://oromaskevic23-cmd.github.io/oromaskevic23-cmd/ja/",
+          "zh": "https://oromaskevic23-cmd.github.io/oromaskevic23-cmd/zh/",
+          "ar": "https://oromaskevic23-cmd.github.io/oromaskevic23-cmd/ar/",
+          "x-default": "https://oromaskevic23-cmd.github.io/oromaskevic23-cmd/"
+        },
+        "robots": "index,follow,max-image-preview:large",
+        "x_robots_tag": null,
+        "schema_types": [
+          "ProfilePage",
+          "Person",
+          "Organization",
+          "WebSite"
+        ],
+        "errors": []
+      },
+      {
+        "url": "https://oromaskevic23-cmd.github.io/oromaskevic23-cmd/fr/",
+        "status": 200,
+        "canonical": [
+          "https://oromaskevic23-cmd.github.io/oromaskevic23-cmd/fr/"
+        ],
+        "lang": "fr",
+        "hreflang": {
+          "en": "https://oromaskevic23-cmd.github.io/oromaskevic23-cmd/",
+          "uk": "https://oromaskevic23-cmd.github.io/oromaskevic23-cmd/uk/",
+          "ru": "https://oromaskevic23-cmd.github.io/oromaskevic23-cmd/ru/",
+          "de": "https://oromaskevic23-cmd.github.io/oromaskevic23-cmd/de/",
+          "fr": "https://oromaskevic23-cmd.github.io/oromaskevic23-cmd/fr/",
+          "es": "https://oromaskevic23-cmd.github.io/oromaskevic23-cmd/es/",
+          "pt": "https://oromaskevic23-cmd.github.io/oromaskevic23-cmd/pt/",
+          "ja": "https://oromaskevic23-cmd.github.io/oromaskevic23-cmd/ja/",
+          "zh": "https://oromaskevic23-cmd.github.io/oromaskevic23-cmd/zh/",
+          "ar": "https://oromaskevic23-cmd.github.io/oromaskevic23-cmd/ar/",
+          "x-default": "https://oromaskevic23-cmd.github.io/oromaskevic23-cmd/"
+        },
+        "robots": "index,follow,max-image-preview:large",
+        "x_robots_tag": null,
+        "schema_types": [
+          "ProfilePage",
+          "Person",
+          "Organization",
+          "WebSite"
+        ],
+        "errors": []
+      },
+      {
+        "url": "https://oromaskevic23-cmd.github.io/oromaskevic23-cmd/es/",
+        "status": 200,
+        "canonical": [
+          "https://oromaskevic23-cmd.github.io/oromaskevic23-cmd/es/"
+        ],
+        "lang": "es",
+        "hreflang": {
+          "en": "https://oromaskevic23-cmd.github.io/oromaskevic23-cmd/",
+          "uk": "https://oromaskevic23-cmd.github.io/oromaskevic23-cmd/uk/",
+          "ru": "https://oromaskevic23-cmd.github.io/oromaskevic23-cmd/ru/",
+          "de": "https://oromaskevic23-cmd.github.io/oromaskevic23-cmd/de/",
+          "fr": "https://oromaskevic23-cmd.github.io/oromaskevic23-cmd/fr/",
+          "es": "https://oromaskevic23-cmd.github.io/oromaskevic23-cmd/es/",
+          "pt": "https://oromaskevic23-cmd.github.io/oromaskevic23-cmd/pt/",
+          "ja": "https://oromaskevic23-cmd.github.io/oromaskevic23-cmd/ja/",
+          "zh": "https://oromaskevic23-cmd.github.io/oromaskevic23-cmd/zh/",
+          "ar": "https://oromaskevic23-cmd.github.io/oromaskevic23-cmd/ar/",
+          "x-default": "https://oromaskevic23-cmd.github.io/oromaskevic23-cmd/"
+        },
+        "robots": "index,follow,max-image-preview:large",
+        "x_robots_tag": null,
+        "schema_types": [
+          "ProfilePage",
+          "Person",
+          "Organization",
+          "WebSite"
+        ],
+        "errors": []
+      },
+      {
+        "url": "https://oromaskevic23-cmd.github.io/oromaskevic23-cmd/pt/",
+        "status": 200,
+        "canonical": [
+          "https://oromaskevic23-cmd.github.io/oromaskevic23-cmd/pt/"
+        ],
+        "lang": "pt",
+        "hreflang": {
+          "en": "https://oromaskevic23-cmd.github.io/oromaskevic23-cmd/",
+          "uk": "https://oromaskevic23-cmd.github.io/oromaskevic23-cmd/uk/",
+          "ru": "https://oromaskevic23-cmd.github.io/oromaskevic23-cmd/ru/",
+          "de": "https://oromaskevic23-cmd.github.io/oromaskevic23-cmd/de/",
+          "fr": "https://oromaskevic23-cmd.github.io/oromaskevic23-cmd/fr/",
+          "es": "https://oromaskevic23-cmd.github.io/oromaskevic23-cmd/es/",
+          "pt": "https://oromaskevic23-cmd.github.io/oromaskevic23-cmd/pt/",
+          "ja": "https://oromaskevic23-cmd.github.io/oromaskevic23-cmd/ja/",
+          "zh": "https://oromaskevic23-cmd.github.io/oromaskevic23-cmd/zh/",
+          "ar": "https://oromaskevic23-cmd.github.io/oromaskevic23-cmd/ar/",
+          "x-default": "https://oromaskevic23-cmd.github.io/oromaskevic23-cmd/"
+        },
+        "robots": "index,follow,max-image-preview:large",
+        "x_robots_tag": null,
+        "schema_types": [
+          "ProfilePage",
+          "Person",
+          "Organization",
+          "WebSite"
+        ],
+        "errors": []
+      },
+      {
+        "url": "https://oromaskevic23-cmd.github.io/oromaskevic23-cmd/ja/",
+        "status": 200,
+        "canonical": [
+          "https://oromaskevic23-cmd.github.io/oromaskevic23-cmd/ja/"
+        ],
+        "lang": "ja",
+        "hreflang": {
+          "en": "https://oromaskevic23-cmd.github.io/oromaskevic23-cmd/",
+          "uk": "https://oromaskevic23-cmd.github.io/oromaskevic23-cmd/uk/",
+          "ru": "https://oromaskevic23-cmd.github.io/oromaskevic23-cmd/ru/",
+          "de": "https://oromaskevic23-cmd.github.io/oromaskevic23-cmd/de/",
+          "fr": "https://oromaskevic23-cmd.github.io/oromaskevic23-cmd/fr/",
+          "es": "https://oromaskevic23-cmd.github.io/oromaskevic23-cmd/es/",
+          "pt": "https://oromaskevic23-cmd.github.io/oromaskevic23-cmd/pt/",
+          "ja": "https://oromaskevic23-cmd.github.io/oromaskevic23-cmd/ja/",
+          "zh": "https://oromaskevic23-cmd.github.io/oromaskevic23-cmd/zh/",
+          "ar": "https://oromaskevic23-cmd.github.io/oromaskevic23-cmd/ar/",
+          "x-default": "https://oromaskevic23-cmd.github.io/oromaskevic23-cmd/"
+        },
+        "robots": "index,follow,max-image-preview:large",
+        "x_robots_tag": null,
+        "schema_types": [
+          "ProfilePage",
+          "Person",
+          "Organization",
+          "WebSite"
+        ],
+        "errors": []
+      },
+      {
+        "url": "https://oromaskevic23-cmd.github.io/oromaskevic23-cmd/zh/",
+        "status": 200,
+        "canonical": [
+          "https://oromaskevic23-cmd.github.io/oromaskevic23-cmd/zh/"
+        ],
+        "lang": "zh",
+        "hreflang": {
+          "en": "https://oromaskevic23-cmd.github.io/oromaskevic23-cmd/",
+          "uk": "https://oromaskevic23-cmd.github.io/oromaskevic23-cmd/uk/",
+          "ru": "https://oromaskevic23-cmd.github.io/oromaskevic23-cmd/ru/",
+          "de": "https://oromaskevic23-cmd.github.io/oromaskevic23-cmd/de/",
+          "fr": "https://oromaskevic23-cmd.github.io/oromaskevic23-cmd/fr/",
+          "es": "https://oromaskevic23-cmd.github.io/oromaskevic23-cmd/es/",
+          "pt": "https://oromaskevic23-cmd.github.io/oromaskevic23-cmd/pt/",
+          "ja": "https://oromaskevic23-cmd.github.io/oromaskevic23-cmd/ja/",
+          "zh": "https://oromaskevic23-cmd.github.io/oromaskevic23-cmd/zh/",
+          "ar": "https://oromaskevic23-cmd.github.io/oromaskevic23-cmd/ar/",
+          "x-default": "https://oromaskevic23-cmd.github.io/oromaskevic23-cmd/"
+        },
+        "robots": "index,follow,max-image-preview:large",
+        "x_robots_tag": null,
+        "schema_types": [
+          "ProfilePage",
+          "Person",
+          "Organization",
+          "WebSite"
+        ],
+        "errors": []
+      },
+      {
+        "url": "https://oromaskevic23-cmd.github.io/oromaskevic23-cmd/ar/",
+        "status": 200,
+        "canonical": [
+          "https://oromaskevic23-cmd.github.io/oromaskevic23-cmd/ar/"
+        ],
+        "lang": "ar",
+        "hreflang": {
+          "en": "https://oromaskevic23-cmd.github.io/oromaskevic23-cmd/",
+          "uk": "https://oromaskevic23-cmd.github.io/oromaskevic23-cmd/uk/",
+          "ru": "https://oromaskevic23-cmd.github.io/oromaskevic23-cmd/ru/",
+          "de": "https://oromaskevic23-cmd.github.io/oromaskevic23-cmd/de/",
+          "fr": "https://oromaskevic23-cmd.github.io/oromaskevic23-cmd/fr/",
+          "es": "https://oromaskevic23-cmd.github.io/oromaskevic23-cmd/es/",
+          "pt": "https://oromaskevic23-cmd.github.io/oromaskevic23-cmd/pt/",
+          "ja": "https://oromaskevic23-cmd.github.io/oromaskevic23-cmd/ja/",
+          "zh": "https://oromaskevic23-cmd.github.io/oromaskevic23-cmd/zh/",
+          "ar": "https://oromaskevic23-cmd.github.io/oromaskevic23-cmd/ar/",
+          "x-default": "https://oromaskevic23-cmd.github.io/oromaskevic23-cmd/"
+        },
+        "robots": "index,follow,max-image-preview:large",
+        "x_robots_tag": null,
+        "schema_types": [
+          "ProfilePage",
+          "Person",
+          "Organization",
+          "WebSite"
+        ],
+        "errors": []
+      },
+      {
+        "url": "https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/",
+        "status": 200,
+        "canonical": [
+          "https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/"
+        ],
+        "lang": "en",
+        "hreflang": {
+          "en": "https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/",
+          "uk": "https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/uk/",
+          "ru": "https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/ru/",
+          "de": "https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/de/",
+          "fr": "https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/fr/",
+          "es": "https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/es/",
+          "pt": "https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/pt/",
+          "ja": "https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/ja/",
+          "zh": "https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/zh/",
+          "ar": "https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/ar/",
+          "x-default": "https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/"
+        },
+        "robots": "index,follow,max-image-preview:large",
+        "x_robots_tag": null,
+        "schema_types": [
+          "WebPage",
+          "Person",
+          "Organization",
+          "WebSite"
+        ],
+        "errors": []
+      },
+      {
+        "url": "https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/uk/",
+        "status": 200,
+        "canonical": [
+          "https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/uk/"
+        ],
+        "lang": "uk",
+        "hreflang": {
+          "en": "https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/",
+          "uk": "https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/uk/",
+          "ru": "https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/ru/",
+          "de": "https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/de/",
+          "fr": "https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/fr/",
+          "es": "https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/es/",
+          "pt": "https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/pt/",
+          "ja": "https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/ja/",
+          "zh": "https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/zh/",
+          "ar": "https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/ar/",
+          "x-default": "https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/"
+        },
+        "robots": "index,follow,max-image-preview:large",
+        "x_robots_tag": null,
+        "schema_types": [
+          "WebPage",
+          "Person",
+          "Organization",
+          "WebSite"
+        ],
+        "errors": []
+      },
+      {
+        "url": "https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/ru/",
+        "status": 200,
+        "canonical": [
+          "https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/ru/"
+        ],
+        "lang": "ru",
+        "hreflang": {
+          "en": "https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/",
+          "uk": "https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/uk/",
+          "ru": "https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/ru/",
+          "de": "https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/de/",
+          "fr": "https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/fr/",
+          "es": "https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/es/",
+          "pt": "https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/pt/",
+          "ja": "https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/ja/",
+          "zh": "https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/zh/",
+          "ar": "https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/ar/",
+          "x-default": "https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/"
+        },
+        "robots": "index,follow,max-image-preview:large",
+        "x_robots_tag": null,
+        "schema_types": [
+          "WebPage",
+          "Person",
+          "Organization",
+          "WebSite"
+        ],
+        "errors": []
+      },
+      {
+        "url": "https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/de/",
+        "status": 200,
+        "canonical": [
+          "https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/de/"
+        ],
+        "lang": "de",
+        "hreflang": {
+          "en": "https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/",
+          "uk": "https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/uk/",
+          "ru": "https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/ru/",
+          "de": "https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/de/",
+          "fr": "https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/fr/",
+          "es": "https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/es/",
+          "pt": "https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/pt/",
+          "ja": "https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/ja/",
+          "zh": "https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/zh/",
+          "ar": "https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/ar/",
+          "x-default": "https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/"
+        },
+        "robots": "index,follow,max-image-preview:large",
+        "x_robots_tag": null,
+        "schema_types": [
+          "WebPage",
+          "Person",
+          "Organization",
+          "WebSite"
+        ],
+        "errors": []
+      },
+      {
+        "url": "https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/fr/",
+        "status": 200,
+        "canonical": [
+          "https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/fr/"
+        ],
+        "lang": "fr",
+        "hreflang": {
+          "en": "https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/",
+          "uk": "https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/uk/",
+          "ru": "https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/ru/",
+          "de": "https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/de/",
+          "fr": "https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/fr/",
+          "es": "https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/es/",
+          "pt": "https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/pt/",
+          "ja": "https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/ja/",
+          "zh": "https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/zh/",
+          "ar": "https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/ar/",
+          "x-default": "https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/"
+        },
+        "robots": "index,follow,max-image-preview:large",
+        "x_robots_tag": null,
+        "schema_types": [
+          "WebPage",
+          "Person",
+          "Organization",
+          "WebSite"
+        ],
+        "errors": []
+      },
+      {
+        "url": "https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/es/",
+        "status": 200,
+        "canonical": [
+          "https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/es/"
+        ],
+        "lang": "es",
+        "hreflang": {
+          "en": "https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/",
+          "uk": "https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/uk/",
+          "ru": "https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/ru/",
+          "de": "https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/de/",
+          "fr": "https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/fr/",
+          "es": "https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/es/",
+          "pt": "https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/pt/",
+          "ja": "https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/ja/",
+          "zh": "https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/zh/",
+          "ar": "https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/ar/",
+          "x-default": "https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/"
+        },
+        "robots": "index,follow,max-image-preview:large",
+        "x_robots_tag": null,
+        "schema_types": [
+          "WebPage",
+          "Person",
+          "Organization",
+          "WebSite"
+        ],
+        "errors": []
+      },
+      {
+        "url": "https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/pt/",
+        "status": 200,
+        "canonical": [
+          "https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/pt/"
+        ],
+        "lang": "pt",
+        "hreflang": {
+          "en": "https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/",
+          "uk": "https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/uk/",
+          "ru": "https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/ru/",
+          "de": "https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/de/",
+          "fr": "https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/fr/",
+          "es": "https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/es/",
+          "pt": "https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/pt/",
+          "ja": "https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/ja/",
+          "zh": "https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/zh/",
+          "ar": "https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/ar/",
+          "x-default": "https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/"
+        },
+        "robots": "index,follow,max-image-preview:large",
+        "x_robots_tag": null,
+        "schema_types": [
+          "WebPage",
+          "Person",
+          "Organization",
+          "WebSite"
+        ],
+        "errors": []
+      },
+      {
+        "url": "https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/ja/",
+        "status": 200,
+        "canonical": [
+          "https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/ja/"
+        ],
+        "lang": "ja",
+        "hreflang": {
+          "en": "https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/",
+          "uk": "https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/uk/",
+          "ru": "https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/ru/",
+          "de": "https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/de/",
+          "fr": "https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/fr/",
+          "es": "https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/es/",
+          "pt": "https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/pt/",
+          "ja": "https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/ja/",
+          "zh": "https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/zh/",
+          "ar": "https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/ar/",
+          "x-default": "https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/"
+        },
+        "robots": "index,follow,max-image-preview:large",
+        "x_robots_tag": null,
+        "schema_types": [
+          "WebPage",
+          "Person",
+          "Organization",
+          "WebSite"
+        ],
+        "errors": []
+      },
+      {
+        "url": "https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/zh/",
+        "status": 200,
+        "canonical": [
+          "https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/zh/"
+        ],
+        "lang": "zh",
+        "hreflang": {
+          "en": "https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/",
+          "uk": "https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/uk/",
+          "ru": "https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/ru/",
+          "de": "https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/de/",
+          "fr": "https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/fr/",
+          "es": "https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/es/",
+          "pt": "https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/pt/",
+          "ja": "https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/ja/",
+          "zh": "https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/zh/",
+          "ar": "https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/ar/",
+          "x-default": "https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/"
+        },
+        "robots": "index,follow,max-image-preview:large",
+        "x_robots_tag": null,
+        "schema_types": [
+          "WebPage",
+          "Person",
+          "Organization",
+          "WebSite"
+        ],
+        "errors": []
+      },
+      {
+        "url": "https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/ar/",
+        "status": 200,
+        "canonical": [
+          "https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/ar/"
+        ],
+        "lang": "ar",
+        "hreflang": {
+          "en": "https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/",
+          "uk": "https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/uk/",
+          "ru": "https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/ru/",
+          "de": "https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/de/",
+          "fr": "https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/fr/",
+          "es": "https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/es/",
+          "pt": "https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/pt/",
+          "ja": "https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/ja/",
+          "zh": "https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/zh/",
+          "ar": "https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/ar/",
+          "x-default": "https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/"
+        },
+        "robots": "index,follow,max-image-preview:large",
+        "x_robots_tag": null,
+        "schema_types": [
+          "WebPage",
+          "Person",
+          "Organization",
+          "WebSite"
+        ],
+        "errors": []
+      },
+      {
+        "url": "https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/reference/",
+        "status": 200,
+        "canonical": [
+          "https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/reference/"
+        ],
+        "lang": "en",
+        "hreflang": {
+          "en": "https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/reference/",
+          "uk": "https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/reference/uk/",
+          "ja": "https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/reference/ja/",
+          "zh": "https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/reference/zh/",
+          "de-CH": "https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/reference/de-CH/",
+          "ru": "https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/reference/ru/",
+          "x-default": "https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/reference/"
+        },
+        "robots": "index,follow,max-image-preview:large",
+        "x_robots_tag": null,
+        "schema_types": [
+          "WebPage",
+          "Person",
+          "Organization",
+          "WebSite"
+        ],
+        "errors": []
+      },
+      {
+        "url": "https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/reference/uk/",
+        "status": 200,
+        "canonical": [
+          "https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/reference/uk/"
+        ],
+        "lang": "uk",
+        "hreflang": {
+          "en": "https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/reference/",
+          "uk": "https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/reference/uk/",
+          "ja": "https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/reference/ja/",
+          "zh": "https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/reference/zh/",
+          "de-CH": "https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/reference/de-CH/",
+          "ru": "https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/reference/ru/",
+          "x-default": "https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/reference/"
+        },
+        "robots": "index,follow,max-image-preview:large",
+        "x_robots_tag": null,
+        "schema_types": [
+          "WebPage",
+          "Person",
+          "Organization",
+          "WebSite"
+        ],
+        "errors": []
+      },
+      {
+        "url": "https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/reference/ja/",
+        "status": 200,
+        "canonical": [
+          "https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/reference/ja/"
+        ],
+        "lang": "ja",
+        "hreflang": {
+          "en": "https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/reference/",
+          "uk": "https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/reference/uk/",
+          "ja": "https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/reference/ja/",
+          "zh": "https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/reference/zh/",
+          "de-CH": "https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/reference/de-CH/",
+          "ru": "https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/reference/ru/",
+          "x-default": "https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/reference/"
+        },
+        "robots": "index,follow,max-image-preview:large",
+        "x_robots_tag": null,
+        "schema_types": [
+          "WebPage",
+          "Person",
+          "Organization",
+          "WebSite"
+        ],
+        "errors": []
+      },
+      {
+        "url": "https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/reference/zh/",
+        "status": 200,
+        "canonical": [
+          "https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/reference/zh/"
+        ],
+        "lang": "zh",
+        "hreflang": {
+          "en": "https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/reference/",
+          "uk": "https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/reference/uk/",
+          "ja": "https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/reference/ja/",
+          "zh": "https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/reference/zh/",
+          "de-CH": "https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/reference/de-CH/",
+          "ru": "https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/reference/ru/",
+          "x-default": "https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/reference/"
+        },
+        "robots": "index,follow,max-image-preview:large",
+        "x_robots_tag": null,
+        "schema_types": [
+          "WebPage",
+          "Person",
+          "Organization",
+          "WebSite"
+        ],
+        "errors": []
+      },
+      {
+        "url": "https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/reference/de-CH/",
+        "status": 200,
+        "canonical": [
+          "https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/reference/de-CH/"
+        ],
+        "lang": "de-CH",
+        "hreflang": {
+          "en": "https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/reference/",
+          "uk": "https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/reference/uk/",
+          "ja": "https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/reference/ja/",
+          "zh": "https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/reference/zh/",
+          "de-CH": "https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/reference/de-CH/",
+          "ru": "https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/reference/ru/",
+          "x-default": "https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/reference/"
+        },
+        "robots": "index,follow,max-image-preview:large",
+        "x_robots_tag": null,
+        "schema_types": [
+          "WebPage",
+          "Person",
+          "Organization",
+          "WebSite"
+        ],
+        "errors": []
+      },
+      {
+        "url": "https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/reference/ru/",
+        "status": 200,
+        "canonical": [
+          "https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/reference/ru/"
+        ],
+        "lang": "ru",
+        "hreflang": {
+          "en": "https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/reference/",
+          "uk": "https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/reference/uk/",
+          "ja": "https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/reference/ja/",
+          "zh": "https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/reference/zh/",
+          "de-CH": "https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/reference/de-CH/",
+          "ru": "https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/reference/ru/",
+          "x-default": "https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/reference/"
+        },
+        "robots": "index,follow,max-image-preview:large",
+        "x_robots_tag": null,
+        "schema_types": [
+          "WebPage",
+          "Person",
+          "Organization",
+          "WebSite"
+        ],
+        "errors": []
+      },
+      {
+        "url": "https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/reference/constructor-ai/",
+        "status": 200,
+        "canonical": [
+          "https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/reference/constructor-ai/"
+        ],
+        "lang": "en",
+        "hreflang": {
+          "en": "https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/reference/constructor-ai/",
+          "uk": "https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/reference/uk/constructor-ai/",
+          "ru": "https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/reference/ru/constructor-ai/",
+          "x-default": "https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/reference/constructor-ai/"
+        },
+        "robots": "index,follow,max-image-preview:large",
+        "x_robots_tag": null,
+        "schema_types": [
+          "WebPage",
+          "Person",
+          "Organization",
+          "WebSite",
+          "WebPage",
+          "SoftwareApplication"
+        ],
+        "errors": []
+      },
+      {
+        "url": "https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/reference/ru/constructor-ai/",
+        "status": 200,
+        "canonical": [
+          "https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/reference/ru/constructor-ai/"
+        ],
+        "lang": "ru",
+        "hreflang": {
+          "en": "https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/reference/constructor-ai/",
+          "uk": "https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/reference/uk/constructor-ai/",
+          "ru": "https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/reference/ru/constructor-ai/",
+          "x-default": "https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/reference/constructor-ai/"
+        },
+        "robots": "index,follow,max-image-preview:large",
+        "x_robots_tag": null,
+        "schema_types": [
+          "WebPage",
+          "Person",
+          "Organization",
+          "WebSite",
+          "WebPage",
+          "SoftwareApplication"
+        ],
+        "errors": []
+      },
+      {
+        "url": "https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/reference/uk/constructor-ai/",
+        "status": 200,
+        "canonical": [
+          "https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/reference/uk/constructor-ai/"
+        ],
+        "lang": "uk",
+        "hreflang": {
+          "en": "https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/reference/constructor-ai/",
+          "uk": "https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/reference/uk/constructor-ai/",
+          "ru": "https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/reference/ru/constructor-ai/",
+          "x-default": "https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/reference/constructor-ai/"
+        },
+        "robots": "index,follow,max-image-preview:large",
+        "x_robots_tag": null,
+        "schema_types": [
+          "WebPage",
+          "Person",
+          "Organization",
+          "WebSite",
+          "WebPage",
+          "SoftwareApplication"
+        ],
+        "errors": []
+      }
+    ]
+  },
+  "founder_publication": {
+    "observed_at_utc": "2026-10-27T12:15:48.531051+00:00",
+    "commit": "f1e3060df5da7d9c55edb1cb6aa4ab10ad2f5348",
+    "pages": [
+      {
+        "url": "https://oromaskevic23-cmd.github.io/oromaskevic23-cmd/ar/",
+        "status": 200,
+        "bytes_match_published_commit": true,
+        "sha256": "453e745c43d0385709a9723993e5db0437f3b73f63560b21b5eb509ff74e8170"
+      },
+      {
+        "url": "https://oromaskevic23-cmd.github.io/oromaskevic23-cmd/de/",
+        "status": 200,
+        "bytes_match_published_commit": true,
+        "sha256": "218c249c9dc5d87eee450c44a72a72138745a9017e0a8989bca50282a9563c72"
+      },
+      {
+        "url": "https://oromaskevic23-cmd.github.io/oromaskevic23-cmd/es/",
+        "status": 200,
+        "bytes_match_published_commit": true,
+        "sha256": "3e282b50a40c2f8329ea4262baa26d2bcb43577683775545810d707c5ddb172e"
+      },
+      {
+        "url": "https://oromaskevic23-cmd.github.io/oromaskevic23-cmd/fr/",
+        "status": 200,
+        "bytes_match_published_commit": true,
+        "sha256": "2be31d71b3c7bef5a0a88557bd749e3447d1b1352e47191f4d13214c772d382d"
+      },
+      {
+        "url": "https://oromaskevic23-cmd.github.io/oromaskevic23-cmd/",
+        "status": 200,
+        "bytes_match_published_commit": true,
+        "sha256": "60de3a4994786048bb0fb903b29182c13c187e17ee972b1a4f3547d458b6c4f9"
+      },
+      {
+        "url": "https://oromaskevic23-cmd.github.io/oromaskevic23-cmd/ja/",
+        "status": 200,
+        "bytes_match_published_commit": true,
+        "sha256": "356ac5a69c29136d9baa0a00468508961fb6d90497d6724a90f86574aa68232e"
+      },
+      {
+        "url": "https://oromaskevic23-cmd.github.io/oromaskevic23-cmd/pt/",
+        "status": 200,
+        "bytes_match_published_commit": true,
+        "sha256": "63ae9781a4c1145ea18070da6d9fa88ccbd021ce0420eba3c421d0af4e0b8436"
+      },
+      {
+        "url": "https://oromaskevic23-cmd.github.io/oromaskevic23-cmd/ru/",
+        "status": 200,
+        "bytes_match_published_commit": true,
+        "sha256": "343810a95a65725a1de0e52b7fa695ddc4ef22b3b6827179b80f122f748bdda1"
+      },
+      {
+        "url": "https://oromaskevic23-cmd.github.io/oromaskevic23-cmd/uk/",
+        "status": 200,
+        "bytes_match_published_commit": true,
+        "sha256": "f520f61dcd9ecec02b8c27f0e645bb382d5c5eed4471646d597e561f17a02d64"
+      },
+      {
+        "url": "https://oromaskevic23-cmd.github.io/oromaskevic23-cmd/zh/",
+        "status": 200,
+        "bytes_match_published_commit": true,
+        "sha256": "076a0e9654e569afa9fd21f97fb635f27d6e6cf45f1aecbb6a409909713a3ca0"
+      }
+    ],
+    "pass_count": 10
+  },
+  "google_search_console": {
+    "owner_verified": "NOT_VERIFIED",
+    "sitemap_submitted": "NOT_VERIFIED",
+    "url_inspection": "NOT_VERIFIED",
+    "indexing": "NOT_VERIFIED",
+    "ranking": "NOT_VERIFIED"
+  }
+}

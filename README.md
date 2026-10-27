@@ -14,7 +14,9 @@ I design governed AI systems: professional agent teams, verifiable software engi
 
 Architecture, engineering updates, 30 canonical reference sections and verified infrastructure information. Available in six languages.
 
-[Русская версия](https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/reference/ru/) · [Founder website](https://oromaskevic23-cmd.github.io/oromaskevic23-cmd/) · [Ecosystem overview](https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/)
+[Founder website](https://oromaskevic23-cmd.github.io/oromaskevic23-cmd/) · [Ecosystem overview](https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/)
+
+[Website and profile verification — 27 October 2026](https://github.com/oromaskevic23-cmd/oromaskevic23-cmd/blob/main/docs/PUBLIC_VISIBILITY_20261027.md)
 
 ### Infrastructure — Frankfurt, Germany
 
@@ -24,7 +26,7 @@ The public reference is hosted on GitHub Pages. Other service locations are stat
 
 ## Founder introduction
 
-I am Alexander Romaskevich — Александр Николаевич Ромаскевич — founder of IMPERIAL Core. I set its architectural direction and retain final architectural decision authority. My work focuses on governed AI agents, software verification and accountable digital systems.
+I am Alexander Nikolaevich Romaskevich — founder of IMPERIAL Core. I set its architectural direction and retain final architectural decision authority. My work focuses on governed AI agents, software verification and accountable digital systems.
 
 My public signature is **RomaskevicH**. This profile connects my architectural work with dated source and verification records.
 
@@ -114,7 +116,7 @@ I welcome technical review and conversations about governed AI systems, verified
 
 ## Authorship — RomaskevicH
 
-**Alexander Romaskevich · Александр Николаевич Ромаскевич**  
+**Alexander Nikolaevich Romaskevich · RomaskevicH**  
 Founder • Owner • CEO • Chief Systems Architect of IMPERIAL Core. Architect / Final Architectural Decision Authority.
 
 Founder roles are project designations; this profile makes no corporate-registration or certification claim. Third-party models, libraries and forked repositories retain their original attribution and license terms. Git history records contributions; public visibility does not create a new license grant.
@@ -123,3 +125,4 @@ Founder roles are project designations; this profile makes no corporate-registra
 
 **Build software. Verify everything.**  
 **IMPERIAL Core — Engineering with Evidence.**
+
