@@ -100,7 +100,9 @@ def validate_page(site: Path, prefix: str, url: str):
     title = "".join(parser.title).strip()
     demand(10 <= len(title) < 135, "Bad title " + url)
     demand(parser.headings == 1, "Expected exactly one H1 " + url)
-    demand(parser.lang in LOCALES, "Unexpected document language " + url)
+    demand(isinstance(parser.lang, str) and
+           parser.lang.split("-", 1)[0].lower() in LOCALES,
+           "Unexpected document language " + url)
     descriptions = [m.get("content", "") for m in parser.head_meta
                     if m.get("name", "").lower() == "description"]
     demand(len(descriptions) == 1 and len(descriptions[0]) >= 40,
@@ -152,7 +154,7 @@ def audit(site: Path, prefix: str, expected_minimum: int):
     demand(len(locs) == len(set(locs)), "Duplicate sitemap loc")
     langs = set()
     for url in locs:
-        langs.add(validate_page(site, prefix, url))
+        langs.add(validate_page(site, prefix, url).split("-", 1)[0].lower())
     demand(LOCALES.issubset(langs), "Missing one or more languages from sitemap")
     robots = (site / "robots.txt").read_text(encoding="utf-8").lower()
     demand("disallow: /" not in robots and
