@@ -152,6 +152,20 @@ def audit(site: Path, prefix: str, expected_minimum: int):
     locs = [u.text for u in tree.findall("s:url/s:loc", NS)]
     demand(len(locs) >= expected_minimum, "Sitemap has fewer indexable pages than expected")
     demand(len(locs) == len(set(locs)), "Duplicate sitemap loc")
+    if prefix == ECOSYSTEM:
+        reference_sitemap = site / "reference" / "sitemap.xml"
+        demand(reference_sitemap.is_file(), "Primary reference sitemap missing")
+        reference_urls = [u.text for u in ET.parse(reference_sitemap).findall("s:url/s:loc", NS)]
+        demand(len(reference_urls) >= 9, "Expected nine published reference routes")
+        demand(set(reference_urls).issubset(set(locs)),
+               "One or more primary reference URLs missing from root sitemap")
+        demand(prefix + "reference/" in reference_urls,
+               "Main IMPERIAL Core reference URL is absent")
+        for main_language in ("ru", "uk", "de-CH", "ja", "zh"):
+            demand(prefix + "reference/" + main_language + "/" in reference_urls,
+                   "Localized reference route missing: " + main_language)
+        demand(prefix + "reference/constructor-ai/" in reference_urls,
+               "CONSTRUCTOR AI reference route missing")
     langs = set()
     for url in locs:
         langs.add(validate_page(site, prefix, url).split("-", 1)[0].lower())
