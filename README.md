@@ -1,8 +1,11 @@
 # Alexander Romaskevich
 
+<p align="center"><a href="https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/reference/"><img src="assets/imperial-core-logo.jpeg" alt="IMPERIAL Core — original gold crowned emblem" width="240"></a></p>
+
 **RomaskevicH**  
-**Founder • Owner • CEO • Chief Systems Architect of IMPERIAL Core**  
-**Architect / Final Architectural Decision Authority**
+**Founder • Owner • CEO of IMPERIAL Core**
+
+**My ownership declaration: I own 100% of IMPERIAL Core shares.**
 
 **Build software. Verify everything.**
 
@@ -10,7 +13,7 @@ I design governed AI systems: professional agent teams, verifiable software engi
 
 ## Official multilingual websites
 
-**[OPEN THE UPDATED IMPERIAL CORE WEBSITE →](https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/reference/)**
+**[Explore IMPERIAL Core →](https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/reference/)**
 
 Architecture, engineering updates, 30 canonical reference sections and verified infrastructure information. Available in six languages.
 
@@ -23,6 +26,8 @@ Architecture, engineering updates, 30 canonical reference sections and verified 
 **Supabase primary database: Frankfurt, Germany (`eu-central-1`).** Configuration checked on **26 October 2026**. This describes project infrastructure; it is not a personal-residence or company-headquarters designation.
 
 The public reference is hosted on GitHub Pages. Other service locations are stated only where confirmed. [Infrastructure details and sources](https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/reference/#infrastructure).
+
+[Projects](#flagship-engineering-projects) · [Engineering evidence](#public-technical-evidence) · [Business inquiries](#collaboration-and-business-inquiries)
 
 ## Founder introduction
 
@@ -117,7 +122,7 @@ I welcome technical review and conversations about governed AI systems, verified
 ## Authorship — RomaskevicH
 
 **Alexander Nikolaevich Romaskevich · RomaskevicH**  
-Founder • Owner • CEO • Chief Systems Architect of IMPERIAL Core. Architect / Final Architectural Decision Authority.
+Founder • Owner • CEO of IMPERIAL Core.
 
 Founder roles are project designations; this profile makes no corporate-registration or certification claim. Third-party models, libraries and forked repositories retain their original attribution and license terms. Git history records contributions; public visibility does not create a new license grant.
 

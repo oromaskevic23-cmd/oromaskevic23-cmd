@@ -29,7 +29,8 @@ check("Founder title and identity", text.startswith("# Alexander Romaskevich\n")
       and "RomaskevicH" in text and "Ukraine" not in text)
 check("All approved ordered sections", sections == ["Official multilingual websites", *EXPECTED_SECTIONS])
 check("Public technology portfolio", all(name in text for name in PROJECTS))
-check("Founder final authority", "Final Architectural Decision Authority" in text)
+check("Owner-approved public roles", "Founder • Owner • CEO of IMPERIAL Core" in text and "Chief Systems Architect" not in text and "100% of IMPERIAL Core shares" in text)
+check("Founder final authority", "retain final architectural decision authority" in text)
 check("Architecture governance", all(s in text for s in
       ("Zero Trust", "Approval Gateway", "Public / Private Boundary")))
 check("Engineering proof", "Verified Engineering Milestones" in text
