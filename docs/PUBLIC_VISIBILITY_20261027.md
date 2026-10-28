@@ -2,7 +2,7 @@
 
 **Alexander Romaskevich · RomaskevicH · IMPERIAL Core**
 
-The public profile and eight repository About panels now point visitors to official project information. Ten founder-site language pages now use the current product name **VELEON ⚡**, distinguish MAX as a mode, and link directly to the current IMPERIAL Core reference.
+The public profile and eight repository About panels now point visitors to official project information. Ten founder-site language pages now use the current product name **VELION ⚡**, distinguish MAX as a mode, and link directly to the current IMPERIAL Core reference.
 
 This is a first-party technical verification record. It establishes published changes and observed HTTP/HTML behavior. It does not establish Google indexing, search rank, independent certification or production readiness of the products.
 

@@ -17,7 +17,7 @@ EXPECTED_SECTIONS = (
     "Collaboration and business inquiries",
     "Authorship — RomaskevicH",
 )
-PROJECTS = ("IMPERIAL Core", "VELEON", "HANTER", "CONSTRUCTOR AI",
+PROJECTS = ("IMPERIAL Core", "VELION", "HANTER", "CONSTRUCTOR AI",
             "LEGION", "CYBER HAK", "NDB & IMPERIUM")
 CHECKS = []
 def check(name, condition):

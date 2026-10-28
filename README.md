@@ -41,7 +41,7 @@ IMPERIAL Core is a long-term AI-native engineering ecosystem under development. 
 | Project | Public status | Evidence scope |
 |---|---|---|
 | [IMPERIAL Core](https://github.com/oromaskevic23-cmd/IMPERIAL-Core-Public) | **SPECIFIED** | Parent AI-native engineering ecosystem. Public architecture and governance documentation. |
-| [VELEON](https://github.com/oromaskevic23-cmd/VELION-LLM-Public) | **TESTED** | Scoped CPU-inference and generated-code experiment recorded on 26 October. Uses third-party Qwen3 weights; see the dated CI evidence below. |
+| [VELION](https://github.com/oromaskevic23-cmd/VELION-LLM-Public) | **TESTED** | Scoped CPU-inference and generated-code experiment recorded on 26 October. Uses third-party Qwen3 weights; see the dated CI evidence below. |
 | [HANTER](https://github.com/oromaskevic23-cmd/HANTER) | **TESTED** | AI Command Center / Chief Systems. Offline Mission Desk reference; the 25 October checkpoint covers bounded planning and review. |
 | [CONSTRUCTOR AI](https://github.com/oromaskevic23-cmd/CONSTRUCTOR-AI) | **TESTED** | Task Manager, planning and quarantine/security reference. The cited 68-test checkpoint uses mocked model calls. |
 | [LEGION / Nano Core Agents](https://github.com/oromaskevic23-cmd/Legion-Public) | **SPECIFIED** | Public professional-team and agent architecture, with separate execution and authority boundaries. Private experiments are not presented as public verification. |
@@ -52,7 +52,7 @@ IMPERIAL Core is a long-term AI-native engineering ecosystem under development. 
 
 **Status key:** SPECIFIED = published design; IMPLEMENTED = identifiable source; TESTED = observed tests for a stated revision; DEPLOYED = evidenced deployment; LIVE VERIFIED = dated live behavior verified. A reference test result does not establish product deployment. No flagship is assigned DEPLOYED or LIVE VERIFIED by this audit.
 
-**Naming:** **VELEON ⚡** is the LLM product; **MAX is a mode**. The historical repository URL `VELION-LLM-Public` is retained.
+**Naming:** **VELION ⚡** is the LLM product; **MAX is a mode**. The historical repository URL `VELION-LLM-Public` is retained.
 
 ## Architecture & technology stack
 
@@ -79,7 +79,7 @@ Dated engineering results with source links. A passing workflow applies to its r
 | --- | --- | --- |
 | [IMPERIAL Venture Factory](https://github.com/oromaskevic23-cmd/IMPERIAL-Venture-Factory) / [ApproveDesk](https://github.com/oromaskevic23-cmd/IMPERIAL-Venture-Factory/pull/12) | [6/6 API/integration tests and real two-session Chromium E2E PASS](https://github.com/oromaskevic23-cmd/IMPERIAL-Venture-Factory/actions/runs/40344602965); commit `4076522e` | Local SQLite MVP; Draft PR; no production service, paying users or sale confirmed |
 | [CYBER HAK](https://github.com/oromaskevic23-cmd/CYBER-HAK-Public) | [Independent automated AuditShield of ApproveDesk: 99/99 tests PASS; 42/42 files assessed](https://github.com/oromaskevic23-cmd/CYBER-HAK-Public/actions/runs/40346901497) | 0 high / 2 medium static findings; no independent human security certification |
-| [VELEON ⚡](https://github.com/oromaskevic23-cmd/VELION-LLM-Public) | [REAL local CPU inference + first verified LLM-generated code: 70/70 suite tests and 1/1 code trial PASS](https://github.com/oromaskevic23-cmd/VELION-LLM-Public/actions/runs/40362166437) | Uses independently licensed third-party Qwen3 weights, **not** proprietary VELEON model weights; MAX is a mode |
+| [VELION ⚡](https://github.com/oromaskevic23-cmd/VELION-LLM-Public) | [REAL local CPU inference + first verified LLM-generated code: 70/70 suite tests and 1/1 code trial PASS](https://github.com/oromaskevic23-cmd/VELION-LLM-Public/actions/runs/40362166437) | Uses independently licensed third-party Qwen3 weights, **not** proprietary VELION model weights; MAX is a mode |
 
 **Venture portfolio under development:** [ApproveDesk](https://github.com/oromaskevic23-cmd/IMPERIAL-Venture-Factory/issues/2), InvoiceRelay, CSVReconcile, QuoteFlow, RenewalRadar, CatalogFix, MarginLens, TicketTriage, WebhookLedger, and SiteSignal. The latter nine remain ideas/specifications; no fabricated customer or revenue claims.
 
@@ -93,7 +93,7 @@ Observed on **25 October 2026** from public GitHub API records and CI job logs. 
 | Project | Observed result | Public evidence | Scope |
 |---|---|---|---|
 | HANTER | 70/70 PASS | [Commit `1e93c22`](https://github.com/oromaskevic23-cmd/HANTER/commit/1e93c221caa7aafb7425a32035645485977c7d7d) · [PR](https://github.com/oromaskevic23-cmd/HANTER/pull/3) · [CI log](https://github.com/oromaskevic23-cmd/HANTER/actions/runs/40143068272/job/121018657164) | Offline mission intake, durable recovery and signed review; demo reports OFFLINE_SIMULATION_NO_ACTION. No external dispatch. |
-| VELEON | 47/47 PASS | [Commit `3eab54f`](https://github.com/oromaskevic23-cmd/VELION-LLM-Public/commit/3eab54f1be8594711822d4402be3198e4d35111f) · [PR](https://github.com/oromaskevic23-cmd/VELION-LLM-Public/pull/1) · [CI log](https://github.com/oromaskevic23-cmd/VELION-LLM-Public/actions/runs/40141141703/job/121012953733) | Local and cloud proposal gateway contracts with mocked provider endpoints. No live provider inference or released model verified. |
+| VELION | 47/47 PASS | [Commit `3eab54f`](https://github.com/oromaskevic23-cmd/VELION-LLM-Public/commit/3eab54f1be8594711822d4402be3198e4d35111f) · [PR](https://github.com/oromaskevic23-cmd/VELION-LLM-Public/pull/1) · [CI log](https://github.com/oromaskevic23-cmd/VELION-LLM-Public/actions/runs/40141141703/job/121012953733) | Local and cloud proposal gateway contracts with mocked provider endpoints. No live provider inference or released model verified. |
 | CONSTRUCTOR AI | 68/68 PASS | [Commit `23d25fa`](https://github.com/oromaskevic23-cmd/CONSTRUCTOR-AI/commit/23d25fa41287001c3529dad23571e67c04ddb74a) · [PR](https://github.com/oromaskevic23-cmd/CONSTRUCTOR-AI/pull/1) · [CI log](https://github.com/oromaskevic23-cmd/CONSTRUCTOR-AI/actions/runs/40131861437/job/120985060759) | Reference Task Manager, proposal contracts and quarantine/security regressions. Model calls are mocked; no autonomous software factory established. |
 | CYBER HAK | 99/99 PASS | [Commit `d683379`](https://github.com/oromaskevic23-cmd/CYBER-HAK-Public/commit/d68337938f3bba6d81bc2419b884cd893e8262d3) · [PR](https://github.com/oromaskevic23-cmd/CYBER-HAK-Public/pull/1) · [CI log](https://github.com/oromaskevic23-cmd/CYBER-HAK-Public/actions/runs/40131894877/job/120985165334) | Defensive AuditShield reference tests and scoped anonymous audits of immutable public revisions. No deployed continuous protection established. |
 

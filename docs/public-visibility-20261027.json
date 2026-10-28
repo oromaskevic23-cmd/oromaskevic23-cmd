@@ -93,7 +93,7 @@
       },
       "after": {
         "full_name": "oromaskevic23-cmd/VELION-LLM-Public",
-        "description": "VELEON ⚡ — the IMPERIAL Core LLM engineering program. Public architecture, governed model routing and scoped inference experiments using third-party licensed weights. MAX is a mode.",
+        "description": "VELION ⚡ — the IMPERIAL Core LLM engineering program. Public architecture, governed model routing and scoped inference experiments using third-party licensed weights. MAX is a mode.",
         "homepage": "https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/reference/#development",
         "topics": [
           "ai-governance",
@@ -102,7 +102,7 @@
           "llm",
           "llm-evaluation",
           "model-routing",
-          "veleon"
+          "VELION"
         ],
         "private": false,
         "default_branch": "main"
