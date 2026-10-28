@@ -135,6 +135,13 @@ def validate_page(site: Path, prefix: str, url: str):
            "Official alias missing " + url)
     demand(GITHUB_PROFILE in person.get("sameAs", []),
            "Missing verified GitHub identity " + url)
+    if url in {ECOSYSTEM + "reference/" + variant for variant in
+               ("", "ru/", "uk/", "de-CH/", "ja/", "zh/")}:
+        demand(person.get("image") ==
+               FOUNDER + "assets/alexander-romaskevich-portrait.jpeg",
+               "Official founder portrait missing from reference identity " + url)
+        demand("CEO" in person.get("jobTitle", ""),
+               "Founder role drift in reference identity " + url)
     demand(not any(k in person for k in
                    ("homeLocation", "address", "birthPlace", "nationality",
                     "streetAddress", "telephone", "email")),
