@@ -1,6 +1,6 @@
 # Alexander Romaskevich
 
-<p align="center"><a href="https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/reference/"><img src="https://d2ol7oe51mr4n9.cloudfront.net/user_3IVOKXTwsRFSR1qLtI96nF4edlB/24fbca56-820a-4150-b387-f03cd073d20f.jpg" alt="IMPERIAL Core — federated AI-native enterprise ecosystem overlooking a futuristic skyline" width="100%"></a></p>
+<p align="center"><a href="https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/reference/"><img src="assets/imperial-core-skyline-banner.webp" alt="IMPERIAL Core — federated AI-native enterprise ecosystem overlooking a futuristic skyline" width="100%"></a></p>
 
 **RomaskevicH**  
 **Founder • Owner • CEO of IMPERIAL Core**
