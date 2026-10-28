@@ -63,3 +63,10 @@
 @media(prefers-reduced-motion:reduce){.pillar{transition:none}.pillar:hover{transform:none}}
 
 .ecosystem .section-heading>div{min-width:0}.ecosystem .section-heading h2{overflow-wrap:anywhere}
+
+/* Original owner-approved IMPERIAL Core emblem. */
+.monogram { position:relative!important; display:block!important; overflow:hidden; width:48px!important; height:48px!important; min-width:48px; border:0!important; border-radius:8px; transform:none!important; background:#03070d; }
+.monogram img { position:absolute; width:170%; height:170%; max-width:none; left:-35%; top:-10%; object-fit:contain; }
+.company-emblem { display:block; width:clamp(150px,19vw,230px); height:auto; max-width:100%; margin:0 0 24px; border-radius:12px; }
+.ownership { max-width:750px; font-size:clamp(14px,1.6vw,17px); line-height:1.75; color:#e8c77e; }
+@media(max-width:900px) { .header { position:relative!important; background:#070c14!important; }.brand { min-width:0; }.brand strong { overflow-wrap:anywhere; } }
