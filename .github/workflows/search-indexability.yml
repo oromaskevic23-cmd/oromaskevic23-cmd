@@ -1,0 +1,38 @@
+name: Google discoverability — published source audit
+on:
+  push:
+    branches: [main]
+    paths:
+      - tools/verify_pages_seo.py
+      - .github/workflows/search-indexability.yml
+  pull_request:
+    paths:
+      - tools/verify_pages_seo.py
+      - .github/workflows/search-indexability.yml
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  inspect-published-pages:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Checkout auditor without persisted token
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          persist-credentials: false
+      - name: Read two public GitHub Pages publication branches
+        run: |
+          git clone --depth=1 --single-branch --branch gh-pages \
+            https://github.com/oromaskevic23-cmd/oromaskevic23-cmd.git \
+            /tmp/imperial-founder-pages
+          git clone --depth=1 --single-branch --branch gh-pages \
+            https://github.com/oromaskevic23-cmd/IMPERIAL-Core-Public.git \
+            /tmp/imperial-ecosystem-pages
+      - name: Audit published pages for Google discoverability and identity privacy
+        run: |
+          python3 tools/verify_pages_seo.py \
+            --founder-tree /tmp/imperial-founder-pages \
+            --ecosystem-tree /tmp/imperial-ecosystem-pages
