@@ -1,11 +1,12 @@
 # Alexander Romaskevich
 
-<p align="center"><a href="https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/reference/"><img src="assets/imperial-core-skyline-banner.webp" alt="IMPERIAL Core — federated AI-native enterprise ecosystem overlooking a futuristic skyline" width="100%"></a></p>
+<p align="center"><a href="https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/reference/"><img src="assets/imperial-core-vision.webp" alt="IMPERIAL Core — crowned globe and future-city vision of a federated AI-native ecosystem" width="100%"></a></p>
+
+<p align="center"><em>Long-term vision artwork. Depicted scale is an ambition, not a claim of currently deployed capacity.</em></p>
 
 **RomaskevicH**  
 **Founder • Owner • CEO of IMPERIAL Core**
 
-**My ownership declaration: I own 100% of IMPERIAL Core shares.**
 
 **Build software. Verify everything.**
 
@@ -15,7 +16,9 @@ I design governed AI systems: professional agent teams, verifiable software engi
 
 **[Explore IMPERIAL Core →](https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/reference/)**
 
-Architecture, engineering updates, 30 canonical reference sections and verified infrastructure information. Available in six languages.
+Architecture, engineering updates, 30 canonical reference sections and verified infrastructure information. Available in **10 languages**, with native language links, an accessible Arabic layout and instant search across the 30 reference sections.
+
+<p><a href="https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/reference/">English</a> · <a href="https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/reference/uk/">Українська</a> · <a href="https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/reference/ru/">Русский</a> · <a href="https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/reference/de-CH/">Deutsch</a> · <a href="https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/reference/fr/">Français</a> · <a href="https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/reference/es/">Español</a> · <a href="https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/reference/pt/">Português</a> · <a href="https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/reference/ar/">العربية</a> · <a href="https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/reference/ja/">日本語</a> · <a href="https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/reference/zh/">中文</a></p>
 
 [Founder website](https://oromaskevic23-cmd.github.io/oromaskevic23-cmd/) · [Ecosystem overview](https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/)
 
@@ -41,6 +44,8 @@ IMPERIAL Core is a long-term AI-native engineering ecosystem under development. 
 
 **HANTER — AI Command Center / Chief Systems** operates within the architecture defined by the founder. Domain orchestrators retain bounded responsibilities and explicit authority.
 
+**Capital Core · Enterprise — city-team vision.** The target architecture assigns a dedicated universal Nano Core Agent team to every major city worldwide. ORION connects collective knowledge and prepares recommendations; domain orchestrators retain responsibility for authorized execution. City coverage is a development objective, not a verified operating fleet. [Explore the city-team model](https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/reference/#capital-core).
+
 ## Flagship engineering projects
 
 | Project | Public status | Evidence scope |
@@ -51,6 +56,8 @@ IMPERIAL Core is a long-term AI-native engineering ecosystem under development. 
 | [CONSTRUCTOR AI](https://github.com/oromaskevic23-cmd/CONSTRUCTOR-AI) | **TESTED** | Task Manager, planning and quarantine/security reference. The cited 68-test checkpoint uses mocked model calls. |
 | [LEGION / Nano Core Agents](https://github.com/oromaskevic23-cmd/Legion-Public) | **SPECIFIED** | Public professional-team and agent architecture, with separate execution and authority boundaries. Private experiments are not presented as public verification. |
 | [CYBER HAK](https://github.com/oromaskevic23-cmd/CYBER-HAK-Public) | **TESTED** | Defensive AuditShield reference with dated test and audit evidence. Continuous deployed protection is not established by these tests. |
+| [Capital Core · Enterprise](https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/reference/#capital-core) | **SPECIFIED** | City-based universal NCA teams, local economic intelligence and ORION collective learning. Global city coverage is a target, not verified deployment. |
+| [ORION](https://github.com/oromaskevic23-cmd/ORION-Public) | **SPECIFIED** | Collective intelligence linking city-team knowledge and recommendations within the federated architecture. |
 | [NDB & IMPERIUM](https://github.com/oromaskevic23-cmd/CRYPTO-IMPERIAL-Ecosystem-Public) | **SPECIFIED** | Separate blockchain architecture and documentation. Token deployment, adoption, liquidity and value not verified in this audit. |
 
 [Nano Core Agents documentation](https://github.com/oromaskevic23-cmd/Nano-Core-Agents-Public) · [HANTER architecture](https://github.com/oromaskevic23-cmd/HANTER-Public) · [Complete public portfolio](https://github.com/oromaskevic23-cmd/IMPERIAL-Core-Public/blob/main/docs/PORTFOLIO.md)
@@ -75,6 +82,10 @@ The architecture preserves **AI Passport, Enterprise Skills, Guardian Core, Appr
 NDB and IMPERIUM belong to a separate blockchain-development direction. **IMPERIUM is a long-term architectural digital currency envisioned for AI agents worldwide**; this is a design ambition, not a claim of current global use, adoption or market status.
 
 ## Public technical evidence
+
+<details>
+<summary><strong>Explore dated engineering results and verification limits</strong></summary>
+
 
 ### 26 October 2026 — recorded engineering milestones
 
@@ -106,6 +117,8 @@ Observed on **25 October 2026** from public GitHub API records and CI job logs. 
 
 </details>
 
+</details>
+
 ## Engineering roadmap
 
 1. Review and integrate bounded reference PRs with reproducible checks.
@@ -131,3 +144,7 @@ Founder roles are project designations; this profile makes no corporate-registra
 **Build software. Verify everything.**  
 **IMPERIAL Core — Engineering with Evidence.**
 
+[Canonical visual identity — crowned globe](https://github.com/oromaskevic23-cmd/IMPERIAL-Core-Public/blob/gh-pages/reference/brand/BRAND.md)
+
+
+[Authorship and provenance](https://github.com/oromaskevic23-cmd/oromaskevic23-cmd/blob/main/NOTICE.md).

@@ -29,7 +29,7 @@ check("Founder title and identity", text.startswith("# Alexander Romaskevich\n")
       and "RomaskevicH" in text and "Ukraine" not in text)
 check("All approved ordered sections", sections == ["Official multilingual websites", *EXPECTED_SECTIONS])
 check("Public technology portfolio", all(name in text for name in PROJECTS))
-check("Owner-approved public roles", "Founder • Owner • CEO of IMPERIAL Core" in text and "Chief Systems Architect" not in text and "100% of IMPERIAL Core shares" in text)
+check("Owner-approved public roles", "Founder • Owner • CEO of IMPERIAL Core" in text and "Chief Systems Architect" not in text and not re.search(r"(?:\bshares\b|\bshareholder\b)", text, re.I))
 check("Founder final authority", "retain final architectural decision authority" in text)
 check("Architecture governance", all(s in text for s in
       ("Zero Trust", "Approval Gateway", "Public / Private Boundary")))
@@ -45,7 +45,7 @@ check("Preserved upstream attribution", "Third-party models, libraries" in text
       and "retain their original attribution" in text)
 check("Free of template filler", "## Hi there 👋" not in text
       and "I'm currently learning" not in text)
-links = re.findall(r"\]\(([^)\s]+)\)", text)
+links = re.findall(r"\]\(([^)\s]+)\)", text) + re.findall(r'href="([^"]+)"', text)
 check("At least ten useful destination links", len(links) >= 10)
 check("Links are absolute HTTPS or local anchor",
       all((urlparse(u).scheme == "https" and urlparse(u).netloc)
@@ -56,7 +56,12 @@ OFFICIAL_PAGES = {
     "https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/reference/",
     "https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/reference/ru/",
     "https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/reference/#infrastructure",
+    "https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/reference/#capital-core",
 }
+OFFICIAL_PAGES.update(
+    "https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/reference/" + locale + "/"
+    for locale in ("en", "uk", "ru", "de-CH", "fr", "es", "pt", "ar", "ja", "zh")
+)
 def allowed_public_link(link):
     if link.startswith("#"):
         return True
