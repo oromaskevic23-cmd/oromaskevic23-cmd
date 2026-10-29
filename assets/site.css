@@ -70,3 +70,6 @@
 .company-emblem { display:block; width:clamp(150px,19vw,230px); height:auto; max-width:100%; margin:0 0 24px; border-radius:12px; }
 .ownership { max-width:750px; font-size:clamp(14px,1.6vw,17px); line-height:1.75; color:#e8c77e; }
 @media(max-width:900px) { .header { position:relative!important; background:#070c14!important; }.brand { min-width:0; }.brand strong { overflow-wrap:anywhere; } }
+
+/* Canonical crowned globe: no square backplate or cropped emblem. */
+.monogram{background:transparent!important;overflow:visible!important;border:0!important;border-radius:0!important;height:54px!important}.monogram img{position:static!important;width:100%!important;height:100%!important;max-width:100%!important;object-fit:contain}
