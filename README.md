@@ -34,6 +34,23 @@ My priorities are enterprise-quality engineering, professional autonomous-agent 
 
 ---
 
+## IMPERIUM & NDB · Explore the CRYPTO IMPERIAL Ecosystem
+
+<p align="center">
+  <a href="https://github.com/oromaskevic23-cmd/IMPERIUM-"><img src="https://raw.githubusercontent.com/oromaskevic23-cmd/IMPERIUM-/main/assets/imperium-hero-20261029.jpg" alt="IMPERIUM digital emblem" width="190" /></a>
+  <a href="https://github.com/oromaskevic23-cmd/N.D.B-"><img src="https://raw.githubusercontent.com/oromaskevic23-cmd/N.D.B-/main/assets/ndb-hero-20261029.jpg" alt="NDB digital emblem" width="190" /></a>
+</p>
+
+**IMPERIUM** explores a future digital economy for AI agents, with an offline settlement-governance prototype. **NDB — New Digital Bitcoin** is a separate Polygon token project with a read-only contract-observation tool.
+
+Both specified contracts are deployed on Polygon and their sources are matched by Sourcify. Source verification is not a security audit. Live agent payments, exchange listings, liquidity and adoption are not established by that evidence.
+
+[Explore IMPERIUM →](https://github.com/oromaskevic23-cmd/IMPERIUM-) · [Explore NDB →](https://github.com/oromaskevic23-cmd/N.D.B-) · [Compare project evidence →](https://github.com/oromaskevic23-cmd/CRYPTO-IMPERIAL-Ecosystem-Public#imperium--ndb)
+
+**NDB is not Bitcoin and is not an official Bitcoin project.** No return is guaranteed.
+
+---
+
 ## Official multilingual websites
 
 **[Explore IMPERIAL Core →](https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/reference/)**
@@ -80,11 +97,11 @@ IMPERIAL Core is a long-term AI-native engineering ecosystem under development. 
 | [CYBER HAK](https://github.com/oromaskevic23-cmd/CYBER-HAK-Public) | **TESTED** | Defensive AuditShield reference with dated test and audit evidence. Continuous deployed protection is not established by these tests. |
 | [Capital Core · Enterprise](https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/reference/#capital-core) | **SPECIFIED** | City-based universal NCA teams, local economic intelligence and ORION collective learning. Global city coverage is a target, not verified deployment. |
 | [ORION](https://github.com/oromaskevic23-cmd/ORION-Public) | **SPECIFIED** | Collective intelligence linking city-team knowledge and recommendations within the federated architecture. |
-| [NDB & IMPERIUM](https://github.com/oromaskevic23-cmd/CRYPTO-IMPERIAL-Ecosystem-Public) | **SPECIFIED** | Separate blockchain architecture and documentation. Token deployment, adoption, liquidity and value not verified in this audit. |
+| [NDB & IMPERIUM](https://github.com/oromaskevic23-cmd/CRYPTO-IMPERIAL-Ecosystem-Public) | **SPECIFIED / CONTRACTS SOURCE-VERIFIED** | Separate Polygon token projects. Contract source matches checked 29 October 2026; audit, adoption, liquidity, value and agent-payment production remain separate questions. |
 
 [Nano Core Agents documentation](https://github.com/oromaskevic23-cmd/Nano-Core-Agents-Public) · [HANTER architecture](https://github.com/oromaskevic23-cmd/HANTER-Public) · [Complete public portfolio](https://github.com/oromaskevic23-cmd/IMPERIAL-Core-Public/blob/main/docs/PORTFOLIO.md)
 
-**Status key:** SPECIFIED = published design; IMPLEMENTED = identifiable source; TESTED = observed tests for a stated revision; DEPLOYED = evidenced deployment; LIVE VERIFIED = dated live behavior verified. A reference test result does not establish product deployment. No flagship is assigned DEPLOYED or LIVE VERIFIED by this audit.
+**Status key:** SPECIFIED = published design; IMPLEMENTED = identifiable source; TESTED = observed tests for a stated revision; DEPLOYED = evidenced deployment; LIVE VERIFIED = dated live behavior verified. A reference test result does not establish product deployment. No production agent-payment service is assigned DEPLOYED or LIVE VERIFIED by this audit; the token contracts are deployed as stated above.
 
 **Naming:** **VELION ⚡** is the LLM product; **MAX is a mode**. The historical repository URL `VELION-LLM-Public` is retained.
 
