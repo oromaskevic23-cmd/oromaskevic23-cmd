@@ -33,7 +33,7 @@ photo_paths = [
     "assets/alexander-romaskevich-founder-portrait.webp",
 ]
 positions = [text.find('src="' + path + '"') for path in photo_paths]
-all_images = re.findall(r'<img\\s+src="([^"]+)"', text)
+all_images = re.findall(r'<img\s+src="([^"]+)"', text)
 check("Exactly two separate owner-provided presentation photos",
       all_images == photo_paths
       and all((README.parent / path).is_file()
