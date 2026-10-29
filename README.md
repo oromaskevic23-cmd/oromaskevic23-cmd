@@ -38,6 +38,13 @@ My priorities are enterprise-quality engineering, professional autonomous-agent 
 
 <p align="center">
   <a href="https://github.com/oromaskevic23-cmd/IMPERIUM-"><img src="https://raw.githubusercontent.com/oromaskevic23-cmd/IMPERIUM-/main/assets/imperium-hero-20261029.jpg" alt="IMPERIUM digital emblem" width="190" /></a>
+</p>
+
+<p align="center">
+  <a href="https://github.com/oromaskevic23-cmd/HANTER-Public"><img src="assets/hanter-banner-original-20261029.jpg" alt="HANTER — Nano Core Agents and IMPERIAL Core" width="100%" /></a>
+</p>
+
+<p align="center">
   <a href="https://github.com/oromaskevic23-cmd/N.D.B-"><img src="https://raw.githubusercontent.com/oromaskevic23-cmd/N.D.B-/main/assets/ndb-hero-20261029.jpg" alt="NDB digital emblem" width="190" /></a>
 </p>
 
