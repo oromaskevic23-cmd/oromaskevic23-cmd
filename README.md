@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/imperial-core-original-skyline-2026.webp" alt="IMPERIAL Core — owner-selected skyscraper skyline at sunset" width="100%" />
+  <img src="assets/imperial-core-skyline-original-20261029.jpg" alt="IMPERIAL Core — owner-selected skyscraper skyline at sunset" width="100%" />
 </p>
 
 <h1 align="center">IMPERIAL Core</h1>
@@ -17,7 +17,7 @@ The architecture connects **HANTER**, **VELION**, **CONSTRUCTOR AI**, **ORION**,
 ---
 
 <p align="center">
-  <img src="assets/alexander-romaskevich-founder-portrait.webp" alt="Portrait supplied by the founder, Alexander Romaskevich" width="300" />
+  <img src="assets/alexander-romaskevich-portrait-original-20261029.jpg" alt="Portrait supplied by the founder, Alexander Romaskevich" width="300" />
 </p>
 
 <h2 align="center">Alexander Romaskevich</h2>
