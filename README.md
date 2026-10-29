@@ -1,6 +1,6 @@
 # Alexander Romaskevich
 
-<p align="center"><a href="https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/reference/"><img src="assets/imperial-core-vision.webp" alt="IMPERIAL Core — crowned globe and future-city vision of a federated AI-native ecosystem" width="100%"></a></p>
+<p align="center"><a href="https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/reference/"><img src="assets/imperial-core-future-city.webp" alt="IMPERIAL Core — crowned globe and future-city vision of a federated AI-native ecosystem" width="100%"></a></p>
 
 <p align="center"><em>Long-term vision artwork. Depicted scale is an ambition, not a claim of currently deployed capacity.</em></p>
 
