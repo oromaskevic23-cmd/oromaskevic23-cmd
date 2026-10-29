@@ -25,8 +25,25 @@ def check(name, condition):
 
 text = README.read_text(encoding="utf-8")
 sections = re.findall(r"^## ([^\r\n]+)$", text, flags=re.MULTILINE)
-check("Founder title and identity", text.startswith("# Alexander Romaskevich\n")
+check("Founder title and identity", text.lstrip().startswith('<p align="center">')
+      and '<h2 align="center">Alexander Romaskevich</h2>' in text
       and "RomaskevicH" in text and "Ukraine" not in text)
+photo_paths = [
+    "assets/imperial-core-original-skyline-2026.webp",
+    "assets/alexander-romaskevich-founder-portrait.webp",
+]
+positions = [text.find('src="' + path + '"') for path in photo_paths]
+all_images = re.findall(r'<img\s+src="([^"]+)"', text)
+check("Exactly two separate owner-provided presentation photos",
+      all_images == photo_paths
+      and all((README.parent / path).is_file()
+              and (README.parent / path).read_bytes().startswith(b"RIFF")
+              and (README.parent / path).read_bytes()[8:12] == b"WEBP"
+              for path in photo_paths))
+check("Skyline -> corporate text -> founder photo -> founder statement",
+      positions[0] >= 0
+      and positions[0] < text.find("### Our vision") < positions[1]
+      and positions[1] < text.find("### Founder statement"))
 check("All approved ordered sections", sections == ["Official multilingual websites", *EXPECTED_SECTIONS])
 check("Public technology portfolio", all(name in text for name in PROJECTS))
 check("Owner-approved public roles", "Founder • Owner • CEO of IMPERIAL Core" in text and "Chief Systems Architect" not in text and not re.search(r"(?:\bshares\b|\bshareholder\b)", text, re.I))

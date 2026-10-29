@@ -1,16 +1,38 @@
-# Alexander Romaskevich
+<p align="center">
+  <img src="assets/imperial-core-original-skyline-2026.webp" alt="IMPERIAL Core — owner-selected skyscraper skyline at sunset" width="100%" />
+</p>
 
-<p align="center"><a href="https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/reference/"><img src="assets/imperial-core-future-city.webp" alt="IMPERIAL Core — crowned globe and future-city vision of a federated AI-native ecosystem" width="100%"></a></p>
+<h1 align="center">IMPERIAL Core</h1>
+<p align="center"><strong>AI-Native Corporate Operating System · Enterprise Engineering</strong></p>
+<p align="center"><em>Architecture → Implementation → Evidence</em></p>
 
-<p align="center"><em>Long-term vision artwork. Depicted scale is an ambition, not a claim of currently deployed capacity.</em></p>
+### Our vision
 
-**RomaskevicH**  
-**Founder • Owner • CEO of IMPERIAL Core**
+**IMPERIAL Core** is a founder-led AI-native engineering ecosystem in development. Our mission is to build governed intelligent systems, professional AI developer teams and verifiable software products — without compromising human authority, security or transparent evidence.
 
+The architecture connects **HANTER**, **VELION**, **CONSTRUCTOR AI**, **ORION**, **LEGION**, **Nano Core Agents** and independent domain orchestrators. It is deliberately a **Federated Multi-Orchestrator Architecture**, not a single unrestricted global AI operator.
+
+*The skyline artwork illustrates our long-term vision; it does not claim physical offices, global deployments or an established legal corporation.*
+
+---
+
+<p align="center">
+  <img src="assets/alexander-romaskevich-founder-portrait.webp" alt="Portrait supplied by the founder, Alexander Romaskevich" width="300" />
+</p>
+
+<h2 align="center">Alexander Romaskevich</h2>
+<p align="center"><strong>Founder · Owner · CEO</strong></p>
+<p align="center"><strong>RomaskevicH</strong> · Founder identity and architectural authority</p>
+
+### Founder statement
+
+I established **IMPERIAL Core** to engineer an ecosystem where people remain accountable for decisions, while AI systems help design, implement and verify useful technologies.
+
+My priorities are enterprise-quality engineering, professional autonomous-agent research, software that can be independently tested, and long-term value created through real products. **Architecture before implementation. Evidence before claims.**
 
 **Build software. Verify everything.**
 
-I design governed AI systems: professional agent teams, verifiable software engineering and federated execution. **Architecture before implementation. Evidence before claims.**
+---
 
 ## Official multilingual websites
 
