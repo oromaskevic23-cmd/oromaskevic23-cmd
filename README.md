@@ -60,13 +60,11 @@ Both specified contracts are deployed on Polygon and their sources are matched b
 
 ## Official multilingual websites
 
-**[Explore IMPERIAL Core →](https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/reference/)**
+**[Explore IMPERIAL Core →](https://oromaskevic23-cmd.github.io/Capital--Core-Public/reference/)**
 
 Architecture, engineering updates, 30 canonical reference sections and verified infrastructure information. Available in **10 languages**, with native language links, an accessible Arabic layout and instant search across the 30 reference sections.
 
-<p><a href="https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/reference/">English</a> · <a href="https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/reference/uk/">Ukrainian</a> · <a href="https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/reference/ru/">Russian</a> · <a href="https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/reference/de-CH/">German</a> · <a href="https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/reference/fr/">French</a> · <a href="https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/reference/es/">Spanish</a> · <a href="https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/reference/pt/">Portuguese</a> · <a href="https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/reference/ar/">Arabic</a> · <a href="https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/reference/ja/">Japanese</a> · <a href="https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/reference/zh/">Chinese</a></p>
-
-[Founder website](https://oromaskevic23-cmd.github.io/oromaskevic23-cmd/) · [Ecosystem overview](https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/)
+[Founder website](https://oromaskevic23-cmd.github.io/oromaskevic23-cmd/)
 
 [Website and profile verification — 27 October 2026](https://github.com/oromaskevic23-cmd/oromaskevic23-cmd/blob/main/docs/PUBLIC_VISIBILITY_20261027.md)
 
@@ -74,7 +72,7 @@ Architecture, engineering updates, 30 canonical reference sections and verified 
 
 **Supabase primary database: Frankfurt, Germany (`eu-central-1`).** Configuration checked on **26 October 2026**. This describes project infrastructure; it is not a personal-residence or company-headquarters designation.
 
-The public reference is hosted on GitHub Pages. Other service locations are stated only where confirmed. [Infrastructure details and sources](https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/reference/#infrastructure).
+The public reference is hosted on GitHub Pages. Other service locations are stated only where confirmed. [Infrastructure details and sources](https://oromaskevic23-cmd.github.io/Capital--Core-Public/reference/#infrastructure).
 
 [Projects](#flagship-engineering-projects) · [Engineering evidence](#public-technical-evidence) · [Business inquiries](#collaboration-and-business-inquiries)
 
@@ -90,23 +88,23 @@ IMPERIAL Core is a long-term AI-native engineering ecosystem under development. 
 
 **HANTER — AI Command Center / Chief Systems** operates within the architecture defined by the founder. Domain orchestrators retain bounded responsibilities and explicit authority.
 
-**Capital Core · Enterprise — city-team vision.** The target architecture assigns a dedicated universal Nano Core Agent team to every major city worldwide. ORION connects collective knowledge and prepares recommendations; domain orchestrators retain responsibility for authorized execution. City coverage is a development objective, not a verified operating fleet. [Explore the city-team model](https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/reference/#capital-core).
+**Capital Core · Enterprise — city-team vision.** The target architecture assigns a dedicated universal Nano Core Agent team to every major city worldwide. ORION connects collective knowledge and prepares recommendations; domain orchestrators retain responsibility for authorized execution. City coverage is a development objective, not a verified operating fleet. [Explore the city-team model](https://oromaskevic23-cmd.github.io/Capital--Core-Public/reference/#capital-core).
 
 ## Flagship engineering projects
 
 | Project | Public status | Evidence scope |
 |---|---|---|
-| [IMPERIAL Core](https://github.com/oromaskevic23-cmd/IMPERIAL-Core-Public) | **SPECIFIED** | Parent AI-native engineering ecosystem. Public architecture and governance documentation. |
+| [IMPERIAL Core](https://github.com/oromaskevic23-cmd/Capital--Core-Public) | **SPECIFIED** | Parent AI-native engineering ecosystem. Public architecture and governance documentation. |
 | [VELION](https://github.com/oromaskevic23-cmd/VELION-LLM-Public) | **TESTED** | Scoped CPU-inference and generated-code experiment recorded on 26 October. Uses third-party Qwen3 weights; see the dated CI evidence below. |
 | [HANTER](https://github.com/oromaskevic23-cmd/HANTER) | **TESTED** | AI Command Center / Chief Systems. Offline Mission Desk reference; the 25 October checkpoint covers bounded planning and review. |
 | [CONSTRUCTOR AI](https://github.com/oromaskevic23-cmd/CONSTRUCTOR-AI) | **TESTED** | Task Manager, planning and quarantine/security reference. The cited 68-test checkpoint uses mocked model calls. |
 | [LEGION / Nano Core Agents](https://github.com/oromaskevic23-cmd/Legion-Public) | **SPECIFIED** | Public professional-team and agent architecture, with separate execution and authority boundaries. Private experiments are not presented as public verification. |
 | [CYBER HAK](https://github.com/oromaskevic23-cmd/CYBER-HAK-Public) | **TESTED** | Defensive AuditShield reference with dated test and audit evidence. Continuous deployed protection is not established by these tests. |
-| [Capital Core · Enterprise](https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/reference/#capital-core) | **SPECIFIED** | City-based universal NCA teams, local economic intelligence and ORION collective learning. Global city coverage is a target, not verified deployment. |
+| [Capital Core · Enterprise](https://oromaskevic23-cmd.github.io/Capital--Core-Public/reference/#capital-core) | **SPECIFIED** | City-based universal NCA teams, local economic intelligence and ORION collective learning. Global city coverage is a target, not verified deployment. |
 | [ORION](https://github.com/oromaskevic23-cmd/ORION-Public) | **SPECIFIED** | Collective intelligence linking city-team knowledge and recommendations within the federated architecture. |
 | [NDB & IMPERIUM](https://github.com/oromaskevic23-cmd/CRYPTO-IMPERIAL-Ecosystem-Public) | **SPECIFIED / CONTRACTS SOURCE-VERIFIED** | Separate Polygon token projects. Contract source matches checked 29 October 2026; audit, adoption, liquidity, value and agent-payment production remain separate questions. |
 
-[Nano Core Agents documentation](https://github.com/oromaskevic23-cmd/Nano-Core-Agents-Public) · [HANTER architecture](https://github.com/oromaskevic23-cmd/HANTER-Public) · [Complete public portfolio](https://github.com/oromaskevic23-cmd/IMPERIAL-Core-Public/blob/main/docs/PORTFOLIO.md)
+[Nano Core Agents documentation](https://github.com/oromaskevic23-cmd/Nano-Core-Agents-Public) · [HANTER architecture](https://github.com/oromaskevic23-cmd/HANTER-Public) · [Complete public portfolio](https://github.com/oromaskevic23-cmd/Capital--Core-Public/blob/main/docs/PORTFOLIO.md)
 
 **Status key:** SPECIFIED = published design; IMPLEMENTED = identifiable source; TESTED = observed tests for a stated revision; DEPLOYED = evidenced deployment; LIVE VERIFIED = dated live behavior verified. A reference test result does not establish product deployment. No production agent-payment service is assigned DEPLOYED or LIVE VERIFIED by this audit; the token contracts are deployed as stated above.
 
@@ -159,7 +157,7 @@ Observed on **25 October 2026** from public GitHub API records and CI job logs. 
 | CONSTRUCTOR AI | 68/68 PASS | [Commit `23d25fa`](https://github.com/oromaskevic23-cmd/CONSTRUCTOR-AI/commit/23d25fa41287001c3529dad23571e67c04ddb74a) · [PR](https://github.com/oromaskevic23-cmd/CONSTRUCTOR-AI/pull/1) · [CI log](https://github.com/oromaskevic23-cmd/CONSTRUCTOR-AI/actions/runs/40131861437/job/120985060759) | Reference Task Manager, proposal contracts and quarantine/security regressions. Model calls are mocked; no autonomous software factory established. |
 | CYBER HAK | 99/99 PASS | [Commit `d683379`](https://github.com/oromaskevic23-cmd/CYBER-HAK-Public/commit/d68337938f3bba6d81bc2419b884cd893e8262d3) · [PR](https://github.com/oromaskevic23-cmd/CYBER-HAK-Public/pull/1) · [CI log](https://github.com/oromaskevic23-cmd/CYBER-HAK-Public/actions/runs/40131894877/job/120985165334) | Defensive AuditShield reference tests and scoped anonymous audits of immutable public revisions. No deployed continuous protection established. |
 
-[Evidence register and verification limits](https://github.com/oromaskevic23-cmd/IMPERIAL-Core-Public/blob/main/docs/EVIDENCE.md) · [Machine-readable evidence](https://github.com/oromaskevic23-cmd/IMPERIAL-Core-Public/blob/main/evidence/milestones.json)
+[Evidence register and verification limits](https://github.com/oromaskevic23-cmd/Capital--Core-Public/blob/main/docs/EVIDENCE.md) · [Machine-readable evidence](https://github.com/oromaskevic23-cmd/Capital--Core-Public/blob/main/evidence/milestones.json)
 
 </details>
 
@@ -172,11 +170,11 @@ Observed on **25 October 2026** from public GitHub API records and CI job logs. 
 3. Verify a complete application lifecycle before claiming an autonomous software factory.
 4. Validate deployed services and customer outcomes separately from local and CI tests.
 
-[Public roadmap](https://github.com/oromaskevic23-cmd/IMPERIAL-Core-Public/blob/main/ROADMAP.md)
+[Public roadmap](https://github.com/oromaskevic23-cmd/Capital--Core-Public/blob/main/ROADMAP.md)
 
 ## Collaboration and business inquiries
 
-I welcome technical review and conversations about governed AI systems, verified software engineering and evidence-based pilots. Start through my [GitHub profile](https://github.com/oromaskevic23-cmd) or review the [public collaboration issues](https://github.com/oromaskevic23-cmd/IMPERIAL-Core-Public/issues) (sign in to GitHub to open a new issue). Share confidential project details only after agreeing on a suitable private channel.
+I welcome technical review and conversations about governed AI systems, verified software engineering and evidence-based pilots. Start through my [GitHub profile](https://github.com/oromaskevic23-cmd) or review the [public collaboration issues](https://github.com/oromaskevic23-cmd/Capital--Core-Public/issues) (sign in to GitHub to open a new issue). Share confidential project details only after agreeing on a suitable private channel.
 
 ## Authorship — RomaskevicH
 
@@ -185,12 +183,12 @@ Founder • Owner • CEO of IMPERIAL Core.
 
 Founder roles are project designations; this profile makes no corporate-registration or certification claim. Third-party models, libraries and forked repositories retain their original attribution and license terms. Git history records contributions; public visibility does not create a new license grant.
 
-[Multilingual founder identity](https://github.com/oromaskevic23-cmd/IMPERIAL-Core-Public/blob/main/docs/FOUNDER_IDENTITY.md) · [Provenance](https://github.com/oromaskevic23-cmd/IMPERIAL-Core-Public/blob/main/PROVENANCE.md)
+[Multilingual founder identity](https://github.com/oromaskevic23-cmd/Capital--Core-Public/blob/main/docs/FOUNDER_IDENTITY.md) · [Provenance](https://github.com/oromaskevic23-cmd/Capital--Core-Public/blob/main/PROVENANCE.md)
 
 **Build software. Verify everything.**  
 **IMPERIAL Core — Engineering with Evidence.**
 
-[Canonical visual identity — crowned globe](https://github.com/oromaskevic23-cmd/IMPERIAL-Core-Public/blob/gh-pages/reference/brand/BRAND.md)
+[Canonical visual identity — crowned globe](https://github.com/oromaskevic23-cmd/Capital--Core-Public/blob/gh-pages/reference/brand/BRAND.md)
 
 
 [Authorship and provenance](https://github.com/oromaskevic23-cmd/oromaskevic23-cmd/blob/main/NOTICE.md).
