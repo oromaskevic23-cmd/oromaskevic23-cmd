@@ -90,7 +90,9 @@ def allowed_public_link(link):
     parsed = urlparse(link)
     if link in OFFICIAL_PAGES or link in TRUSTED_RAW_GRAPHICS:
         return True
-    if parsed.scheme != "https" or parsed.username or parsed.password or parsed.query or parsed.fragment:
+    if parsed.scheme != "https" or parsed.username or parsed.password or parsed.query:
+        return False
+    if parsed.fragment and not re.fullmatch(r"[a-z0-9-]{1,80}", parsed.fragment):
         return False
     if parsed.netloc != "github.com":
         return False
