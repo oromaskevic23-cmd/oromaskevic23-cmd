@@ -10,6 +10,7 @@ import argparse
 import base64
 import datetime
 import json
+import os
 import re
 import sys
 import urllib.error
@@ -117,7 +118,7 @@ def main():
         records = [audit_public_repo(x["repo"], x["contents"], x.get("author_record")) for x in fixture]
     else:
         # Deliberately use only public API; do not accept a wide-scope private PAT.
-        records = collect_public(OWNER)
+        records = collect_public(OWNER, os.environ.get("GITHUB_TOKEN", ""))
     report = {"schema": "imperial.ip.public-inventory.v1", "owner": OWNER,
               "observed_at_utc": datetime.datetime.now(datetime.timezone.utc).isoformat(),
               "summary": summarize(records), "repositories": records,
