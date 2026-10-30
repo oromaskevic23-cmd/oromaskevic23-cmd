@@ -1,0 +1,97 @@
+name: IMPERIAL Core founder authorship and license provenance
+on:
+  workflow_call:
+  pull_request:
+  push:
+    branches: [main]
+permissions:
+  contents: read
+jobs:
+  provenance:
+    # Free-only: public repositories run on GitHub-hosted runners.
+    # A private repository must have a verified account-level $0 Actions hard stop.
+    if: ${{ github.event.repository.private == false || vars.IMPERIAL_CI_ZERO_SPEND_BUDGET_VERIFIED == 'true' }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 4
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+      - name: Verify founder attribution and safeguard existing notices
+        env:
+          BASE_SHA: ${{ github.event.pull_request.base.sha || github.event.before }}
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          import os
+          import pathlib
+          import re
+          import subprocess
+          import sys
+
+          # Canonical founder: Ромаскевич Александр Николаевич
+          FOUNDER = "Alexander Nikolaevich Romaskevich"
+          SIGNATURE = "RomaskevicH"
+          authors = pathlib.Path("AUTHORS.md")
+          readme = pathlib.Path("README.md")
+          problems = []
+          if not authors.is_file():
+              problems.append("AUTHORS.md is missing")
+          else:
+              record = authors.read_text(encoding="utf-8")
+              if FOUNDER not in record or SIGNATURE not in record:
+                  problems.append("The canonical founder attribution is missing or altered")
+              if not re.search(r"(?i)(git history|git contribution|contributor)", record):
+                  problems.append("Original contributor/history protections are missing")
+          if not readme.is_file():
+              problems.append("README.md is missing")
+          elif FOUNDER not in readme.read_text(encoding="utf-8"):
+              problems.append("README.md no longer identifies the founding architect")
+
+          protected = {"AUTHORS.md", "PROVENANCE.md", "NOTICE", "NOTICE.md",
+                       "COPYING", "COPYING.md", ".github/CODEOWNERS",
+                       ".github/workflows/enterprise-founder-authorship.yml"}
+          baseline = os.environ.get("BASE_SHA", "").strip()
+          if baseline and not re.fullmatch(r"[a-f0-9]{40}", baseline):
+              problems.append("Invalid Git base reference for provenance comparison")
+          elif baseline and baseline != "0" * 40:
+              diff = subprocess.run(
+                  ["git", "diff", "--name-status", "--find-renames",
+                   baseline, "HEAD", "--"],
+                  text=True, capture_output=True, check=False)
+              if diff.returncode != 0:
+                  problems.append("Could not compare Git history for deleted notices")
+              else:
+                  for entry in diff.stdout.splitlines():
+                      parts = entry.split("\t")
+                      status = parts[0]
+                      if status.startswith(("D", "R")) and len(parts) > 1:
+                          path = parts[1]
+                          name = pathlib.PurePosixPath(path).name.upper()
+                          if (path in protected
+                              or name.startswith(("LICENSE", "LICENCE", "COPYING", "NOTICE"))
+                              or (path.startswith(("third_party/", "third-party/", "vendor/"))
+                                  and name in {"LICENSE", "NOTICE", "COPYING", "AUTHORS"})):
+                              problems.append("Protected attribution/license deleted or moved: " + path)
+                      if status.startswith("M") and len(parts) > 1:
+                          name = pathlib.PurePosixPath(parts[1]).name.upper()
+                          if name.startswith(("LICENSE", "LICENCE", "COPYING", "NOTICE")):
+                              print("LICENSE_REVIEW_REQUIRED: " + parts[1])
+
+          # Root audit deliberately does not claim full transitive SPDX compliance.
+          license_files = [p for p in pathlib.Path(".").iterdir()
+                           if p.is_file() and p.name.upper().startswith(
+                           ("LICENSE", "LICENCE", "COPYING"))]
+          if license_files:
+              print("ROOT_LICENSE_PRESENT: " + ", ".join(p.name for p in license_files))
+              print("DEPENDENCY_LICENSES_NOT_FULLY_AUDITED")
+          else:
+              print("ROOT_LICENSE_ABSENT: license selection/rights review still required")
+          if problems:
+              for problem in problems:
+                  print("FAIL: " + problem, file=sys.stderr)
+              sys.exit(1)
+          print("PASS: founder record and tracked notice-deletion safeguards")
+          print("NOT_A_FULL_LICENSE_CLEARANCE_OR_OWNERSHIP_CERTIFICATE")
+          PY
