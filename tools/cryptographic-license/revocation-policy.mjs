@@ -111,3 +111,56 @@ export function verifyLicenseWithFreshRevocations({
     code: "SIGNATURE_SCOPE_AND_FRESH_REVOCATIONS_VERIFIED_NOT_LEGAL_CLEARANCE",
     revocationValidUntil: revocations.validUntil });
 }
+
+/**
+ * Strict anti-rollback adapter; requires trusted, atomically durable checkpoint storage.
+ * checkpointStore.get() returns {sequence, digest} from a trusted durable backend.
+ * checkpointStore.compareAndSwap({expected,next}) must atomically check expected
+ * and durably store next BEFORE returning true, including when expected equals next.
+ * A missing or untrusted checkpoint is denied. Only an out-of-band trusted Owner
+ * bootstrap can install the initial {sequence:0, digest:64 zeroes} checkpoint.
+ * Caller must NOT silently retry on CAS failure with an older snapshot.
+ * No KMS, production checkpoint store, trusted clock or real issuance is included.
+ */
+export async function verifyLicenseWithAtomicCheckpoint({
+  certificate, trustedPublicKeys, expected, revocationSnapshot,
+  trustedRevocationPublicKeys, checkpointStore, now = new Date()
+} = {}) {
+  try {
+    requireValid(checkpointStore &&
+      typeof checkpointStore.get === "function" &&
+      typeof checkpointStore.compareAndSwap === "function",
+      "TRUSTED_CHECKPOINT_STORE_REQUIRED");
+    const revocations = verifyRevocationSnapshot({
+      snapshot: revocationSnapshot, trustedPublicKeys: trustedRevocationPublicKeys, now
+    });
+    requireValid(revocations.valid, revocations.code);
+    const license = verifyLicense({
+      certificate, trustedPublicKeys, expected, now,
+      revokedLicenseIds: revocations.revokedLicenseIds,
+      revokedKeyIds: revocations.revokedKeyIds
+    });
+    requireValid(license.valid, license.code);
+    const previous = await checkpointStore.get();
+    requireValid(exactShape(previous, ["sequence", "digest"]) &&
+      Number.isSafeInteger(previous.sequence) && previous.sequence >= 0 &&
+      typeof previous.digest === "string" && /^[a-f0-9]{64}$/.test(previous.digest) &&
+      (previous.sequence !== 0 || previous.digest === "0".repeat(64)),
+      "TRUSTED_CHECKPOINT_INVALID");
+    requireValid(revocations.sequence >= previous.sequence, "REVOCATION_ROLLBACK_DENIED");
+    requireValid(revocations.sequence !== previous.sequence ||
+      revocations.snapshotDigest === previous.digest, "REVOCATION_FORK_DENIED");
+    const next = { sequence: revocations.sequence, digest: revocations.snapshotDigest };
+    requireValid(await checkpointStore.compareAndSwap({ expected: previous, next }) === true,
+      "TRUSTED_CHECKPOINT_CAS_DENIED");
+    return Object.freeze({
+      ...license,
+      code: "SIGNATURE_SCOPE_REVOCATIONS_AND_ATOMIC_CHECKPOINT_VERIFIED_NOT_LEGAL_CLEARANCE",
+      revocationSequence: revocations.sequence,
+      revocationValidUntil: revocations.validUntil
+    });
+  } catch (error) {
+    return Object.freeze({ valid: false,
+      code: error instanceof Error ? error.message : "REVOCATION_CHECKPOINT_DENIED" });
+  }
+}
