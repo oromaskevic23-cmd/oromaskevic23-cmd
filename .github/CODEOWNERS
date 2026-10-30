@@ -1,0 +1,7 @@
+# Suggested reviewers for critical governance materials; not enforced without branch protection.
+/AUTHORS.md @oromaskevic23-cmd
+/PROVENANCE.md @oromaskevic23-cmd
+/NOTICE* @oromaskevic23-cmd
+/LICENSE* @oromaskevic23-cmd
+/.github/workflows/enterprise-founder-authorship.yml @oromaskevic23-cmd
+/.github/CODEOWNERS @oromaskevic23-cmd
