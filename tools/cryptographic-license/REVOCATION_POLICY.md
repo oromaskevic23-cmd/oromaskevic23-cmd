@@ -15,17 +15,18 @@ unless a separately pinned Ed25519 revocation signer authenticates a snapshot
 that is within its valid time interval. It then passes both authenticated
 revocation ID sets into the existing license verifier.
 
-The older **verifyLicense** and **verify-cli.mjs** remain OFFLINE DIAGNOSTIC
+The older **verifyLicense**, **verifyLicenseWithFreshRevocations** (which lacks a checkpoint) and **verify-cli.mjs** remain OFFLINE DIAGNOSTIC
 reference implementations only. They are NOT standalone production runtime gates.
 
 ## Strict signed snapshot
 
 The envelope must have exactly two properties: payload and signature.
 The payload has only schema, keyId, issuedAt, expiresAt,
-revokedLicenseIds and revokedKeyIds.
+sequence, revokedLicenseIds and revokedKeyIds.
 
-- Schema: imperial.revocations.ed25519.v1.
+- Schema: imperial.revocations.ed25519.v2.
 - Lifetime: at most 24 hours; future or expired snapshots are denied.
+- sequence: signed positive safe integer, monotonically increasing across snapshots.
 - IDs: canonical, unique, sorted, maximum 10,000 in each list.
 - Signature: canonical JSON Ed25519, validated against a separately pinned
   public key from trustedRevocationPublicKeys. The snapshot never supplies trust.
@@ -48,11 +49,33 @@ const result = verifyLicenseWithFreshRevocations({
 if (!result.valid) throw new Error(result.code);
 ~~~
 
+## Stronger anti-rollback reference API
+
+The async **verifyLicenseWithAtomicCheckpoint** API requires a trusted backend
+implementing two methods:
+
+- checkpointStore.get(): returns durable, trusted {sequence, digest}.
+- checkpointStore.compareAndSwap({expected, next}): MUST atomically read and
+  compare the current trusted state and durably commit next before returning
+  true; this applies even if expected equals next.
+
+The caller must bootstrap checkpoint state out-of-band under Owner control.
+A valid initial state is {sequence: 0, digest: 64 zeroes}; this is NOT
+automatically inserted, and user-supplied checkpoint contents are prohibited.
+A valid signed snapshot with a lower sequence is denied. An equal sequence
+with a different signed hash is denied as a fork. A failed CAS denies access;
+it must never automatically re-authorize an older sequence.
+
+The test adapter is deliberately **in-memory only**. No persistent production
+checkpoint service, KMS, trusted clock, issuance API, instance-leasing server,
+or legally binding customer contract has been deployed.
+
 ## Production blockers
 
 1. Snapshot replay is possible until expiry. A 24-hour maximum validity is
-   NOT instant revocation. Add monotonic epochs and anti-rollback persistent
-   state or fresh signed server responses before customer activation.
+   NOT instant revocation. The new signed sequence and CAS interface provide
+   a reference protocol, but a trusted production-grade durable store and
+   authenticated freshness delivery remain necessary.
 2. Production must use a hardened trusted clock/time source.
 3. A signed maxInstances field is NOT enforcement. Add atomic server-side
    customer-scoped instance leases/heartbeats with expiry and bounded concurrency.
