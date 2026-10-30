@@ -6,12 +6,16 @@ on:
   push:
     branches: [main]
     paths:
+      - 'LICENSE'
+      - 'governance/LICENSE_INVENTORY.md'
       - 'tools/imperial_license_audit.py'
       - 'tools/test_imperial_license_audit.py'
       - 'docs/IMPERIAL_ENTERPRISE_LICENSING_STANDARD.md'
       - '.github/workflows/imperial-ip-surveillance.yml'
   pull_request:
     paths:
+      - 'LICENSE'
+      - 'governance/LICENSE_INVENTORY.md'
       - 'tools/imperial_license_audit.py'
       - 'tools/test_imperial_license_audit.py'
       - 'docs/IMPERIAL_ENTERPRISE_LICENSING_STANDARD.md'
