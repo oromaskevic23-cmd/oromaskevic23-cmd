@@ -1,0 +1,52 @@
+name: IMPERIAL cryptographic licensing - Ed25519 verifier CI
+on:
+  pull_request:
+    paths:
+      - 'LICENSE'
+      - 'tools/cryptographic-license/**'
+      - '.github/workflows/cryptographic-license.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'LICENSE'
+      - 'tools/cryptographic-license/**'
+      - '.github/workflows/cryptographic-license.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  cryptographic-license-offline-check:
+    if: ${{ github.event.repository.private == false }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          persist-credentials: false
+      - name: Verify the source is syntax-valid, no remote dependencies
+        run: node --check tools/cryptographic-license/index.mjs && node --check tools/cryptographic-license/index.test.mjs && node --check tools/cryptographic-license/verify-cli.mjs
+      - name: Run original offline Ed25519 license verifier and adversarial checks
+        run: node --test tools/cryptographic-license/index.test.mjs
+      - name: Verify no private signing keys or automatic production permits
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          import re
+          files=[Path('tools/cryptographic-license/index.mjs'),
+                 Path('tools/cryptographic-license/index.test.mjs'),
+                 Path('tools/cryptographic-license/verify-cli.mjs')]
+          root=Path('LICENSE').read_text(encoding='utf-8')
+          sdk=Path('tools/cryptographic-license/LICENSE').read_text(encoding='utf-8')
+          for file in files:
+              content=file.read_text(encoding='utf-8')
+              assert '-----BEGIN PRIVATE KEY-----' not in content
+              assert 'SUPABASE_SERVICE_ROLE_KEY' not in content
+              assert 'process.env' not in content
+          assert root.startswith('IMPERIAL CORE PROPRIETARY')
+          assert sdk.startswith('MIT License')
+          assert 'Permission is hereby granted' in sdk
+          assert 'MIT rights' not in root or 'does not extend MIT rights' in root
+          print('PASS: original cryptographic SDK license isolated from proprietary project; no real signing key')
+          PY

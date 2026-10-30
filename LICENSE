@@ -1,0 +1,66 @@
+IMPERIAL CORE PROPRIETARY SOURCE AND CONTENT LICENSE — VERSION 1.0
+Copyright (c) 2026 Alexander Nikolaevich Romaskevich (RomaskevicH),
+solely to the extent of original copyrightable rights actually owned or
+validly licensable by that person.
+
+1. SCOPE
+This license applies only to original IMPERIAL Core material in this
+repository for which the above licensor possesses the required rights,
+unless a more specific file-level or directory-level license applies.
+
+2. LIMITED PERMISSION
+Subject to applicable law and GitHub Terms of Service, the licensor grants
+a non-exclusive, revocable permission to inspect and evaluate the
+licensor-owned repository material privately without a fee. This
+permission does not include production deployment, commercial use,
+redistribution outside rights independently granted by GitHub or
+applicable law, sublicensing, model training, sale or creation of a
+competing rebranded commercial offering.
+
+3. RESERVED RIGHTS
+All rights not expressly granted are reserved. A public repository is
+not an open-source release. Commercial licenses, source redistribution,
+production deployment and customer access require a separate, signed
+agreement with an authorized rights holder and the relevant third-party
+rights clearance. A cryptographically signed certificate may establish
+authenticity of a particular entitlement but does not override the
+applicable legal agreement.
+
+4. SEPARATELY LICENSED ORIGINAL COMPONENTS
+The ORIGINAL cryptographic license reference implementation in
+tools/cryptographic-license/ is offered under the unmodified MIT License
+in tools/cryptographic-license/LICENSE, and only for the files identified
+by tools/cryptographic-license/README.md and their original
+copyrightable contributions. This exception does not extend MIT rights
+to the rest of the repository, its images, logos, third-party materials,
+models, other applications or other IMPERIAL Core repositories.
+
+5. THIRD-PARTY MATERIAL AND CONTRIBUTIONS
+Nothing here revokes, supersedes or relicenses existing upstream,
+third-party or contributor rights, notices or mandatory applicable
+licenses. Individual code authorship remains in Git history. Only
+rights actually held may be licensed. Proprietary trade secrets and
+private repositories are not disclosed or licensed by this notice.
+
+6. BRAND AND SECURITY
+Project names, trademarks, designs and logos are not granted for use as
+product identifiers. Any existing GitHub platform rights or mandatory
+legal exceptions remain unaffected. Nothing in this license authorizes
+use of credentials, private APIs, security bypasses or processing of
+customer data.
+
+7. DISCLAIMER
+TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, MATERIAL IS PROVIDED
+"AS IS", WITHOUT WARRANTIES OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE OR NON-INFRINGEMENT.
+LIABILITY AND THE EFFECT OF ANY DISCLAIMER ARE SUBJECT TO APPLICABLE
+MANDATORY LAW AND ANY SEPARATE ENFORCEABLE AGREEMENT.
+
+This is a repository-level source-availability and copyright notice;
+it is NOT MIT/Apache-2.0 for the whole repository, does not represent
+legal incorporation, certification, registered trademark status or
+exclusive ownership of third-party works.
+
+Provenance: AUTHORS.md and NOTICE.md
+Enterprise policy: docs/IMPERIAL_ENTERPRISE_LICENSING_STANDARD.md
+Commercial draft: docs/COMMERCIAL_SOFTWARE_LICENSE_TERM_SHEET_DRAFT.md
