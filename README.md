@@ -21,6 +21,7 @@ The architecture connects **HANTER**, **VELION**, **CONSTRUCTOR AI**, **ORION**,
 </p>
 
 <h2 align="center">Alexander Romaskevich</h2>
+<p align="center"><strong>Full name: Alexander Nikolaevich Romaskevich</strong> · <a href="AUTHORS.md">Authorship and provenance</a></p>
 <p align="center"><strong>Founder · Owner · CEO</strong></p>
 <p align="center"><strong>RomaskevicH</strong> · Founder identity and architectural authority</p>
 
