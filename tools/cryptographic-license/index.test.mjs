@@ -104,3 +104,37 @@ test("malformed signature encoding denied", () => {
   const c = cert(); c.signature = "ignored";
   assert.equal(verify(c).valid, false);
 });
+
+test("CLI verifies only bounded, externally trusted certificates", async () => {
+  const { mkdtempSync, writeFileSync, rmSync } = await import("node:fs");
+  const { tmpdir } = await import("node:os");
+  const { join } = await import("node:path");
+  const { spawnSync } = await import("node:child_process");
+  const folder = mkdtempSync(join(tmpdir(), "imperial-lic-test-"));
+  try {
+    const p = payload();
+    const start = Date.now() - 60_000, expires = Date.now() + 3600_000;
+    p.notBefore = new Date(start).toISOString();
+    p.expiresAt = new Date(expires).toISOString();
+    const issued = issueLicense({ payload: p, privateKeyPem: secret(OWNER.privateKey) });
+    const names = ["certificate.json", "keys.json", "expected.json", "revocations.json"];
+    const values = [issued, trust, expected(), { revokedLicenseIds: [], revokedKeyIds: [] }];
+    const paths = names.map((name, i) => {
+      const path = join(folder, name);
+      writeFileSync(path, JSON.stringify(values[i]), { mode: 0o600 });
+      return path;
+    });
+    const args = [new URL("./verify-cli.mjs", import.meta.url).pathname, ...paths];
+    const ok = spawnSync(process.execPath, args, { encoding: "utf8" });
+    assert.equal(ok.status, 0, ok.stderr);
+    assert.match(ok.stdout, /TECHNICAL_LICENSE_VERIFIED_NOT_LEGAL_CLEARANCE/);
+    writeFileSync(paths[3], JSON.stringify({
+      revokedLicenseIds: ["IC-LICENSE-TEST-0001"], revokedKeyIds: []
+    }));
+    const denied = spawnSync(process.execPath, args, { encoding: "utf8" });
+    assert.equal(denied.status, 2);
+    assert.match(denied.stderr, /TECHNICAL_LICENSE_DENIED/);
+  } finally {
+    rmSync(folder, { recursive: true, force: true });
+  }
+});
