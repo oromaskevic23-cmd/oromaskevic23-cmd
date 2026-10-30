@@ -130,10 +130,12 @@ def main():
     print(json.dumps(report["summary"], sort_keys=True))
     for row in records:
         print(row["repo"] + ": " + row["license_status"] + " / " + row["founder_record"])
-    if any(x["founder_record"] in ("MISSING", "INCOMPLETE", "UNREADABLE") for x in records):
-        print("REMEDIATION_REQUIRED: one or more founder records need owner-reviewed repair")
+    broken = [x["repo"] for x in records if x["founder_record"] != "FOUNDER_DECLARED_CONTRIBUTIONS_PRESERVED"]
     print("REPORT_WRITTEN: " + args.out)
     print("NOT_A_LICENSE_GRANT_OR_A_LEGAL_CERTIFICATION")
+    if broken:
+        print("FOUNDER_PROVENANCE_GUARD_FAILED_CLOSED: " + ", ".join(broken), file=sys.stderr)
+        sys.exit(2)
 
 
 if __name__ == "__main__":
