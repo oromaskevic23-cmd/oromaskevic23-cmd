@@ -1,6 +1,9 @@
 """Offline tests for read-only, fail-closed IP inventory classification."""
 import importlib.util
 import pathlib
+import json
+import subprocess
+import sys
 import tempfile
 import unittest
 
@@ -57,6 +60,42 @@ class GuardTests(unittest.TestCase):
         self.assertEqual(summary["releases_authorized"], 0)
         self.assertFalse(summary["complete_copyright_clearance"])
         self.assertFalse(summary["private_repositories_included"])
+
+    def test_cli_founder_regression_exits_nonzero(self):
+        with tempfile.TemporaryDirectory() as folder:
+            folder = pathlib.Path(folder)
+            fixture = folder / "data.json"
+            report = folder / "result.json"
+            fixture.write_text(json.dumps([
+                {"repo": repo("OK"), "contents": files("README.md", "AUTHORS.md"),
+                 "author_record": RECORD},
+                {"repo": repo("BROKEN"), "contents": files("README.md")}
+            ]), encoding="utf-8")
+            process = subprocess.run([
+                sys.executable, str(pathlib.Path(__file__).with_name("imperial_license_audit.py")),
+                "--offline-fixture", str(fixture), "--out", str(report)
+            ], capture_output=True, text=True)
+            self.assertEqual(process.returncode, 2)
+            self.assertIn("FOUNDER_PROVENANCE_GUARD_FAILED_CLOSED", process.stderr)
+            self.assertTrue(report.is_file())
+            self.assertEqual(json.loads(report.read_text())["summary"]["founder_records_verified"], 1)
+
+    def test_cli_clean_founder_inventory_passes_without_license_grant(self):
+        with tempfile.TemporaryDirectory() as folder:
+            folder = pathlib.Path(folder)
+            fixture = folder / "data.json"
+            report = folder / "result.json"
+            fixture.write_text(json.dumps([
+                {"repo": repo("OK"), "contents": files("README.md", "AUTHORS.md"),
+                 "author_record": RECORD}
+            ]), encoding="utf-8")
+            process = subprocess.run([
+                sys.executable, str(pathlib.Path(__file__).with_name("imperial_license_audit.py")),
+                "--offline-fixture", str(fixture), "--out", str(report)
+            ], capture_output=True, text=True)
+            self.assertEqual(process.returncode, 0)
+            self.assertIn("NOT_A_LICENSE_GRANT_OR_A_LEGAL_CERTIFICATION", process.stdout)
+            self.assertEqual(json.loads(report.read_text())["summary"]["releases_authorized"], 0)
 
     def test_scope_rejects_wrong_owner(self):
         with self.assertRaises(ValueError):
