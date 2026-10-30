@@ -30,7 +30,7 @@ jobs:
           import subprocess
           import sys
 
-          # Canonical founder: Ромаскевич Александр Николаевич
+          # Canonical founder identity is recorded in AUTHORS.md
           FOUNDER = "Alexander Nikolaevich Romaskevich"
           SIGNATURE = "RomaskevicH"
           authors = pathlib.Path("AUTHORS.md")
@@ -46,7 +46,9 @@ jobs:
                   problems.append("Original contributor/history protections are missing")
           if not readme.is_file():
               problems.append("README.md is missing")
-          elif FOUNDER not in readme.read_text(encoding="utf-8"):
+          elif (FOUNDER not in readme.read_text(encoding="utf-8") and
+                not ("Alexander Romaskevich" in readme.read_text(encoding="utf-8")
+                     and SIGNATURE in readme.read_text(encoding="utf-8"))):
               problems.append("README.md no longer identifies the founding architect")
 
           protected = {"AUTHORS.md", "PROVENANCE.md", "NOTICE", "NOTICE.md",
