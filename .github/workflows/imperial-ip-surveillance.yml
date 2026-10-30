@@ -1,0 +1,71 @@
+name: IMPERIAL Core - public IP and license surveillance
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '29 4,16 * * *'
+  push:
+    branches: [main]
+    paths:
+      - 'tools/imperial_license_audit.py'
+      - 'tools/test_imperial_license_audit.py'
+      - 'docs/IMPERIAL_ENTERPRISE_LICENSING_STANDARD.md'
+      - '.github/workflows/imperial-ip-surveillance.yml'
+  pull_request:
+    paths:
+      - 'tools/imperial_license_audit.py'
+      - 'tools/test_imperial_license_audit.py'
+      - 'docs/IMPERIAL_ENTERPRISE_LICENSING_STANDARD.md'
+      - '.github/workflows/imperial-ip-surveillance.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  offline-adversarial-guard-tests:
+    if: ${{ github.event.repository.private == false }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          persist-credentials: false
+      - name: Offline fail-closed licensing tests (no dependencies)
+        run: python3 -m unittest tools/test_imperial_license_audit.py -v
+
+  public-owner-repository-inventory:
+    if: ${{ github.event.repository.private == false && (github.event_name == 'schedule' || github.event_name == 'workflow_dispatch' || github.event_name == 'push') }}
+    needs: offline-adversarial-guard-tests
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          persist-credentials: false
+      - name: Read public GitHub repository metadata only
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python3 tools/imperial_license_audit.py --out /tmp/imperial-ip-public-inventory.json
+      - name: Publish bounded summary in run without credentials
+        run: |
+          python3 - <<'PY'
+          import json
+          import os
+          from pathlib import Path
+          report = json.loads(Path('/tmp/imperial-ip-public-inventory.json').read_text())
+          s = report['summary']
+          lines = [
+              '## IMPERIAL Core public repository IP inventory',
+              '',
+              '- Checked public repositories: ' + str(s['public_repos_checked']),
+              '- Root LICENSE absent: ' + str(s['root_license_absent']),
+              '- Root LICENSE present, rights unverified: ' + str(s['root_license_present_rights_unverified']),
+              '- Founder record verified: ' + str(s['founder_records_verified']),
+              '- Commercial licenses / releases authorized by this job: **0**',
+              '- Private repos included: **No**',
+              '- Third-party/model/dataset license clearance: **Not verified**',
+              '',
+              'This workflow is read-only and never writes to customer systems or issues.'
+          ]
+          with open(os.environ['GITHUB_STEP_SUMMARY'], 'a', encoding='utf-8') as out:
+              out.write('\n'.join(lines) + '\n')
+          PY
