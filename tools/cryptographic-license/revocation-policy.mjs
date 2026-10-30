@@ -4,12 +4,12 @@
  * Original project architecture: Alexander Nikolaevich Romaskevich (RomaskevicH).
  * This is an offline reference implementation, not a production revocation service.
  */
-import { createPrivateKey, createPublicKey, sign, verify } from "node:crypto";
+import { createHash, createPrivateKey, createPublicKey, sign, verify } from "node:crypto";
 import { verifyLicense } from "./index.mjs";
 
-export const REVOCATION_SCHEMA = "imperial.revocations.ed25519.v1";
+export const REVOCATION_SCHEMA = "imperial.revocations.ed25519.v2";
 const FIELDS = Object.freeze([
-  "schema", "keyId", "issuedAt", "expiresAt", "revokedLicenseIds", "revokedKeyIds"
+  "schema", "keyId", "sequence", "issuedAt", "expiresAt", "revokedLicenseIds", "revokedKeyIds"
 ]);
 const MAX_VALIDITY_MS = 24 * 60 * 60 * 1000;
 const ID = /^[A-Za-z0-9._:-]{8,100}$/;
@@ -32,6 +32,7 @@ export function canonicalRevocations(payload) {
   requireValid(payload.schema === REVOCATION_SCHEMA &&
     typeof payload.keyId === "string" && ID.test(payload.keyId),
     "REVOCATION_ISSUER_DENIED");
+  requireValid(Number.isSafeInteger(payload.sequence) && payload.sequence >= 1, "REVOCATION_SEQUENCE_DENIED");
   requireValid(validTimestamp(payload.issuedAt) && validTimestamp(payload.expiresAt),
     "REVOCATION_TIME_FORMAT_DENIED");
   const age = Date.parse(payload.expiresAt) - Date.parse(payload.issuedAt);
@@ -82,6 +83,8 @@ export function verifyRevocationSnapshot({ snapshot, trustedPublicKeys, now = ne
     return Object.freeze({ valid: true, code: "FRESH_SIGNED_REVOCATIONS_VERIFIED",
       revokedLicenseIds: Object.freeze([...p.revokedLicenseIds]),
       revokedKeyIds: Object.freeze([...p.revokedKeyIds]),
+      sequence: p.sequence,
+      snapshotDigest: createHash("sha256").update(canonical, "utf8").digest("hex"),
       validUntil: p.expiresAt });
   } catch (error) {
     return Object.freeze({ valid: false,
