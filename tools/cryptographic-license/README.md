@@ -1,6 +1,6 @@
 # IMPERIAL Core — cryptographically verifiable product licenses
 
-**Reference implementation:** `index.mjs` and `index.test.mjs`.  
+**MIT-scoped original reference files:** `index.mjs`, `index.test.mjs`, `verify-cli.mjs`, `revocation-policy.mjs`, `revocation-policy.test.mjs`, `README.md` and `REVOCATION_POLICY.md` in this directory only. The directory's `LICENSE` contains the unmodified MIT terms. These file-level permissions do not relicense the root repository.  
 **SPDX code license:** `MIT` (full unmodified text in this directory's [LICENSE](LICENSE)).  
 **Project founder / original architecture authority:** Alexander Nikolaevich Romaskevich (RomaskevicH).  
 **Native name:** recorded in the source-code header; GitHub documentation remains English only.  
@@ -18,6 +18,21 @@ The canonical signer binds: `schema`, `issuer`, `licenseId`, `keyId`, `productId
 
 The public certificate contains only `{ "payload": {...}, "signature": "<base64>" }`. Never put public/private keys into the certificate payload or trust user-supplied cert keys. Verifiers require a **separately pinned** Ed25519 public-key registry.
 
+## Strict revocation and anti-rollback reference
+
+The v2 signed revocation snapshot adds a monotonic signed sequence and independently
+pinned public-key verification. The recommended strict reference API is
+`verifyLicenseWithAtomicCheckpoint` in
+[revocation-policy.mjs](revocation-policy.mjs). It requires a trusted
+`checkpointStore` implementing atomic durable get and compare-and-swap
+semantics, including same-state comparisons. No production store is provided;
+test stores are memory-only.
+
+Read [REVOCATION_POLICY.md](REVOCATION_POLICY.md) for replay, fork,
+counter-rollback and clock risks. `verifyLicense`, `verify-cli.mjs` and
+`verifyLicenseWithFreshRevocations` alone **DO NOT** enforce persistent
+anti-rollback or instant revocation.
+
 ## External mandatory authorization gates
 
 - Verify the Owner-controlled approval reference against **Approval Gateway/Audit Ledger**, not just a 64-character hash.
@@ -32,10 +47,10 @@ The public certificate contains only `{ "payload": {...}, "signature": "<base64>
 ## Quick test
 
 ```shell
-node --test tools/cryptographic-license/index.test.mjs
+node --test tools/cryptographic-license/index.test.mjs tools/cryptographic-license/revocation-policy.test.mjs
 ```
 
-Only built-in Node.js `node:crypto` and `node:test`, no network, payments, secrets or dependencies. The test suite creates **ephemeral test Ed25519 keys in-memory** and covers tampering, unknown keys, expiry, revocations, prohibited permissions, foreign customers and missing Owner/contract bindings. A passing test does not issue a real customer license.
+Only built-in Node.js `node:crypto` and `node:test`, no network, payments, secrets or dependencies. The test suite creates **ephemeral test Ed25519 keys in-memory** and covers tampering, unknown keys, expiry, revocations, prohibited permissions, foreign customers, missing Owner/contract bindings, signed-sequence rollback, snapshot forks and atomic-state races. A passing test does not issue a real customer license.
 
 The standard MIT text is legally applicable **only to these first-party reference implementation files**; it does not grant MIT rights to VELION, HANTER, CONSTRUCTOR AI, licensed model weights, graphics, private data or the complete IMPERIAL Core ecosystem.
 
