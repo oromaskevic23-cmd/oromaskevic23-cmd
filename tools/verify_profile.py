@@ -64,7 +64,7 @@ check("Clear reference versus production limits",
       "No production agent-payment service is assigned DEPLOYED or LIVE VERIFIED" in text)
 check("Business inquiry route", "Collaboration and business inquiries" in text
       and "sign in to GitHub to open a new issue" in text
-      and "https://github.com/oromaskevic23-cmd/Capital--Core-Public/issues" in text)
+      and "https://github.com/oromaskevic23-cmd/Capital-Core-Public/issues" in text)
 check("Preserved upstream attribution", "Third-party models, libraries" in text
       and "retain their original attribution" in text)
 check("Free of template filler", "## Hi there 👋" not in text
@@ -76,9 +76,12 @@ check("Links are absolute HTTPS or local anchor",
           or u.startswith("#") for u in links))
 OFFICIAL_PAGES = {
     "https://oromaskevic23-cmd.github.io/oromaskevic23-cmd/",
-    "https://oromaskevic23-cmd.github.io/Capital--Core-Public/reference/",
-    "https://oromaskevic23-cmd.github.io/Capital--Core-Public/reference/#infrastructure",
-    "https://oromaskevic23-cmd.github.io/Capital--Core-Public/reference/#capital-core",
+    "https://oromaskevic23-cmd.github.io/Capital-Core-Public/reference/",
+    "https://oromaskevic23-cmd.github.io/Capital-Core-Public/reference/#infrastructure",
+    "https://oromaskevic23-cmd.github.io/Capital-Core-Public/reference/#capital-core",
+    "https://oromaskevic23-cmd.github.io/Capital-Core-Public/reference/projects/",
+    "https://oromaskevic23-cmd.github.io/Capital-Core-Public/reference/velion/",
+    "https://oromaskevic23-cmd.github.io/oromaskevic23-cmd/projects/",
 }
 TRUSTED_RAW_GRAPHICS = {
     "https://raw.githubusercontent.com/oromaskevic23-cmd/IMPERIUM/main/assets/imperium-hero-20261029.jpg",

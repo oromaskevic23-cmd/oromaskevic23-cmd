@@ -15,7 +15,7 @@ from pathlib import Path
 from urllib.parse import urlparse, unquote
 
 FOUNDER = "https://oromaskevic23-cmd.github.io/oromaskevic23-cmd/"
-ECOSYSTEM = "https://oromaskevic23-cmd.github.io/IMPERIAL-Core-Public/"
+ECOSYSTEM = "https://oromaskevic23-cmd.github.io/Capital-Core-Public/"
 GITHUB_PROFILE = "https://github.com/oromaskevic23-cmd"
 LOCALES = {"en", "uk", "ru", "de", "fr", "es", "pt", "ja", "zh", "ar"}
 NS = {"s": "http://www.sitemaps.org/schemas/sitemap/0.9"}
@@ -115,8 +115,16 @@ def validate_page(site: Path, prefix: str, url: str):
     demand(canon == [url], "Missing or conflicting self canonical " + url)
     alt = {l.get("hreflang") for l in parser.head_links
            if l.get("rel") == "alternate"}
-    demand({"x-default", "en", "ru", "uk"}.issubset(alt),
-           "Missing essential international language alternatives " + url)
+    # New project details and portfolio directories are published in English
+    # only. Do not falsely advertise translated URL alternatives for them.
+    english_only = url in {
+        FOUNDER + "projects/",
+        ECOSYSTEM + "reference/projects/",
+        ECOSYSTEM + "reference/velion/",
+    }
+    required = {"x-default", "en"} if english_only else {"x-default", "en", "ru", "uk"}
+    demand(required.issubset(alt),
+           "Missing declared language alternatives " + url)
     demand(parser.scripts, "No JSON-LD " + url)
     graphs = []
     for text in parser.scripts:
@@ -159,7 +167,11 @@ def audit(site: Path, prefix: str, expected_minimum: int):
     locs = [u.text for u in tree.findall("s:url/s:loc", NS)]
     demand(len(locs) >= expected_minimum, "Sitemap has fewer indexable pages than expected")
     demand(len(locs) == len(set(locs)), "Duplicate sitemap loc")
+    if prefix == FOUNDER:
+        demand(FOUNDER + "projects/" in locs, "Founder project catalog missing from sitemap")
     if prefix == ECOSYSTEM:
+        for suffix in ("reference/projects/", "reference/velion/"):
+            demand(ECOSYSTEM + suffix in locs, "Project architecture page missing: " + suffix)
         reference_sitemap = site / "reference" / "sitemap.xml"
         demand(reference_sitemap.is_file(), "Primary reference sitemap missing")
         reference_urls = [u.text for u in ET.parse(reference_sitemap).findall("s:url/s:loc", NS)]

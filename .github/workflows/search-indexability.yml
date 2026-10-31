@@ -31,7 +31,7 @@ jobs:
             https://github.com/oromaskevic23-cmd/oromaskevic23-cmd.git \
             /tmp/imperial-founder-pages
           git clone --depth=1 --single-branch --branch gh-pages \
-            https://github.com/oromaskevic23-cmd/IMPERIAL-Core-Public.git \
+            https://github.com/oromaskevic23-cmd/Capital-Core-Public.git \
             /tmp/imperial-ecosystem-pages
       - name: Audit published pages for Google discoverability and identity privacy
         run: |
