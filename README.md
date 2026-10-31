@@ -196,12 +196,12 @@ Founder roles are project designations; this profile makes no corporate-registra
 
 ---
 
-## Canonical Public Engineering Portfolio — October 2026
+### Canonical Public Engineering Portfolio — October 2026
 
 **Founder / architectural authority:** Alexander Nikolaevich Romaskevich (**RomaskevicH**), Founder · Owner · CEO of IMPERIAL Core. This profile is the canonical cross-project attribution point for original IMPERIAL Core systems architecture. Each repository retains its individual author/contributor history, dependencies, third-party rights and maturity limitations.
 
 **New verified modular milestone:** [VELION Enterprise Modular Intelligence Fabric v2](https://github.com/oromaskevic23-cmd/VELION-LLM-Public/blob/main/docs/VELION_ENTERPRISE_MODULAR_ARCHITECTURE_V2.md) — provider-independent model planning, a federated route policy, STANDARD/MAX resource limits, verifiable receipt contracts and [32 passing CI tests](https://github.com/oromaskevic23-cmd/VELION-LLM-Public/actions/runs/41213361918). MAX remains a VELION mode, not a separate model. The v2 code is source-level and not a production endpoint.
 
-**[Full public IMPERIAL Core project registry](docs/FOUNDER_PUBLIC_PROJECT_REGISTRY_20261031.md)** connects the currently verified public repositories and distinguishes original architectural stewardship from rights in third-party model weights and libraries. **[Search/indexing evidence standard](docs/GOOGLE_PROJECT_INDEXING_STATUS_20261031.md)** records crawlable public-source prerequisites and what remains unverified by Google.
+**[Full public IMPERIAL Core project registry](https://github.com/oromaskevic23-cmd/oromaskevic23-cmd/blob/main/docs/FOUNDER_PUBLIC_PROJECT_REGISTRY_20261031.md)** connects the currently verified public repositories and distinguishes original architectural stewardship from rights in third-party model weights and libraries. **[Search/indexing evidence standard](https://github.com/oromaskevic23-cmd/oromaskevic23-cmd/blob/main/docs/GOOGLE_PROJECT_INDEXING_STATUS_20261031.md)** records crawlable public-source prerequisites and what remains unverified by Google.
 
 VELION · CONSTRUCTOR AI · HANTER · Nano Core Agents · LEGION · ORION · CYBER HAK · IMPERIAL Plugins · n8n Automation are architecturally connected under **federated** domain orchestrators; none is represented as a universally deployed service by this index. Google indexing, Knowledge Panel recognition, website registration and search rankings require independent external evidence.

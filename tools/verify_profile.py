@@ -33,9 +33,9 @@ photo_paths = [
     "assets/alexander-romaskevich-portrait-original-20261029.jpg",
 ]
 other_images = [
-    "https://raw.githubusercontent.com/oromaskevic23-cmd/IMPERIUM-/main/assets/imperium-hero-20261029.jpg",
+    "https://raw.githubusercontent.com/oromaskevic23-cmd/IMPERIUM/main/assets/imperium-hero-20261029.jpg",
     "assets/hanter-banner-original-20261029.jpg",
-    "https://raw.githubusercontent.com/oromaskevic23-cmd/N.D.B-/main/assets/ndb-hero-20261029.jpg",
+    "https://raw.githubusercontent.com/oromaskevic23-cmd/N.D.B/main/assets/ndb-hero-20261029.jpg",
 ]
 positions = [text.find('src="' + path + '"') for path in photo_paths]
 all_images = re.findall(r'<img\s+src="([^"]+)"', text)
@@ -81,8 +81,8 @@ OFFICIAL_PAGES = {
     "https://oromaskevic23-cmd.github.io/Capital--Core-Public/reference/#capital-core",
 }
 TRUSTED_RAW_GRAPHICS = {
-    "https://raw.githubusercontent.com/oromaskevic23-cmd/IMPERIUM-/main/assets/imperium-hero-20261029.jpg",
-    "https://raw.githubusercontent.com/oromaskevic23-cmd/N.D.B-/main/assets/ndb-hero-20261029.jpg",
+    "https://raw.githubusercontent.com/oromaskevic23-cmd/IMPERIUM/main/assets/imperium-hero-20261029.jpg",
+    "https://raw.githubusercontent.com/oromaskevic23-cmd/N.D.B/main/assets/ndb-hero-20261029.jpg",
 }
 def allowed_public_link(link):
     if link.startswith("#"):
