@@ -37,7 +37,7 @@ My priorities are enterprise-quality engineering, professional autonomous-agent 
 ## IMPERIUM & NDB · Explore the CRYPTO IMPERIAL Ecosystem
 
 <p align="center">
-  <a href="https://github.com/oromaskevic23-cmd/IMPERIUM-"><img src="https://raw.githubusercontent.com/oromaskevic23-cmd/IMPERIUM-/main/assets/imperium-hero-20261029.jpg" alt="IMPERIUM digital emblem" width="190" /></a>
+  <a href="https://github.com/oromaskevic23-cmd/IMPERIUM"><img src="https://raw.githubusercontent.com/oromaskevic23-cmd/IMPERIUM/main/assets/imperium-hero-20261029.jpg" alt="IMPERIUM digital emblem" width="190" /></a>
 </p>
 
 <p align="center">
@@ -45,14 +45,14 @@ My priorities are enterprise-quality engineering, professional autonomous-agent 
 </p>
 
 <p align="center">
-  <a href="https://github.com/oromaskevic23-cmd/N.D.B-"><img src="https://raw.githubusercontent.com/oromaskevic23-cmd/N.D.B-/main/assets/ndb-hero-20261029.jpg" alt="NDB digital emblem" width="190" /></a>
+  <a href="https://github.com/oromaskevic23-cmd/N.D.B"><img src="https://raw.githubusercontent.com/oromaskevic23-cmd/N.D.B/main/assets/ndb-hero-20261029.jpg" alt="NDB digital emblem" width="190" /></a>
 </p>
 
 **IMPERIUM** explores a future digital economy for AI agents, with an offline settlement-governance prototype. **NDB — New Digital Bitcoin** is a separate Polygon token project with a read-only contract-observation tool.
 
 Both specified contracts are deployed on Polygon and their sources are matched by Sourcify. Source verification is not a security audit. Live agent payments, exchange listings, liquidity and adoption are not established by that evidence.
 
-[Explore IMPERIUM →](https://github.com/oromaskevic23-cmd/IMPERIUM-) · [Explore NDB →](https://github.com/oromaskevic23-cmd/N.D.B-) · [Compare project evidence →](https://github.com/oromaskevic23-cmd/CRYPTO-IMPERIAL-Ecosystem-Public#imperium--ndb)
+[Explore IMPERIUM →](https://github.com/oromaskevic23-cmd/IMPERIUM) · [Explore NDB →](https://github.com/oromaskevic23-cmd/N.D.B) · [Compare project evidence →](https://github.com/oromaskevic23-cmd/CRYPTO-IMPERIAL-Ecosystem-Public#imperium--ndb)
 
 **NDB is not Bitcoin and is not an official Bitcoin project.** No return is guaranteed.
 
@@ -192,3 +192,16 @@ Founder roles are project designations; this profile makes no corporate-registra
 
 
 [Authorship and provenance](https://github.com/oromaskevic23-cmd/oromaskevic23-cmd/blob/main/NOTICE.md).
+
+
+---
+
+## Canonical Public Engineering Portfolio — October 2026
+
+**Founder / architectural authority:** Alexander Nikolaevich Romaskevich (**RomaskevicH**), Founder · Owner · CEO of IMPERIAL Core. This profile is the canonical cross-project attribution point for original IMPERIAL Core systems architecture. Each repository retains its individual author/contributor history, dependencies, third-party rights and maturity limitations.
+
+**New verified modular milestone:** [VELION Enterprise Modular Intelligence Fabric v2](https://github.com/oromaskevic23-cmd/VELION-LLM-Public/blob/main/docs/VELION_ENTERPRISE_MODULAR_ARCHITECTURE_V2.md) — provider-independent model planning, a federated route policy, STANDARD/MAX resource limits, verifiable receipt contracts and [32 passing CI tests](https://github.com/oromaskevic23-cmd/VELION-LLM-Public/actions/runs/41213361918). MAX remains a VELION mode, not a separate model. The v2 code is source-level and not a production endpoint.
+
+**[Full public IMPERIAL Core project registry](docs/FOUNDER_PUBLIC_PROJECT_REGISTRY_20261031.md)** connects the currently verified public repositories and distinguishes original architectural stewardship from rights in third-party model weights and libraries. **[Search/indexing evidence standard](docs/GOOGLE_PROJECT_INDEXING_STATUS_20261031.md)** records crawlable public-source prerequisites and what remains unverified by Google.
+
+VELION · CONSTRUCTOR AI · HANTER · Nano Core Agents · LEGION · ORION · CYBER HAK · IMPERIAL Plugins · n8n Automation are architecturally connected under **federated** domain orchestrators; none is represented as a universally deployed service by this index. Google indexing, Knowledge Panel recognition, website registration and search rankings require independent external evidence.
