@@ -1,0 +1,28 @@
+name: IMPERIAL Core - Reusable Enterprise Error Gate v1
+on:
+  workflow_call:
+permissions:
+  contents: read
+jobs:
+  enterprise-error-gate:
+    name: enterprise-error-gate
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Checkout caller repository with no saved credentials
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        with:
+          persist-credentials: false
+          fetch-depth: 0
+      - name: Checkout immutable IMPERIAL Core quality policy
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        with:
+          repository: oromaskevic23-cmd/oromaskevic23-cmd
+          ref: 2c65e91f485c8b728bf7ce9f0e4554d55a4ae377
+          path: .imperial-quality-policy
+          persist-credentials: false
+      - name: Run fail-closed policy on changed tracked source
+        env:
+          IMPERIAL_CI_BASE: ${{ github.event.pull_request.base.sha || github.event.before || '' }}
+          IMPERIAL_CI_HEAD: ${{ github.sha }}
+        run: python3 .imperial-quality-policy/tools/imperial_enterprise_gate.py --root .
