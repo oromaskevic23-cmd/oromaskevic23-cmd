@@ -34,6 +34,9 @@ SECRET_VALUE = [
 ]
 USES = re.compile(r"^\s*(?:-\s*)?uses:\s*['\"]?([^\s'\"#]+)", re.MULTILINE)
 PINNED_SHA = re.compile(r"^[a-fA-F0-9]{40}$")
+PINNED_IMAGE_DIGEST = re.compile(r"^docker://[^\s@]+@sha256:[a-fA-F0-9]{64}$")
+GATE_PATH = ".github/workflows/imperial-enterprise-gate.yml"
+PROTECTED_FILES = frozenset({GATE_PATH, ".github/CODEOWNERS", "AUTHORS.md", "SECURITY.md", "LICENSE", "LICENSE.md", "LICENSE.txt"})
 ZERO = "0" * 40
 
 
@@ -69,6 +72,22 @@ def changed_files(root: Path, base: str, head: str, tracked: set[str]) -> set[st
     }
 
 
+def protected_deletions(root: Path, base: str, head: str) -> set[str]:
+    """Detect protected file deletions even when removed from the final Git index."""
+    if not base or base == ZERO:
+        return set()
+    if not re.fullmatch(r"[0-9a-fA-F]{40}", base):
+        raise GateError("INVALID_BASE_SHA")
+    if not head or not re.fullmatch(r"[0-9a-fA-F]{40}", head):
+        raise GateError("INVALID_HEAD_SHA")
+    removed = {
+        p.decode("utf-8")
+        for p in git(root, "diff", "--name-only", "--diff-filter=D", "-z", base, head).split(b"\0")
+        if p
+    }
+    return removed & PROTECTED_FILES
+
+
 def strict_json(raw: bytes) -> None:
     def unique(pairs):
         result = {}
@@ -88,12 +107,16 @@ def check_workflow(text: str, name: str) -> list[str]:
     findings = []
     if not re.search(r"^permissions:\s*(?:\n|$)", text, re.MULTILINE):
         findings.append("WORKFLOW_MISSING_EXPLICIT_PERMISSIONS")
+    if re.search(r"(?m)^permissions:[ \t]*write-all[ \t]*(?:#.*)?$", text):
+        findings.append("WORKFLOW_EXCESSIVE_GLOBAL_PERMISSIONS")
+    if re.search(r"(?m)^[ \t]*id-token:[ \t]*write(?:[ \t]|$)", text):
+        findings.append("WORKFLOW_OIDC_WRITE_REQUIRES_SECURITY_REVIEW")
     for ref in USES.findall(text):
         if ref.startswith("./"):
             continue
         if ref.startswith("docker://"):
-            if "@sha256:" not in ref:
-                findings.append("UNPINNED_DOCKER_ACTION")
+            if not PINNED_IMAGE_DIGEST.fullmatch(ref):
+                findings.append("INVALID_DOCKER_ACTION_DIGEST")
             continue
         if "@" not in ref or not PINNED_SHA.fullmatch(ref.rsplit("@", 1)[1]):
             findings.append("UNPINNED_GITHUB_ACTION")
@@ -173,10 +196,14 @@ def main() -> int:
         tracked = tracked_files(root)
         changed = changed_files(root, args.base, args.head, tracked)
         findings, counters = scan(root, changed)
+        if GATE_PATH not in tracked:
+            findings.append("IMPERIAL_GATE_WORKFLOW_MISSING")
+        for path in sorted(protected_deletions(root, args.base, args.head)):
+            findings.append(f"{path}: PROTECTED_GOVERNANCE_FILE_REMOVED")
     except (GateError, OSError, subprocess.TimeoutExpired, UnicodeError) as exc:
         print(f"IMPERIAL_GATE_BLOCKED: {type(exc).__name__}: {exc}", file=sys.stderr)
         return 1
-    print("IMPERIAL_ENTERPRISE_GATE_V1", json.dumps(counters, sort_keys=True))
+    print("IMPERIAL_ENTERPRISE_GATE_V2", json.dumps(counters, sort_keys=True))
     print(f"TRACKED_FILES={len(tracked)} CHANGED_SCANNED={len(changed)}")
     for finding in findings:
         print("BLOCK: " + finding, file=sys.stderr)
