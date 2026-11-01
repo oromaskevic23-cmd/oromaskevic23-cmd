@@ -83,6 +83,7 @@ check("Links are absolute HTTPS or local anchor",
 OFFICIAL_PAGES = {
     "https://oromaskevic23-cmd.github.io/oromaskevic23-cmd/",
     "https://oromaskevic23-cmd.github.io/Capital-Core-Public/reference/",
+    "https://oromaskevic23-cmd.github.io/Capital-Core-Public/reference/constructor-ai/studio/studio.html",
     "https://oromaskevic23-cmd.github.io/Capital-Core-Public/reference/#infrastructure",
     "https://oromaskevic23-cmd.github.io/Capital-Core-Public/reference/#capital-core",
     "https://oromaskevic23-cmd.github.io/Capital-Core-Public/reference/projects/",
