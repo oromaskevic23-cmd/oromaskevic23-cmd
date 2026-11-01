@@ -57,7 +57,9 @@ check("Featured reproducible CONSTRUCTOR AI with explicit scope",
       and "docs/FLAGSHIP_ACCEPTANCE.md" in text
       and "node tools/verify-acceptance.mjs acceptance-output" in text
       and "not** arbitrary prompt-to-production AI generation" in text
-      and "full human browser acceptance remains separate" in text)
+      and "Human visual/accessibility review and full cross-browser acceptance remain separate" in text
+      and "actions/runs/41327878532" in text
+      and "actions/runs/41327399818" in text)
 check("Public technology portfolio", all(name in text for name in PROJECTS))
 check("Owner-approved public roles", "Founder • Owner • CEO of IMPERIAL Core" in text and "Chief Systems Architect" not in text and not re.search(r"(?:\bshares\b|\bshareholder\b)", text, re.I))
 check("Founder final authority", "retain final architectural decision authority" in text)
@@ -83,6 +85,7 @@ check("Links are absolute HTTPS or local anchor",
 OFFICIAL_PAGES = {
     "https://oromaskevic23-cmd.github.io/oromaskevic23-cmd/",
     "https://oromaskevic23-cmd.github.io/Capital-Core-Public/reference/",
+    "https://oromaskevic23-cmd.github.io/Capital-Core-Public/reference/constructor-ai/studio/studio.html",
     "https://oromaskevic23-cmd.github.io/Capital-Core-Public/reference/#infrastructure",
     "https://oromaskevic23-cmd.github.io/Capital-Core-Public/reference/#capital-core",
     "https://oromaskevic23-cmd.github.io/Capital-Core-Public/reference/projects/",

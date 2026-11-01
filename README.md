@@ -38,7 +38,7 @@ My priorities are enterprise-quality engineering, professional autonomous-agent 
 
 **Template Studio · Independently reproducible local engineering release**
 
-[**View source and run instructions**](https://github.com/oromaskevic23-cmd/CONSTRUCTOR-AI) · [**Independent acceptance guide**](https://github.com/oromaskevic23-cmd/CONSTRUCTOR-AI/blob/main/docs/FLAGSHIP_ACCEPTANCE.md) · [**Automated build evidence**](https://github.com/oromaskevic23-cmd/CONSTRUCTOR-AI/actions/runs/41326389562) · [**Isolated CRM and QA evidence**](https://github.com/oromaskevic23-cmd/CONSTRUCTOR-AI/actions/runs/41326389592)
+[**Open live Template Studio**](https://oromaskevic23-cmd.github.io/Capital-Core-Public/reference/constructor-ai/studio/studio.html) · [**Source and instructions**](https://github.com/oromaskevic23-cmd/CONSTRUCTOR-AI) · [**Independent acceptance**](https://github.com/oromaskevic23-cmd/CONSTRUCTOR-AI/blob/main/docs/FLAGSHIP_ACCEPTANCE.md) · [**Real Chromium E2E — PASS**](https://github.com/oromaskevic23-cmd/CONSTRUCTOR-AI/actions/runs/41327399818) · [**Public delivery SHA-256 proof**](https://github.com/oromaskevic23-cmd/CONSTRUCTOR-AI/actions/runs/41327878532)
 
 CONSTRUCTOR AI currently provides **three working, exportable local app templates**: Task Manager, Business CRM and Business Dashboard. Each project ZIP includes editable source, a standalone local server, automated tests, SHA-256 integrity checking and validated JSON backup/restore with user confirmation. The documented acceptance workflow verifies clean ZIP extraction and tests all three applications.
 
@@ -53,7 +53,7 @@ node tools/build-acceptance.mjs acceptance-output
 node tools/verify-acceptance.mjs acceptance-output
 ```
 
-**Evidence boundary:** CI and an isolated automated CRM QA workflow passed for the cited revision; full human browser acceptance remains separate. These reviewed local templates are **not** arbitrary prompt-to-production AI generation, a deployed autonomous software factory, customer cloud service, commercial release or independent security certification.
+**Evidence boundary:** Clean-export CI, isolated automated CRM QA, real Chromium browser acceptance and the HTTPS delivery hash gate have passed for the linked revisions. Human visual/accessibility review and full cross-browser acceptance remain separate. These reviewed local templates are **not** arbitrary prompt-to-production AI generation, a deployed autonomous software factory, customer cloud service, commercial release or independent security certification.
 
 **Product development principle:** Deliver one narrow, working and inspectable artifact before expanding autonomous engineering claims.
 
