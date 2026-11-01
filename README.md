@@ -34,6 +34,31 @@ My priorities are enterprise-quality engineering, professional autonomous-agent 
 
 ---
 
+## Featured runnable product — CONSTRUCTOR AI
+
+**Template Studio · Independently reproducible local engineering release**
+
+[**View source and run instructions**](https://github.com/oromaskevic23-cmd/CONSTRUCTOR-AI) · [**Independent acceptance guide**](https://github.com/oromaskevic23-cmd/CONSTRUCTOR-AI/blob/main/docs/FLAGSHIP_ACCEPTANCE.md) · [**Automated build evidence**](https://github.com/oromaskevic23-cmd/CONSTRUCTOR-AI/actions/runs/41326389562) · [**Isolated CRM and QA evidence**](https://github.com/oromaskevic23-cmd/CONSTRUCTOR-AI/actions/runs/41326389592)
+
+CONSTRUCTOR AI currently provides **three working, exportable local app templates**: Task Manager, Business CRM and Business Dashboard. Each project ZIP includes editable source, a standalone local server, automated tests, SHA-256 integrity checking and validated JSON backup/restore with user confirmation. The documented acceptance workflow verifies clean ZIP extraction and tests all three applications.
+
+**Reproduce with Node.js 22+:**
+
+```sh
+git clone https://github.com/oromaskevic23-cmd/CONSTRUCTOR-AI.git
+cd CONSTRUCTOR-AI
+npm ci --ignore-scripts --no-audit --no-fund
+npm run verify
+node tools/build-acceptance.mjs acceptance-output
+node tools/verify-acceptance.mjs acceptance-output
+```
+
+**Evidence boundary:** CI and an isolated automated CRM QA workflow passed for the cited revision; full human browser acceptance remains separate. These reviewed local templates are **not** arbitrary prompt-to-production AI generation, a deployed autonomous software factory, customer cloud service, commercial release or independent security certification.
+
+**Product development principle:** Deliver one narrow, working and inspectable artifact before expanding autonomous engineering claims.
+
+---
+
 ## IMPERIUM & NDB · Explore the CRYPTO IMPERIAL Ecosystem
 
 <p align="center">
