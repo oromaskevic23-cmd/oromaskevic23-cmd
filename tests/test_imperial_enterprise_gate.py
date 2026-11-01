@@ -8,7 +8,7 @@ import unittest
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "tools"))
-from imperial_enterprise_gate import scan, strict_json, check_workflow, changed_files, tracked_files
+from imperial_enterprise_gate import scan, strict_json, check_workflow, changed_files, tracked_files, protected_deletions, GATE_PATH
 
 
 class QualityGateTests(unittest.TestCase):
@@ -86,6 +86,73 @@ class QualityGateTests(unittest.TestCase):
         link = self.root / "leak.py"
         link.symlink_to(self.root / "missing")
         self.assertIn("MISSING_OR_SYMLINK", repr(self.errors("leak.py")))
+
+    def test_global_write_all_is_blocked(self):
+        p = self.put(".github/workflows/write.yml", "permissions: write-all\n")
+        self.assertIn("WORKFLOW_EXCESSIVE_GLOBAL_PERMISSIONS", repr(self.errors(p)))
+
+    def test_oidc_write_is_blocked(self):
+        p = self.put(
+            ".github/workflows/oidc.yml",
+            "permissions:\n  contents: read\n  id-token: write\n"
+        )
+        self.assertIn("WORKFLOW_OIDC_WRITE_REQUIRES_SECURITY_REVIEW", repr(self.errors(p)))
+
+    def test_invalid_docker_digest_is_blocked(self):
+        p = self.put(
+            ".github/workflows/docker.yml",
+            "permissions:\n  contents: read\njobs:\n  a:\n    steps:\n"
+            "      - uses: docker://alpine@sha256:abcd\n"
+        )
+        self.assertIn("INVALID_DOCKER_ACTION_DIGEST", repr(self.errors(p)))
+
+    def test_valid_docker_digest_is_accepted(self):
+        p = self.put(
+            ".github/workflows/docker.yml",
+            "permissions:\n  contents: read\njobs:\n  a:\n    steps:\n"
+            "      - uses: docker://alpine@sha256:" + "a" * 64 + "\n"
+        )
+        self.assertEqual(self.errors(p), [])
+
+    def test_deleted_governance_file_cannot_bypass_gate(self):
+        def git(*args):
+            return subprocess.run(
+                ["git", "-C", str(self.root), *args], capture_output=True,
+                text=True, check=True
+            ).stdout.strip()
+
+        git("init")
+        git("config", "user.name", "IMPERIAL Test")
+        git("config", "user.email", "test@example.invalid")
+        path = self.put(GATE_PATH, "permissions:\n  contents: read\n")
+        git("add", ".")
+        git("commit", "-m", "protected gate")
+        base = git("rev-parse", "HEAD")
+        (self.root / path).unlink()
+        git("add", "-A")
+        git("commit", "-m", "attempt to remove mandatory gate")
+        head = git("rev-parse", "HEAD")
+        self.assertEqual(protected_deletions(self.root, base, head), {GATE_PATH})
+
+    def test_missing_governance_gate_is_fail_closed(self):
+        def git(*args):
+            return subprocess.run(
+                ["git", "-C", str(self.root), *args], capture_output=True,
+                text=True, check=True
+            ).stdout.strip()
+        git("init")
+        git("config", "user.name", "IMPERIAL Test")
+        git("config", "user.email", "test@example.invalid")
+        self.put("src/ok.py", "x = 1\n")
+        git("add", ".")
+        git("commit", "-m", "missing gate")
+        result = subprocess.run(
+            [sys.executable, str(ROOT / "tools" / "imperial_enterprise_gate.py"),
+             "--root", str(self.root)],
+            capture_output=True, text=True, check=False
+        )
+        self.assertNotEqual(result.returncode, 0)
+        self.assertIn("IMPERIAL_GATE_WORKFLOW_MISSING", result.stderr)
 
     def test_diff_only_new_changed_files(self):
         def git(*args):
