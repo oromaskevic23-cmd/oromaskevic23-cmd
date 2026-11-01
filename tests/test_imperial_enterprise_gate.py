@@ -48,7 +48,8 @@ class QualityGateTests(unittest.TestCase):
         self.assertIn("JSON_INVALID", repr(self.errors(p)))
 
     def test_embedded_private_key_fails(self):
-        p = self.put("README.md", "-----BEGIN PRIVATE KEY-----\nFAKE\n-----END PRIVATE KEY-----")
+        marker = "-----BEGIN " + "PRIVATE KEY-----"
+        p = self.put("README.md", marker + "\nFAKE\n-----END " + "PRIVATE KEY-----")
         self.assertIn("PRIVATE_KEY_MATERIAL", repr(self.errors(p)))
 
     def test_secret_file_name_fails(self):
