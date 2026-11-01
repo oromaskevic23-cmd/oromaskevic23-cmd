@@ -18,7 +18,7 @@ jobs:
         uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
         with:
           repository: oromaskevic23-cmd/oromaskevic23-cmd
-          ref: 2c65e91f485c8b728bf7ce9f0e4554d55a4ae377
+          ref: 54f3799ef6469a6ee3bc3bed629731a52dec3528
           path: .imperial-quality-policy
           persist-credentials: false
       - name: Run fail-closed policy on changed tracked source
