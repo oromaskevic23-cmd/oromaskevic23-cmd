@@ -51,7 +51,13 @@ check("Skyline -> corporate text -> founder photo -> founder statement",
       positions[0] >= 0
       and positions[0] < text.find("### Our vision") < positions[1]
       and positions[1] < text.find("### Founder statement"))
-check("All approved ordered sections", sections == ["IMPERIUM & NDB · Explore the CRYPTO IMPERIAL Ecosystem", "Official multilingual websites", *EXPECTED_SECTIONS])
+check("All approved ordered sections", sections == ["Featured runnable product — CONSTRUCTOR AI", "IMPERIUM & NDB · Explore the CRYPTO IMPERIAL Ecosystem", "Official multilingual websites", *EXPECTED_SECTIONS])
+check("Featured reproducible CONSTRUCTOR AI with explicit scope",
+      "## Featured runnable product — CONSTRUCTOR AI" in text
+      and "docs/FLAGSHIP_ACCEPTANCE.md" in text
+      and "node tools/verify-acceptance.mjs acceptance-output" in text
+      and "not** arbitrary prompt-to-production AI generation" in text
+      and "full human browser acceptance remains separate" in text)
 check("Public technology portfolio", all(name in text for name in PROJECTS))
 check("Owner-approved public roles", "Founder • Owner • CEO of IMPERIAL Core" in text and "Chief Systems Architect" not in text and not re.search(r"(?:\bshares\b|\bshareholder\b)", text, re.I))
 check("Founder final authority", "retain final architectural decision authority" in text)
