@@ -111,7 +111,7 @@ My public signature is **RomaskevicH**. This profile connects my architectural w
 
 IMPERIAL Core is a long-term AI-native engineering ecosystem under development. Its **Federated Multi-Orchestrator Architecture** supports domain-specific orchestrators, multiple organizational structures, professional teams and a dynamic number of Nano Core Agents.
 
-**HANTER — AI Command Center / Chief Systems** operates within the architecture defined by the founder. Domain orchestrators retain bounded responsibilities and explicit authority.
+**HANTER — AI Command Center** operates within the architecture defined by the founder. Domain orchestrators retain bounded responsibilities and explicit authority.
 
 **Capital Core · Enterprise — city-team vision.** The target architecture assigns a dedicated universal Nano Core Agent team to every major city worldwide. ORION connects collective knowledge and prepares recommendations; domain orchestrators retain responsibility for authorized execution. City coverage is a development objective, not a verified operating fleet. [Explore the city-team model](https://oromaskevic23-cmd.github.io/Capital-Core-Public/reference/#capital-core).
 
