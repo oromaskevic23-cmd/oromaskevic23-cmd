@@ -36,7 +36,7 @@ My priorities are enterprise-quality engineering, professional autonomous-agent 
 
 ## Evidence-backed engineering profile
 
-**[Engineering evidence dossier — live founder-site source](https://oromaskevic23-cmd.github.io/oromaskevic23-cmd/engineering/)** · [Machine-readable source-linked verification (JSON)](https://oromaskevic23-cmd.github.io/oromaskevic23-cmd/engineering/evidence.json) · [20-project source portfolio](https://oromaskevic23-cmd.github.io/oromaskevic23-cmd/projects/)
+**[Engineering evidence dossier — live founder-site source](https://oromaskevic23-cmd.github.io/oromaskevic23-cmd/engineering/)** · [Machine-readable source-linked verification (JSON)](https://oromaskevic23-cmd.github.io/oromaskevic23-cmd/engineering/evidence.json) · [23-project source portfolio](https://oromaskevic23-cmd.github.io/oromaskevic23-cmd/projects/)
 
 This public technical profile makes architectural claims inspectable through actual source code and dated GitHub Actions runs. Verified examples include **CONSTRUCTOR AI** browser acceptance, a **signed single-NCA local model/Chromium experiment**, **CYBER HAK Owner Authority Guard** cryptographic tests, and **IMPERIAL EYE** source/WebAuthn laboratory checks.
 
@@ -129,7 +129,7 @@ IMPERIAL Core is a long-term AI-native engineering ecosystem under development. 
 
 ## Flagship engineering projects
 
-**Canonical author/project index:** [Alexander Nikolaevich Romaskevich — 20 public engineering repositories](https://oromaskevic23-cmd.github.io/oromaskevic23-cmd/projects/) · [IMPERIAL Core project directory](https://oromaskevic23-cmd.github.io/Capital-Core-Public/reference/projects/) · [VELION Enterprise Modular Architecture v2](https://oromaskevic23-cmd.github.io/Capital-Core-Public/reference/velion/). Source-linked stewardship of original IMPERIAL Core work is not a claim of ownership of upstream third-party models or libraries; external Google indexing remains unverified.
+**Canonical author/project index:** [Alexander Nikolaevich Romaskevich — 23 public technology project repositories](https://oromaskevic23-cmd.github.io/oromaskevic23-cmd/projects/) · [IMPERIAL Core project directory](https://oromaskevic23-cmd.github.io/Capital-Core-Public/reference/projects/) · [VELION Enterprise Modular Architecture v2](https://oromaskevic23-cmd.github.io/Capital-Core-Public/reference/velion/). Source-linked stewardship of original IMPERIAL Core work is not a claim of ownership of upstream third-party models or libraries; external Google indexing remains unverified.
 
 
 | Project | Public status | Evidence scope |
