@@ -5,3 +5,8 @@
 /LICENSE* @oromaskevic23-cmd
 /.github/workflows/enterprise-founder-authorship.yml @oromaskevic23-cmd
 /.github/CODEOWNERS @oromaskevic23-cmd
+/assets/imperial-core-emblem.webp @oromaskevic23-cmd
+/brand/ @oromaskevic23-cmd
+/tools/check_corporate_symbol.py @oromaskevic23-cmd
+/tests/test_corporate_symbol_lock.py @oromaskevic23-cmd
+/.github/workflows/corporate-symbol-lock.yml @oromaskevic23-cmd
