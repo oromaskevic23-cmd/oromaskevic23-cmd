@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "policy_id": "IMPERIAL-CORE-CORPORATE-SYMBOL-LOCK-001",
+  "decision_date": "2026-11-03",
+  "status": "CANONICAL_GITHUB_REFERENCE",
+  "visual_authority": "Founder / Chief Systems Architect",
+  "brand": "IMPERIAL Core",
+  "approved_symbol": {
+    "repository": "oromaskevic23-cmd/oromaskevic23-cmd",
+    "path": "assets/imperial-core-emblem.webp",
+    "git_blob_sha1": "7749da03da49d4434fc826d0f26793785a3cab42",
+    "media_type": "image/webp",
+    "role": "corporate_primary_symbol",
+    "reference_url": "https://github.com/oromaskevic23-cmd/oromaskevic23-cmd/blob/main/assets/imperial-core-emblem.webp"
+  },
+  "allowed_variation": {
+    "nca_avatar_subject": true,
+    "nca_agent_name": true,
+    "nca_profession": true,
+    "nca_agent_style": true,
+    "location_and_background": true,
+    "property_asset_type": true,
+    "size_and_reversible_crop_without_modifying_symbol": true,
+    "official_corporate_symbol": false
+  },
+  "forbidden_substitutes": [
+    "new_royal_crown_logo",
+    "new_eye_logo",
+    "new_bird_logo",
+    "animal_logo_as_corporate_mark",
+    "random_generated_logo",
+    "new_monogram_without_owner_approval"
+  ],
+  "placement": "In corporate branding, display the approved symbol unchanged. NCA avatars may differ but must not replace the corporate mark.",
+  "execution_scope": "This manifest pins the GitHub profile asset; it is not yet cross-repository GitHub ruleset enforcement.",
+  "rights_and_status": "Image origin/provenance remains subject to the separately recorded authorial/IP evidence. Technical hash verification is not legal title."
+}
