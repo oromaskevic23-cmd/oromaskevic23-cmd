@@ -158,6 +158,41 @@ def validate_page(site: Path, prefix: str, url: str):
     return parser.lang
 
 
+def validate_evidence_index(site: Path):
+    """Ensure developer portfolio claims remain traceable and not self-awarded."""
+    path = site / "engineering" / "evidence.json"
+    demand(path.is_file(), "Machine-readable engineering evidence missing")
+    try:
+        evidence = json.loads(path.read_text(encoding="utf-8"))
+    except ValueError as exc:
+        raise SEOError("Malformed engineering evidence JSON") from exc
+    demand(evidence.get("document_type", "").startswith("Public engineering evidence"),
+           "Engineering record identity missing")
+    subject = evidence.get("subject", {})
+    demand(isinstance(subject, dict) and
+           subject.get("official_profile") == GITHUB_PROFILE and
+           subject.get("canonical_author_page") == FOUNDER,
+           "Engineering evidence author identity conflict")
+    runs = evidence.get("verified_examples", [])
+    demand(isinstance(runs, list) and len(runs) >= 4,
+           "Expected four source-backed engineering examples")
+    for item in runs:
+        demand(isinstance(item, dict) and item.get("result") == "SUCCESS" and
+               str(item.get("artifact", "")).startswith(GITHUB_PROFILE + "/") and
+               str(item.get("run", "")).startswith(GITHUB_PROFILE + "/") and
+               "/actions/runs/" in str(item.get("run", "")) and
+               len(str(item.get("limits", ""))) >= 20,
+               "Unsupported CI evidence or missing limitations")
+    status = evidence.get("indexing", {})
+    demand(status.get("google_indexed") == "UNVERIFIED" and
+           status.get("google_search_console_verified") == "UNVERIFIED" and
+           status.get("sitemap_submitted") == "UNVERIFIED",
+           "Google indexing or Search Console claims lack evidence")
+    page = (site / "engineering" / "index.html").read_text(encoding="utf-8")
+    demand("engineering/evidence.json" in page,
+           "Machine-readable source evidence not linked from HTML")
+
+
 def audit(site: Path, prefix: str, expected_minimum: int):
     sitemap = site / "sitemap.xml"
     demand(sitemap.is_file(), "Missing sitemap.xml")
@@ -171,6 +206,7 @@ def audit(site: Path, prefix: str, expected_minimum: int):
     if prefix == FOUNDER:
         demand(FOUNDER + "projects/" in locs, "Founder project catalog missing from sitemap")
         demand(FOUNDER + "engineering/" in locs, "Evidence-based engineer page missing from sitemap")
+        validate_evidence_index(site)
     if prefix == ECOSYSTEM:
         for suffix in ("reference/projects/", "reference/velion/"):
             demand(ECOSYSTEM + suffix in locs, "Project architecture page missing: " + suffix)
