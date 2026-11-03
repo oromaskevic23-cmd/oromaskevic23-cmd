@@ -193,6 +193,69 @@ def validate_evidence_index(site: Path):
            "Machine-readable source evidence not linked from HTML")
 
 
+
+PUBLIC_PROJECTS = {
+    "VELION-LLM-Public", "CONSTRUCTOR-AI", "HANTER-Public",
+    "Nano-Core-Agents-Public", "Legion-Public", "ORION-Public",
+    "CYBER-HAK-Public", "IMPERIAL-Plugins", "IMPERIAL-n8n-Automation",
+    "SHPAIZMAN-ORCHESTRATOR", "Jem", "IMPERIAL-Venture-Factory",
+    "Capital-Core-Public", "CRYPTO-IMPERIAL-Ecosystem-Public",
+    "IMPERIUM", "N.D.B", "Lisa-", "IMPERIAL-AGI", "AGY",
+    "Codex-Enterprise-IMPERIAL-Skills",
+    "IMPERIAL-CRM-Autopilot", "IMPERIAL-Skill", "Supabase",
+}
+
+PRIVATE_REPOSITORIES = {
+    "IMPERIAL-Core-Private", "Codex--PRIVATE-", "HANTER-Private",
+    "Nano-Core-Agents-Private", "Enterprise-IMPERIAL-Skills",
+    "IMPERIAL-Engineering-Intelligence-", "Repository-name-IMPERIAL-Core",
+}
+
+
+def validate_project_portfolio(site: Path, location: str) -> None:
+    """Ensure structured metadata and visible HTML catalog the same public sources.
+
+    The published pages are manually maintained. This gate catches drift but
+    does not infer future private/public GitHub visibility changes.
+    """
+    import re
+
+    page = site / location
+    demand(page.is_file(), "Missing public project catalog: " + location)
+    body = page.read_text(encoding="utf-8")
+    parser = Page()
+    parser.feed(body)
+    graphs = []
+    for script in parser.scripts:
+        obj = json.loads(script)
+        graphs.extend(obj.get("@graph", [obj]) if isinstance(obj, dict) else obj)
+    itemlists = [obj for obj in graphs if isinstance(obj, dict)
+                 and obj.get("@type") == "ItemList"]
+    demand(len(itemlists) == 1, "Expected one project ItemList: " + location)
+    items = itemlists[0].get("itemListElement", [])
+    demand(itemlists[0].get("numberOfItems") == len(PUBLIC_PROJECTS)
+           and len(items) == len(PUBLIC_PROJECTS),
+           "Public project count drift: " + location)
+    expected_links = {GITHUB_PROFILE + "/" + name for name in PUBLIC_PROJECTS}
+    actual = [it.get("url", "") for it in items]
+    demand(set(actual) == expected_links and len(actual) == len(set(actual)),
+           "Project metadata missing/duplicate/foreign entry: " + location)
+    demand([it.get("position") for it in items] ==
+           list(range(1, len(items) + 1)),
+           "Project list positions are inconsistent: " + location)
+    displayed = {url for url in re.findall(
+        r'href=["\\'](https://github\\.com/oromaskevic23-cmd/[^"\\'?#]+)["\\']',
+        body,
+    )}
+    demand(expected_links.issubset(displayed),
+           "Project is not visibly linked in HTML: " + location)
+    demand(not any(GITHUB_PROFILE + "/" + private in body
+                   for private in PRIVATE_REPOSITORIES),
+           "Private repository leaked into crawlable catalog: " + location)
+    demand("20-project" not in body and "Twenty public" not in body,
+           "Stale portfolio count: " + location)
+
+
 def audit(site: Path, prefix: str, expected_minimum: int):
     sitemap = site / "sitemap.xml"
     demand(sitemap.is_file(), "Missing sitemap.xml")
@@ -207,7 +270,9 @@ def audit(site: Path, prefix: str, expected_minimum: int):
         demand(FOUNDER + "projects/" in locs, "Founder project catalog missing from sitemap")
         demand(FOUNDER + "engineering/" in locs, "Evidence-based engineer page missing from sitemap")
         validate_evidence_index(site)
+        validate_project_portfolio(site, "projects/index.html")
     if prefix == ECOSYSTEM:
+        validate_project_portfolio(site, "reference/projects/index.html")
         for suffix in ("reference/projects/", "reference/velion/"):
             demand(ECOSYSTEM + suffix in locs, "Project architecture page missing: " + suffix)
         reference_sitemap = site / "reference" / "sitemap.xml"
