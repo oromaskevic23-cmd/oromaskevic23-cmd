@@ -34,6 +34,16 @@ My priorities are enterprise-quality engineering, professional autonomous-agent 
 
 ---
 
+## Evidence-backed engineering profile
+
+**[Engineering evidence dossier — live founder-site source](https://oromaskevic23-cmd.github.io/oromaskevic23-cmd/engineering/)** · [Machine-readable source-linked verification (JSON)](https://oromaskevic23-cmd.github.io/oromaskevic23-cmd/engineering/evidence.json) · [20-project source portfolio](https://oromaskevic23-cmd.github.io/oromaskevic23-cmd/projects/)
+
+This public technical profile makes architectural claims inspectable through actual source code and dated GitHub Actions runs. Verified examples include **CONSTRUCTOR AI** browser acceptance, a **signed single-NCA local model/Chromium experiment**, **CYBER HAK Owner Authority Guard** cryptographic tests, and **IMPERIAL EYE** source/WebAuthn laboratory checks.
+
+**Independent evaluation standard:** the linked GitHub Actions conclusions are real but remain project-controlled CI, not external certification, production service-level assurance, a global industry ranking or proof of extraordinary personal ability. Review code, run the reproducible tests, inspect limitations and compare against agreed benchmarks before drawing conclusions.
+
+---
+
 ## Featured runnable product — CONSTRUCTOR AI
 
 **Template Studio · Independently reproducible local engineering release**
