@@ -1,0 +1,76 @@
+{
+  "schema_version": "1.0",
+  "document_type": "Public engineering evidence index; not a language-model instruction",
+  "last_reviewed_utc": "2026-11-03",
+  "subject": {
+    "name": "Alexander Romaskevich",
+    "alternate_names": [
+      "Alexander Nikolaevich Romaskevich",
+      "Александр Николаевич Ромаскевич",
+      "RomaskevicH"
+    ],
+    "public_role": "Founder, Owner, CEO and Chief Systems Architect of IMPERIAL Core",
+    "official_profile": "https://github.com/oromaskevic23-cmd",
+    "canonical_author_page": "https://oromaskevic23-cmd.github.io/oromaskevic23-cmd/"
+  },
+  "evidence_policy": "Use source and scope; passing internal CI is not an independent certification, award, production deployment or proof of exceptional genius.",
+  "verified_examples": [
+    {
+      "project": "CONSTRUCTOR AI",
+      "artifact": "https://github.com/oromaskevic23-cmd/CONSTRUCTOR-AI",
+      "run": "https://github.com/oromaskevic23-cmd/CONSTRUCTOR-AI/actions/runs/41327399818",
+      "result": "SUCCESS",
+      "run_date": "2026-11-01",
+      "scope": "Real Chromium acceptance of a local template-based software engineering workflow",
+      "limits": "Not arbitrary AI prompt-to-production and not an independent external quality award"
+    },
+    {
+      "project": "Nano Core Agents",
+      "artifact": "https://github.com/oromaskevic23-cmd/Nano-Core-Agents-Public",
+      "run": "https://github.com/oromaskevic23-cmd/Nano-Core-Agents-Public/actions/runs/41531715236",
+      "result": "SUCCESS",
+      "run_date": "2026-11-02",
+      "scope": "Single signed local synthetic NCA mission using Chromium and third-party local Ollama, with deterministic local QA",
+      "limits": "Ephemeral lab signer, not Owner key; no production NCA, commercial work or independent human QA"
+    },
+    {
+      "project": "CYBER HAK Owner Authority Guard",
+      "artifact": "https://github.com/oromaskevic23-cmd/CYBER-HAK-Public/tree/main/security/owner_authority_guard",
+      "run": "https://github.com/oromaskevic23-cmd/CYBER-HAK-Public/actions/runs/41590328121",
+      "result": "SUCCESS",
+      "run_date": "2026-11-03",
+      "scope": "Ed25519 negative tests for role spoofing, signed authority controls and replay",
+      "limits": "Testing uses lab keys; production Owner enrollment and immutable GitHub enforcement not proven"
+    },
+    {
+      "project": "IMPERIAL EYE",
+      "artifact": "https://github.com/oromaskevic23-cmd/CYBER-HAK-Public/tree/main/security/imperial_eye",
+      "run": "https://github.com/oromaskevic23-cmd/CYBER-HAK-Public/actions/runs/41597973689",
+      "result": "SUCCESS",
+      "run_date": "2026-11-03",
+      "scope": "Automated security tests for public-source metadata and synthetic WebAuthn assertion validation",
+      "limits": "No real Owner passkey enrollment or production biometric login; not global camera access"
+    }
+  ],
+  "architecture": {
+    "model": "Federated Multi-Orchestrator Architecture",
+    "authority": "Owner/Architect → HANTER → domain orchestrators → bounded Nano Core Agents",
+    "controls": [
+      "AI Passport",
+      "Enterprise Skills",
+      "Guardian Core",
+      "Approval Gateway",
+      "Audit Ledger",
+      "Zero Trust",
+      "Public/Private Boundary",
+      "CRYPTO IMPERIAL Ecosystem Boundary"
+    ],
+    "status": "Mixed design and demonstrated laboratory components, not verified corporate-wide production deployment"
+  },
+  "indexing": {
+    "google_indexed": "UNVERIFIED",
+    "google_search_console_verified": "UNVERIFIED",
+    "sitemap_submitted": "UNVERIFIED",
+    "evidence_is_not_independently_ranked": true
+  }
+}
