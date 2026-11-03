@@ -38,3 +38,20 @@ jobs:
           python3 tools/verify_pages_seo.py \
             --founder-tree /tmp/imperial-founder-pages \
             --ecosystem-tree /tmp/imperial-ecosystem-pages
+      - name: Verify public GitHub Pages HTTP responses
+        env:
+          GITHUB_PAGES_BASE: https://oromaskevic23-cmd.github.io
+        run: |
+          set -euo pipefail
+          for page in \
+            "$GITHUB_PAGES_BASE/oromaskevic23-cmd/" \
+            "$GITHUB_PAGES_BASE/oromaskevic23-cmd/projects/" \
+            "$GITHUB_PAGES_BASE/oromaskevic23-cmd/sitemap.xml" \
+            "$GITHUB_PAGES_BASE/Capital-Core-Public/" \
+            "$GITHUB_PAGES_BASE/Capital-Core-Public/reference/projects/" \
+            "$GITHUB_PAGES_BASE/Capital-Core-Public/sitemap.xml"; do
+            echo "VERIFY $page"
+            curl --fail --silent --show-error --location \
+              --retry 3 --max-time 25 --output /dev/null \
+              --write-out 'HTTP %{http_code} / %{url_effective}\n' "$page"
+          done
