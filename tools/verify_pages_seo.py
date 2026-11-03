@@ -119,6 +119,7 @@ def validate_page(site: Path, prefix: str, url: str):
     # only. Do not falsely advertise translated URL alternatives for them.
     english_only = url in {
         FOUNDER + "projects/",
+        FOUNDER + "engineering/",
         ECOSYSTEM + "reference/projects/",
         ECOSYSTEM + "reference/velion/",
     }
@@ -169,6 +170,7 @@ def audit(site: Path, prefix: str, expected_minimum: int):
     demand(len(locs) == len(set(locs)), "Duplicate sitemap loc")
     if prefix == FOUNDER:
         demand(FOUNDER + "projects/" in locs, "Founder project catalog missing from sitemap")
+        demand(FOUNDER + "engineering/" in locs, "Evidence-based engineer page missing from sitemap")
     if prefix == ECOSYSTEM:
         for suffix in ("reference/projects/", "reference/velion/"):
             demand(ECOSYSTEM + suffix in locs, "Project architecture page missing: " + suffix)
