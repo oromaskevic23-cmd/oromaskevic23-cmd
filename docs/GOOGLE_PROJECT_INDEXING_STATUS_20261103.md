@@ -14,7 +14,7 @@
 | Separate public governance / U.S. holding-company planning blueprint | 1, not a technology product and not promoted in the SEO catalog; legal planning only, no incorporation or share-status claims |
 | Published project catalogs | Founder `projects/index.html` and company `reference/projects/index.html` on their respective `gh-pages` branches |
 | Project JSON-LD `ItemList` | 23 entries, consistent project URLs and 1-based positions on both published sources |
-| Sitemap / robots.txt | Present on both `gh-pages` branches, canonical host URLs declared |
+| Sitemap / robots.txt | Present on both `gh-pages` branches, canonical host URLs declared; HTTP 200 independently checked on 2026-11-03 |
 | Private source visibility | 7 private repositories excluded from all public project catalog items |
 | Search Console property owner | NOT VERIFIED (Google Contacts access is unrelated) |
 | Google sitemap submission | NOT VERIFIED (requires Google Search Console authenticated property) |
@@ -54,7 +54,7 @@ Each path is a distinct GitHub Pages URL-prefix property, even though both share
 - Corporate public portfolio change: `63aed247292630963185695d49fd58b1a40d2a0e`, `gh-pages`.
 - Founder identity/project registry: `9b26b268298281ba4f6624a194db30a93ad96aac`, `main`.
 - Source SEO CI success: https://github.com/oromaskevic23-cmd/oromaskevic23-cmd/actions/runs/41702255715 (prior to adding live HTTP probe).
-- Additional live HTTP probe: check the later exact-SHA CI run independently; **do not count it as passed until observed.**
+- Source audit and live HTTP probe: **PASS** at https://github.com/oromaskevic23-cmd/oromaskevic23-cmd/actions/runs/41702530969 (commit `b6c358b8bf389746a0af21fdb14d8336431c96f6`). This run validated **12 founder-site** and **25 corporate-site** XML sitemap URLs in published source, and fetched both site homepages, both portfolio directories and both root sitemap URLs with HTTP **200** from a GitHub-hosted runner. This is site availability evidence only, not Google indexation.
 
 ## Remaining Google-only steps
 
