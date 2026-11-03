@@ -107,6 +107,8 @@ Architecture, engineering updates, 30 canonical reference sections and verified 
 
 **Supabase primary database: Frankfurt, Germany (`eu-central-1`).** Configuration checked on **26 October 2026**. This describes project infrastructure; it is not a personal-residence or company-headquarters designation.
 
+**Enterprise Supabase infrastructure and diagrams:** [IMPERIAL Core / Supabase](https://github.com/oromaskevic23-cmd/Supabase) — Frankfurt region architecture, federated HANTER control, CRM-SOFFT database map, Zero Trust checks and prepared Google Search metadata. Founder public roles: **Founder · Owner · CEO**. GitHub Pages and Google indexing are pending separate verification.
+
 The public reference is hosted on GitHub Pages. Other service locations are stated only where confirmed. [Infrastructure details and sources](https://oromaskevic23-cmd.github.io/Capital-Core-Public/reference/#infrastructure).
 
 [Projects](#flagship-engineering-projects) · [Engineering evidence](#public-technical-evidence) · [Business inquiries](#collaboration-and-business-inquiries)
