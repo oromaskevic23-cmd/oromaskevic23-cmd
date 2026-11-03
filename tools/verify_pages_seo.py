@@ -244,7 +244,7 @@ def validate_project_portfolio(site: Path, location: str) -> None:
            list(range(1, len(items) + 1)),
            "Project list positions are inconsistent: " + location)
     displayed = {url for url in re.findall(
-        r'href=["\\'](https://github\\.com/oromaskevic23-cmd/[^"\\'?#]+)["\\']',
+        r'<a[^>]+href="(https://github[.]com/oromaskevic23-cmd/[A-Za-z0-9_.-]+)"',
         body,
     )}
     demand(expected_links.issubset(displayed),
