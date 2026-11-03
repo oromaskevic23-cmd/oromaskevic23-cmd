@@ -1,6 +1,6 @@
 # IMPERIAL Core — Canonical Public Project Registry
 
-**Verified GitHub inventory: 2026-10-31.** Published by founder account [oromaskevic23-cmd](https://github.com/oromaskevic23-cmd). Project and repository names are exact; legal registration, paid execution and search ranking are **not** implied.
+**Verified GitHub inventory: 2026-11-03.** Published by founder account [oromaskevic23-cmd](https://github.com/oromaskevic23-cmd). Project and repository names are exact; legal registration, paid execution and search ranking are **not** implied.
 
 ## Identity and scope
 
@@ -32,6 +32,15 @@ Original engineering architecture: Federated Multi-Orchestrator; HANTER is comma
 | [IMPERIAL-AGI](https://github.com/oromaskevic23-cmd/IMPERIAL-AGI) | Long-term AI research architecture | AGI not demonstrated |
 | [AGY](https://github.com/oromaskevic23-cmd/AGY) | Founder account's public research repository | Purpose/readiness not independently classified |
 | [Codex-Enterprise-IMPERIAL-Skills](https://github.com/oromaskevic23-cmd/Codex-Enterprise-IMPERIAL-Skills) | IMPERIAL Skills integration work | Third-party Codex ownership not implied |
+| [IMPERIAL-CRM-Autopilot](https://github.com/oromaskevic23-cmd/IMPERIAL-CRM-Autopilot) | CRM-SOFFT federated CRM operations and fail-closed commercial gates | Public tests; no production revenue asserted |
+| [IMPERIAL-Skill](https://github.com/oromaskevic23-cmd/IMPERIAL-Skill) | Governed Enterprise Skills for Nano Core Agents | Source framework and CI; no globally deployed registry |
+| [Supabase](https://github.com/oromaskevic23-cmd/Supabase) | IMPERIAL Core's independent Supabase integration architecture | Not an official Supabase Inc. repository or proof of live integration |
+
+## Registry coverage and public identity boundaries
+
+**Owner's current GitHub inventory:** 32 repositories; **25 public**, **7 private**. This page indexes **23 publicly inspectable technology and business project repositories**. The separately linked `oromaskevic23-cmd` founder profile repository is the 24th public repository, not a distinct product project; the public U.S. holding-company planning blueprint is an unexecuted legal/governance proposal and is **not featured in the promotional project directory**. Public visibility of that blueprint does not confer legal incorporation or authorized disclosure of personal equity data. No private source is included.
+
+**Google discovery is not confirmed.** A valid published sitemap and canonical registry provide discovery signals only; Search Console authorization and Google URL Inspection are separate steps.
 
 ## Not publicly indexable
 
