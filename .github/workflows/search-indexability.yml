@@ -4,10 +4,12 @@ on:
     branches: [main]
     paths:
       - tools/verify_pages_seo.py
+      - tests/test_verify_pages_seo.py
       - .github/workflows/search-indexability.yml
   pull_request:
     paths:
       - tools/verify_pages_seo.py
+      - tests/test_verify_pages_seo.py
       - .github/workflows/search-indexability.yml
   workflow_dispatch:
   schedule:
@@ -25,6 +27,8 @@ jobs:
         uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
         with:
           persist-credentials: false
+      - name: Test search metadata and evidence validators
+        run: python3 -m unittest discover -s tests -p "test_verify_pages_seo.py" -v
       - name: Read two public GitHub Pages publication branches
         run: |
           git clone --depth=1 --single-branch --branch gh-pages \
