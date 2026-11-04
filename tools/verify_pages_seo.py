@@ -271,6 +271,18 @@ def audit(site: Path, prefix: str, expected_minimum: int):
         demand(FOUNDER + "engineering/" in locs, "Evidence-based engineer page missing from sitemap")
         validate_evidence_index(site)
         validate_project_portfolio(site, "projects/index.html")
+        # The founder landing page is a separate SEO entrypoint, not the project
+        # catalog itself. It must not advertise outdated counts or dead repo aliases.
+        home_html = (site / "index.html").read_text(encoding="utf-8")
+        demand("23 public engineering projects" in home_html
+               and "20 public engineering projects" not in home_html,
+               "Founder homepage portfolio count does not match 23-project registry")
+        for obsolete in (
+            "https://github.com/oromaskevic23-cmd/IMPERIAL-Core-Public",
+            "https://github.com/oromaskevic23-cmd/HANTER\\\"",
+            "https://github.com/oromaskevic23-cmd/AGY---PUBLIC-",
+        ):
+            demand(obsolete not in home_html, "Obsolete public project link on founder homepage")
     if prefix == ECOSYSTEM:
         validate_project_portfolio(site, "reference/projects/index.html")
         for suffix in ("reference/projects/", "reference/velion/"):
