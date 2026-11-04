@@ -64,6 +64,15 @@ class GoogleEvidenceTests(unittest.TestCase):
             "founder_url_live_test": "INDEXABLE",
         }
         validate_google_observation(status)
+        for key, value in (
+            ("observation_date_utc", "2026-11-05"),
+            ("founder_url_live_test", "UNVERIFIED"),
+            ("sitemap_report_status", "INDEXED"),
+        ):
+            invalid = dict(status)
+            invalid[key] = value
+            with self.subTest(field=key), self.assertRaises(SEOError):
+                validate_google_observation(invalid)
         status["google_indexed"] = "INDEXED"
         with self.assertRaises(SEOError):
             validate_google_observation(status)
