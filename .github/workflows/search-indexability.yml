@@ -4,12 +4,16 @@ on:
     branches: [main]
     paths:
       - tools/verify_pages_seo.py
+      - tools/verify_public_projects.py
       - tests/test_verify_pages_seo.py
+      - tests/test_verify_public_projects.py
       - .github/workflows/search-indexability.yml
   pull_request:
     paths:
       - tools/verify_pages_seo.py
+      - tools/verify_public_projects.py
       - tests/test_verify_pages_seo.py
+      - tests/test_verify_public_projects.py
       - .github/workflows/search-indexability.yml
   workflow_dispatch:
   schedule:
@@ -28,7 +32,7 @@ jobs:
         with:
           persist-credentials: false
       - name: Test search metadata and evidence validators
-        run: python3 -m unittest discover -s tests -p "test_verify_pages_seo.py" -v
+        run: python3 -m unittest discover -s tests -p "test_verify_*.py" -v
       - name: Read two public GitHub Pages publication branches
         run: |
           git clone --depth=1 --single-branch --branch gh-pages \
@@ -42,6 +46,10 @@ jobs:
           python3 tools/verify_pages_seo.py \
             --founder-tree /tmp/imperial-founder-pages \
             --ecosystem-tree /tmp/imperial-ecosystem-pages
+      - name: Check portfolio repositories remain public and reachable
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python3 tools/verify_public_projects.py
       - name: Verify public GitHub Pages HTTP responses
         env:
           GITHUB_PAGES_BASE: https://oromaskevic23-cmd.github.io
