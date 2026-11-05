@@ -1,144 +1,151 @@
 #!/usr/bin/env python3
-"""Reproducible, offline verification for the public IMPERIAL Core founder README."""
+"""Offline integrity checks for the public IMPERIAL Core founder profile.
+
+These checks guard selected presentation and evidence boundaries. They do not
+validate live URLs, prove claims in linked material or certify a product.
+"""
+from __future__ import annotations
+
+import hashlib
 from pathlib import Path
-from urllib.parse import urlparse, unquote
 import re
 import sys
+from urllib.parse import unquote, urlparse
 
-README = Path(__file__).resolve().parents[1] / "README.md"
-EXPECTED_SECTIONS = (
-    "Founder introduction",
-    "IMPERIAL Core — ecosystem overview",
-    "Flagship engineering projects",
-    "Architecture & technology stack",
-    "Zero Trust, AI Governance & Verified Engineering",
-    "Public technical evidence",
-    "Engineering roadmap",
-    "Collaboration and business inquiries",
-    "Authorship — RomaskevicH",
-)
-PROJECTS = ("IMPERIAL Core", "VELION", "HANTER", "CONSTRUCTOR AI",
-            "LEGION", "CYBER HAK", "NDB & IMPERIUM")
-CHECKS = []
-def check(name, condition):
-    CHECKS.append((name, bool(condition)))
-
-text = README.read_text(encoding="utf-8")
-sections = re.findall(r"^## ([^\r\n]+)$", text, flags=re.MULTILINE)
-check("Founder title and identity", text.lstrip().startswith('<p align="center">')
-      and '<h2 align="center">Alexander Romaskevich</h2>' in text
-      and "RomaskevicH" in text and "Ukraine" not in text)
-photo_paths = [
-    "assets/imperial-core-skyline-original-20261029.jpg",
-    "assets/alexander-romaskevich-portrait-original-20261029.jpg",
-]
-other_images = [
-    "https://raw.githubusercontent.com/oromaskevic23-cmd/IMPERIUM/main/assets/imperium-hero-20261029.jpg",
-    "assets/hanter-banner-original-20261029.jpg",
-    "https://raw.githubusercontent.com/oromaskevic23-cmd/N.D.B/main/assets/ndb-hero-20261029.jpg",
-]
-positions = [text.find('src="' + path + '"') for path in photo_paths]
-all_images = re.findall(r'<img\s+src="([^"]+)"', text)
-check("Exactly two separate owner-provided presentation photos",
-      all_images == photo_paths + other_images
-      and all((README.parent / path).is_file()
-              and (README.parent / path).stat().st_size >= 100_000
-              and (README.parent / path).read_bytes()[:3] == bytes.fromhex("ffd8ff")
-              for path in photo_paths)
-      and (README.parent / other_images[1]).is_file()
-      and (README.parent / other_images[1]).read_bytes()[:3] == bytes.fromhex("ffd8ff"))
-check("Skyline -> corporate text -> founder photo -> founder statement",
-      positions[0] >= 0
-      and positions[0] < text.find("### Our vision") < positions[1]
-      and positions[1] < text.find("### Founder statement"))
-check("All approved ordered sections", sections == ["Investment and pilot partnerships", "Evidence-backed engineering profile", "Featured runnable product — CONSTRUCTOR AI", "IMPERIUM & NDB · Explore the CRYPTO IMPERIAL Ecosystem", "Official multilingual websites", *EXPECTED_SECTIONS])
-check("Investor and pilot links and scope",
-      "https://github.com/oromaskevic23-cmd/oromaskevic23-cmd/blob/main/docs/CONSTRUCTOR_AI_INVESTOR_OVERVIEW.md" in text
-      and "mailto:oromaskevic23@gmail.com" in text
-      and "Multi-user production hosting and general-purpose autonomous application generation are not yet established." in text)
-check("Featured reproducible CONSTRUCTOR AI with explicit scope",
-      "## Featured runnable product — CONSTRUCTOR AI" in text
-      and "docs/FLAGSHIP_ACCEPTANCE.md" in text
-      and "node tools/verify-acceptance.mjs acceptance-output" in text
-      and "not** arbitrary prompt-to-production AI generation" in text
-      and "Human visual/accessibility review and full cross-browser acceptance remain separate" in text
-      and "actions/runs/41327878532" in text
-      and "actions/runs/41327399818" in text)
-check("Public technology portfolio", all(name in text for name in PROJECTS))
-check("Owner-approved public roles", "Founder • Owner • CEO of IMPERIAL Core" in text and "Chief Systems Architect" not in text and not re.search(r"(?:\bshares\b|\bshareholder\b)", text, re.I))
-check("Founder final authority", "retain final architectural decision authority" in text)
-check("Architecture governance", all(s in text for s in
-      ("Zero Trust", "Approval Gateway", "Public / Private Boundary")))
-check("Engineering proof", "Verified Engineering Milestones" in text
-      and "TESTED" in text and "SPECIFIED" in text)
-check("Clear reference versus production limits",
-      "not establish product deployment" in text and
-      "No production agent-payment service is assigned DEPLOYED or LIVE VERIFIED" in text)
-check("Business inquiry route", "Collaboration and business inquiries" in text
-      and "sign in to GitHub to open a new issue" in text
-      and "https://github.com/oromaskevic23-cmd/Capital-Core-Public/issues" in text)
-check("Preserved upstream attribution", "Third-party models, libraries" in text
-      and "retain their original attribution" in text)
-check("Free of template filler", "## Hi there 👋" not in text
-      and "I'm currently learning" not in text)
-links = re.findall(r"\]\(([^)\s]+)\)", text) + re.findall(r'href="([^"]+)"', text)
-check("At least ten useful destination links", len(links) >= 10)
-check("Links are absolute HTTPS, local anchors or the approved founder email",
-      all((urlparse(u).scheme == "https" and urlparse(u).netloc)
-          or u.startswith("#") or u == "mailto:oromaskevic23@gmail.com" for u in links))
+ROOT = Path(__file__).resolve().parents[1]
+OWNER = "oromaskevic23-cmd"
+CONTACT = "mailto:oromaskevic23@gmail.com"
+PHOTO_SKYLINE = "assets/imperial-core-skyline-original-20261029.jpg"
+EMBLEM = "assets/imperial-core-emblem.webp"
+PHOTO_FOUNDER = "assets/alexander-romaskevich-portrait-original-20261029.jpg"
+IMPERIUM_IMAGE = "https://raw.githubusercontent.com/oromaskevic23-cmd/IMPERIUM/main/assets/imperium-hero-20261029.jpg"
+NDB_IMAGE = "https://raw.githubusercontent.com/oromaskevic23-cmd/N.D.B/main/assets/ndb-hero-20261029.jpg"
+IMAGES = (PHOTO_SKYLINE, EMBLEM, PHOTO_FOUNDER, IMPERIUM_IMAGE, NDB_IMAGE)
+ASSET_BLOBS = {
+    PHOTO_SKYLINE: "3c3da53b749b0f58eaf3e88fa16e66c30daeb8cc",
+    EMBLEM: "7749da03da49d4434fc826d0f26793785a3cab42",
+    PHOTO_FOUNDER: "9f9267646a4b7b12eec88714e60a452ac227dde9",
+}
 OFFICIAL_PAGES = {
     "https://oromaskevic23-cmd.github.io/oromaskevic23-cmd/",
     "https://oromaskevic23-cmd.github.io/oromaskevic23-cmd/engineering/",
-    "https://oromaskevic23-cmd.github.io/oromaskevic23-cmd/engineering/evidence.json",
     "https://oromaskevic23-cmd.github.io/Capital-Core-Public/reference/",
     "https://oromaskevic23-cmd.github.io/Capital-Core-Public/reference/constructor-ai/studio/studio.html",
-    "https://oromaskevic23-cmd.github.io/Capital-Core-Public/reference/#infrastructure",
-    "https://oromaskevic23-cmd.github.io/Capital-Core-Public/reference/#capital-core",
-    "https://oromaskevic23-cmd.github.io/Capital-Core-Public/reference/projects/",
-    "https://oromaskevic23-cmd.github.io/Capital-Core-Public/reference/velion/",
-    "https://oromaskevic23-cmd.github.io/oromaskevic23-cmd/projects/",
 }
-TRUSTED_RAW_GRAPHICS = {
-    "https://raw.githubusercontent.com/oromaskevic23-cmd/IMPERIUM/main/assets/imperium-hero-20261029.jpg",
-    "https://raw.githubusercontent.com/oromaskevic23-cmd/N.D.B/main/assets/ndb-hero-20261029.jpg",
-}
-def allowed_public_link(link):
+EXPECTED_SECTIONS = (
+    "Investment and pilot partnerships", "Featured product — CONSTRUCTOR AI",
+    "Public engineering portfolio", "Architecture and governance",
+    "CRYPTO IMPERIAL Ecosystem", "Engineering roadmap",
+    "Collaboration and authorship",
+)
+
+
+def git_blob_sha1(data: bytes) -> str:
+    return hashlib.sha1(f"blob {len(data)}\0".encode() + data).hexdigest()
+
+
+def approved_assets(root: Path) -> bool:
+    try:
+        return all(
+            (root / path).is_file() and not (root / path).is_symlink()
+            and git_blob_sha1((root / path).read_bytes()) == digest
+            for path, digest in ASSET_BLOBS.items()
+        )
+    except OSError:
+        return False
+
+
+def allowed_public_link(link: str) -> bool:
+    if link == CONTACT or link in OFFICIAL_PAGES or link in (IMPERIUM_IMAGE, NDB_IMAGE):
+        return True
     if link.startswith("#"):
-        return True
-    if link == "mailto:oromaskevic23@gmail.com":
-        return True
+        return bool(re.fullmatch(r"#[a-z0-9-]{1,80}", link))
     parsed = urlparse(link)
-    if link in OFFICIAL_PAGES or link in TRUSTED_RAW_GRAPHICS:
-        return True
-    if parsed.scheme != "https" or parsed.username or parsed.password or parsed.query:
+    if (parsed.scheme != "https" or parsed.netloc != "github.com"
+            or parsed.username or parsed.password or parsed.query):
         return False
     if parsed.fragment and not re.fullmatch(r"[a-z0-9-]{1,80}", parsed.fragment):
         return False
-    if parsed.netloc != "github.com":
-        return False
     decoded = unquote(parsed.path)
     parts = decoded.split("/")
-    return len(parts) >= 2 and parts[1] == "oromaskevic23-cmd" and all(
-        part not in ("", ".", "..") for part in parts[2:]
-    ) and chr(92) not in decoded
-check("Official Pages plus safe GitHub namespace", all(allowed_public_link(u) for u in links))
-check("No sign-in-only direct issue form", "/issues/new" not in text)
-check("No obsolete Val Town website in published README", "imperialcore.val.run" not in text)
-check("Public milestone PR/CI references with honest private HANTER boundary",
-      all(f"/{repo}/pull/{pr}" in text and f"/{repo}/actions/runs/" in text
-          for repo,pr in (("VELION-LLM-Public",1),
-                          ("CONSTRUCTOR-AI",1),("CYBER-HAK-Public",1)))
-      and "Private historical checkpoint" in text
-      and "not independently inspectable" in text)
-patterns = [
-    r"ghp_[A-Za-z0-9]{36}",
-    r"github_pat_[A-Za-z0-9_]{20,}",
-    r"-----BEGIN (?:OPENSSH|RSA|EC|PRIVATE) KEY-----",
-    r"sk-[A-Za-z0-9_-]{20,}",
-]
-check("No common credential token patterns",
-      not any(re.search(pattern, text) for pattern in patterns))
-for name, success in CHECKS:
-    print(("PASS" if success else "FAIL") + ": " + name)
-print(f"Profile integrity: {sum(ok for _, ok in CHECKS)}/{len(CHECKS)} PASS")
-sys.exit(0 if all(ok for _, ok in CHECKS) else 1)
+    return (len(parts) >= 2 and parts[1] == OWNER
+            and all(part not in ("", ".", "..") for part in parts[2:])
+            and chr(92) not in decoded)
+
+
+def verify_profile(text: str, root: Path = ROOT) -> list[tuple[str, bool]]:
+    checks: list[tuple[str, bool]] = []
+
+    def check(name: str, condition: bool) -> None:
+        checks.append((name, bool(condition)))
+
+    image_paths = re.findall(r'<img\s+src="([^"]+)"', text)
+    positions = [text.find('src="' + path + '"') for path in IMAGES]
+    check("Approved image selection and order", image_paths == list(IMAGES))
+    check("Approved image asset fingerprints", approved_assets(root))
+    check("Skyline, company text, founder portrait and statement order",
+          positions[0] >= 0 and positions[0] < text.find("### Our vision")
+          < positions[2] < text.find("### Founder statement"))
+    check("Canonical emblem has an accessible description",
+          'alt="IMPERIAL Core official corporate emblem"' in text)
+    sections = re.findall(r"^## ([^\r\n]+)$", text, flags=re.MULTILINE)
+    check("Profile sections remain complete and ordered", sections == list(EXPECTED_SECTIONS))
+    check("Founder identity, roles and authority",
+          all(value in text for value in ("Alexander Nikolaevich Romaskevich", "RomaskevicH",
+              "Founder · Owner · CEO · Chief Systems Architect", "retain final architectural decision authority")))
+    check("Personal privacy and ownership detail boundary",
+          "Ukraine" not in text and not re.search(r"\b(?:shares|shareholder)\b", text, re.I))
+    check("Investment route and current prototype scope",
+          all(value in text for value in ("CONSTRUCTOR_AI_INVESTOR_OVERVIEW.md", CONTACT,
+              "pre-seed investors", "local applications from predefined templates",
+              "multi-user production hosting and customer acceptance remain development milestones")))
+    check("Reproducible flagship commands and commit-bound CI evidence",
+          all(value in text for value in ("898d1abe2616cb92104b64dc126e0875cc9acddf",
+              "actions/runs/42001525579", "actions/runs/42001525556",
+              "npm run verify", "node tools/verify-acceptance.mjs acceptance-output",
+              "docs/FLAGSHIP_ACCEPTANCE.md")))
+    check("Limits of product and CI evidence",
+          all(value in text for value in ("project-controlled", "local, single-user",
+              "do not establish a production service or external certification",
+              "Human visual/accessibility review and full cross-browser acceptance remain separate")))
+    check("Canonical public portfolio",
+          all(value in text for value in ("IMPERIAL Core", "VELION", "HANTER", "CONSTRUCTOR AI",
+              "Nano Core Agents", "LEGION", "ORION", "CYBER HAK", "Capital Core", "IMPERIUM", "NDB")))
+    check("Federated governance and public/private boundary",
+          all(value in text for value in ("Federated Multi-Orchestrator Architecture", "AI Passport",
+              "Enterprise Skills", "Guardian Core", "Approval Gateway", "Audit Ledger",
+              "Zero Trust", "Public / Private Boundary", "CRYPTO IMPERIAL Ecosystem Boundary",
+              "target architecture")))
+    check("IMPERIUM vision and crypto evidence boundary",
+          "long-term architectural digital currency envisioned for AI agents worldwide" in text
+          and "no current global adoption, liquidity, financial return or agent-payment service is claimed" in text)
+    check("Third-party attribution and license boundary",
+          "Third-party models, libraries and contributions retain their original attribution" in text
+          and "public visibility alone does not grant a software license" in text)
+    check("Business inquiry route", CONTACT in text
+          and "https://github.com/oromaskevic23-cmd/Capital-Core-Public/issues" in text
+          and "/issues/new" not in text)
+    links = (re.findall(r"\]\(([^)\s]+)\)", text)
+             + re.findall(r'href="([^"]+)"', text)
+             + [path for path in image_paths if path.startswith("https://")])
+    check("Useful links stay within approved destinations",
+          len(links) >= 15 and all(allowed_public_link(link) for link in links))
+    check("No obsolete Val Town URL or generic template filler",
+          "imperialcore.val.run" not in text and "## Hi there 👋" not in text
+          and "I'm currently learning" not in text)
+    patterns = (r"ghp_[A-Za-z0-9]{36}", r"github_pat_[A-Za-z0-9_]{20,}",
+                r"-----BEGIN (?:OPENSSH|RSA|EC|PRIVATE) KEY-----", r"sk-[A-Za-z0-9_-]{20,}")
+    check("No common credential token patterns", not any(re.search(p, text) for p in patterns))
+    return checks
+
+
+def main() -> int:
+    checks = verify_profile((ROOT / "README.md").read_text(encoding="utf-8"))
+    for name, success in checks:
+        print(("PASS" if success else "FAIL") + ": " + name)
+    print(f"Profile integrity: {sum(ok for _, ok in checks)}/{len(checks)} PASS")
+    return 0 if all(ok for _, ok in checks) else 1
+
+
+if __name__ == "__main__":
+    sys.exit(main())

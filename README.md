@@ -1,259 +1,119 @@
 <p align="center">
-  <img src="assets/imperial-core-skyline-original-20261029.jpg" alt="IMPERIAL Core — owner-selected skyscraper skyline at sunset" width="100%" />
+  <img src="assets/imperial-core-skyline-original-20261029.jpg" alt="IMPERIAL Core vision: a skyline at sunset" width="100%" />
+</p>
+
+<p align="center">
+  <img src="assets/imperial-core-emblem.webp" alt="IMPERIAL Core official corporate emblem" width="112" />
 </p>
 
 <h1 align="center">IMPERIAL Core</h1>
-<p align="center"><strong>AI-Native Corporate Operating System · Enterprise Engineering</strong></p>
+<p align="center"><strong>AI-native systems · Human authority · Engineering with evidence</strong></p>
 <p align="center"><em>Architecture → Implementation → Evidence</em></p>
 
-<p align="center"><strong>Investors &amp; pilot partners:</strong> <a href="https://github.com/oromaskevic23-cmd/oromaskevic23-cmd/blob/main/docs/CONSTRUCTOR_AI_INVESTOR_OVERVIEW.md">Explore CONSTRUCTOR AI</a> · <a href="mailto:oromaskevic23@gmail.com">Contact the founder</a></p>
+<p align="center">
+  <a href="https://oromaskevic23-cmd.github.io/Capital-Core-Public/reference/constructor-ai/studio/studio.html">Explore the demo</a> ·
+  <a href="https://github.com/oromaskevic23-cmd/oromaskevic23-cmd/blob/main/docs/CONSTRUCTOR_AI_INVESTOR_OVERVIEW.md">Investor &amp; pilot overview</a> ·
+  <a href="https://github.com/oromaskevic23-cmd/CONSTRUCTOR-AI">Review the source</a> ·
+  <a href="mailto:oromaskevic23@gmail.com">Contact the founder</a>
+</p>
 
 ### Our vision
 
-**IMPERIAL Core** is a founder-led AI-native engineering ecosystem in development. Our mission is to build governed intelligent systems, professional AI developer teams and verifiable software products — without compromising human authority, security or transparent evidence.
-
-The architecture connects **HANTER**, **VELION**, **CONSTRUCTOR AI**, **ORION**, **LEGION**, **Nano Core Agents** and independent domain orchestrators. It is deliberately a **Federated Multi-Orchestrator Architecture**, not a single unrestricted global AI operator.
-
-*The skyline artwork illustrates our long-term vision; it does not claim physical offices, global deployments or an established legal corporation.*
+**IMPERIAL Core** is a founder-led AI-native ecosystem in development. My aim is to build useful software and governed AI systems that people can inspect, test and direct. The skyline is an illustration of that long-term vision.
 
 ---
 
 <p align="center">
-  <img src="assets/alexander-romaskevich-portrait-original-20261029.jpg" alt="Portrait supplied by the founder, Alexander Romaskevich" width="300" />
+  <img src="assets/alexander-romaskevich-portrait-original-20261029.jpg" alt="Alexander Romaskevich, founder of IMPERIAL Core" width="300" />
 </p>
 
 <h2 align="center">Alexander Romaskevich</h2>
-<p align="center"><strong>Founder · Owner · CEO</strong></p>
-<p align="center"><strong>RomaskevicH</strong> · Founder identity and architectural authority</p>
+<p align="center"><strong>Founder · Owner · CEO · Chief Systems Architect</strong></p>
+<p align="center"><strong>RomaskevicH</strong></p>
 
 ### Founder statement
 
-I established **IMPERIAL Core** to engineer an ecosystem where people remain accountable for decisions, while AI systems help design, implement and verify useful technologies.
+I am **Alexander Nikolaevich Romaskevich**. I set the architectural direction of IMPERIAL Core and retain final architectural decision authority. My focus is governed AI, software verification and accountable digital systems.
 
-My priorities are enterprise-quality engineering, professional autonomous-agent research, software that can be independently tested, and long-term value created through real products. **Architecture before implementation. Evidence before claims.**
-
-**Build software. Verify everything.**
+**Build software. Verify everything. Keep humans in control.**
 
 ---
 
 ## Investment and pilot partnerships
 
-**CONSTRUCTOR AI** is an early-stage project for creating inspectable, testable software with governed AI assistance. We are looking to connect with **pre-seed investors, technical partners and pilot customers** who share an interest in practical, verifiable AI development.
+I welcome conversations with **pre-seed investors, technical partners and prospective pilot customers** interested in practical AI-assisted software development. The immediate focus is **CONSTRUCTOR AI**, an early-stage product being developed around inspectable applications, explicit permissions and verifiable results.
 
-**Available today:** an exportable local Template Studio for a Task Manager, Business CRM and Dashboard, with editable source and reproducible tests. **Next milestone:** independently verify one complete application workflow using a real model. Multi-user production hosting and general-purpose autonomous application generation are not yet established.
+The current prototype exports local applications from predefined templates. A complete real-model application workflow, multi-user production hosting and customer acceptance remain development milestones. Pilot scope, financing and commercial terms are open for discussion.
 
-[Investor & pilot overview](https://github.com/oromaskevic23-cmd/oromaskevic23-cmd/blob/main/docs/CONSTRUCTOR_AI_INVESTOR_OVERVIEW.md) · [Try the demo](https://oromaskevic23-cmd.github.io/Capital-Core-Public/reference/constructor-ai/studio/studio.html) · [Review the source](https://github.com/oromaskevic23-cmd/CONSTRUCTOR-AI) · [Contact Alexander](mailto:oromaskevic23@gmail.com)
+[Investor & pilot overview](https://github.com/oromaskevic23-cmd/oromaskevic23-cmd/blob/main/docs/CONSTRUCTOR_AI_INVESTOR_OVERVIEW.md) · [Open the demo](https://oromaskevic23-cmd.github.io/Capital-Core-Public/reference/constructor-ai/studio/studio.html) · [Email Alexander](mailto:oromaskevic23@gmail.com)
 
----
+## Featured product — CONSTRUCTOR AI
 
-## Evidence-backed engineering profile
+**Today:** Template Studio builds three exportable **local, single-user** applications: Task Manager, Business CRM and Business Dashboard. Each export includes editable source, automated tests and integrity checks; data is stored locally in the browser, with JSON backup and restore.
 
-**[Engineering evidence dossier — live founder-site source](https://oromaskevic23-cmd.github.io/oromaskevic23-cmd/engineering/)** · [Machine-readable source-linked verification (JSON)](https://oromaskevic23-cmd.github.io/oromaskevic23-cmd/engineering/evidence.json) · [23-project source portfolio](https://oromaskevic23-cmd.github.io/oromaskevic23-cmd/projects/)
+**Evidence:** On 5 November 2026, the project-controlled [reference CI](https://github.com/oromaskevic23-cmd/CONSTRUCTOR-AI/actions/runs/42001525579) and [real Chromium acceptance](https://github.com/oromaskevic23-cmd/CONSTRUCTOR-AI/actions/runs/42001525556) completed successfully for commit [`898d1abe`](https://github.com/oromaskevic23-cmd/CONSTRUCTOR-AI/commit/898d1abe2616cb92104b64dc126e0875cc9acddf). The checks cover the reviewed templates and exported applications; they do not establish a production service or external certification.
 
-This public technical profile makes architectural claims inspectable through actual source code and dated GitHub Actions runs. Verified examples include **CONSTRUCTOR AI** browser acceptance, a **signed single-NCA local model/Chromium experiment**, **CYBER HAK Owner Authority Guard** cryptographic tests, and **IMPERIAL EYE** source/WebAuthn laboratory checks.
-
-**Independent evaluation standard:** the linked GitHub Actions conclusions are real but remain project-controlled CI, not external certification, production service-level assurance, a global industry ranking or proof of extraordinary personal ability. Review code, run the reproducible tests, inspect limitations and compare against agreed benchmarks before drawing conclusions.
-
----
-
-## Featured runnable product — CONSTRUCTOR AI
-
-**Template Studio · Independently reproducible local engineering release**
-
-[**Open live Template Studio**](https://oromaskevic23-cmd.github.io/Capital-Core-Public/reference/constructor-ai/studio/studio.html) · [**Source and instructions**](https://github.com/oromaskevic23-cmd/CONSTRUCTOR-AI) · [**Independent acceptance**](https://github.com/oromaskevic23-cmd/CONSTRUCTOR-AI/blob/main/docs/FLAGSHIP_ACCEPTANCE.md) · [**Real Chromium E2E — PASS**](https://github.com/oromaskevic23-cmd/CONSTRUCTOR-AI/actions/runs/41327399818) · [**Public delivery SHA-256 proof**](https://github.com/oromaskevic23-cmd/CONSTRUCTOR-AI/actions/runs/41327878532)
-
-CONSTRUCTOR AI currently provides **three working, exportable local app templates**: Task Manager, Business CRM and Business Dashboard. Each project ZIP includes editable source, a standalone local server, automated tests, SHA-256 integrity checking and validated JSON backup/restore with user confirmation. The documented acceptance workflow verifies clean ZIP extraction and tests all three applications.
-
-**Reproduce with Node.js 22+:**
+**Reproduce the recorded revision** with Node.js 22+, npm and unzip:
 
 ```sh
 git clone https://github.com/oromaskevic23-cmd/CONSTRUCTOR-AI.git
 cd CONSTRUCTOR-AI
+git checkout 898d1abe2616cb92104b64dc126e0875cc9acddf
 npm ci --ignore-scripts --no-audit --no-fund
 npm run verify
 node tools/build-acceptance.mjs acceptance-output
 node tools/verify-acceptance.mjs acceptance-output
 ```
 
-**Evidence boundary:** Clean-export CI, isolated automated CRM QA, real Chromium browser acceptance and the HTTPS delivery hash gate have passed for the linked revisions. Human visual/accessibility review and full cross-browser acceptance remain separate. These reviewed local templates are **not** arbitrary prompt-to-production AI generation, a deployed autonomous software factory, customer cloud service, commercial release or independent security certification.
+[Source and instructions](https://github.com/oromaskevic23-cmd/CONSTRUCTOR-AI) · [Acceptance procedure and limitations](https://github.com/oromaskevic23-cmd/CONSTRUCTOR-AI/blob/898d1abe2616cb92104b64dc126e0875cc9acddf/docs/FLAGSHIP_ACCEPTANCE.md) · [Product blueprint](https://github.com/oromaskevic23-cmd/CONSTRUCTOR-AI/blob/main/docs/ENTERPRISE_PRODUCT_BLUEPRINT_20261105.md)
 
-**Product development principle:** Deliver one narrow, working and inspectable artifact before expanding autonomous engineering claims.
+Arbitrary prompt-to-production app generation, independent human security review and commercial production readiness are not established. Human visual/accessibility review and full cross-browser acceptance remain separate.
 
----
+## Public engineering portfolio
 
-## IMPERIUM & NDB · Explore the CRYPTO IMPERIAL Ecosystem
+Each repository describes its own evidence and limitations. **Architecture** identifies a design direction; **prototype** identifies bounded source or experiments; neither alone proves a deployed service.
 
-<p align="center">
-  <a href="https://github.com/oromaskevic23-cmd/IMPERIUM"><img src="https://raw.githubusercontent.com/oromaskevic23-cmd/IMPERIUM/main/assets/imperium-hero-20261029.jpg" alt="IMPERIUM digital emblem" width="190" /></a>
-</p>
-
-<p align="center">
-  <a href="https://github.com/oromaskevic23-cmd/HANTER-Public"><img src="assets/hanter-banner-original-20261029.jpg" alt="HANTER — Nano Core Agents and IMPERIAL Core" width="100%" /></a>
-</p>
-
-<p align="center">
-  <a href="https://github.com/oromaskevic23-cmd/N.D.B"><img src="https://raw.githubusercontent.com/oromaskevic23-cmd/N.D.B/main/assets/ndb-hero-20261029.jpg" alt="NDB digital emblem" width="190" /></a>
-</p>
-
-**IMPERIUM** explores a future digital economy for AI agents, with an offline settlement-governance prototype. **NDB — New Digital Bitcoin** is a separate Polygon token project with a read-only contract-observation tool.
-
-Both specified contracts are deployed on Polygon and their sources are matched by Sourcify. Source verification is not a security audit. Live agent payments, exchange listings, liquidity and adoption are not established by that evidence.
-
-[Explore IMPERIUM →](https://github.com/oromaskevic23-cmd/IMPERIUM) · [Explore NDB →](https://github.com/oromaskevic23-cmd/N.D.B) · [Compare project evidence →](https://github.com/oromaskevic23-cmd/CRYPTO-IMPERIAL-Ecosystem-Public#imperium--ndb)
-
-**NDB is not Bitcoin and is not an official Bitcoin project.** No return is guaranteed.
-
----
-
-## Official multilingual websites
-
-**[Explore IMPERIAL Core →](https://oromaskevic23-cmd.github.io/Capital-Core-Public/reference/)**
-
-Architecture, engineering updates, 30 canonical reference sections and verified infrastructure information. Available in **10 languages**, with native language links, an accessible Arabic layout and instant search across the 30 reference sections.
-
-[Founder website](https://oromaskevic23-cmd.github.io/oromaskevic23-cmd/)
-
-[Website and profile verification — 27 October 2026](https://github.com/oromaskevic23-cmd/oromaskevic23-cmd/blob/main/docs/PUBLIC_VISIBILITY_20261027.md)
-
-### Infrastructure — Frankfurt, Germany
-
-**Supabase primary database: Frankfurt, Germany (`eu-central-1`).** Configuration checked on **26 October 2026**. This describes project infrastructure; it is not a personal-residence or company-headquarters designation.
-
-**Enterprise Supabase infrastructure and diagrams:** [IMPERIAL Core / Supabase](https://github.com/oromaskevic23-cmd/Supabase) — Frankfurt region architecture, federated HANTER control, CRM-SOFFT database map, Zero Trust checks and prepared Google Search metadata. Founder public roles: **Founder · Owner · CEO**. GitHub Pages and Google indexing are pending separate verification.
-
-The public reference is hosted on GitHub Pages. Other service locations are stated only where confirmed. [Infrastructure details and sources](https://oromaskevic23-cmd.github.io/Capital-Core-Public/reference/#infrastructure).
-
-[Projects](#flagship-engineering-projects) · [Engineering evidence](#public-technical-evidence) · [Business inquiries](#collaboration-and-business-inquiries)
-
-## Founder introduction
-
-I am Alexander Nikolaevich Romaskevich — founder of IMPERIAL Core. I set its architectural direction and retain final architectural decision authority. My work focuses on governed AI agents, software verification and accountable digital systems.
-
-My public signature is **RomaskevicH**. This profile connects my architectural work with dated source and verification records.
-
-## IMPERIAL Core — ecosystem overview
-
-IMPERIAL Core is a long-term AI-native engineering ecosystem under development. Its **Federated Multi-Orchestrator Architecture** supports domain-specific orchestrators, multiple organizational structures, professional teams and a dynamic number of Nano Core Agents.
-
-**HANTER — AI Command Center** operates within the architecture defined by the founder. Domain orchestrators retain bounded responsibilities and explicit authority.
-
-**Capital Core · Enterprise — city-team vision.** The target architecture assigns a dedicated universal Nano Core Agent team to every major city worldwide. ORION connects collective knowledge and prepares recommendations; domain orchestrators retain responsibility for authorized execution. City coverage is a development objective, not a verified operating fleet. [Explore the city-team model](https://oromaskevic23-cmd.github.io/Capital-Core-Public/reference/#capital-core).
-
-## Flagship engineering projects
-
-**Canonical author/project index:** [Alexander Nikolaevich Romaskevich — 23 public technology project repositories](https://oromaskevic23-cmd.github.io/oromaskevic23-cmd/projects/) · [IMPERIAL Core project directory](https://oromaskevic23-cmd.github.io/Capital-Core-Public/reference/projects/) · [VELION Enterprise Modular Architecture v2](https://oromaskevic23-cmd.github.io/Capital-Core-Public/reference/velion/). Source-linked stewardship of original IMPERIAL Core work is not a claim of ownership of upstream third-party models or libraries; external Google indexing remains unverified.
-
-
-| Project | Public status | Evidence scope |
+| Project | Focus | Public scope |
 |---|---|---|
-| [IMPERIAL Core](https://github.com/oromaskevic23-cmd/Capital-Core-Public) | **SPECIFIED** | Parent AI-native engineering ecosystem. Public architecture and governance documentation. |
-| [VELION](https://github.com/oromaskevic23-cmd/VELION-LLM-Public) | **TESTED** | Scoped CPU-inference and generated-code experiment recorded on 26 October. Uses third-party Qwen3 weights; see the dated CI evidence below. |
-| [HANTER](https://github.com/oromaskevic23-cmd/HANTER-Public) | **SPECIFIED** | Public AI Command Center architecture. Earlier private Mission Desk checkpoints are not independently inspectable. |
-| [CONSTRUCTOR AI](https://github.com/oromaskevic23-cmd/CONSTRUCTOR-AI) | **TESTED** | Task Manager, planning and quarantine/security reference. The cited 68-test checkpoint uses mocked model calls. |
-| [LEGION / Nano Core Agents](https://github.com/oromaskevic23-cmd/Legion-Public) | **SPECIFIED** | Public professional-team and agent architecture, with separate execution and authority boundaries. Private experiments are not presented as public verification. |
-| [CYBER HAK](https://github.com/oromaskevic23-cmd/CYBER-HAK-Public) | **TESTED** | Defensive AuditShield reference with dated test and audit evidence. Continuous deployed protection is not established by these tests. |
-| [Capital Core · Enterprise](https://oromaskevic23-cmd.github.io/Capital-Core-Public/reference/#capital-core) | **SPECIFIED** | City-based universal NCA teams, local economic intelligence and ORION collective learning. Global city coverage is a target, not verified deployment. |
-| [ORION](https://github.com/oromaskevic23-cmd/ORION-Public) | **SPECIFIED** | Collective intelligence linking city-team knowledge and recommendations within the federated architecture. |
-| [NDB & IMPERIUM](https://github.com/oromaskevic23-cmd/CRYPTO-IMPERIAL-Ecosystem-Public) | **SPECIFIED / CONTRACTS SOURCE-VERIFIED** | Separate Polygon token projects. Contract source matches checked 29 October 2026; audit, adoption, liquidity, value and agent-payment production remain separate questions. |
+| [CONSTRUCTOR AI](https://github.com/oromaskevic23-cmd/CONSTRUCTOR-AI) | Inspectable software creation | Tested local prototype |
+| [VELION](https://github.com/oromaskevic23-cmd/VELION-LLM-Public) | Model intelligence and governed routing | Architecture and bounded experiments; MAX is a mode |
+| [HANTER](https://github.com/oromaskevic23-cmd/HANTER-Public) | AI Command Center | Public architecture and mission-coordination design |
+| [Nano Core Agents](https://github.com/oromaskevic23-cmd/Nano-Core-Agents-Public) · [LEGION](https://github.com/oromaskevic23-cmd/Legion-Public) | Professional agents and teams | Architecture and scoped references |
+| [ORION](https://github.com/oromaskevic23-cmd/ORION-Public) | Collective intelligence | Public architecture |
+| [CYBER HAK](https://github.com/oromaskevic23-cmd/CYBER-HAK-Public) | Defensive security engineering | Reference implementation and tests |
+| [Capital Core](https://github.com/oromaskevic23-cmd/Capital-Core-Public) | Business and real-estate applications | Public architecture and reference site |
+| [IMPERIUM & NDB](https://github.com/oromaskevic23-cmd/CRYPTO-IMPERIAL-Ecosystem-Public) | Separate blockchain direction | Project documentation and contract references |
 
-[Nano Core Agents documentation](https://github.com/oromaskevic23-cmd/Nano-Core-Agents-Public) · [HANTER architecture](https://github.com/oromaskevic23-cmd/HANTER-Public) · [Complete public portfolio](https://github.com/oromaskevic23-cmd/Capital-Core-Public/blob/main/docs/PORTFOLIO.md)
+[Full project registry](https://github.com/oromaskevic23-cmd/oromaskevic23-cmd/blob/main/docs/FOUNDER_PUBLIC_PROJECT_REGISTRY_20261031.md) · [Engineering evidence dossier](https://oromaskevic23-cmd.github.io/oromaskevic23-cmd/engineering/) · [Founder website](https://oromaskevic23-cmd.github.io/oromaskevic23-cmd/) · [IMPERIAL Core reference](https://oromaskevic23-cmd.github.io/Capital-Core-Public/reference/)
 
-**Status key:** SPECIFIED = published design; IMPLEMENTED = identifiable source; TESTED = observed tests for a stated revision; DEPLOYED = evidenced deployment; LIVE VERIFIED = dated live behavior verified. A reference test result does not establish product deployment. No production agent-payment service is assigned DEPLOYED or LIVE VERIFIED by this audit; the token contracts are deployed as stated above.
+## Architecture and governance
 
-**Naming:** **VELION ⚡** is the LLM product; **MAX is a mode**. The historical repository URL `VELION-LLM-Public` is retained.
+IMPERIAL Core follows a **Federated Multi-Orchestrator Architecture**: HANTER is the AI Command Center, while domain orchestrators have bounded responsibilities for professional teams and a dynamic number of Nano Core Agents. ORION is the collective-intelligence component. These relationships describe the target architecture; live operation must be demonstrated separately.
 
-## Architecture & technology stack
+The governance design preserves **AI Passport**, **Enterprise Skills**, **Guardian Core**, **Approval Gateway** and **Audit Ledger**, guided by **Zero Trust**, the **Public / Private Boundary** and the **CRYPTO IMPERIAL Ecosystem Boundary**. Authority, permissions and execution are distinct. Implementations and tests are reported only within their demonstrated scope.
 
-Public references use **JavaScript / Node.js 22**, Node's built-in test runner and GitHub Actions. The CONSTRUCTOR AI reference also includes browser HTML/CSS and localStorage. Public documentation tooling uses Python's standard library, Markdown and JSON. These are observed repository technologies, not a claim of a production-wide platform stack.
+## CRYPTO IMPERIAL Ecosystem
 
-The architecture preserves **AI Passport, Enterprise Skills, Guardian Core, Approval Gateway and Audit Ledger**, with explicit **Public / Private Boundary** and **CRYPTO IMPERIAL Ecosystem Boundary**. These are architectural requirements; individual implementations and verification remain scoped to their evidence.
+<p align="center">
+  <a href="https://github.com/oromaskevic23-cmd/IMPERIUM"><img src="https://raw.githubusercontent.com/oromaskevic23-cmd/IMPERIUM/main/assets/imperium-hero-20261029.jpg" alt="IMPERIUM project emblem" width="150" /></a>
+  <a href="https://github.com/oromaskevic23-cmd/N.D.B"><img src="https://raw.githubusercontent.com/oromaskevic23-cmd/N.D.B/main/assets/ndb-hero-20261029.jpg" alt="NDB project emblem" width="150" /></a>
+</p>
 
-## Zero Trust, AI Governance & Verified Engineering
+**IMPERIUM** is a long-term architectural digital currency envisioned for AI agents worldwide. **NDB** is a separate token project. These are distinct from the software product; no current global adoption, liquidity, financial return or agent-payment service is claimed here.
 
-- Identity ≠ Authority. Capability ≠ Approval.
-- Zero Trust, Deny by Default and Fail Closed guide engineering requirements.
-- Execution requires bounded permissions, explicit policy and traceable evidence.
-- Tests, simulations, proposed designs and live operation are reported separately.
-
-NDB and IMPERIUM belong to a separate blockchain-development direction. **IMPERIUM is a long-term architectural digital currency envisioned for AI agents worldwide**; this is a design ambition, not a claim of current global use, adoption or market status.
-
-## Public technical evidence
-
-<details>
-<summary><strong>Explore dated engineering results and verification limits</strong></summary>
-
-
-### 26 October 2026 — recorded engineering milestones
-
-Dated engineering results with source links. A passing workflow applies to its recorded revision; it does not establish a production release.
-
-| Engineering track | Verified evidence | Reality boundary |
-| --- | --- | --- |
-| [IMPERIAL Venture Factory](https://github.com/oromaskevic23-cmd/IMPERIAL-Venture-Factory) / [ApproveDesk](https://github.com/oromaskevic23-cmd/IMPERIAL-Venture-Factory/pull/12) | [6/6 API/integration tests and real two-session Chromium E2E PASS](https://github.com/oromaskevic23-cmd/IMPERIAL-Venture-Factory/actions/runs/40344602965); commit `4076522e` | Local SQLite MVP; Draft PR; no production service, paying users or sale confirmed |
-| [CYBER HAK](https://github.com/oromaskevic23-cmd/CYBER-HAK-Public) | [Independent automated AuditShield of ApproveDesk: 99/99 tests PASS; 42/42 files assessed](https://github.com/oromaskevic23-cmd/CYBER-HAK-Public/actions/runs/40346901497) | 0 high / 2 medium static findings; no independent human security certification |
-| [VELION ⚡](https://github.com/oromaskevic23-cmd/VELION-LLM-Public) | [REAL local CPU inference + first verified LLM-generated code: 70/70 suite tests and 1/1 code trial PASS](https://github.com/oromaskevic23-cmd/VELION-LLM-Public/actions/runs/40362166437) | Uses independently licensed third-party Qwen3 weights, **not** proprietary VELION model weights; MAX is a mode |
-
-**Venture portfolio under development:** [ApproveDesk](https://github.com/oromaskevic23-cmd/IMPERIAL-Venture-Factory/issues/2), InvoiceRelay, CSVReconcile, QuoteFlow, RenewalRadar, CatalogFix, MarginLens, TicketTriage, WebhookLedger, and SiteSignal. The latter nine remain ideas/specifications; no fabricated customer or revenue claims.
-
-<details>
-<summary>Earlier verification checkpoint — 25 October 2026</summary>
-
-### Verified Engineering Milestones
-
-Observed on **25 October 2026** from public GitHub API records and CI job logs. All four cited PRs were **open and unmerged** at this checkpoint. Counts are recorded per test suite and are not combined into a product-readiness score.
-
-| Project | Observed result | Public evidence | Scope |
-|---|---|---|---|
-| HANTER | Private historical checkpoint: 70/70 reported (not publicly verifiable) | [Public architecture](https://github.com/oromaskevic23-cmd/HANTER-Public) | Original commit, PR and CI logs are in a restricted repository. Offline mission intake and review were reported; no external dispatch is verified. |
-| VELION | 47/47 PASS | [Commit `3eab54f`](https://github.com/oromaskevic23-cmd/VELION-LLM-Public/commit/3eab54f1be8594711822d4402be3198e4d35111f) · [PR](https://github.com/oromaskevic23-cmd/VELION-LLM-Public/pull/1) · [CI log](https://github.com/oromaskevic23-cmd/VELION-LLM-Public/actions/runs/40141141703/job/121012953733) | Local and cloud proposal gateway contracts with mocked provider endpoints. No live provider inference or released model verified. |
-| CONSTRUCTOR AI | 68/68 PASS | [Commit `23d25fa`](https://github.com/oromaskevic23-cmd/CONSTRUCTOR-AI/commit/23d25fa41287001c3529dad23571e67c04ddb74a) · [PR](https://github.com/oromaskevic23-cmd/CONSTRUCTOR-AI/pull/1) · [CI log](https://github.com/oromaskevic23-cmd/CONSTRUCTOR-AI/actions/runs/40131861437/job/120985060759) | Reference Task Manager, proposal contracts and quarantine/security regressions. Model calls are mocked; no autonomous software factory established. |
-| CYBER HAK | 99/99 PASS | [Commit `d683379`](https://github.com/oromaskevic23-cmd/CYBER-HAK-Public/commit/d68337938f3bba6d81bc2419b884cd893e8262d3) · [PR](https://github.com/oromaskevic23-cmd/CYBER-HAK-Public/pull/1) · [CI log](https://github.com/oromaskevic23-cmd/CYBER-HAK-Public/actions/runs/40131894877/job/120985165334) | Defensive AuditShield reference tests and scoped anonymous audits of immutable public revisions. No deployed continuous protection established. |
-
-[Evidence register and verification limits](https://github.com/oromaskevic23-cmd/Capital-Core-Public/blob/main/docs/EVIDENCE.md) · [Machine-readable evidence](https://github.com/oromaskevic23-cmd/Capital-Core-Public/blob/main/evidence/milestones.json)
-
-</details>
-
-</details>
+[IMPERIUM](https://github.com/oromaskevic23-cmd/IMPERIUM) · [NDB](https://github.com/oromaskevic23-cmd/N.D.B) · [Ecosystem documentation](https://github.com/oromaskevic23-cmd/CRYPTO-IMPERIAL-Ecosystem-Public)
 
 ## Engineering roadmap
 
-1. Review and integrate bounded reference PRs with reproducible checks.
-2. Integrate the scoped model-inference experiments into reproducible, isolated engineering workflows.
-3. Verify a complete application lifecycle before claiming an autonomous software factory.
-4. Validate deployed services and customer outcomes separately from local and CI tests.
+1. Complete a bounded real-model application workflow with isolated execution and reviewable evidence.
+2. Independently review application quality and security, then validate a specific customer pilot.
+3. Establish reliable deployment, operating costs and support before making production claims.
 
-[Public roadmap](https://github.com/oromaskevic23-cmd/Capital-Core-Public/blob/main/ROADMAP.md)
+## Collaboration and authorship
 
-## Collaboration and business inquiries
-
-I welcome technical review and conversations about governed AI systems, verified software engineering and evidence-based pilots. Start through my [GitHub profile](https://github.com/oromaskevic23-cmd) or review the [public collaboration issues](https://github.com/oromaskevic23-cmd/Capital-Core-Public/issues) (sign in to GitHub to open a new issue). Share confidential project details only after agreeing on a suitable private channel.
-
-## Authorship — RomaskevicH
+For investment, pilot or technical collaboration, contact [oromaskevic23@gmail.com](mailto:oromaskevic23@gmail.com) or use the [public collaboration issues](https://github.com/oromaskevic23-cmd/Capital-Core-Public/issues). Please keep confidential details out of public issues.
 
 **Alexander Nikolaevich Romaskevich · RomaskevicH**  
-Founder • Owner • CEO of IMPERIAL Core.
+Founder · Owner · CEO · Chief Systems Architect, IMPERIAL Core.
 
-Founder roles are project designations; this profile makes no corporate-registration or certification claim. Third-party models, libraries and forked repositories retain their original attribution and license terms. Git history records contributions; public visibility does not create a new license grant.
-
-[Multilingual founder identity](https://github.com/oromaskevic23-cmd/Capital-Core-Public/blob/main/docs/FOUNDER_IDENTITY.md) · [Provenance](https://github.com/oromaskevic23-cmd/Capital-Core-Public/blob/main/PROVENANCE.md)
-
-**Build software. Verify everything.**  
-**IMPERIAL Core — Engineering with Evidence.**
-
-[Canonical visual identity — crowned globe](https://github.com/oromaskevic23-cmd/Capital-Core-Public/blob/gh-pages/reference/brand/BRAND.md)
-
-
-[Authorship and provenance](https://github.com/oromaskevic23-cmd/oromaskevic23-cmd/blob/main/NOTICE.md).
-
-
----
-
-### Canonical Public Engineering Portfolio — October 2026
-
-**Founder / architectural authority:** Alexander Nikolaevich Romaskevich (**RomaskevicH**), Founder · Owner · CEO of IMPERIAL Core. This profile is the canonical cross-project attribution point for original IMPERIAL Core systems architecture. Each repository retains its individual author/contributor history, dependencies, third-party rights and maturity limitations.
-
-**New verified modular milestone:** [VELION Enterprise Modular Intelligence Fabric v2](https://github.com/oromaskevic23-cmd/VELION-LLM-Public/blob/main/docs/VELION_ENTERPRISE_MODULAR_ARCHITECTURE_V2.md) — provider-independent model planning, a federated route policy, STANDARD/MAX resource limits, verifiable receipt contracts and [32 passing CI tests](https://github.com/oromaskevic23-cmd/VELION-LLM-Public/actions/runs/41213361918). MAX remains a VELION mode, not a separate model. The v2 code is source-level and not a production endpoint.
-
-**[Full public IMPERIAL Core project registry](https://github.com/oromaskevic23-cmd/oromaskevic23-cmd/blob/main/docs/FOUNDER_PUBLIC_PROJECT_REGISTRY_20261031.md)** connects the currently verified public repositories and distinguishes original architectural stewardship from rights in third-party model weights and libraries. **[Search/indexing evidence standard](https://github.com/oromaskevic23-cmd/oromaskevic23-cmd/blob/main/docs/GOOGLE_PROJECT_INDEXING_STATUS_20261031.md)** records crawlable public-source prerequisites and what remains unverified by Google.
-
-VELION · CONSTRUCTOR AI · HANTER · Nano Core Agents · LEGION · ORION · CYBER HAK · IMPERIAL Plugins · n8n Automation are architecturally connected under **federated** domain orchestrators; none is represented as a universally deployed service by this index. Google indexing, Knowledge Panel recognition, website registration and search rankings require independent external evidence.
+Third-party models, libraries and contributions retain their original attribution and applicable licenses. Git history records contributions; public visibility alone does not grant a software license. [Authorship and provenance](https://github.com/oromaskevic23-cmd/oromaskevic23-cmd/blob/main/NOTICE.md) · [Corporate symbol policy](https://github.com/oromaskevic23-cmd/oromaskevic23-cmd/blob/main/brand/README.md) · [Previous detailed profile and historical evidence](https://github.com/oromaskevic23-cmd/oromaskevic23-cmd/blob/2f581d65111e6d4137de108be804c1882e173205/README.md).
