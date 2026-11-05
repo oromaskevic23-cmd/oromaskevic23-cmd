@@ -6,6 +6,8 @@
 <p align="center"><strong>AI-Native Corporate Operating System · Enterprise Engineering</strong></p>
 <p align="center"><em>Architecture → Implementation → Evidence</em></p>
 
+<p align="center"><strong>Investors &amp; pilot partners:</strong> <a href="https://github.com/oromaskevic23-cmd/oromaskevic23-cmd/blob/main/docs/CONSTRUCTOR_AI_INVESTOR_OVERVIEW.md">Explore CONSTRUCTOR AI</a> · <a href="mailto:oromaskevic23@gmail.com">Contact the founder</a></p>
+
 ### Our vision
 
 **IMPERIAL Core** is a founder-led AI-native engineering ecosystem in development. Our mission is to build governed intelligent systems, professional AI developer teams and verifiable software products — without compromising human authority, security or transparent evidence.
@@ -31,6 +33,16 @@ I established **IMPERIAL Core** to engineer an ecosystem where people remain acc
 My priorities are enterprise-quality engineering, professional autonomous-agent research, software that can be independently tested, and long-term value created through real products. **Architecture before implementation. Evidence before claims.**
 
 **Build software. Verify everything.**
+
+---
+
+## Investment and pilot partnerships
+
+**CONSTRUCTOR AI** is an early-stage project for creating inspectable, testable software with governed AI assistance. We are looking to connect with **pre-seed investors, technical partners and pilot customers** who share an interest in practical, verifiable AI development.
+
+**Available today:** an exportable local Template Studio for a Task Manager, Business CRM and Dashboard, with editable source and reproducible tests. **Next milestone:** independently verify one complete application workflow using a real model. Multi-user production hosting and general-purpose autonomous application generation are not yet established.
+
+[Investor & pilot overview](docs/CONSTRUCTOR_AI_INVESTOR_OVERVIEW.md) · [Try the demo](https://oromaskevic23-cmd.github.io/Capital-Core-Public/reference/constructor-ai/studio/studio.html) · [Review the source](https://github.com/oromaskevic23-cmd/CONSTRUCTOR-AI) · [Contact Alexander](mailto:oromaskevic23@gmail.com)
 
 ---
 
