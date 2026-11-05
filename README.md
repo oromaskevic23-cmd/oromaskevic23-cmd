@@ -42,7 +42,7 @@ My priorities are enterprise-quality engineering, professional autonomous-agent 
 
 **Available today:** an exportable local Template Studio for a Task Manager, Business CRM and Dashboard, with editable source and reproducible tests. **Next milestone:** independently verify one complete application workflow using a real model. Multi-user production hosting and general-purpose autonomous application generation are not yet established.
 
-[Investor & pilot overview](docs/CONSTRUCTOR_AI_INVESTOR_OVERVIEW.md) · [Try the demo](https://oromaskevic23-cmd.github.io/Capital-Core-Public/reference/constructor-ai/studio/studio.html) · [Review the source](https://github.com/oromaskevic23-cmd/CONSTRUCTOR-AI) · [Contact Alexander](mailto:oromaskevic23@gmail.com)
+[Investor & pilot overview](https://github.com/oromaskevic23-cmd/oromaskevic23-cmd/blob/main/docs/CONSTRUCTOR_AI_INVESTOR_OVERVIEW.md) · [Try the demo](https://oromaskevic23-cmd.github.io/Capital-Core-Public/reference/constructor-ai/studio/studio.html) · [Review the source](https://github.com/oromaskevic23-cmd/CONSTRUCTOR-AI) · [Contact Alexander](mailto:oromaskevic23@gmail.com)
 
 ---
 

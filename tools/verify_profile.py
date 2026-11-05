@@ -51,7 +51,11 @@ check("Skyline -> corporate text -> founder photo -> founder statement",
       positions[0] >= 0
       and positions[0] < text.find("### Our vision") < positions[1]
       and positions[1] < text.find("### Founder statement"))
-check("All approved ordered sections", sections == ["Featured runnable product — CONSTRUCTOR AI", "IMPERIUM & NDB · Explore the CRYPTO IMPERIAL Ecosystem", "Official multilingual websites", *EXPECTED_SECTIONS])
+check("All approved ordered sections", sections == ["Investment and pilot partnerships", "Evidence-backed engineering profile", "Featured runnable product — CONSTRUCTOR AI", "IMPERIUM & NDB · Explore the CRYPTO IMPERIAL Ecosystem", "Official multilingual websites", *EXPECTED_SECTIONS])
+check("Investor and pilot links and scope",
+      "https://github.com/oromaskevic23-cmd/oromaskevic23-cmd/blob/main/docs/CONSTRUCTOR_AI_INVESTOR_OVERVIEW.md" in text
+      and "mailto:oromaskevic23@gmail.com" in text
+      and "Multi-user production hosting and general-purpose autonomous application generation are not yet established." in text)
 check("Featured reproducible CONSTRUCTOR AI with explicit scope",
       "## Featured runnable product — CONSTRUCTOR AI" in text
       and "docs/FLAGSHIP_ACCEPTANCE.md" in text
@@ -79,11 +83,13 @@ check("Free of template filler", "## Hi there 👋" not in text
       and "I'm currently learning" not in text)
 links = re.findall(r"\]\(([^)\s]+)\)", text) + re.findall(r'href="([^"]+)"', text)
 check("At least ten useful destination links", len(links) >= 10)
-check("Links are absolute HTTPS or local anchor",
+check("Links are absolute HTTPS, local anchors or the approved founder email",
       all((urlparse(u).scheme == "https" and urlparse(u).netloc)
-          or u.startswith("#") for u in links))
+          or u.startswith("#") or u == "mailto:oromaskevic23@gmail.com" for u in links))
 OFFICIAL_PAGES = {
     "https://oromaskevic23-cmd.github.io/oromaskevic23-cmd/",
+    "https://oromaskevic23-cmd.github.io/oromaskevic23-cmd/engineering/",
+    "https://oromaskevic23-cmd.github.io/oromaskevic23-cmd/engineering/evidence.json",
     "https://oromaskevic23-cmd.github.io/Capital-Core-Public/reference/",
     "https://oromaskevic23-cmd.github.io/Capital-Core-Public/reference/constructor-ai/studio/studio.html",
     "https://oromaskevic23-cmd.github.io/Capital-Core-Public/reference/#infrastructure",
@@ -98,6 +104,8 @@ TRUSTED_RAW_GRAPHICS = {
 }
 def allowed_public_link(link):
     if link.startswith("#"):
+        return True
+    if link == "mailto:oromaskevic23@gmail.com":
         return True
     parsed = urlparse(link)
     if link in OFFICIAL_PAGES or link in TRUSTED_RAW_GRAPHICS:
