@@ -18,14 +18,27 @@ CONTACT = "mailto:oromaskevic23@gmail.com"
 PHOTO_SKYLINE = "assets/imperial-core-skyline-original-20261029.jpg"
 EMBLEM = "assets/imperial-core-emblem.webp"
 PHOTO_FOUNDER = "assets/alexander-romaskevich-portrait-original-20261029.jpg"
+HANTER_BANNER = "assets/hanter-banner-original-20261029.jpg"
 IMPERIUM_IMAGE = "https://raw.githubusercontent.com/oromaskevic23-cmd/IMPERIUM/main/assets/imperium-hero-20261029.jpg"
 NDB_IMAGE = "https://raw.githubusercontent.com/oromaskevic23-cmd/N.D.B/main/assets/ndb-hero-20261029.jpg"
-IMAGES = (PHOTO_SKYLINE, EMBLEM, PHOTO_FOUNDER, IMPERIUM_IMAGE, NDB_IMAGE)
+IMAGES = (PHOTO_SKYLINE, EMBLEM, PHOTO_FOUNDER, IMPERIUM_IMAGE, HANTER_BANNER, NDB_IMAGE)
 ASSET_BLOBS = {
     PHOTO_SKYLINE: "3c3da53b749b0f58eaf3e88fa16e66c30daeb8cc",
     EMBLEM: "7749da03da49d4434fc826d0f26793785a3cab42",
     PHOTO_FOUNDER: "9f9267646a4b7b12eec88714e60a452ac227dde9",
+    HANTER_BANNER: "64dda3398ac3b54da5a24252502d1ac85a6f5b34",
 }
+OWNER_SELECTED_STACK = '''<p align="center">
+  <a href="https://github.com/oromaskevic23-cmd/IMPERIUM"><img src="https://raw.githubusercontent.com/oromaskevic23-cmd/IMPERIUM/main/assets/imperium-hero-20261029.jpg" alt="IMPERIUM digital emblem" width="190" /></a>
+</p>
+
+<p align="center">
+  <a href="https://github.com/oromaskevic23-cmd/HANTER-Public"><img src="assets/hanter-banner-original-20261029.jpg" alt="HANTER — Nano Core Agents and IMPERIAL Core" width="100%" /></a>
+</p>
+
+<p align="center">
+  <a href="https://github.com/oromaskevic23-cmd/N.D.B"><img src="https://raw.githubusercontent.com/oromaskevic23-cmd/N.D.B/main/assets/ndb-hero-20261029.jpg" alt="NDB digital emblem" width="190" /></a>
+</p>'''
 OFFICIAL_PAGES = {
     "https://oromaskevic23-cmd.github.io/oromaskevic23-cmd/",
     "https://oromaskevic23-cmd.github.io/oromaskevic23-cmd/engineering/",
@@ -83,6 +96,7 @@ def verify_profile(text: str, root: Path = ROOT) -> list[tuple[str, bool]]:
     positions = [text.find('src="' + path + '"') for path in IMAGES]
     check("Approved image selection and order", image_paths == list(IMAGES))
     check("Approved image asset fingerprints", approved_assets(root))
+    check("Owner-selected IMPERIUM / HANTER / NDB arrangement", OWNER_SELECTED_STACK in text)
     check("Skyline, company text, founder portrait and statement order",
           positions[0] >= 0 and positions[0] < text.find("### Our vision")
           < positions[2] < text.find("### Founder statement"))

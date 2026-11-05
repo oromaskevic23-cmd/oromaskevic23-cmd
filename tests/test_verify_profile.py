@@ -48,6 +48,11 @@ class ProfileIntegrityTests(unittest.TestCase):
             (root / EMBLEM).write_bytes(b"substituted emblem")
             self.assert_fails(self.profile, "Approved image asset fingerprints", root)
 
+    def test_hanter_banner_must_remain_between_token_images(self):
+        changed = self.profile.replace('src="assets/hanter-banner-original-20261029.jpg"',
+                                       'src="assets/unapproved-banner.jpg"')
+        self.assert_fails(changed, "Owner-selected IMPERIUM / HANTER / NDB arrangement")
+
     def test_credential_like_token_is_rejected(self):
         token = "ghp_" + "A" * 36
         self.assert_fails(self.profile + "\n" + token, "No common credential token patterns")
