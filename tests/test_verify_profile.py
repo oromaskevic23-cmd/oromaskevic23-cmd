@@ -22,6 +22,10 @@ class ProfileIntegrityTests(unittest.TestCase):
         changed = self.profile.replace("retain final architectural decision authority", "guide the project")
         self.assert_fails(changed, "Founder identity, roles and authority")
 
+    def test_deprecated_executive_title_is_rejected(self):
+        old_title = "Chief" + " Systems" + " Architect"
+        self.assert_fails(self.profile + "\n" + old_title, "Deprecated executive title removed")
+
     def test_missing_product_evidence_boundary_is_rejected(self):
         changed = self.profile.replace("do not establish a production service or external certification", "prove full production readiness")
         self.assert_fails(changed, "Limits of product and CI evidence")
