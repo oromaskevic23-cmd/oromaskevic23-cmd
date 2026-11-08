@@ -5,7 +5,7 @@
 **Canonical GitHub owner:** [oromaskevic23-cmd](https://github.com/oromaskevic23-cmd)  
 **Project:** IMPERIAL Core — original AI-native engineering ecosystem and its independently scoped projects.
 
-The founder leads architectural design and retains final architectural decision authority as Founder, Owner, CEO and Chief Systems Architect of the IMPERIAL Core project.
+The founder leads architectural design and retains final architectural decision authority as Founder, Owner and CEO of the IMPERIAL Core project.
 
 Individual source-file contributors retain credit shown in Git history and existing notices. Third-party software, model weights, data, forks, and other authors' contributions are **not** claimed as personally authored by the founder. No historical commits are modified or re-attributed.
 
