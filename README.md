@@ -28,7 +28,7 @@
 </p>
 
 <h2 align="center">Alexander Romaskevich</h2>
-<p align="center"><strong>Founder · Owner · CEO · Chief Systems Architect</strong></p>
+<p align="center"><strong>Founder · Owner · CEO</strong></p>
 <p align="center"><strong>RomaskevicH</strong></p>
 
 ### Founder statement
@@ -121,6 +121,6 @@ Governance is built around **AI Passport**, **Enterprise Skills**, **Guardian Co
 For investment, pilot or technical collaboration, contact [oromaskevic23@gmail.com](mailto:oromaskevic23@gmail.com) or use the [public collaboration issues](https://github.com/oromaskevic23-cmd/Capital-Core-Public/issues). Please keep confidential details out of public issues.
 
 **Alexander Nikolaevich Romaskevich · RomaskevicH**  
-Founder · Owner · CEO · Chief Systems Architect, IMPERIAL Core.
+Founder · Owner · CEO, IMPERIAL Core.
 
 Third-party models, libraries and contributions retain their original attribution and applicable licenses. Git history records contributions; public visibility alone does not grant a software license. [Authorship and provenance](https://github.com/oromaskevic23-cmd/oromaskevic23-cmd/blob/main/NOTICE.md) · [Corporate symbol policy](https://github.com/oromaskevic23-cmd/oromaskevic23-cmd/blob/main/brand/README.md).
