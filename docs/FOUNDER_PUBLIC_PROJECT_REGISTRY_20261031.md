@@ -1,6 +1,6 @@
 # IMPERIAL Core — Canonical Public Project Registry
 
-**Verified GitHub inventory: 2026-11-03.** Published by founder account [oromaskevic23-cmd](https://github.com/oromaskevic23-cmd). Project and repository names are exact; legal registration, paid execution and search ranking are **not** implied.
+**Verified GitHub inventory: 2026-11-09.** Published by founder account [oromaskevic23-cmd](https://github.com/oromaskevic23-cmd). Project and repository names are exact; legal registration, paid execution and search ranking are **not** implied.
 
 ## Identity and scope
 
@@ -21,7 +21,7 @@ Original engineering architecture: Federated Multi-Orchestrator; HANTER is comma
 | [CYBER-HAK-Public](https://github.com/oromaskevic23-cmd/CYBER-HAK-Public) | Defensive security/verification research | Not proof of universal deployed protection |
 | [IMPERIAL-Plugins](https://github.com/oromaskevic23-cmd/IMPERIAL-Plugins) | Experimental Enterprise plugin security kernel | Source tests; no remote plugin marketplace |
 | [IMPERIAL-n8n-Automation](https://github.com/oromaskevic23-cmd/IMPERIAL-n8n-Automation) | Safe n8n workflows and authenticated intake prototype | No live n8n Cloud connection claimed |
-| [SHPAIZMAN-ORCHESTRATOR](https://github.com/oromaskevic23-cmd/SHPAIZMAN-ORCHESTRATOR) | Separate bounded automation orchestrator | No agent revenue or customer claims |
+| [SHPAIZMAN-ORCHESTRATOR](https://github.com/oromaskevic23-cmd/SHPAIZMAN-ORCHESTRATOR) | Separate project outside the IMPERIAL Core commercial and agent runtime boundary | No integration into IMPERIAL Core operations, revenue or customer claims |
 | [Jem](https://github.com/oromaskevic23-cmd/Jem) | AI animation / film production product research | Scope and maturity as in repo |
 | [IMPERIAL-Venture-Factory](https://github.com/oromaskevic23-cmd/IMPERIAL-Venture-Factory) | Product research and business programs | Architecture / source |
 | [Capital-Core-Public](https://github.com/oromaskevic23-cmd/Capital-Core-Public) | Capital/city-team and corporate architecture reference | Public documentation |
@@ -38,7 +38,7 @@ Original engineering architecture: Federated Multi-Orchestrator; HANTER is comma
 
 ## Registry coverage and public identity boundaries
 
-**Owner's current GitHub inventory:** 32 repositories; **25 public**, **7 private**. This page indexes **23 publicly inspectable technology and business project repositories**. The separately linked `oromaskevic23-cmd` founder profile repository is the 24th public repository, not a distinct product project; the public U.S. holding-company planning blueprint is an unexecuted legal/governance proposal and is **not featured in the promotional project directory**. Public visibility of that blueprint does not confer legal incorporation or authorized disclosure of personal equity data. No private source is included.
+**Observed owner-account inventory on 9 November 2026:** 33 repositories; **25 public**, **8 private**. Repository counts can change; do not treat this dated snapshot as a continuously updated metric. This page indexes **23 publicly inspectable technology and business project repositories**. The separately linked `oromaskevic23-cmd` founder profile repository is the 24th public repository, not a distinct product project; the public U.S. holding-company planning blueprint is an unexecuted legal/governance proposal and is **not featured in the promotional project directory**. Public visibility of that blueprint does not confer legal incorporation or authorized disclosure of personal equity data. No private source is included.
 
 **Google discovery is not confirmed.** A valid published sitemap and canonical registry provide discovery signals only; Search Console authorization and Google URL Inspection are separate steps.
 

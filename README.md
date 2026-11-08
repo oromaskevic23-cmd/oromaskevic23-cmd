@@ -7,19 +7,22 @@
 </p>
 
 <h1 align="center">IMPERIAL Core</h1>
-<p align="center"><strong>Software engineering · Governed AI · Verifiable results</strong></p>
+<p align="center"><strong>Inspectable software · Governed AI agents · Evidence-first engineering</strong></p>
 <p align="center"><em>Architecture → Implementation → Evidence</em></p>
 
 <p align="center">
-  <a href="https://oromaskevic23-cmd.github.io/Capital-Core-Public/reference/constructor-ai/studio/studio.html">Explore the demo</a> ·
+  <a href="https://oromaskevic23-cmd.github.io/Capital-Core-Public/reference/constructor-ai/studio/studio.html">Try the product demo</a> ·
+  <a href="https://github.com/oromaskevic23-cmd/CONSTRUCTOR-AI">Inspect source &amp; tests</a> ·
+  <a href="https://github.com/oromaskevic23-cmd/oromaskevic23-cmd/blob/main/docs/ENGINEERING_DUE_DILIGENCE_20261109.md">Evidence &amp; limitations</a> ·
   <a href="https://github.com/oromaskevic23-cmd/oromaskevic23-cmd/blob/main/docs/CONSTRUCTOR_AI_INVESTOR_OVERVIEW.md">Investor &amp; pilot overview</a> ·
-  <a href="https://github.com/oromaskevic23-cmd/CONSTRUCTOR-AI">Review the source</a> ·
-  <a href="mailto:oromaskevic23@gmail.com">Contact the founder</a>
+  <a href="mailto:oromaskevic23@gmail.com">Contact</a>
 </p>
 
 ### Our vision
 
-**IMPERIAL Core** is a founder-led technology ecosystem under development. Our work centers on software people can inspect, test and control. We develop AI systems around explicit permissions, verifiable results and clear human accountability.
+**IMPERIAL Core** is a founder-led technology ecosystem under development. **CONSTRUCTOR AI is the flagship product**; HANTER, VELION, Nano Core Agents and the security layers form its longer-term engineering context. Our priority is software that people can inspect, test and control.
+
+**Start with evidence, not promises.** A public Template Studio demonstration exports three local applications. The [source](https://github.com/oromaskevic23-cmd/CONSTRUCTOR-AI), [recorded tests](https://github.com/oromaskevic23-cmd/CONSTRUCTOR-AI/actions/runs/42001525579), and [Chromium acceptance workflow](https://github.com/oromaskevic23-cmd/CONSTRUCTOR-AI/actions/runs/42001525556) can be inspected. Production-grade autonomous app generation, customer deployments and commercial traction are **not established by these results**. The [due diligence brief](https://github.com/oromaskevic23-cmd/oromaskevic23-cmd/blob/main/docs/ENGINEERING_DUE_DILIGENCE_20261109.md) separates verified scope from remaining milestones.
 
 ---
 
@@ -41,15 +44,17 @@ I am **Alexander Nikolaevich Romaskevich**, founder of IMPERIAL Core. I lead the
 
 ## Investment and pilot partnerships
 
-I am speaking with **pre-seed investors, technical partners and prospective pilot customers** about **CONSTRUCTOR AI**. Our focus is practical software creation: inspectable applications, defined permissions and results that can be independently checked.
+We welcome inquiries from **pre-seed investors, technical partners and prospective pilot customers** interested in inspectable software creation and evidence-backed engineering. This is an invitation to discuss a pilot, **not a claim of signed investors, customers, contracts or revenue**.
 
-The current prototype exports local applications from predefined templates. A real-model application workflow, multi-user production hosting and customer acceptance remain development milestones. We are open to discussing a scoped pilot and investment terms.
+The current prototype exports local applications from predefined templates. A real-model application workflow, multi-user production hosting and customer acceptance remain development milestones. Pilot scope, access, ownership and funding terms must be agreed separately. Start with the demo and reproducible verification steps below.
 
-[Investor & pilot overview](https://github.com/oromaskevic23-cmd/oromaskevic23-cmd/blob/main/docs/CONSTRUCTOR_AI_INVESTOR_OVERVIEW.md) · [Open the demo](https://oromaskevic23-cmd.github.io/Capital-Core-Public/reference/constructor-ai/studio/studio.html) · [Email Alexander](mailto:oromaskevic23@gmail.com)
+[Investor & pilot overview](https://github.com/oromaskevic23-cmd/oromaskevic23-cmd/blob/main/docs/CONSTRUCTOR_AI_INVESTOR_OVERVIEW.md) · [Evidence for reviewers](https://github.com/oromaskevic23-cmd/oromaskevic23-cmd/blob/main/docs/ENGINEERING_DUE_DILIGENCE_20261109.md) · [Open the demo](https://oromaskevic23-cmd.github.io/Capital-Core-Public/reference/constructor-ai/studio/studio.html) · [Contact](mailto:oromaskevic23@gmail.com)
 
 ## Featured product — CONSTRUCTOR AI
 
-**Available today:** Template Studio exports three **local, single-user** applications: Task Manager, Business CRM and Business Dashboard. Each includes editable code, automated tests, integrity checks and local browser storage with JSON backup and restore.
+**What an independent visitor can evaluate today:** Template Studio exports three **local, single-user** applications: Task Manager, Business CRM and Business Dashboard. Each includes editable code, automated tests, integrity checks and local browser storage with JSON backup and restore.
+
+**Why this matters:** a reviewer can inspect a generated ZIP, verify file hashes, run its tests, and explore local CRUD and backup/restore behavior. No login, payment or confidential customer dataset is needed for that evaluation. These are reviewed templates, **not** proof that arbitrary prompts produce ready-to-deploy software.
 
 **Verified revision:** On 5 November 2026, the project-controlled [reference CI](https://github.com/oromaskevic23-cmd/CONSTRUCTOR-AI/actions/runs/42001525579) and [real Chromium acceptance](https://github.com/oromaskevic23-cmd/CONSTRUCTOR-AI/actions/runs/42001525556) completed successfully for commit [`898d1abe`](https://github.com/oromaskevic23-cmd/CONSTRUCTOR-AI/commit/898d1abe2616cb92104b64dc126e0875cc9acddf). The checks cover the reviewed templates and exported applications; they do not establish a production service or external certification.
 
@@ -71,7 +76,7 @@ The demonstrated scope is a tested local prototype, not arbitrary prompt-to-prod
 
 ## Public engineering portfolio
 
-Our public repositories document the systems we are building, with source code and engineering evidence where available. Architecture documents describe intended systems; prototypes demonstrate only the capabilities that have been tested.
+**Product first, platform second.** These repositories describe the supporting engineering stack and adjacent research. The flagship product is CONSTRUCTOR AI. Architecture documentation describes intended capabilities; individual prototypes demonstrate only their recorded tests. There is no implied 24/7 global agent fleet, security certification or commercial service.
 
 | Project | Focus | Public scope |
 |---|---|---|
@@ -112,9 +117,10 @@ Governance is built around **AI Passport**, **Enterprise Skills**, **Guardian Co
 
 ## Engineering roadmap
 
-1. Deliver one complete real-model workflow with isolated execution and reviewable evidence.
-2. Complete independent quality and security review, then run a bounded customer pilot.
-3. Validate deployment, operating costs and support before a production release.
+1. **Engineering acceptance:** deliver one complete bounded real-model workflow with isolated execution and independently reviewable QA evidence.
+2. **Independent review:** obtain human code/security review and close the documented acceptance findings.
+3. **Market validation:** invite a prospective customer to a written-scope, low-risk pilot; record acceptance or rejection instead of assuming demand.
+4. **Production decision:** validate multi-user requirements, deployment reliability, support and operating costs before any commercial readiness claim.
 
 ## Collaboration and authorship
 
