@@ -1,6 +1,6 @@
 # CONSTRUCTOR AI — Investor and Pilot Overview
 
-**Founder and Chief Systems Architect:** Alexander Nikolaevich Romaskevich (RomaskevicH)  
+**Founder • Owner • CEO:** Alexander Nikolaevich Romaskevich (RomaskevicH)  
 **Project:** CONSTRUCTOR AI · IMPERIAL Core  
 **Stage:** Early-stage, working local prototype · Updated 5 November 2026
 
@@ -32,4 +32,4 @@ We welcome conversations with pre-seed investors, technical partners and prospec
 Please introduce your organization and interest; do not send sensitive customer data in an initial inquiry.
 
 **Alexander Nikolaevich Romaskevich · RomaskevicH**  
-Founder · Owner · CEO · Chief Systems Architect, IMPERIAL Core
+Founder · Owner · CEO, IMPERIAL Core
