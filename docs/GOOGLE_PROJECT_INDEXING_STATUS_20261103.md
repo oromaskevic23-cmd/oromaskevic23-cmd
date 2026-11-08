@@ -1,6 +1,6 @@
 # IMPERIAL Core — Google Discoverability & Public Project Index
 **Checkpoint:** 2026-11-03 · **Status:** SOURCE AND NAVIGATION VERIFIED; GOOGLE INDEXATION UNVERIFIED.
-**Founder:** Alexander Nikolaevich Romaskevich (RomaskevicH), Founder • Owner • CEO • Chief Systems Architect and final architectural decision authority.
+**Founder:** Alexander Nikolaevich Romaskevich (RomaskevicH), Founder • Owner • CEO and final architectural decision authority.
 
 ## Scope verified through authorized GitHub connector
 
