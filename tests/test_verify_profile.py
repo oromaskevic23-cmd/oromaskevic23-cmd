@@ -4,7 +4,7 @@ from shutil import copyfile
 from tempfile import TemporaryDirectory
 import unittest
 
-from tools.verify_profile import ASSET_BLOBS, EMBLEM, ROOT, verify_profile
+from tools.verify_profile import ASSET_BLOBS, EMBLEM, ROOT, verify_profile, verify_public_reference_links
 
 
 class ProfileIntegrityTests(unittest.TestCase):
@@ -56,6 +56,32 @@ class ProfileIntegrityTests(unittest.TestCase):
         changed = self.profile.replace('src="assets/hanter-banner-original-20261029.jpg"',
                                        'src="assets/unapproved-banner.jpg"')
         self.assert_fails(changed, "Owner-selected IMPERIUM / HANTER / NDB arrangement")
+
+    def test_public_document_links_pass(self):
+        self.assertTrue(all(ok for _, ok in verify_public_reference_links()))
+
+    def test_obsolete_brand_link_in_notice_is_rejected(self):
+        paths = (
+            "README.md", "NOTICE.md", "docs/CONSTRUCTOR_AI_INVESTOR_OVERVIEW.md",
+            "docs/ENGINEERING_DUE_DILIGENCE_20261109.md",
+            "docs/FOUNDER_PUBLIC_PROJECT_REGISTRY_20261031.md", "brand/README.md",
+        )
+        with TemporaryDirectory() as directory:
+            root = Path(directory)
+            for path in paths:
+                target = root / path
+                target.parent.mkdir(parents=True, exist_ok=True)
+                copyfile(ROOT / path, target)
+            notice = root / "NOTICE.md"
+            notice.write_text(
+                notice.read_text(encoding="utf-8").replace(
+                    "https://github.com/oromaskevic23-cmd/oromaskevic23-cmd/blob/main/brand/README.md",
+                    "https://oromaskevic23-cmd.github.io/Capital-Core-Public/reference/brand/BRAND.md"
+                ), encoding="utf-8")
+            self.assertFalse(dict(verify_public_reference_links(root))[
+                "Founder notice points to canonical tracked symbol policy"])
+            self.assertFalse(dict(verify_public_reference_links(root))[
+                "Founder notice rejects obsolete site and untracked brand links"])
 
     def test_credential_like_token_is_rejected(self):
         token = "ghp_" + "A" * 36
