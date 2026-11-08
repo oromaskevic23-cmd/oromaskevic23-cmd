@@ -154,8 +154,41 @@ def verify_profile(text: str, root: Path = ROOT) -> list[tuple[str, bool]]:
     return checks
 
 
+
+def verify_public_reference_links(root: Path = ROOT) -> list[tuple[str, bool]]:
+    """Check local document targets and canonical links without network access.
+
+    This prevents regressions to obsolete Pages paths, but cannot validate
+    the uptime or search indexing of an externally served website.
+    """
+    profile = (root / "README.md").read_text(encoding="utf-8")
+    notice = (root / "NOTICE.md").read_text(encoding="utf-8")
+    investor = (root / "docs/CONSTRUCTOR_AI_INVESTOR_OVERVIEW.md").read_text(encoding="utf-8")
+    paths = (
+        "docs/ENGINEERING_DUE_DILIGENCE_20261109.md",
+        "docs/CONSTRUCTOR_AI_INVESTOR_OVERVIEW.md",
+        "docs/FOUNDER_PUBLIC_PROJECT_REGISTRY_20261031.md",
+        "brand/README.md",
+    )
+    base = f"https://github.com/{OWNER}/{OWNER}/blob/main/"
+    return [
+        ("Public reference documents are present",
+         all((root / p).is_file() for p in paths)),
+        ("Profile points to existing investor, due-diligence and registry files",
+         all(base + p in profile for p in paths[:3])),
+        ("Founder notice points to canonical tracked symbol policy",
+         base + "brand/README.md" in notice),
+        ("Founder notice rejects obsolete site and untracked brand links",
+         "IMPERIAL-Core-Public/reference/" not in notice
+         and "Capital-Core-Public/reference/brand/BRAND.md" not in notice),
+        ("Investor overview links to the reproducible evidence brief",
+         base + "docs/ENGINEERING_DUE_DILIGENCE_20261109.md" in investor),
+    ]
+
+
 def main() -> int:
-    checks = verify_profile((ROOT / "README.md").read_text(encoding="utf-8"))
+    checks = (verify_profile((ROOT / "README.md").read_text(encoding="utf-8"))
+              + verify_public_reference_links())
     for name, success in checks:
         print(("PASS" if success else "FAIL") + ": " + name)
     print(f"Profile integrity: {sum(ok for _, ok in checks)}/{len(checks)} PASS")
