@@ -1,7 +1,7 @@
 # IMPERIAL Core — One Corporate Symbol Policy
 
 **Canonical decision:** 3 November 2026.  
-**Authority:** Alexander Nikolaevich Romaskevich (RomaskevicH) · Founder, Owner, CEO & Chief Systems Architect.  
+**Authority:** Alexander Nikolaevich Romaskevich (RomaskevicH) · Founder, Owner and CEO.  
 **Policy ID:** `IMPERIAL-CORE-CORPORATE-SYMBOL-LOCK-001`.  
 **Status:** Pinned in the official GitHub profile with tested integrity checks; **cross-repository enforcement not yet verified**.
 

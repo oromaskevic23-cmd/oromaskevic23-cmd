@@ -106,7 +106,8 @@ def verify_profile(text: str, root: Path = ROOT) -> list[tuple[str, bool]]:
     check("Profile sections remain complete and ordered", sections == list(EXPECTED_SECTIONS))
     check("Founder identity, roles and authority",
           all(value in text for value in ("Alexander Nikolaevich Romaskevich", "RomaskevicH",
-              "Founder · Owner · CEO · Chief Systems Architect", "retain final architectural decision authority")))
+              "Founder · Owner · CEO", "retain final architectural decision authority")))
+    check("Deprecated executive title removed", not re.search(r"chief\s+systems\s+architect", text, re.I))
     check("Personal privacy and ownership detail boundary",
           "Ukraine" not in text and not re.search(r"\b(?:shares|shareholder)\b", text, re.I))
     check("Investment route and current prototype scope",
