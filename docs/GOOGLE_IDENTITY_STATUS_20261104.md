@@ -3,8 +3,7 @@
 **Observation date:** 2026-11-04 UTC. This is a dated operator record, not a live ranking report.
 
 The public identity describes Alexander Nikolaevich Romaskevich, also known as
-Alexander Romaskevich and RomaskevicH, as Founder, Owner, CEO and Chief Systems
-Architect of IMPERIAL Core. These are founder-declared project roles.
+Alexander Romaskevich and RomaskevicH, as Founder, Owner, CEO of IMPERIAL Core. These are founder-declared project roles.
 
 ## Search Console observations
 
