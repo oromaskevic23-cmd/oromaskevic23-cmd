@@ -6,7 +6,7 @@ on:
       - README.md
       - assets/imperial-core-skyline-original-20261029.jpg
       - assets/imperial-core-emblem.webp
-      - assets/alexander-romaskevich-portrait-original-20261029.jpg
+      - assets/alexander-romaskevich-portrait-20261110.jpg
       - assets/hanter-banner-original-20261029.jpg
       - tools/verify_profile.py
       - tests/test_verify_profile.py
