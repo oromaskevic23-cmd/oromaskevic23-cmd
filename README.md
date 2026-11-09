@@ -27,7 +27,7 @@
 ---
 
 <p align="center">
-  <img src="assets/alexander-romaskevich-portrait-original-20261029.jpg" alt="Alexander Romaskevich, founder of IMPERIAL Core" width="300" />
+  <img src="assets/alexander-romaskevich-portrait-20261110.jpg" alt="Alexander Romaskevich, founder of IMPERIAL Core" width="300" />
 </p>
 
 <h2 align="center">Alexander Romaskevich</h2>

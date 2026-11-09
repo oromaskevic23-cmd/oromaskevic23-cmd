@@ -1,5 +1,7 @@
 # IMPERIAL Core — Official Project and Founder Attribution
 
+<img src="assets/alexander-romaskevich-portrait-20261110.jpg" alt="Alexander Nikolaevich Romaskevich" width="220" />
+
 **Project creator / Founding Architect:** Alexander Nikolaevich Romaskevich  
 **Public GitHub signature:** RomaskevicH  
 **Canonical GitHub owner:** [oromaskevic23-cmd](https://github.com/oromaskevic23-cmd)  
