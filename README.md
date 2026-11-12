@@ -87,11 +87,19 @@ These are architectural commitments. Each operational capability must be demonst
 ## CRYPTO IMPERIAL Ecosystem
 
 <p align="center">
-  <a href="https://github.com/oromaskevic23-cmd/IMPERIUM"><img src="https://raw.githubusercontent.com/oromaskevic23-cmd/IMPERIUM/main/assets/imperium-hero-20261029.jpg" alt="IMPERIUM" width="160" /></a>
-  <a href="https://github.com/oromaskevic23-cmd/N.D.B"><img src="https://raw.githubusercontent.com/oromaskevic23-cmd/N.D.B/main/assets/ndb-hero-20261029.jpg" alt="NDB" width="160" /></a>
+  <img src="assets/crypto-imperial-gallery.svg" alt="IMPERIUM and NDB — two aligned neon-blue digital asset cards" width="100%" />
 </p>
 
-**IMPERIUM** is a long-term architectural digital currency envisioned for AI agents worldwide. **NDB** is a separate token project. This direction is distinct from the software business. We make no claim of current global adoption, liquidity, investment returns or an operational agent-payment service.
+<p align="center">
+  <a href="https://github.com/oromaskevic23-cmd/IMPERIUM"><strong>IMPERIUM</strong></a> &nbsp;·&nbsp;
+  <a href="https://github.com/oromaskevic23-cmd/N.D.B"><strong>NDB</strong></a>
+</p>
+
+**IMPERIUM** is a long-term architectural digital currency envisioned for AI agents worldwide.
+
+**NDB** is a separate token project. This direction is distinct from the software business.
+
+> We make no claim of current global adoption, liquidity, investment returns or an operational agent-payment service.
 
 ## What comes next
 
