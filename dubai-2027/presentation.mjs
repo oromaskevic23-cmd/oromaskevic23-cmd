@@ -13,3 +13,10 @@ button.addEventListener('click',async()=>{
   }catch(error){status.textContent='Not verified: '+error.message+'. See the offline verification guide.';}
   finally{button.disabled=false;}
 });
+
+import {renderScenario} from './scenarios.mjs';
+const scenarioSelect=document.getElementById('scenario-select');
+const scenarioOutput=document.getElementById('scenario-output');
+function showScenario(){renderScenario(scenarioOutput,scenarioSelect.value);}
+scenarioSelect.addEventListener('change',showScenario);
+showScenario();
