@@ -1,0 +1,39 @@
+{
+  "schema": "imperial-dubai-public-checkpoint-v1",
+  "date": "2026-11-15",
+  "scope": "DEVELOPER_RUN_LOCAL_SYNTHETIC",
+  "signer": "EPHEMERAL_DEMO_KEY_NOT_VERIFIED_OWNER_IDENTITY",
+  "python": {
+    "passed": 133,
+    "total": 133,
+    "seconds": 18.447
+  },
+  "javascript_ui_state": {
+    "passed": 8,
+    "total": 8
+  },
+  "ed25519_proof_tests": {
+    "passed": 10,
+    "total": 10,
+    "included_in_python": true
+  },
+  "showcase_assertions": {
+    "passed": 9,
+    "total": 9,
+    "separate_run": true
+  },
+  "synthetic_benchmark": {
+    "cases": 24,
+    "review_cases": 12,
+    "false_matches": 0,
+    "real_payments": 0
+  },
+  "private_sample_signature_verified": true,
+  "limits": [
+    "No independent QA",
+    "No live LLM evaluation",
+    "No browser end-to-end acceptance",
+    "No measured client savings",
+    "No production deployment or contest acceptance claimed"
+  ]
+}
