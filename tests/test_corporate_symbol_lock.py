@@ -31,7 +31,7 @@ class CorporateSymbolLockTests(unittest.TestCase):
 
     def test_rejects_another_symbol(self):
         root,m=self.make_fixture()
-        (root/CANONICAL_FILE).write_bytes(b"RIFF....WEBP" + b"changed")
+        (root/CANONICAL_FILE).write_bytes(b"\xff\xd8\xff" + b"changed" + b"\xff\xd9")
         with self.assertRaisesRegex(BrandIntegrityError,"CORPORATE_EMBLEM_BYTES_CHANGED"):
             verify_brand_lock(root=root)
 
@@ -55,10 +55,10 @@ class CorporateSymbolLockTests(unittest.TestCase):
         with self.assertRaisesRegex(BrandIntegrityError,"MISSING_OR_LINKED"):
             verify_brand_lock(root=root)
 
-    def test_asset_has_webp_magic(self):
+    def test_asset_has_jpeg_magic(self):
         raw=Path(CANONICAL_FILE).read_bytes()
-        self.assertEqual(raw[:4],b"RIFF")
-        self.assertEqual(raw[8:12],b"WEBP")
+        self.assertEqual(raw[:3],b"\xff\xd8\xff")
+        self.assertEqual(raw[-2:],b"\xff\xd9")
         self.assertEqual(len(CANONICAL_GIT_BLOB_SHA1),40)
 
     def test_agent_avatar_can_change_without_brand_change(self):
@@ -72,3 +72,4 @@ class CorporateSymbolLockTests(unittest.TestCase):
 
 if __name__=="__main__":
     unittest.main()
+

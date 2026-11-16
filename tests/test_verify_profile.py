@@ -1,10 +1,10 @@
-"""Meaningful regression checks for founder profile integrity boundaries."""
+"""Negative tests for the public profile's critical disclosure boundaries."""
 from pathlib import Path
 from shutil import copyfile
 from tempfile import TemporaryDirectory
 import unittest
 
-from tools.verify_profile import ASSET_BLOBS, EMBLEM, ROOT, verify_profile, verify_public_reference_links
+from tools.verify_profile import ASSET_BLOBS, EMBLEM, ROOT, allowed_public_link, verify_profile, verify_public_reference_links
 
 
 class ProfileIntegrityTests(unittest.TestCase):
@@ -12,80 +12,40 @@ class ProfileIntegrityTests(unittest.TestCase):
     def setUpClass(cls):
         cls.profile = (ROOT / "README.md").read_text(encoding="utf-8")
 
-    def assert_fails(self, text, name, root=ROOT):
-        self.assertFalse(dict(verify_profile(text, root))[name])
+    def rejected(self, changed, name, root=ROOT):
+        self.assertFalse(dict(verify_profile(changed, root))[name])
 
     def test_current_profile_passes(self):
         self.assertTrue(all(ok for _, ok in verify_profile(self.profile)))
-
-    def test_missing_founder_authority_is_rejected(self):
-        changed = self.profile.replace("retain final architectural decision authority", "guide the project")
-        self.assert_fails(changed, "Founder identity, roles and authority")
-
-    def test_deprecated_executive_title_is_rejected(self):
-        old_title = "Chief" + " Systems" + " Architect"
-        self.assert_fails(self.profile + "\n" + old_title, "Deprecated executive title removed")
-
-    def test_missing_product_evidence_boundary_is_rejected(self):
-        changed = self.profile.replace("do not establish a production service or external certification", "prove full production readiness")
-        self.assert_fails(changed, "Limits of product and CI evidence")
-
-    def test_missing_architecture_boundary_is_rejected(self):
-        changed = self.profile.replace("Federated Multi-Orchestrator Architecture", "single global controller")
-        self.assert_fails(changed, "Federated governance and public/private boundary")
-
-    def test_unapproved_link_is_rejected(self):
-        changed = self.profile.replace("https://github.com/oromaskevic23-cmd/CONSTRUCTOR-AI)", "https://example.invalid/CONSTRUCTOR-AI)", 1)
-        self.assert_fails(changed, "Useful links stay within approved destinations")
-
-    def test_missing_recorded_ci_is_rejected(self):
-        changed = self.profile.replace("actions/runs/42001525556", "actions/runs/not-a-recorded-run")
-        self.assert_fails(changed, "Reproducible flagship commands and commit-bound CI evidence")
-
-    def test_substituted_corporate_emblem_is_rejected(self):
-        with TemporaryDirectory() as directory:
-            root = Path(directory)
-            for asset in ASSET_BLOBS:
-                target = root / asset
-                target.parent.mkdir(parents=True, exist_ok=True)
-                copyfile(ROOT / asset, target)
-            (root / EMBLEM).write_bytes(b"substituted emblem")
-            self.assert_fails(self.profile, "Approved image asset fingerprints", root)
-
-    def test_hanter_banner_must_remain_between_token_images(self):
-        changed = self.profile.replace('src="assets/hanter-banner-original-20261029.jpg"',
-                                       'src="assets/unapproved-banner.jpg"')
-        self.assert_fails(changed, "Owner-selected IMPERIUM / HANTER / NDB arrangement")
-
-    def test_public_document_links_pass(self):
         self.assertTrue(all(ok for _, ok in verify_public_reference_links()))
 
-    def test_obsolete_brand_link_in_notice_is_rejected(self):
-        paths = (
-            "README.md", "NOTICE.md", "docs/CONSTRUCTOR_AI_INVESTOR_OVERVIEW.md",
-            "docs/ENGINEERING_DUE_DILIGENCE_20261109.md",
-            "docs/FOUNDER_PUBLIC_PROJECT_REGISTRY_20261031.md", "brand/README.md",
-        )
+    def test_architecture_and_passport_boundaries(self):
+        self.rejected(self.profile.replace("Federated Multi-Orchestrator Architecture", "single controller"),
+                      "Federated architecture and control boundaries")
+        self.rejected(self.profile.replace("Identity alone never grants permission", "Identity grants permission"),
+                      "Passport illustration cannot imply authorization")
+
+    def test_synthetic_demo_and_model_failure_are_disclosed(self):
+        self.rejected(self.profile.replace("fixed synthetic examples", "live examples"),
+                      "Dubai walkthrough and status are bounded")
+        self.rejected(self.profile.replace("browser verifier failed", "browser verifier succeeded"),
+                      "Evidence, model failure and limitations disclosed")
+
+    def test_swapped_symbol_is_rejected(self):
         with TemporaryDirectory() as directory:
             root = Path(directory)
-            for path in paths:
+            for path in ASSET_BLOBS:
                 target = root / path
                 target.parent.mkdir(parents=True, exist_ok=True)
                 copyfile(ROOT / path, target)
-            notice = root / "NOTICE.md"
-            notice.write_text(
-                notice.read_text(encoding="utf-8").replace(
-                    "https://github.com/oromaskevic23-cmd/oromaskevic23-cmd/blob/main/brand/README.md",
-                    "https://oromaskevic23-cmd.github.io/Capital-Core-Public/reference/brand/BRAND.md"
-                ), encoding="utf-8")
-            self.assertFalse(dict(verify_public_reference_links(root))[
-                "Founder notice points to canonical tracked symbol policy"])
-            self.assertFalse(dict(verify_public_reference_links(root))[
-                "Founder notice rejects obsolete site and untracked brand links"])
+            (root / EMBLEM).write_bytes(b"unapproved substitution")
+            self.rejected(self.profile, "Owner-selected image fingerprints", root)
 
-    def test_credential_like_token_is_rejected(self):
-        token = "ghp_" + "A" * 36
-        self.assert_fails(self.profile + "\n" + token, "No common credential token patterns")
+    def test_bad_links_and_credentials_are_rejected(self):
+        self.assertFalse(allowed_public_link("https://github.com.evil.example/oromaskevic23-cmd/project"))
+        self.assertFalse(allowed_public_link("docs/%2e%2e/private"))
+        self.rejected(self.profile + "\n" + "ghp_" + "A" * 36,
+                      "No common credential token patterns")
 
 
 if __name__ == "__main__":

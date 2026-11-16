@@ -4,10 +4,11 @@ on:
     branches: [main]
     paths:
       - README.md
-      - assets/imperial-core-skyline-original-20261029.jpg
-      - assets/imperial-core-emblem.webp
+      - assets/imperial-core-banner-diamond-20261116.jpg
+      - assets/imperial-core-diamond-20261116.jpg
+      - assets/ai-passport-concept-20261116.jpg
       - assets/alexander-romaskevich-portrait-20261110.jpg
-      - assets/hanter-banner-original-20261029.jpg
+      - assets/hanter-banner-diamond-20261116.jpg
       - tools/verify_profile.py
       - tests/test_verify_profile.py
       - .github/workflows/profile-integrity.yml
@@ -28,3 +29,4 @@ jobs:
         run: python3 tools/verify_profile.py
       - name: Exercise profile integrity checks
         run: python3 -m unittest discover -s tests -p 'test_verify_profile.py' -v
+

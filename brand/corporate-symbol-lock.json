@@ -1,17 +1,17 @@
 {
   "schema_version": 1,
   "policy_id": "IMPERIAL-CORE-CORPORATE-SYMBOL-LOCK-001",
-  "decision_date": "2026-11-03",
+  "decision_date": "2026-11-16",
   "status": "CANONICAL_GITHUB_REFERENCE",
   "visual_authority": "Founder / Owner / CEO",
   "brand": "IMPERIAL Core",
   "approved_symbol": {
     "repository": "oromaskevic23-cmd/oromaskevic23-cmd",
-    "path": "assets/imperial-core-emblem.webp",
-    "git_blob_sha1": "7749da03da49d4434fc826d0f26793785a3cab42",
-    "media_type": "image/webp",
+    "path": "assets/imperial-core-diamond-20261116.jpg",
+    "git_blob_sha1": "85113c4fdd90c6c0fbe971ee14a5a6c30bb9d7aa",
+    "media_type": "image/jpeg",
     "role": "corporate_primary_symbol",
-    "reference_url": "https://github.com/oromaskevic23-cmd/oromaskevic23-cmd/blob/main/assets/imperial-core-emblem.webp"
+    "reference_url": "https://github.com/oromaskevic23-cmd/oromaskevic23-cmd/blob/main/assets/imperial-core-diamond-20261116.jpg"
   },
   "allowed_variation": {
     "nca_avatar_subject": true,
@@ -31,7 +31,7 @@
     "random_generated_logo",
     "new_monogram_without_owner_approval"
   ],
-  "placement": "In corporate branding, display the approved symbol unchanged. NCA avatars may differ but must not replace the corporate mark.",
+  "placement": "Use the exact owner-selected diamond source, without redrawing or stretching. Proportional scaling or a non-destructive display crop is allowed.",
   "execution_scope": "This manifest pins the GitHub profile asset; it is not yet cross-repository GitHub ruleset enforcement.",
   "rights_and_status": "Image origin/provenance remains subject to the separately recorded authorial/IP evidence. Technical hash verification is not legal title."
 }

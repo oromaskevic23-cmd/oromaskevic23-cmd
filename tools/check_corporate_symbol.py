@@ -14,8 +14,8 @@ ROOT = Path(__file__).resolve().parents[1]
 MANIFEST = ROOT / "brand" / "corporate-symbol-lock.json"
 
 CANONICAL_REPO = "oromaskevic23-cmd/oromaskevic23-cmd"
-CANONICAL_FILE = "assets/imperial-core-emblem.webp"
-CANONICAL_GIT_BLOB_SHA1 = "7749da03da49d4434fc826d0f26793785a3cab42"
+CANONICAL_FILE = "assets/imperial-core-diamond-20261116.jpg"
+CANONICAL_GIT_BLOB_SHA1 = "85113c4fdd90c6c0fbe971ee14a5a6c30bb9d7aa"
 POLICY_ID = "IMPERIAL-CORE-CORPORATE-SYMBOL-LOCK-001"
 
 
@@ -54,7 +54,7 @@ def verify_brand_lock(*, root: Path = ROOT) -> dict:
     if asset.is_symlink() or not asset.is_file():
         raise BrandIntegrityError("MISSING_OR_LINKED_CORPORATE_EMBLEM")
     content = asset.read_bytes()
-    if not content.startswith(b"RIFF") or content[8:12] != b"WEBP":
+    if not content.startswith(b"\xff\xd8\xff") or not content.endswith(b"\xff\xd9"):
         raise BrandIntegrityError("INVALID_CORPORATE_EMBLEM_FORMAT")
     actual = git_blob_hash(content)
     if actual != CANONICAL_GIT_BLOB_SHA1:
@@ -72,3 +72,4 @@ def verify_brand_lock(*, root: Path = ROOT) -> dict:
 if __name__ == "__main__":
     import json
     print(json.dumps(verify_brand_lock(), sort_keys=True, indent=2))
+

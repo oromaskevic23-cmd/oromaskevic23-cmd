@@ -1,9 +1,9 @@
 <p align="center">
-  <img src="assets/imperial-core-skyline-original-20261029.jpg" alt="IMPERIAL Core" width="100%" />
+  <img src="assets/imperial-core-banner-diamond-20261116.jpg" alt="IMPERIAL Core federated AI ecosystem concept, with a blue diamond and city skyline" width="100%" />
 </p>
 
 <p align="center">
-  <img src="assets/imperial-core-emblem.webp" alt="IMPERIAL Core official emblem" width="112" />
+  <img src="assets/imperial-core-diamond-20261116.jpg" alt="IMPERIAL Core blue diamond identity artwork" width="200" />
 </p>
 
 <h1 align="center">IMPERIAL Core</h1>
@@ -56,6 +56,12 @@ These are specific, inspectable development records, not commercial or productio
 
 The [engineering due-diligence brief](docs/ENGINEERING_DUE_DILIGENCE_20261109.md) and [evidence dossier](https://oromaskevic23-cmd.github.io/oromaskevic23-cmd/engineering/) provide additional context. Repository-controlled tests are not independent certification. Customer revenue, commercial readiness and an operating global agent fleet are not established here.
 
+## Dubai 2027 — an agent for invoice exceptions
+
+Our competition work focuses on a finance problem: matching invoices against reference records and directing exceptions to an authorized reviewer. The [public project](https://github.com/oromaskevic23-cmd/IMPERIAL-DUBAI-2027-Public) explains the prototype, its safeguards and its evidence. The [interactive walkthrough](https://oromaskevic23-cmd.github.io/oromaskevic23-cmd/dubai-2027/) uses fixed synthetic examples; it is not a live agent or a payment service.
+
+Developer-run tests and synthetic comparisons are documented in the project. Model quality acceptance, independent review and measured customer value remain open. This is independent preparation; participation, selection and endorsement are not claimed.
+
 ## Technology portfolio
 
 | Project | Purpose |
@@ -75,14 +81,24 @@ The [engineering due-diligence brief](docs/ENGINEERING_DUE_DILIGENCE_20261109.md
 ## Architecture and human control
 
 <p align="center">
-  <a href="https://github.com/oromaskevic23-cmd/HANTER-Public"><img src="assets/hanter-banner-original-20261029.jpg" alt="HANTER and Nano Core Agents" width="100%" /></a>
+  <a href="https://github.com/oromaskevic23-cmd/HANTER-Public"><img src="assets/hanter-banner-diamond-20261116.jpg" alt="HANTER AI Command Center concept artwork" width="100%" /></a>
 </p>
+
+The artwork is illustrative; its labels and QR code do not establish operating status or override the architecture described below.
 
 The target architecture is a **Federated Multi-Orchestrator Architecture**. HANTER coordinates missions, while specialized orchestrators manage their own organizations, professional teams and Nano Core Agents. ORION supports collective intelligence.
 
 AI Passport identifies agents; Enterprise Skills define their capabilities. Guardian Core evaluates policy, Approval Gateway handles approvals and Audit Ledger records relevant actions. Zero Trust, the Owner Kill Switch, the Public/Private Boundary and the CRYPTO IMPERIAL Ecosystem Boundary are core design requirements.
 
 These are architectural commitments. Each operational capability must be demonstrated separately before it is described as working.
+
+### AI Passport — design concept
+
+<p align="center">
+  <img src="assets/ai-passport-concept-20261116.jpg" alt="Concept illustration of the front and back of an IMPERIAL Core AI Passport" width="100%" />
+</p>
+
+The proposed passport gives an agent a recognizable identity, specialty and verifiable credential. The public view should disclose only the information needed to identify and verify the credential; private policy, approval and audit details remain inside the authorized boundary. Identity alone never grants permission to act. The pictured name, score, QR code and status are illustrative, not live credentials or measured results. [Read the design and verification boundary](docs/AI_PASSPORT_CONCEPT.md).
 
 ## CRYPTO IMPERIAL Ecosystem
 
@@ -121,3 +137,4 @@ Founder · Owner · CEO, IMPERIAL Core
 [Authorship and provenance](NOTICE.md) · [Corporate symbol policy](brand/README.md)
 
 Third-party components retain their original attribution and applicable licenses. Public visibility does not by itself grant a software license.
+
