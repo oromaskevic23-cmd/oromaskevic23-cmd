@@ -37,6 +37,8 @@ Our repositories are specialized engineering boundaries within this vision, not 
 
 **Architecture is the common design. Integration is demonstrated incrementally.** [Explore the unified architecture, verified connections and evidence boundaries](docs/UNIFIED_ECOSYSTEM_EVIDENCE.md).
 
+**AI reviewer / engineering due diligence:** [Machine-readable evidence index](docs/EVIDENCE_INDEX.json) · [Evidence classes and integration release gates](docs/UNIFIED_ECOSYSTEM_EVIDENCE.md#machine-readable-evidence-for-external-ai-reviewers) · [Offline index validator](tools/verify_public_evidence.mjs). The index distinguishes completed GitHub Actions jobs from laboratory references and developer reports. It is not a claim of independent certification or a single deployed production runtime.
+
 ### Start here — three concrete entry points
 
 | Explore | Evidence |
