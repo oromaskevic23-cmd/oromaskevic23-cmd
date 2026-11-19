@@ -1,0 +1,101 @@
+{
+  "schema_version": "1.0",
+  "project": "IMPERIAL Core",
+  "public_architecture": "Federated Multi-Orchestrator Architecture",
+  "as_of": "2026-11-19",
+  "description": "Machine-readable public evidence index. Architectural intent and test results are separate. Links establish traceability, not independent certification.",
+  "final_architectural_authority": "Alexander Nikolaevich Romaskevich — Founder · Owner · CEO",
+  "unified_production_runtime_verified": false,
+  "independent_certification_verified": false,
+  "championship_submission_verified": false,
+  "records": [
+    {
+      "id": "constructor-template-ci",
+      "component": "CONSTRUCTOR AI",
+      "evidence_class": "github_actions_job_success",
+      "source": "https://github.com/oromaskevic23-cmd/CONSTRUCTOR-AI/actions/runs/42001525579",
+      "claim": "At the cited reviewed revision, GitHub Actions completed source, ZIP export and extracted-app checks successfully.",
+      "scope": "Three reviewed local template applications",
+      "limitation": "Not an arbitrary-prompt software factory, deployment or independent audit.",
+      "independent": false,
+      "production": false
+    },
+    {
+      "id": "constructor-browser-ci",
+      "component": "CONSTRUCTOR AI",
+      "evidence_class": "github_actions_job_success",
+      "source": "https://github.com/oromaskevic23-cmd/CONSTRUCTOR-AI/actions/runs/42001525556",
+      "claim": "GitHub Actions browser job completed with real Chromium acceptance checks.",
+      "scope": "Reviewed Template Studio and exported applications",
+      "limitation": "Does not establish full cross-browser support or production readiness.",
+      "independent": false,
+      "production": false
+    },
+    {
+      "id": "velion-constructor-inference-ci",
+      "component": "VELION → CONSTRUCTOR AI",
+      "evidence_class": "github_actions_job_success",
+      "source": "https://github.com/oromaskevic23-cmd/VELION-LLM-Public/actions/runs/40683989519",
+      "claim": "Real-model cross-repository GitHub Actions job completed successfully using externally sourced NVIDIA Nemotron weights and a local signed API.",
+      "scope": "Bounded ephemeral CPU inference and CONSTRUCTOR AI adapter",
+      "limitation": "No VELION-owned foundation model, persistent hosted endpoint or autonomous production coding.",
+      "independent": false,
+      "production": false
+    },
+    {
+      "id": "agy-local-protocol-ci",
+      "component": "AGY",
+      "evidence_class": "github_actions_job_success",
+      "source": "https://github.com/oromaskevic23-cmd/AGY/actions/runs/43118953561",
+      "claim": "The repository's local protocol CI job completed successfully, including offline demonstrations.",
+      "scope": "Local mission protocol and signed owner controls",
+      "limitation": "Does not establish a live blockchain network, distributed consensus or operational economy.",
+      "independent": false,
+      "production": false
+    },
+    {
+      "id": "hanter-local-pilot",
+      "component": "HANTER → Federated Orchestrators → Nano Core Agents",
+      "evidence_class": "documented_local_reference",
+      "source": "https://github.com/oromaskevic23-cmd/HANTER-Public/blob/main/README.md",
+      "claim": "Repository documents an executable read-only mission pilot and signed local permit references.",
+      "scope": "Local file-hashing mission and laboratory credentials",
+      "limitation": "No continuous runtime, live agent fleet, production AI Passport issuer or independent QA.",
+      "independent": false,
+      "production": false
+    },
+    {
+      "id": "security-local-composition",
+      "component": "ZERO TRUST · GUARDIAN CORE · APPROVAL GATEWAY · AUDIT LEDGER",
+      "evidence_class": "documented_local_reference",
+      "source": "https://github.com/oromaskevic23-cmd/AUDIT-LEDGER/blob/main/README.md",
+      "claim": "Documented synthetic cross-component reference with local protected records, signed decisions and ledger proof limitations.",
+      "scope": "Laboratory composition, local SQLite and test fixtures",
+      "limitation": "Not production enforcement, an independently witnessed immutable audit or a distributed Owner Kill Switch.",
+      "independent": false,
+      "production": false
+    },
+    {
+      "id": "dubai-signed-public-checkpoint",
+      "component": "Governed Invoice Exception Agent — Dubai 2027",
+      "evidence_class": "public_developer_report",
+      "source": "https://github.com/oromaskevic23-cmd/IMPERIAL-DUBAI-2027-Public/blob/main/EVIDENCE.md",
+      "claim": "Public evidence document records 133 Python tests, eight UI-state tests and a 24-case synthetic benchmark; summary signed using a demonstration key.",
+      "scope": "Developer-recorded snapshot dated 2026-11-15",
+      "limitation": "Valid signature supports summary integrity, not independent test execution, live service, customer savings or accepted model quality.",
+      "independent": false,
+      "production": false
+    },
+    {
+      "id": "dubai-model-quality-fail",
+      "component": "Governed Invoice Exception Agent — Dubai 2027",
+      "evidence_class": "public_developer_report",
+      "source": "https://github.com/oromaskevic23-cmd/IMPERIAL-DUBAI-2027-Public/blob/main/REAL_MODEL_RESULTS.md",
+      "claim": "Public real-model experiment records model quality FAIL despite deterministic policy safety on synthetic examples.",
+      "scope": "Developer-run local model evaluation dated 2026-11-15",
+      "limitation": "Not an accepted AI model or production competition-runtime integration.",
+      "independent": false,
+      "production": false
+    }
+  ]
+}
