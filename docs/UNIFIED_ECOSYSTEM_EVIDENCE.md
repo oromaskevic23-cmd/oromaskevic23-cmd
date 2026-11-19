@@ -45,6 +45,42 @@ Repositories are versioned engineering boundaries for specialized components, pr
 
 CI jobs listed as successful were checked on 19 November. Project-controlled CI is not independent certification. The local reference and public documentation links are inspectable, not claims of a single production runtime.
 
+## Machine-readable evidence for external AI reviewers
+
+The [public evidence index](EVIDENCE_INDEX.json) ties eight specific claims to public source URLs, the observed evidence class, a narrowly stated scope, and a clear limitation. It makes the distinction between an architecture reference, a developer-reported experiment and a completed GitHub Actions job explicit.
+
+Evidence classes are deliberately limited:
+
+| Class | Meaning | Does not prove |
+| --- | --- | --- |
+| `github_actions_job_success` | The linked GitHub Actions job ended with `conclusion=success` at the observed checkpoint | Independent certification, continuous runtime or general capability |
+| `documented_local_reference` | Public code/documentation describes a local laboratory reference | That an independent assessor ran it or that it is deployed |
+| `public_developer_report` | A public report records results and limitations under the developer's responsibility | Independent observation, model admission or measured customer value |
+| `architecture_target` | An intended design contract for future implementation | Tested functionality or deployment |
+
+As of 19 November 2026, **no index entry asserts independent certification or production operation**. No self-signed demo proof is represented as third-party certification. The validator checks data consistency and the presence of scoped evidence URLs; it does not fetch source URLs, rerun external tests or make security assertions.
+
+Run locally using Node.js 22+ (no dependencies, network or paid CI):
+
+```sh
+node tools/verify_public_evidence.mjs
+node --test tests/test_public_evidence_index.mjs
+```
+
+The recorded index is a snapshot, not continuous monitoring. Every future claim must bind to a dated source revision or execution receipt, state whether results are developer-run, and preserve known failures.
+
+## Release gates for the unified digital-state architecture
+
+| Area | Current public evidence | Admission required before claiming a fully integrated mechanism |
+| --- | --- | --- |
+| Intelligence and software engineering | VELION → CONSTRUCTOR AI completed an ephemeral real-model CI; Template Studio exported reviewed local apps | Reproducible real-model user-to-artifact workflow, actual code execution in a sandbox, separate QA and release proof |
+| Federated operations | HANTER has local mission and source-level MCP handoffs | Actual HANTER mission dispatch, federated worker claim/lease/finish and attributable receipt against one exact revision |
+| Identity, policy, approval, audit | Four public security modules provide local reference code and synthetic composition | End-to-end resource-side enforcement under an independently pinned Owner authority, revocation, replay and stop tests |
+| Dubai flagship | Public signed developer checkpoint and documented model-quality failures | Accepted real-model quality on held-out tasks, real browser-agent workflow, independent QA and measured paired finance-pilot results |
+| Agent economy | AGY has an offline local protocol | Devnet, multi-node consistency, measured costs and independently observed operation; not required for Dubai |
+
+**Fail closed on evidence.** A passed policy test does not rehabilitate a failed model-quality test. A successful CI workflow at a pinned SHA does not prove that the current default branch, an external web deployment or the whole ecosystem passes today. Missing evidence is `NOT VERIFIED`, never a fabricated PASS.
+
 ## VELION: ownership and provenance
 
 VELION is IMPERIAL Core's intelligence architecture, governed routing and application integration work. The documented inference experiments use third-party model weights (including NVIDIA Nemotron and Qwen); their licenses and attribution remain separate. The ecosystem does not claim proprietary foundation-model training, exclusive ownership of third-party code, or superiority without evaluation. [VELION evidence](https://github.com/oromaskevic23-cmd/VELION-LLM-Public).
