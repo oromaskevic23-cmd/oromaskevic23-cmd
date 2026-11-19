@@ -15,9 +15,11 @@ flowchart TD
     F --> N["Runtime Domains · organizations · LEGION teams · dynamic Nano Core Agents"]
     N --> Z["Zero Trust · AI Passport · Enterprise Skills"]
     Z --> G["Guardian Core · IntentLock"]
-    G --> P["Approval Gateway — where required"]
+    G -->|Approval required| P["Approval Gateway — where required"]
+    G -->|Policy allows, no additional approval required| E["Bounded authorized execution"]
     G -->|Deny| L["Audit Ledger · ProofGraph"]
-    P --> E["Bounded authorized execution"]
+    P -->|Authorized| E
+    P -->|Denied or expired| L
     E --> L
     L --> H
     A --> K["Owner Kill Switch"]
