@@ -7,7 +7,7 @@
 </p>
 
 <h1 align="center">IMPERIAL Core</h1>
-<p align="center"><strong>Building software and autonomous AI systems people can trust.</strong></p>
+<p align="center"><strong>One AI-native ecosystem · One governance architecture · Human sovereignty</strong></p>
 <p align="center">Architecture → Implementation → Evidence</p>
 
 <p align="center">
@@ -17,11 +17,33 @@
   <a href="https://github.com/oromaskevic23-cmd/oromaskevic23-cmd/blob/main/docs/CONSTRUCTOR_AI_INVESTOR_OVERVIEW.md">Investor overview</a>
 </p>
 
-## A long-term engineering ambition
+## One ecosystem — the Digital State vision
 
-IMPERIAL Core is a founder-led technology ecosystem under development. Our goal is to build useful AI products and an infrastructure in which autonomous agents can work together without sacrificing security, accountability or human control.
+IMPERIAL Core is a founder-led AI-native ecosystem being engineered as a unified mechanism for intelligence, mission coordination, specialized organizations, secure execution and verifiable results. **Digital State** describes the engineering vision of a common governance architecture for autonomous intelligence: identity, capability, policy, authorization and evidence. It is not a legal state, government or claim of a fully deployed system.
 
-We start with a practical product: CONSTRUCTOR AI. The wider ecosystem brings together AI orchestration, model intelligence, professional agent teams, security and research into trusted digital infrastructure.
+Our repositories are specialized engineering boundaries within this vision, not dozens of independent businesses or live services. The architecture is federated: domains retain bounded autonomy while sharing governance requirements and verifiable interfaces.
+
+| System responsibility | Canonical component |
+| --- | --- |
+| Human sovereignty and final veto | ARCHITECT AUTHORITY · Owner Kill Switch |
+| Intelligence and collective reasoning | [VELION](https://github.com/oromaskevic23-cmd/VELION-LLM-Public) · [ORION](https://github.com/oromaskevic23-cmd/ORION-Public) |
+| Command and mission coordination | [HANTER](https://github.com/oromaskevic23-cmd/HANTER-Public) — AI Command Center |
+| Federated execution | Federated Multi-Orchestrator Architecture · Runtime Domains · [LEGION](https://github.com/oromaskevic23-cmd/Legion-Public) · [Nano Core Agents](https://github.com/oromaskevic23-cmd/Nano-Core-Agents-Public) |
+| Identity and skills | AI Passport · [Enterprise Skills](https://github.com/oromaskevic23-cmd/IMPERIAL-Skill) · [Zero Trust](https://github.com/oromaskevic23-cmd/ZERO-TRUST) |
+| Policy and authorization | [Guardian Core](https://github.com/oromaskevic23-cmd/GUARDIAN-CORE) · [Approval Gateway](https://github.com/oromaskevic23-cmd/APPROVAL-GATEWAY) · IntentLock |
+| Security and verifiable evidence | [CYBER HAK](https://github.com/oromaskevic23-cmd/CYBER-HAK-Public) · [Audit Ledger](https://github.com/oromaskevic23-cmd/AUDIT-LEDGER) · ProofGraph |
+| Products and research | [CONSTRUCTOR AI](https://github.com/oromaskevic23-cmd/CONSTRUCTOR-AI) · [Dubai 2027](https://github.com/oromaskevic23-cmd/IMPERIAL-DUBAI-2027-Public) · [Capital Core](https://github.com/oromaskevic23-cmd/Capital-Core-Public) · [AGY](https://github.com/oromaskevic23-cmd/AGY) |
+| Separate economic research | [CRYPTO IMPERIAL Ecosystem](https://github.com/oromaskevic23-cmd/CRYPTO-IMPERIAL-Ecosystem-Public) — isolated from competition and software execution |
+
+**Architecture is the common design. Integration is demonstrated incrementally.** [Explore the unified architecture, verified connections and evidence boundaries](docs/UNIFIED_ECOSYSTEM_EVIDENCE.md).
+
+### Start here — three concrete entry points
+
+| Explore | Evidence |
+| --- | --- |
+| [Dubai 2027 — Governed Invoice Exception Agent](https://github.com/oromaskevic23-cmd/IMPERIAL-DUBAI-2027-Public) | [Synthetic walkthrough](https://oromaskevic23-cmd.github.io/oromaskevic23-cmd/dubai-2027/) · [Signed public summary](https://github.com/oromaskevic23-cmd/IMPERIAL-DUBAI-2027-Public/blob/main/EVIDENCE.md) |
+| [CONSTRUCTOR AI — flagship software product](https://github.com/oromaskevic23-cmd/CONSTRUCTOR-AI) | [Template Studio](https://oromaskevic23-cmd.github.io/Capital-Core-Public/reference/constructor-ai/studio/studio.html) · [Actual browser acceptance CI](https://github.com/oromaskevic23-cmd/CONSTRUCTOR-AI/actions/runs/42001525556) |
+| [HANTER — AI Command Center](https://github.com/oromaskevic23-cmd/HANTER-Public) | [Executable local mission pilot](https://github.com/oromaskevic23-cmd/HANTER-Public/tree/main/hanter_pilot) · [Cross-repository evidence](docs/UNIFIED_ECOSYSTEM_EVIDENCE.md#evidence-of-composition) |
 
 <p align="center">
   <img src="assets/alexander-romaskevich-portrait-20261110.jpg" alt="Alexander Romaskevich, Founder, Owner and CEO of IMPERIAL Core" width="300" />
@@ -54,15 +76,19 @@ These are specific, inspectable development records, not commercial or productio
 | CONSTRUCTOR AI — real-model research | [PR #24](https://github.com/oromaskevic23-cmd/CONSTRUCTOR-AI/pull/24) records a real Qwen experiment whose browser verifier failed. A follow-up fixes verifier handling; successful end-to-end acceptance is not yet established. |
 | AGY | [Local Protocol Tests](https://github.com/oromaskevic23-cmd/AGY/actions/runs/43118953561) report 91 passing tests and three offline demonstrations, including a disposable worker stop and signed resume. [PR #7](https://github.com/oromaskevic23-cmd/AGY/pull/7) remains a research increment, not a live blockchain. |
 
-The [engineering due-diligence brief](docs/ENGINEERING_DUE_DILIGENCE_20261109.md) and [evidence dossier](https://oromaskevic23-cmd.github.io/oromaskevic23-cmd/engineering/) provide additional context. Repository-controlled tests are not independent certification. Customer revenue, commercial readiness and an operating global agent fleet are not established here.
+| VELION → CONSTRUCTOR AI | [Successful real-model cross-repository CI](https://github.com/oromaskevic23-cmd/VELION-LLM-Public/actions/runs/40683989519) used third-party NVIDIA Nemotron weights through a signed local API and a draft adapter; no persistent service or proprietary foundation model is claimed. |
+| HANTER → federation → NCA | [Local mission pilot](https://github.com/oromaskevic23-cmd/HANTER-Public/tree/main/hanter_pilot) and [pinned MCP handoff](https://github.com/oromaskevic23-cmd/HANTER-Public/blob/main/docs/SEARCH_INDEXING_MCP_HANDOFF.md) document bounded composition, not live fleet deployment. |
+| Shared security layers | [Audit Ledger composition reference](https://github.com/oromaskevic23-cmd/AUDIT-LEDGER#local-persistent-evidence) links a local synthetic cross-component check; no production or independent acceptance is claimed. |
+
+The [engineering due-diligence brief](docs/ENGINEERING_DUE_DILIGENCE_20261109.md) and [evidence dossier](https://oromaskevic23-cmd.github.io/oromaskevic23-cmd/engineering/) provide additional context. Repository-controlled tests are not independent certification. Customer revenue, commercial readiness and an operating global agent fleet are not established here. The linked CONSTRUCTOR AI, AGY and VELION CI job conclusions were checked on 19 November 2026. See the [composition evidence map](docs/UNIFIED_ECOSYSTEM_EVIDENCE.md) for scope and remaining acceptance gates.
 
 ## Dubai 2027 — an agent for invoice exceptions
 
 Our competition work focuses on a finance problem: matching invoices against reference records and directing exceptions to an authorized reviewer. The [public project](https://github.com/oromaskevic23-cmd/IMPERIAL-DUBAI-2027-Public) explains the prototype, its safeguards and its evidence. The [interactive walkthrough](https://oromaskevic23-cmd.github.io/oromaskevic23-cmd/dubai-2027/) uses fixed synthetic examples; it is not a live agent or a payment service.
 
-Developer-run tests and synthetic comparisons are documented in the project. Model quality acceptance, independent review and measured customer value remain open. This is independent preparation; participation, selection and endorsement are not claimed.
+The competition prototype is a separate original implementation of these governance principles. Its public evidence includes a signed developer-reported checkpoint, a synthetic benchmark, and failed real-model quality experiments. A signature proves summary integrity, not independently witnessed execution. Developer-run tests and synthetic comparisons are documented in the project. Model quality acceptance, independent review and measured customer value remain open. This is independent preparation; participation, selection and endorsement are not claimed.
 
-## Technology portfolio
+## Technology portfolio — specialized engineering domains
 
 | Project | Purpose |
 | --- | --- |
@@ -113,13 +139,13 @@ The proposed passport gives an agent a recognizable identity, specialty and veri
 
 **IMPERIUM** is a long-term architectural digital currency envisioned for AI agents worldwide.
 
-**NDB** is a separate token project. This direction is distinct from the software business.
+**NDB** is a separate token project. This direction is distinct from the software business and explicitly outside the Dubai invoice agent: no token, wallet, blockchain or payment connector is required.
 
 > We make no claim of current global adoption, liquidity, investment returns or an operational agent-payment service.
 
 ## What comes next
 
-Our engineering priority is a complete, bounded real-model application workflow with reproducible tests, isolated execution and independently reviewable evidence. Independent review and a carefully scoped customer pilot are the next steps toward a commercial product. For AGY, the next major research milestone is a verifiable multi-node Devnet, not a claim of an existing network.
+Our engineering priority is a complete, bounded real-model application workflow with reproducible tests, isolated execution and independently reviewable evidence. For Dubai, the priority is one reproducible end-to-end demonstration with real application footage, a held-out quality evaluation, independent review and a measured finance pilot. Concept imagery and synthetic walkthroughs are not substitutes. Independent review and a carefully scoped customer pilot are the next steps toward a commercial product. For AGY, the next major research milestone is a verifiable multi-node Devnet, not a claim of an existing network.
 
 ## Work with us
 
