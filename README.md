@@ -130,13 +130,17 @@ The proposed passport gives an agent a recognizable identity, specialty and veri
 ## CRYPTO IMPERIAL Ecosystem
 
 <p align="center">
-  <img src="assets/crypto-imperial-gallery-nzt.svg" alt="CRYPTO IMPERIAL Ecosystem: IMPERIUM, NZT and NDB — three original blue digital asset emblems" width="100%" />
+  <a href="https://github.com/oromaskevic23-cmd/IMPERIUM" title="Open IMPERIUM repository"><img src="assets/crypto-imperial-card-imperium-20261120.svg" alt="Open IMPERIUM GitHub repository" width="45%" /></a>
+  <a href="https://github.com/oromaskevic23-cmd/N.D.B" title="Open NDB repository"><img src="assets/crypto-imperial-card-ndb-20261120.svg" alt="Open NDB GitHub repository" width="45%" /></a>
+</p>
+<p align="center">
+  <a href="https://github.com/oromaskevic23-cmd/NZT-" title="Open NZT repository"><img src="assets/crypto-imperial-card-nzt-20261120.svg" alt="Open NZT GitHub repository" width="45%" /></a>
 </p>
 
 <p align="center">
   <a href="https://github.com/oromaskevic23-cmd/IMPERIUM"><strong>IMPERIUM</strong></a> &nbsp;·&nbsp;
-  <a href="https://github.com/oromaskevic23-cmd/NZT-"><strong>NZT</strong></a> &nbsp;·&nbsp;
-  <a href="https://github.com/oromaskevic23-cmd/N.D.B"><strong>NDB</strong></a>
+  <a href="https://github.com/oromaskevic23-cmd/N.D.B"><strong>NDB</strong></a> &nbsp;·&nbsp;
+  <a href="https://github.com/oromaskevic23-cmd/NZT-"><strong>NZT</strong></a>
 </p>
 
 **IMPERIUM** is a long-term architectural digital currency envisioned for AI agents worldwide.
