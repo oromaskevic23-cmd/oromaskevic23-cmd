@@ -130,15 +130,18 @@ The proposed passport gives an agent a recognizable identity, specialty and veri
 ## CRYPTO IMPERIAL Ecosystem
 
 <p align="center">
-  <img src="assets/crypto-imperial-gallery.svg" alt="IMPERIUM and NDB — two aligned neon-blue digital asset cards" width="100%" />
+  <img src="assets/crypto-imperial-gallery-nzt.svg" alt="CRYPTO IMPERIAL Ecosystem: IMPERIUM, NZT and NDB — three original blue digital asset emblems" width="100%" />
 </p>
 
 <p align="center">
   <a href="https://github.com/oromaskevic23-cmd/IMPERIUM"><strong>IMPERIUM</strong></a> &nbsp;·&nbsp;
+  <a href="https://github.com/oromaskevic23-cmd/NZT-"><strong>NZT</strong></a> &nbsp;·&nbsp;
   <a href="https://github.com/oromaskevic23-cmd/N.D.B"><strong>NDB</strong></a>
 </p>
 
 **IMPERIUM** is a long-term architectural digital currency envisioned for AI agents worldwide.
+
+**NZT** is a separate digital-asset research project with a declared Polygon contract reference. Live on-chain identity, supply and independent security verification remain pending.
 
 **NDB** is a separate token project. This direction is distinct from the software business and explicitly outside the Dubai invoice agent: no token, wallet, blockchain or payment connector is required.
 
