@@ -8,6 +8,7 @@
 
 <h1 align="center">IMPERIAL Core</h1>
 <p align="center"><strong>One AI-native ecosystem · One governance architecture · Human sovereignty</strong></p>
+<p align="center"><strong>Alexander Romaskevich</strong> · Founder · Owner · CEO</p>
 <p align="center">Architecture → Implementation → Evidence</p>
 
 <p align="center">
@@ -16,6 +17,19 @@
   <a href="https://oromaskevic23-cmd.github.io/Capital-Core-Public/">Ecosystem website</a> ·
   <a href="https://github.com/oromaskevic23-cmd/oromaskevic23-cmd/blob/main/docs/CONSTRUCTOR_AI_INVESTOR_OVERVIEW.md">Investor overview</a>
 </p>
+
+## Engineering decisions you can verify
+
+I design systems where an AI model can propose an action, a human or a policy can authorize it, and a reviewer can trace the outcome back to the source. These four examples show how that design takes shape in code.
+
+| Engineering decision | What you can inspect |
+| --- | --- |
+| **Make generated software reviewable.** CONSTRUCTOR AI exports editable source, tests and an integrity manifest together. | [Chromium acceptance](https://github.com/oromaskevic23-cmd/CONSTRUCTOR-AI/actions/runs/42001525556) and [pinned acceptance procedure](https://github.com/oromaskevic23-cmd/CONSTRUCTOR-AI/blob/898d1abe2616cb92104b64dc126e0875cc9acddf/docs/FLAGSHIP_ACCEPTANCE.md) cover three reviewed local application templates. |
+| **Keep identity, policy and approval separate.** The HANTER pilot checks three signatures with separate test keys before dispatching a read-only mission. | [Pinned AI Passport pilot](https://github.com/oromaskevic23-cmd/HANTER-Public/blob/8f249d0a1edb7ac088e138a112982fa579f5bba3/hanter_pilot/ED25519_PASSPORT.md). On 23 November 2026, `python3 -m hanter_pilot.signed_demo` returned a valid local audit chain and recorded zero external effects. |
+| **Put a signed boundary around model inference.** VELION served model output through a signed local API consumed by a CONSTRUCTOR AI adapter. | [Cross-repository CI](https://github.com/oromaskevic23-cmd/VELION-LLM-Public/actions/runs/40683989519) exercised third-party NVIDIA Nemotron weights in a temporary CPU runner. |
+| **Make audit records tamper-evident.** The Dubai invoice agent publishes a signed synthetic checkpoint and a reproducible integrity checker. | [Pinned checkpoint and verification steps](https://github.com/oromaskevic23-cmd/IMPERIAL-DUBAI-2027-Public/blob/d38975e2ed33cb6427ffa805cf6475bdd9b9385c/EVIDENCE.md). On 23 November 2026, `node evidence/verify-cli.mjs` verified the published signature and `node --test evidence/verify.test.mjs` passed 10 public verifier tests. The signature establishes summary integrity. |
+
+[Machine-readable evidence index](docs/EVIDENCE_INDEX.json) · [External product due diligence and open release gates](docs/EXTERNAL_PRODUCT_DUE_DILIGENCE_20261121.md)
 
 ## One ecosystem — the Digital State vision
 
@@ -37,7 +51,7 @@ Our repositories are specialized engineering boundaries within this vision, not 
 
 **Architecture is the common design. Integration is demonstrated incrementally.** [Explore the unified architecture, verified connections and evidence boundaries](docs/UNIFIED_ECOSYSTEM_EVIDENCE.md).
 
-**AI reviewer / engineering due diligence:** [Machine-readable evidence index](docs/EVIDENCE_INDEX.json) · [Evidence classes and integration release gates](docs/UNIFIED_ECOSYSTEM_EVIDENCE.md#machine-readable-evidence-for-external-ai-reviewers) · [Offline index validator](tools/verify_public_evidence.mjs). The index distinguishes completed GitHub Actions jobs from laboratory references and developer reports. It is not a claim of independent certification or a single deployed production runtime.
+**Evidence and reproducibility.** [Evidence classes and integration release gates](docs/UNIFIED_ECOSYSTEM_EVIDENCE.md#machine-readable-evidence-for-external-ai-reviewers) · [Offline index validator](tools/verify_public_evidence.mjs). The index records the source, scope and limitations for each CI run, laboratory reference and developer report.
 
 ### Start here — three concrete entry points
 
@@ -83,12 +97,6 @@ These are specific, inspectable development records, not commercial or productio
 
 The [engineering due-diligence brief](docs/ENGINEERING_DUE_DILIGENCE_20261109.md) and [evidence dossier](https://oromaskevic23-cmd.github.io/oromaskevic23-cmd/engineering/) provide additional context. Repository-controlled tests are not independent certification. Customer revenue, commercial readiness and an operating global agent fleet are not established here. The linked CONSTRUCTOR AI, AGY and VELION CI job conclusions were checked on 19 November 2026. See the [composition evidence map](docs/UNIFIED_ECOSYSTEM_EVIDENCE.md) for scope and remaining acceptance gates.
 
-## Dubai 2027 — an agent for invoice exceptions
-
-Our competition work focuses on a finance problem: matching invoices against reference records and directing exceptions to an authorized reviewer. The [public project](https://github.com/oromaskevic23-cmd/IMPERIAL-DUBAI-2027-Public) explains the prototype, its safeguards and its evidence. The [interactive walkthrough](https://oromaskevic23-cmd.github.io/oromaskevic23-cmd/dubai-2027/) uses fixed synthetic examples; it is not a live agent or a payment service.
-
-The competition prototype is a separate original implementation of these governance principles. Its public evidence includes a signed developer-reported checkpoint, a synthetic benchmark, and failed real-model quality experiments. A signature proves summary integrity, not independently witnessed execution. Developer-run tests and synthetic comparisons are documented in the project. Model quality acceptance, independent review and measured customer value remain open. This is independent preparation; participation, selection and endorsement are not claimed.
-
 ## Technology portfolio — specialized engineering domains
 
 | Project | Purpose |
@@ -126,6 +134,16 @@ These are architectural commitments. Each operational capability must be demonst
 </p>
 
 The proposed passport gives an agent a recognizable identity, specialty and verifiable credential. The public view should disclose only the information needed to identify and verify the credential; private policy, approval and audit details remain inside the authorized boundary. Identity alone never grants permission to act. The pictured name, score, QR code and status are illustrative, not live credentials or measured results. [Read the design and verification boundary](docs/AI_PASSPORT_CONCEPT.md).
+
+## Dubai 2027 — an agent for invoice exceptions
+
+<p align="center">
+  <a href="https://oromaskevic23-cmd.github.io/oromaskevic23-cmd/dubai-2027/"><img src="assets/dubai-social-preview-20261123.jpg" alt="Illustrated Dubai skyline at sunset, with the Burj Khalifa viewed from the waterfront" width="100%" /></a>
+</p>
+
+Our competition work focuses on a finance problem: matching invoices against reference records and directing exceptions to an authorized reviewer. The [public project](https://github.com/oromaskevic23-cmd/IMPERIAL-DUBAI-2027-Public) explains the prototype, its safeguards and its evidence. The [interactive walkthrough](https://oromaskevic23-cmd.github.io/oromaskevic23-cmd/dubai-2027/) uses fixed synthetic examples; it is not a live agent or a payment service.
+
+The competition prototype is a separate original implementation of these governance principles. Its public evidence includes a signed developer-reported checkpoint, a synthetic benchmark, and failed real-model quality experiments. A signature proves summary integrity, not independently witnessed execution. Developer-run tests and synthetic comparisons are documented in the project. Model quality acceptance, independent review and measured customer value remain open. This is independent preparation; participation, selection and endorsement are not claimed.
 
 ## CRYPTO IMPERIAL Ecosystem
 

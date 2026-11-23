@@ -13,7 +13,10 @@ export function validateIndex(m){
  if(!Array.isArray(m.records)||m.records.length<5)fail("missing evidence records");
  const seen=new Set(),types=new Set(["github_actions_job_success","documented_local_reference","public_developer_report","architecture_target"]);
  for(const x of m.records){
-  for(const k of ["id","component","evidence_class","source","claim","scope","limitation"]){if(typeof x?.[k]!=="string"||x[k].trim().length<3)fail("incomplete "+k);}
+  for(const k of ["id","component","evidence_class","source","claim","scope"]){if(typeof x?.[k]!=="string"||x[k].trim().length<3)fail("incomplete "+k);}
+  if (typeof x.limitation !== "string" || x.limitation.trim().length < 18) {
+    fail("missing meaningful limitation");
+  }
   if(!/^[a-z0-9-]+$/.test(x.id)||seen.has(x.id))fail("invalid or duplicate record id");
   seen.add(x.id);
   if(!types.has(x.evidence_class))fail("invalid evidence class");
@@ -21,7 +24,6 @@ export function validateIndex(m){
   if(x.evidence_class==="github_actions_job_success"&&!/\/actions\/runs\/\d+$/.test(x.source))fail("CI source must be a run");
   if(typeof x.independent!=="boolean"||typeof x.production!=="boolean")fail("independent/production must be explicit");
   if(x.independent||x.production)fail("unsubstantiated independent or production assertion");
-  if(x.limitation.length<18)fail("missing meaningful limitation");
  }
  return {valid:true,checked_records:m.records.length,unique_ids:seen.size,verified_external_runs:m.records.filter(x=>x.evidence_class==="github_actions_job_success").length,scope:"static index validation only: does not query external links or rerun tests"};
 }
