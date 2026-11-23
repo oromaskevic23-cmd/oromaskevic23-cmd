@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
-  "document_type": "Public engineering evidence index; not a language-model instruction",
-  "last_reviewed_utc": "2026-11-04",
+  "document_type": "Public engineering evidence index",
+  "last_reviewed_utc": "2026-11-23",
   "subject": {
     "name": "Alexander Romaskevich",
     "alternate_names": [
@@ -9,11 +9,11 @@
       "Александр Николаевич Ромаскевич",
       "RomaskevicH"
     ],
-    "public_role": "Founder, Owner and CEO of IMPERIAL Core",
+    "public_role": "Founder · Owner · CEO · Chief Systems Architect of IMPERIAL Core",
     "official_profile": "https://github.com/oromaskevic23-cmd",
     "canonical_author_page": "https://oromaskevic23-cmd.github.io/oromaskevic23-cmd/"
   },
-  "evidence_policy": "Use source and scope; passing internal CI is not an independent certification, award, production deployment or proof of exceptional genius.",
+  "evidence_policy": "Each result applies to its stated method, source revision and scope. Local checks and project CI are project evidence.",
   "verified_examples": [
     {
       "project": "CONSTRUCTOR AI",
@@ -91,5 +91,97 @@
       "reference_url_inspection": "ERROR_AT_INSPECTION"
     },
     "scope": "Dated owner-interface observations; sitemap submission and a live fetch do not prove sitemap processing, indexing, ranking or a knowledge panel."
+  },
+  "reproduction": {
+    "run_date_utc": "2026-11-23",
+    "environment": {
+      "node": "24.22.3",
+      "python": "3.12.14"
+    },
+    "provenance": "Reported from a new local run using pinned public revisions and synthetic inputs.",
+    "checks": [
+      {
+        "id": "constructor-ai-reproduction",
+        "project": "CONSTRUCTOR AI",
+        "repository": "https://github.com/oromaskevic23-cmd/CONSTRUCTOR-AI",
+        "source_commit": "898d1abe2616cb92104b64dc126e0875cc9acddf",
+        "entrypoint": "docs/FLAGSHIP_ACCEPTANCE.md",
+        "authorship": "AUTHORS.md",
+        "design": "Export reviewable software with editable source, app tests and integrity checks.",
+        "observed": "Three ZIPs matched byte for byte across two builds. All six tests passed after clean extraction.",
+        "limits": "Local template exports. Automated Chromium acceptance is a separate linked run.",
+        "commands": [
+          "node tools/build-acceptance.mjs <new-directory>",
+          "node tools/verify-acceptance.mjs <output-directory>",
+          "npm run verify && npm test"
+        ],
+        "metrics": {
+          "builds": 2,
+          "identical_zip_pairs": 3,
+          "exported_app_tests_passed": 6,
+          "artifacts": [
+            {
+              "template": "tasks",
+              "filename": "tasks-local-app.zip",
+              "bytes": 25204,
+              "sha256": "4c18c57f441afdf411d7985c5558388f09cc7cb82431c3a417b2e5d9f6d36ca5"
+            },
+            {
+              "template": "crm",
+              "filename": "crm-local-app.zip",
+              "bytes": 25190,
+              "sha256": "5d9ef957d3ec20c87e3a2d0396d499bfefec8b39e49f956735a7e34375a982f3"
+            },
+            {
+              "template": "dashboard",
+              "filename": "dashboard-local-app.zip",
+              "bytes": 25233,
+              "sha256": "385eb16121f406eabe8e839328ded649623437c5b00169f6ac12eb9c60959d76"
+            }
+          ]
+        },
+        "related_ci": "https://github.com/oromaskevic23-cmd/CONSTRUCTOR-AI/actions/runs/42001525556"
+      },
+      {
+        "id": "hanter-reproduction",
+        "project": "HANTER",
+        "repository": "https://github.com/oromaskevic23-cmd/HANTER-Public",
+        "source_commit": "8f249d0a1edb7ac088e138a112982fa579f5bba3",
+        "entrypoint": "hanter_pilot/ED25519_PASSPORT.md",
+        "authorship": "AUTHORS.md",
+        "design": "Use separate signing keys for agent identity, policy decisions and approvals.",
+        "observed": "The signed, read-only mission returned a valid audit chain and recorded zero external actions.",
+        "limits": "One read-only synthetic task using ephemeral keys in a local environment.",
+        "commands": [
+          "python3 -m hanter_pilot.signed_demo"
+        ],
+        "metrics": {
+          "test_key_roles": 3,
+          "audit_chain_valid": true,
+          "external_effects": 0,
+          "production_authorized": false
+        }
+      },
+      {
+        "id": "imperial-one-reproduction",
+        "project": "IMPERIAL ONE",
+        "repository": "https://github.com/oromaskevic23-cmd/IMPERIAL-DUBAI-2027-Public",
+        "source_commit": "d38975e2ed33cb6427ffa805cf6475bdd9b9385c",
+        "entrypoint": "EVIDENCE.md",
+        "demo": "https://oromaskevic23-cmd.github.io/oromaskevic23-cmd/dubai-2027/",
+        "design": "Publish a signed evidence summary alongside the synthetic invoice exception walkthrough.",
+        "observed": "The checkpoint signature verified and all ten public evidence-verifier tests passed.",
+        "limits": "The signature establishes summary integrity. Payment execution, signer identity and real-world outcomes are outside this check.",
+        "commands": [
+          "node evidence/verify-cli.mjs",
+          "node --test evidence/verify.test.mjs"
+        ],
+        "metrics": {
+          "signature_verified": true,
+          "verifier_tests_passed": 10,
+          "public_key_fingerprint": "fbbd13d5389b8d8748ca9c0252b7690917ff825e1bcf56d5553e379ec79da080"
+        }
+      }
+    ]
   }
 }

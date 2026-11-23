@@ -30,6 +30,27 @@ TOKENS = (
     ("NZT", "NZT-", 760, 760),
 )
 FOUNDER_LOCALES = {"en", "uk", "ru", "de", "fr", "es", "pt", "ar", "ja", "zh"}
+PROOF_DETAILS = {
+    "en": (
+        "Engineering you can reproduce",
+        "See the pinned source, commands and results for Alexander Romaskevich’s engineering portfolio.",
+        ("Three application ZIPs matched across two builds. All six tests passed after clean extraction.",
+         "A signed local mission returned a valid audit chain with zero external actions.",
+         "The signed evidence summary verified and all ten verifier tests passed."),
+    ),
+    "ru": (
+        "Инженерные результаты, которые можно повторить",
+        "Исходники, команды и результаты проверок инженерных проектов Александра Ромаскевича.",
+        ("Две сборки дали три побайтно одинаковых ZIP. Все шесть тестов распакованных приложений прошли.",
+         "Подписанная локальная задача сохранила целостную цепочку аудита с нулём внешних действий.",
+         "Проверка подтвердила подпись опубликованного отчёта. Все десять тестов проверяющего модуля прошли."),
+    ),
+}
+PROOF_PROJECTS = (
+    ("CONSTRUCTOR AI", "constructor-ai-reproduction"),
+    ("HANTER", "hanter-reproduction"),
+    ("IMPERIAL ONE", "imperial-one-reproduction"),
+)
 CARD_ICONS = ("gem", "stack-2", "topology-star-3", "shield-check", "id", "topology-star-3")
 ALT_NAMES = ("Alexander Nikolaevich Romaskevich", "Александр Николаевич Ромаскевич", "Олександр Ромаскевич", "RomaskevicH")
 
@@ -64,7 +85,8 @@ def identity(lang, url, title, description):
             {"@type": "Person", "@id": person, "name": "Alexander Romaskevich", "alternateName": ALT_NAMES,
              "url": FOUNDER, "jobTitle": founder_role(lang),
              "image": FOUNDER + "assets/alexander-romaskevich-portrait.jpeg", "sameAs": [GIT],
-             "affiliation": {"@id": organization}},
+             "affiliation": {"@id": organization},
+             "subjectOf": {"@id": FOUNDER + "engineering/#page"}},
             {"@type": "WebSite", "@id": website, "name": "IMPERIAL Core", "url": HOST + SHOWCASE,
              "publisher": {"@id": organization}},
         ],
@@ -73,6 +95,24 @@ def identity(lang, url, title, description):
 
 def founder_role(lang):
     return {"en": ROLE, "en-US": ROLE, "ru": ROLE_RU}.get(lang, COPY[lang]["role"])
+
+
+def render_proof(lang, label):
+    if lang not in PROOF_DETAILS:
+        return ""
+    title, intro, summaries = PROOF_DETAILS[lang]
+    cards = "".join(
+        f'<article class="entry"><h3>{name}</h3><p>{escape(summary)}</p>'
+        f'{link(label, FOUNDER + "engineering/#" + section)}</article>'
+        for (name, section), summary in zip(PROOF_PROJECTS, summaries, strict=True)
+    )
+    return f"""<section class="wrap section" id="engineering-proof" aria-labelledby="engineering-proof-title">
+  <div class="section-head"><h2 id="engineering-proof-title">{escape(title)}</h2>
+  {link(label, FOUNDER + "engineering/#reproduction")}</div>
+  <p class="section-lead">{escape(intro)}</p>
+  <div class="entries">{cards}</div>
+</section>"""
+
 
 
 def render(lang):
@@ -190,6 +230,8 @@ def render(lang):
     founder_statement = f'<p class="founder-statement">{escape(biography["statement"])}</p>' if biography else ""
     founder_intro = escape(biography["intro"] if biography else t["founderBody"])
     founder_story = render_biography(biography_lang) if biography else ""
+    proof = render_proof(biography_lang, t["evidence"])
+    proof_link = "#engineering-proof" if proof else FOUNDER + "engineering/#reproduction"
     language_badge = "EN-US" if lang == "en-US" else lang.split("-")[0].upper()
     t = {k: escape(v) for k, v in t.items()}
     return f"""<!doctype html>
@@ -239,7 +281,8 @@ def render(lang):
   </div>
   <div class="wrap hero-inner"><h1 id="hero-title">{t["hero1"]} <span>{t["hero2"]}</span></h1>
     <p>{t["intro"]}</p>
-    {link(COPY[lang]["explore"], "#official-projects", "btn btn-gold")}
+    <div class="actions">{link(COPY[lang]["explore"], "#official-projects", "btn btn-gold")}
+    {link(COPY[lang]["evidence"], proof_link, "btn btn-outline")}</div>
   </div>
 </section>
 <ul class="wrap principles" aria-label="{t["architecture"]}">{principle_items}</ul>
@@ -247,6 +290,7 @@ def render(lang):
   <div class="section-head"><h2>{t["portfolioTitle"].replace("IMPERIAL Core", "<em>IMPERIAL Core</em>")}</h2>{link(COPY[lang]["all"], "#all-projects")}</div>
   <div class="cards">{"".join(cards)}</div>
 </section>
+{proof}
 <section class="wrap section" id="architecture">
   <div class="architecture">
   <figure class="architecture-art"><img src="{ART}architecture.webp" width="1160" height="580" alt="" loading="lazy" decoding="async"></figure>

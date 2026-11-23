@@ -20,7 +20,7 @@
   "files": [
     {
       "path": "ar/index.html",
-      "sha256": "85e2bbb286d009ea61a77a7baffee53bfa6ee2006398d885625261258ba6609a"
+      "sha256": "7f8632e2393f5c08a334a29289b0ec27f047927bee586e2d95dff674131a5864"
     },
     {
       "path": "assets/founder.css",
@@ -28,59 +28,59 @@
     },
     {
       "path": "de-CH/index.html",
-      "sha256": "8fc60fd982adf1011b7731d2848ced678d3790cc1e7f89844be3d38303baff97"
+      "sha256": "1e6ed27be66f7ab5b72fd9f96e3700be66ed0113864eba9a3619ec477c83f60d"
     },
     {
       "path": "en-US/index.html",
-      "sha256": "c1648caa010640b4aafb05f11800d1a888f4b59fd5e4efce9bf59afabc05fac4"
+      "sha256": "42eeb974494d18ccc71d4efb9bc736118ad24077aa039fd707c4399f1149bb2d"
     },
     {
       "path": "es/index.html",
-      "sha256": "a6d623933b740bd1a5a66029627483f7783a1e43d87226ff1bae0822663f76e8"
+      "sha256": "15c4c5ec7767935ab1b8961b53822e31217c1a949364c8ad0c5e52dfdaf1074f"
     },
     {
       "path": "fr/index.html",
-      "sha256": "700c0ce256030b3aa7c3080ed497cdbcda71f9c59e2e2260aff7a589747e81b8"
+      "sha256": "f30b936aeb07825c66e859c76edabb9d80b93c6145e2b23773322fad473fe875"
     },
     {
       "path": "index.html",
-      "sha256": "01e185dff67518cfceda8cf356f05a45df8804a920aa6c6bfbd543b46d7c40b0"
+      "sha256": "a4b454943e48a9bedec402cb404d9b2ed3ac39b2fb36484a2f00ee7cada6e3ff"
     },
     {
       "path": "it/index.html",
-      "sha256": "1109ca231a864f648aed804bd6d2b7ca8a6b44c588f27b5b5e39cc6065f3950c"
+      "sha256": "09cd18d96508fba5f7a37dbed1f8775f6ec9a286842f7220e6fa0b1710602ec9"
     },
     {
       "path": "ja/index.html",
-      "sha256": "ffb784d0c0cfd46ee92f412c50af8ced2f3d1dab55d2b6672fd39c948dd9b46e"
+      "sha256": "1d4013a0de4c78500b8a57c73a6bd62f4716cf5b7324a250fad0d108030f4edf"
     },
     {
       "path": "ko/index.html",
-      "sha256": "9c4e2b30e4436c39838672c2395d80f54a2ff697245d69db4cfb243bcc27e054"
+      "sha256": "ba08cc8a7a007fc9de191c4062ce274bb85b887c44db168d6bfe2dd52810fce9"
     },
     {
       "path": "pl/index.html",
-      "sha256": "34b665b77f7ccc3bc41c9acd4d935cbe78f8e5a5b69a2d6a26e22f1222053167"
+      "sha256": "8aa9621703b34d41fc0a5021cdd156d032263c2f7c7765a658d64d955b4059c0"
     },
     {
       "path": "pt/index.html",
-      "sha256": "88362f987bd6ca9519fcd71b73e5713a4e82c3244b7d43fa671773a3cedb6543"
+      "sha256": "98d201a2c3074488b2f5151fa41be5598cf0a9561e2921ecbab3baabc201ac3d"
     },
     {
       "path": "ru/index.html",
-      "sha256": "3d4b1c1ffd066aa3e79369526af9810e9c49151e854d3cb0852d0e318686442f"
+      "sha256": "fe4fa3475d5e4c985d56f414022488cff3c47943409e60c8d74531e61f85b30f"
     },
     {
       "path": "tr/index.html",
-      "sha256": "45c122b43591571653bfcc1556abe6395e32c520de4e1d50c9ff7b1592f919a0"
+      "sha256": "f670c6f2e4391a5447cf08f68fdb409751fc470613b16820a013c72f85b2f53f"
     },
     {
       "path": "uk/index.html",
-      "sha256": "f92bcd86ec4ffff62606b34a136689526d9ce9d5b28a2188f6720cafb975755a"
+      "sha256": "e3f87ce0e9d875d39f61d8844d7f9e48eff834f1d9e9e4d5927157565435f2a3"
     },
     {
       "path": "zh/index.html",
-      "sha256": "d5618cae436a84fee1fd24ebbe5e03b373f65c1db3d19046434d90579856c3eb"
+      "sha256": "893fb4ee514a8a9e5318a6ba3c4499ebce07ddf84c35fa3cc76710d6ac9e8c27"
     }
   ]
 }
