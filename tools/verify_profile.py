@@ -11,15 +11,15 @@ from urllib.parse import unquote, urlparse
 ROOT = Path(__file__).resolve().parents[1]
 EMBLEM = "assets/imperial-core-diamond-20261116.jpg"
 PROFILE_IMAGES = (
-    "assets/imperial-core-dubai-luxury-profile-20261123.jpg",
     "assets/alexander-romaskevich-portrait-20261110.jpg",
+    "assets/imperial-core-dubai-luxury-profile-20261123.jpg",
     "assets/hanter-banner-diamond-20261116.jpg",
     "assets/ai-passport-concept-20261116.jpg",
     "assets/dubai-social-preview-20261123.jpg",
 )
 ASSET_BLOBS = {
-    PROFILE_IMAGES[0]: "2b748cc61a9466e1910d633f020a623135b84495",
-    PROFILE_IMAGES[-1]: "ea178022266c95b6d4ffe30a2a92178855eee871",
+    "assets/imperial-core-dubai-luxury-profile-20261123.jpg": "2b748cc61a9466e1910d633f020a623135b84495",
+    "assets/dubai-social-preview-20261123.jpg": "ea178022266c95b6d4ffe30a2a92178855eee871",
     "assets/imperial-core-banner-diamond-20261116.jpg": "83c8ec16411e5d3037b6a942f0df1c3456fc7116",
     EMBLEM: "85113c4fdd90c6c0fbe971ee14a5a6c30bb9d7aa",
     "assets/alexander-romaskevich-portrait-20261110.jpg": "9f9267646a4b7b12eec88714e60a452ac227dde9",
@@ -67,7 +67,9 @@ def verify_profile(text: str, root: Path = ROOT) -> list[tuple[str, bool]]:
     check("Image descriptions present", all(re.search(r'<img\b[^>]*\balt="[^"]+"', tag)
                                               for tag in re.findall(r'<img\b[^>]*>', text)))
     check("Founder and authority", all(v in text for v in (
-        "Alexander Romaskevich", "Founder · Owner · CEO", "RomaskevicH")))
+        "Alexander Romaskevich", "Founder · Owner · CEO · Chief Systems Architect of IMPERIAL Core", "RomaskevicH")))
+    heading = re.search(r'<h1\b[^>]*>([^<]+)</h1>', text)
+    check("Profile opens with the founder", heading is not None and heading.group(1) == "Alexander Romaskevich")
     check("Federated architecture and control boundaries", all(v in text for v in (
         "Federated Multi-Orchestrator Architecture", "AI Passport", "Enterprise Skills",
         "Guardian Core", "Approval Gateway", "Audit Ledger", "Zero Trust",

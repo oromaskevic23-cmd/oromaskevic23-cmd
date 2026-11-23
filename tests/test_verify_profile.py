@@ -19,6 +19,10 @@ class ProfileIntegrityTests(unittest.TestCase):
         self.assertTrue(all(ok for _, ok in verify_profile(self.profile)))
         self.assertTrue(all(ok for _, ok in verify_public_reference_links()))
 
+    def test_founder_remains_the_primary_heading(self):
+        changed = self.profile.replace(">Alexander Romaskevich</h1>", ">IMPERIAL Core</h1>")
+        self.rejected(changed, "Profile opens with the founder")
+
     def test_architecture_and_passport_boundaries(self):
         self.rejected(self.profile.replace("Federated Multi-Orchestrator Architecture", "single controller"),
                       "Federated architecture and control boundaries")
