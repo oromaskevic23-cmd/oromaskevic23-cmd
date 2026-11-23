@@ -1,9 +1,5 @@
 <p align="center">
-  <img src="assets/imperial-core-banner-diamond-20261116.jpg" alt="IMPERIAL Core federated AI ecosystem concept, with a blue diamond and city skyline" width="100%" />
-</p>
-
-<p align="center">
-  <img src="assets/imperial-core-diamond-20261116.jpg" alt="IMPERIAL Core blue diamond identity artwork" width="200" />
+  <img src="assets/imperial-core-dubai-luxury-profile-20261123.jpg" alt="IMPERIAL Core Dubai premium ecosystem design concept showing HANTER, VELION, Nano Core Agents, CYBER HAK, AI Passport and AGY" width="100%" />
 </p>
 
 <h1 align="center">IMPERIAL Core</h1>
