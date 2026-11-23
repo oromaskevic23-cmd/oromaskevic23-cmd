@@ -1,7 +1,7 @@
 """Visible English copy and complete locale overlays for the public showcase."""
 
 LANGUAGES = {
-    "en": "English", "uk": "Українська", "ru": "Русский", "de-CH": "Deutsch",
+    "en": "English", "en-US": "English (US)", "uk": "Українська", "ru": "Русский", "de-CH": "Deutsch",
     "fr": "Français", "es": "Español", "pt": "Português", "ar": "العربية",
     "ja": "日本語", "zh": "中文",
 }
@@ -976,3 +976,24 @@ PORTFOLIO_LABELS.update(
     tr=("GitHub projeleri", "Supabase altyapı belgeleri", "Borsada listelenme hedefi 2027. Onay bekleniyor."),
     ko=("GitHub 프로젝트", "Supabase 인프라 문서", "거래소 상장 목표 시점은 2027년이며 확인이 필요합니다."),
 )
+
+COPY["en-US"] = {
+    **COPY["en"],
+    "hero1": "Sovereign AI",
+    "hero2": "Systems",
+    "intro": "An AI ecosystem for organizations that need to verify what agents did, who approved it, and what evidence they produced.",
+    "explore": "Explore IMPERIAL Core",
+    "portfolioTitle": "Projects Across IMPERIAL Core",
+    "architectureTitle": "How IMPERIAL Core Works",
+    "architectureBody": "The Architect defines the objective and holds final decision authority. HANTER coordinates missions across independent domains. Each domain assigns scoped tasks to its teams and Nano Core Agents, then returns records reviewers can use to verify the work.",
+    "moreIntro": "Browse publicly available architecture, source code, and reference implementations for each part of the ecosystem.",
+    "walkthrough": "Open the demo with synthetic data",
+    "candidateEvidence": "Review the candidate projects",
+    "engineering": "Engineering Portfolio",
+    "reference": "Technical Reference",
+}
+
+FEATURE_TEXT["en-US"] = FEATURE_TEXT["en"]
+MORE_TEXT["en-US"] = MORE_TEXT["en"]
+REFERENCE_LABELS["en-US"] = REFERENCE_LABELS["en"]
+PORTFOLIO_LABELS["en-US"] = PORTFOLIO_LABELS["en"]

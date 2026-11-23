@@ -72,7 +72,7 @@ def identity(lang, url, title, description):
 
 
 def founder_role(lang):
-    return {"en": ROLE, "ru": ROLE_RU}.get(lang, COPY[lang]["role"])
+    return {"en": ROLE, "en-US": ROLE, "ru": ROLE_RU}.get(lang, COPY[lang]["role"])
 
 
 def render(lang):
@@ -89,7 +89,7 @@ def render(lang):
              else f"IMPERIAL Core | {t['hero1']} {t['hero2']}")
     direction = "rtl" if lang == "ar" else "ltr"
     desc = f"{t['intro']} Alexander Romaskevich · IMPERIAL Core."
-    archived_lang = lang if lang.split("-")[0] in FOUNDER_LOCALES else "en"
+    archived_lang = lang if lang in FOUNDER_LOCALES or lang == "de-CH" else "en"
     archived = LEGACY_REFERENCE + "technical/" + suffix(archived_lang)
     alternates = "\n".join(
         f'<link rel="alternate" hreflang="{code}" href="{HOST}{SHOWCASE}{suffix(code)}">'
@@ -185,10 +185,12 @@ def render(lang):
     founder_locale = founder_locale if founder_locale in FOUNDER_LOCALES else "en"
     founder_link = FOUNDER + suffix(founder_locale)
     graph = json.dumps(identity(lang, url, title, desc), ensure_ascii=False, separators=(",", ":"))
-    biography = BIOGRAPHIES.get(lang)
+    biography_lang = "en" if lang == "en-US" else lang
+    biography = BIOGRAPHIES.get(biography_lang)
     founder_statement = f'<p class="founder-statement">{escape(biography["statement"])}</p>' if biography else ""
     founder_intro = escape(biography["intro"] if biography else t["founderBody"])
-    founder_story = render_biography(lang) if biography else ""
+    founder_story = render_biography(biography_lang) if biography else ""
+    language_badge = "EN-US" if lang == "en-US" else lang.split("-")[0].upper()
     t = {k: escape(v) for k, v in t.items()}
     return f"""<!doctype html>
 <html lang="{lang}" dir="{direction}">
@@ -224,7 +226,7 @@ def render(lang):
 <a class="brand" href="{SHOWCASE}{current}"><img src="{ASSETS}showcase-gem.svg" width="39" height="39" alt=""><span>IMPERIAL <em>Core</em></span></a>
 <nav class="main-nav" aria-label="{t["nav"]}">{nav}</nav>
 <div class="bar-actions">
-<details class="language"><summary aria-label="{t["languages"]} · {LANGUAGES[lang]}"><bdi>{lang.split("-")[0].upper()}</bdi></summary>
+<details class="language"><summary aria-label="{t["languages"]} · {LANGUAGES[lang]}"><bdi>{language_badge}</bdi></summary>
 <div class="language-panel">{language_links}</div></details>
 <details class="mobile-menu"><summary aria-label="{t["nav"]}">{icon("menu-2")}</summary><nav>{nav}{link(COPY[lang]["github"], GIT, "", False)}</nav></details>
 {link(COPY[lang]["github"], GIT, "profile-link")}

@@ -2,6 +2,7 @@
   "canonical_base": "https://oromaskevic23-cmd.github.io/oromaskevic23-cmd/imperial-core/",
   "pages": [
     "https://oromaskevic23-cmd.github.io/oromaskevic23-cmd/imperial-core/",
+    "https://oromaskevic23-cmd.github.io/oromaskevic23-cmd/imperial-core/en-US/",
     "https://oromaskevic23-cmd.github.io/oromaskevic23-cmd/imperial-core/uk/",
     "https://oromaskevic23-cmd.github.io/oromaskevic23-cmd/imperial-core/ru/",
     "https://oromaskevic23-cmd.github.io/oromaskevic23-cmd/imperial-core/de-CH/",
@@ -19,7 +20,7 @@
   "files": [
     {
       "path": "ar/index.html",
-      "sha256": "8919edaa90a124b1524a89d9f83063bff9e992a2603d7977e63916129c5bef41"
+      "sha256": "85e2bbb286d009ea61a77a7baffee53bfa6ee2006398d885625261258ba6609a"
     },
     {
       "path": "assets/founder.css",
@@ -27,55 +28,59 @@
     },
     {
       "path": "de-CH/index.html",
-      "sha256": "430ffb7af53dbab5ca4ad340fdf5fd0fb1c1f439353dcab66b676dbfc27cb2f2"
+      "sha256": "8fc60fd982adf1011b7731d2848ced678d3790cc1e7f89844be3d38303baff97"
+    },
+    {
+      "path": "en-US/index.html",
+      "sha256": "c1648caa010640b4aafb05f11800d1a888f4b59fd5e4efce9bf59afabc05fac4"
     },
     {
       "path": "es/index.html",
-      "sha256": "e05f442d99cc99d10ba1f76b5053de7cc46777138bfd916506bd3f84867852e2"
+      "sha256": "a6d623933b740bd1a5a66029627483f7783a1e43d87226ff1bae0822663f76e8"
     },
     {
       "path": "fr/index.html",
-      "sha256": "b7f49091a70366c70b1537e1d9e8c142b00752d0fa9bfbfc0cdea8a95bec4f3d"
+      "sha256": "700c0ce256030b3aa7c3080ed497cdbcda71f9c59e2e2260aff7a589747e81b8"
     },
     {
       "path": "index.html",
-      "sha256": "91b3ec59ea72c8a5418f1b4acd2105e9f6f61d1c9e3347b5e5a5d2579e4249b6"
+      "sha256": "01e185dff67518cfceda8cf356f05a45df8804a920aa6c6bfbd543b46d7c40b0"
     },
     {
       "path": "it/index.html",
-      "sha256": "7e936737814e4323356da55c68f95bc737e3d2a56b64313bee631b49e00fcde0"
+      "sha256": "1109ca231a864f648aed804bd6d2b7ca8a6b44c588f27b5b5e39cc6065f3950c"
     },
     {
       "path": "ja/index.html",
-      "sha256": "fb611b2af4e44d653b55dce3436db6b4b79cdfc97eaff8b670b799bf38fa006c"
+      "sha256": "ffb784d0c0cfd46ee92f412c50af8ced2f3d1dab55d2b6672fd39c948dd9b46e"
     },
     {
       "path": "ko/index.html",
-      "sha256": "03ce5b8e7d284e208a323bf9f3811f0182275044cec5c73838613cc23316e0e2"
+      "sha256": "9c4e2b30e4436c39838672c2395d80f54a2ff697245d69db4cfb243bcc27e054"
     },
     {
       "path": "pl/index.html",
-      "sha256": "86ed089a65048035ee129bd16a37d9bb77d086834d1e4bf05c8289e874bf366a"
+      "sha256": "34b665b77f7ccc3bc41c9acd4d935cbe78f8e5a5b69a2d6a26e22f1222053167"
     },
     {
       "path": "pt/index.html",
-      "sha256": "2d3b376302f618c390f8412cad09cd2cb9c39c7246f12e306d4c3445aeb9003d"
+      "sha256": "88362f987bd6ca9519fcd71b73e5713a4e82c3244b7d43fa671773a3cedb6543"
     },
     {
       "path": "ru/index.html",
-      "sha256": "7973ae15cba8da7f4b3e58100b7e403497c6794ee749fd456d9ddd4006457349"
+      "sha256": "3d4b1c1ffd066aa3e79369526af9810e9c49151e854d3cb0852d0e318686442f"
     },
     {
       "path": "tr/index.html",
-      "sha256": "4a2f08a71219099109386e5a9e03b28e27f21cd2e0b230625d035e5cd24646b7"
+      "sha256": "45c122b43591571653bfcc1556abe6395e32c520de4e1d50c9ff7b1592f919a0"
     },
     {
       "path": "uk/index.html",
-      "sha256": "71069eb91ffde49a51e78cc29ef37b84330bec6ac60c02f493a7dcbbc3923c0e"
+      "sha256": "f92bcd86ec4ffff62606b34a136689526d9ce9d5b28a2188f6720cafb975755a"
     },
     {
       "path": "zh/index.html",
-      "sha256": "a0a2916a44883dabf887e0962100ddb0997c04300d64940206f216b4f0663cb6"
+      "sha256": "d5618cae436a84fee1fd24ebbe5e03b373f65c1db3d19046434d90579856c3eb"
     }
   ]
 }
