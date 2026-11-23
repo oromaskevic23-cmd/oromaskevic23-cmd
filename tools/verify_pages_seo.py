@@ -18,10 +18,13 @@ from urllib.parse import urlparse, unquote
 FOUNDER = "https://oromaskevic23-cmd.github.io/oromaskevic23-cmd/"
 ECOSYSTEM = "https://oromaskevic23-cmd.github.io/Capital-Core-Public/"
 SHOWCASE = FOUNDER + "imperial-core/"
-SHOWCASE_LANGS = {"en", "uk", "ru", "de-CH", "fr", "es", "pt", "ja", "zh", "ar", "it", "pl", "tr", "ko"}
+SHOWCASE_LANGS = {"en", "en-US", "uk", "ru", "de-CH", "fr", "es", "pt", "ja", "zh", "ar", "it", "pl", "tr", "ko"}
 GITHUB_PROFILE = "https://github.com/oromaskevic23-cmd"
 LOCALES = {"en", "uk", "ru", "de", "fr", "es", "pt", "ja", "zh", "ar"}
-NS = {"s": "http://www.sitemaps.org/schemas/sitemap/0.9"}
+NS = {
+    "s": "http://www.sitemaps.org/schemas/sitemap/0.9",
+    "xhtml": "http://www.w3.org/1999/xhtml",
+}
 
 
 class SEOError(RuntimeError):
@@ -211,6 +214,7 @@ def validate_page(site: Path, prefix: str, url: str):
     demand(GITHUB_PROFILE in person.get("sameAs", []),
            "Missing verified GitHub identity " + url)
     if url.startswith(SHOWCASE):
+        demand(showcase_urls().get(parser.lang) == url, "Mismatched showcase locale for " + url)
         demand(person.get("image") == FOUNDER + "assets/alexander-romaskevich-portrait.jpeg",
                "Canonical founder portrait missing from showcase identity " + url)
         organizations = [g for g in graphs if g.get("@type") == "Organization"]
@@ -340,7 +344,16 @@ def audit(site: Path, prefix: str, expected_minimum: int):
     demand(len(locs) >= expected_minimum, "Sitemap has fewer indexable pages than expected")
     demand(len(locs) == len(set(locs)), "Duplicate sitemap loc")
     if prefix == FOUNDER:
-        demand(set(showcase_urls().values()).issubset(locs), "Showcase languages missing from sitemap")
+        expected_languages = {**showcase_urls(), "x-default": SHOWCASE}
+        localized_urls = set(showcase_urls().values())
+        demand(localized_urls.issubset(locs), "Showcase languages missing from sitemap")
+        for entry in tree.findall("s:url", NS):
+            url = entry.findtext("s:loc", namespaces=NS)
+            if url in localized_urls:
+                alternates = {link.get("hreflang"): link.get("href")
+                              for link in entry.findall("xhtml:link", NS)
+                              if link.get("rel") == "alternate"}
+                demand(alternates == expected_languages, "Incomplete sitemap language cluster for " + url)
         demand(FOUNDER + "projects/" in locs, "Founder project catalog missing from sitemap")
         demand(FOUNDER + "engineering/" in locs, "Evidence-based engineer page missing from sitemap")
         validate_evidence_index(site)
