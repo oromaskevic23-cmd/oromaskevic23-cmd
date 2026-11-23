@@ -85,7 +85,8 @@ def render(lang):
     repo_heading, supabase_detail, listing_status = PORTFOLIO_LABELS[lang]
     current = suffix(lang)
     url = HOST + SHOWCASE + current
-    title = f"IMPERIAL Core | {t['hero1']} {t['hero2']}"
+    title = ("IMPERIAL Core | Ecosistema sovrano di IA" if lang == "it"
+             else f"IMPERIAL Core | {t['hero1']} {t['hero2']}")
     direction = "rtl" if lang == "ar" else "ltr"
     desc = f"{t['intro']} Alexander Romaskevich · IMPERIAL Core."
     archived_lang = lang if lang.split("-")[0] in FOUNDER_LOCALES else "en"
