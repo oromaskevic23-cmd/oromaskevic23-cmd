@@ -73,3 +73,53 @@
 
 /* Canonical crowned globe: no square backplate or cropped emblem. */
 .monogram{background:transparent!important;overflow:visible!important;border:0!important;border-radius:0!important;height:54px!important}.monogram img{position:static!important;width:100%!important;height:100%!important;max-width:100%!important;object-fit:contain}
+
+.profile-expanded {
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  column-gap: clamp(2rem, 5vw, 5rem);
+}
+
+.profile-expanded .role {
+  font-size: .95rem;
+  letter-spacing: .015em;
+}
+
+.profile-expanded .hero-portrait {
+  width: 100%;
+  max-width: 34rem;
+  margin-inline: auto;
+}
+
+.profile-biography .founder-story > * + * {
+  margin-block-start: 1rem;
+}
+
+.profile-biography .founder-story h3 {
+  margin-block-start: 2.25rem;
+}
+
+.profile-biography .founder-principles {
+  padding-inline-start: 1.25rem;
+  color: var(--gold);
+}
+
+.profile-biography blockquote {
+  margin-inline: 0;
+  padding-inline-start: 1.25rem;
+  border-inline-start: 2px solid var(--gold);
+}
+
+.profile-biography blockquote p + p {
+  margin-block-start: .75rem;
+}
+
+.profile-biography .founder-closing {
+  color: var(--gold);
+  font-weight: 650;
+}
+
+@media (max-width: 760px) {
+  .profile-expanded {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}

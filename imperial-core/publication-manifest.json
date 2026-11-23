@@ -1,0 +1,81 @@
+{
+  "canonical_base": "https://oromaskevic23-cmd.github.io/oromaskevic23-cmd/imperial-core/",
+  "pages": [
+    "https://oromaskevic23-cmd.github.io/oromaskevic23-cmd/imperial-core/",
+    "https://oromaskevic23-cmd.github.io/oromaskevic23-cmd/imperial-core/uk/",
+    "https://oromaskevic23-cmd.github.io/oromaskevic23-cmd/imperial-core/ru/",
+    "https://oromaskevic23-cmd.github.io/oromaskevic23-cmd/imperial-core/de-CH/",
+    "https://oromaskevic23-cmd.github.io/oromaskevic23-cmd/imperial-core/fr/",
+    "https://oromaskevic23-cmd.github.io/oromaskevic23-cmd/imperial-core/es/",
+    "https://oromaskevic23-cmd.github.io/oromaskevic23-cmd/imperial-core/pt/",
+    "https://oromaskevic23-cmd.github.io/oromaskevic23-cmd/imperial-core/ar/",
+    "https://oromaskevic23-cmd.github.io/oromaskevic23-cmd/imperial-core/ja/",
+    "https://oromaskevic23-cmd.github.io/oromaskevic23-cmd/imperial-core/zh/",
+    "https://oromaskevic23-cmd.github.io/oromaskevic23-cmd/imperial-core/it/",
+    "https://oromaskevic23-cmd.github.io/oromaskevic23-cmd/imperial-core/pl/",
+    "https://oromaskevic23-cmd.github.io/oromaskevic23-cmd/imperial-core/tr/",
+    "https://oromaskevic23-cmd.github.io/oromaskevic23-cmd/imperial-core/ko/"
+  ],
+  "files": [
+    {
+      "path": "ar/index.html",
+      "sha256": "8919edaa90a124b1524a89d9f83063bff9e992a2603d7977e63916129c5bef41"
+    },
+    {
+      "path": "assets/founder.css",
+      "sha256": "25bca89729bf5f2e3ea613cbf7c1fdcaec641fe83ecea33aff8566b5acabec08"
+    },
+    {
+      "path": "de-CH/index.html",
+      "sha256": "430ffb7af53dbab5ca4ad340fdf5fd0fb1c1f439353dcab66b676dbfc27cb2f2"
+    },
+    {
+      "path": "es/index.html",
+      "sha256": "e05f442d99cc99d10ba1f76b5053de7cc46777138bfd916506bd3f84867852e2"
+    },
+    {
+      "path": "fr/index.html",
+      "sha256": "b7f49091a70366c70b1537e1d9e8c142b00752d0fa9bfbfc0cdea8a95bec4f3d"
+    },
+    {
+      "path": "index.html",
+      "sha256": "91b3ec59ea72c8a5418f1b4acd2105e9f6f61d1c9e3347b5e5a5d2579e4249b6"
+    },
+    {
+      "path": "it/index.html",
+      "sha256": "e71b7a2f0e4898f143499771b4a8370b10a95cb93735733013fe2918cc4b3c15"
+    },
+    {
+      "path": "ja/index.html",
+      "sha256": "fb611b2af4e44d653b55dce3436db6b4b79cdfc97eaff8b670b799bf38fa006c"
+    },
+    {
+      "path": "ko/index.html",
+      "sha256": "03ce5b8e7d284e208a323bf9f3811f0182275044cec5c73838613cc23316e0e2"
+    },
+    {
+      "path": "pl/index.html",
+      "sha256": "86ed089a65048035ee129bd16a37d9bb77d086834d1e4bf05c8289e874bf366a"
+    },
+    {
+      "path": "pt/index.html",
+      "sha256": "2d3b376302f618c390f8412cad09cd2cb9c39c7246f12e306d4c3445aeb9003d"
+    },
+    {
+      "path": "ru/index.html",
+      "sha256": "7973ae15cba8da7f4b3e58100b7e403497c6794ee749fd456d9ddd4006457349"
+    },
+    {
+      "path": "tr/index.html",
+      "sha256": "4a2f08a71219099109386e5a9e03b28e27f21cd2e0b230625d035e5cd24646b7"
+    },
+    {
+      "path": "uk/index.html",
+      "sha256": "71069eb91ffde49a51e78cc29ef37b84330bec6ac60c02f493a7dcbbc3923c0e"
+    },
+    {
+      "path": "zh/index.html",
+      "sha256": "a0a2916a44883dabf887e0962100ddb0997c04300d64940206f216b4f0663cb6"
+    }
+  ]
+}
