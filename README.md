@@ -4,13 +4,13 @@
 
 <h1 align="center">IMPERIAL Core</h1>
 <p align="center"><strong>One AI-native ecosystem · One governance architecture · Human sovereignty</strong></p>
-<p align="center"><strong>Alexander Romaskevich</strong> · Founder · Owner · CEO</p>
+<p align="center"><strong>Alexander Romaskevich</strong> · Founder · Owner · CEO · Chief Systems Architect of IMPERIAL Core</p>
 <p align="center">Architecture → Implementation → Evidence</p>
 
 <p align="center">
   <a href="https://oromaskevic23-cmd.github.io/Capital-Core-Public/reference/constructor-ai/studio/studio.html">Product demo</a> ·
   <a href="https://oromaskevic23-cmd.github.io/oromaskevic23-cmd/">Founder website</a> ·
-  <a href="https://oromaskevic23-cmd.github.io/Capital-Core-Public/">Ecosystem website</a> ·
+  <a href="https://oromaskevic23-cmd.github.io/oromaskevic23-cmd/imperial-core/">Ecosystem website</a> ·
   <a href="https://github.com/oromaskevic23-cmd/oromaskevic23-cmd/blob/main/docs/CONSTRUCTOR_AI_INVESTOR_OVERVIEW.md">Investor overview</a>
 </p>
 
@@ -58,17 +58,48 @@ Our repositories are specialized engineering boundaries within this vision, not 
 | [HANTER — AI Command Center](https://github.com/oromaskevic23-cmd/HANTER-Public) | [Executable local mission pilot](https://github.com/oromaskevic23-cmd/HANTER-Public/tree/main/hanter_pilot) · [Cross-repository evidence](docs/UNIFIED_ECOSYSTEM_EVIDENCE.md#evidence-of-composition) |
 
 <p align="center">
-  <img src="assets/alexander-romaskevich-portrait-20261110.jpg" alt="Alexander Romaskevich, Founder, Owner and CEO of IMPERIAL Core" width="300" />
+  <a href="https://oromaskevic23-cmd.github.io/oromaskevic23-cmd/"><img src="assets/alexander-romaskevich-portrait-20261110.jpg" alt="Alexander Romaskevich, Founder, Owner, CEO and Chief Systems Architect of IMPERIAL Core" width="460" /></a>
 </p>
 
 <h2 align="center">Alexander Romaskevich</h2>
-<p align="center"><strong>Founder · Owner · CEO</strong><br/>RomaskevicH</p>
+<p align="center"><strong>Founder · Owner · CEO · Chief Systems Architect of IMPERIAL Core</strong></p>
+<p align="center"><strong>Engineering the Future of Artificial Intelligence.</strong></p>
 
-### A message from the founder
+Alexander Romaskevich is an independent technology founder, AI systems architect, and developer focused on building the next generation of intelligent digital ecosystems.
 
-I want IMPERIAL Core to become a lasting technology organization, one that earns trust through the quality of its work. My focus is on practical products, responsible autonomy and engineering decisions that can withstand independent scrutiny.
+He is the creator and chief architect of IMPERIAL Core, an ambitious AI-native ecosystem designed around federated intelligence, autonomous agents, enterprise security, and verifiable execution.
 
-We are building toward that vision step by step. I welcome conversations with people who value long-term thinking, sound engineering and measurable progress.
+His engineering philosophy is built on three principles:
+
+- Architecture Before Implementation.
+- Evidence Before Claims.
+- Human Authority Above Artificial Intelligence.
+
+Rather than approaching artificial intelligence as a collection of isolated tools, Alexander is developing a unified architectural vision in which specialized AI systems, professional agent teams, and independent orchestration domains operate under clearly defined governance and security boundaries.
+
+His engineering portfolio includes HANTER, VELION, Nano Core Agents, CONSTRUCTOR AI, CYBER HAK, AI Passport, and AGY.
+
+Each project contributes to a long-term vision of intelligent systems that can reason, coordinate, execute, and demonstrate their results while preserving human authority.
+
+### The Vision
+
+To build intelligent systems that transform ambitious ideas into real, secure, and verifiable technology.
+
+Alexander’s ambition extends beyond individual software products. His goal is to establish a lasting technological ecosystem capable of evolving across industries, organizations, and generations.
+
+### A Message from the Founder
+
+> “I don’t measure engineering excellence by the complexity of an idea. I measure it by what we can build, verify, improve, and ultimately deliver.
+>
+> My ambition is to create technology that will continue to evolve long after its first version.”
+
+**Alexander Romaskevich**<br>
+Founder · Owner · CEO<br>
+IMPERIAL Core
+
+**One Vision. One Architecture. Infinite Possibilities.**
+
+[Founder website](https://oromaskevic23-cmd.github.io/oromaskevic23-cmd/) · [IMPERIAL Core showcase](https://oromaskevic23-cmd.github.io/oromaskevic23-cmd/imperial-core/) · [Engineering evidence](https://oromaskevic23-cmd.github.io/oromaskevic23-cmd/engineering/)
 
 ## CONSTRUCTOR AI — our flagship product
 
@@ -107,7 +138,7 @@ The [engineering due-diligence brief](docs/ENGINEERING_DUE_DILIGENCE_20261109.md
 | [Capital Core](https://github.com/oromaskevic23-cmd/Capital-Core-Public) | Business and real-estate applications |
 | [CRYPTO IMPERIAL Ecosystem](https://github.com/oromaskevic23-cmd/CRYPTO-IMPERIAL-Ecosystem-Public) | Separate digital-asset research and contract references |
 
-[Public project registry](docs/FOUNDER_PUBLIC_PROJECT_REGISTRY_20261031.md) · [Ecosystem reference](https://oromaskevic23-cmd.github.io/Capital-Core-Public/reference/)
+[Public project registry](docs/FOUNDER_PUBLIC_PROJECT_REGISTRY_20261031.md) · [IMPERIAL Core showcase](https://oromaskevic23-cmd.github.io/oromaskevic23-cmd/imperial-core/)
 
 ## Architecture and human control
 
@@ -173,7 +204,7 @@ Our engineering priority is a complete, bounded real-model application workflow 
 
 We welcome discussions with prospective pilot customers, technical partners and investors. Start by exploring the demo and the engineering evidence, then contact us to discuss a specific opportunity.
 
-[Investor and pilot overview](docs/CONSTRUCTOR_AI_INVESTOR_OVERVIEW.md) · [Contact](mailto:oromaskevic23@gmail.com) · [Technical collaboration](https://github.com/oromaskevic23-cmd/Capital-Core-Public/issues)
+[Investor and pilot overview](docs/CONSTRUCTOR_AI_INVESTOR_OVERVIEW.md) · [Contact](mailto:oromaskevic23@gmail.com) · [Engineering portfolio](https://oromaskevic23-cmd.github.io/oromaskevic23-cmd/engineering/)
 
 This GitHub profile is a public, Git-managed presentation of IMPERIAL Core. It does not depend on Instagram authorization, an Instagram API or social-media tokens.
 
